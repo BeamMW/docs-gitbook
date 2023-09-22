@@ -1,6 +1,6 @@
 # Creating cross-chain Transactions
 
-This article will cover how to utilize Beam Bridge to create cross-chain transactions between **Ethereum to Beam** and **Beam to Ethereum**. This step-by-step tutorial provides a foundation for completing cross-chain transactions with all supported tokens including:
+This article will cover how to utilize Beam Bridge to create cross-chain transactions between **Ethereum to Beam**. This step-by-step tutorial provides a foundation for completing cross-chain transactions with all supported tokens including:
 
 * $ETH, $USDT, $DAI, $WBTC on Ethereum.
 * $bETH, $bUSDT, $bDAI, $bWTC on Beam.
@@ -135,16 +135,16 @@ Double-check all transaction details before completing any transaction.
 
 &#x20;
 
-<figure><img src="https://lh3.googleusercontent.com/0wDwVGP4CWWR3OlyjGppKZA6TasISlVYrz7aKiOq4z91XXkp7zrqib0NmnWkL2Vq_f7N70h8_MxWs7DnmRr8x3F0Xiv6JUNay3rJ6xRENaSUhVnG9_-0ShYp87SlLkPxd3VXnaFlMpxPszGGqWncBJIR5SbWBthl1nmtVejhzRRFfaXXAssXq5NgHQ" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/0.05confirmdeposit.png" alt=""><figcaption></figcaption></figure>
 
 ### Transaction Complete
 
 Successful Beam to Ethereum transactions will appear under "Bridges App Transactions".
 
-<figure><img src="https://lh5.googleusercontent.com/qAW2PAEe0L5se6_TE-XzUd5sFednE9OvxCcJfINAVTohj4x6d-LBzJBieSa19NBhheLoVGbcInKljT64j8srSFPMEy-HyOS3QsYckVa18vhnxjC3BfbBEClPLT2kOxfmuCU2NjVIkraIv5WsYNqDhIpOKcyooLBtDzMXXVpEK9d2e99Am-ysUbWRKQ" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/0.05transactioncomplete.png" alt=""><figcaption></figcaption></figure>
 
 #### Transaction Info
 
-<figure><img src="https://lh3.googleusercontent.com/qnu5U6P3GAWtHHFojaKmbxHp2gSP7Y-rAuL72ZFgsbJtM1Hk590tolflXTDyPaAwJc9i7eaGdrxHtOl2wFCh-z6bjCNJ965qfy7dMfDAVI1okN6oCQq7P4U6WtkoCDy7-vAKnBV1kDatZnoM84eXd_5OLGmZEMvtrYOgwSwALMPSXGjc2VuTSQNveg" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/0.05transactioninfo.png" alt=""><figcaption></figcaption></figure>
 
 ##
