@@ -106,7 +106,7 @@ Before using the external miner, please review the sample Mining Architecture be
 
 1. Download the CLI Wallet (available on all platforms) from the [Beam Website](https://www.beam.mw/downloads/).
 2. Extract the CLI Wallet to any folder on your machine and title it `wallet_folder.`
-3.  Launch the Command Line and change the directory to `wallet_folder`. Enter the following command:
+3. Launch the Command Line and change the directory to `wallet_folder`. Enter the following command:
 
     ```
     cd /wallet_folder
