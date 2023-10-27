@@ -7,6 +7,7 @@ description: >-
 # Receiving Beam
 
 {% hint style="danger" %}
+**Known Limitations:**
 
 * _SBBS addresses for Web Wallet are single-use only addresses._
 * _Newly generated SBBS addresses expire after 12 hours._
