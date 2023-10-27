@@ -7,7 +7,6 @@ description: >-
 # Receiving Beam
 
 {% hint style="danger" %}
-_**As Beam web wallet is currently in Testnet, please consider:**_
 
 * _SBBS addresses for Web Wallet are single-use only addresses._
 * _Newly generated SBBS addresses expire after 12 hours._
