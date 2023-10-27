@@ -16,8 +16,6 @@ description: >-
 * _It is possible to reuse an existing address (more information on that later)._
 {% endhint %}
 
-## Full Browser view:
-
 ### Generate an Address
 
 From your wallet dashboard, select "receive" to be directed the receiving window.
