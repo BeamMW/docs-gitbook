@@ -15,7 +15,7 @@
 ## Additional Documentation
 
 * [Desktop Wallet User Guide](https://beam.mw/en/docs/desktop)
-* [Mobile Wallet User Guide]((https://beam.mw/en/docs/mobile))
+* [Mobile Wallet User Guide](https://beam.mw/en/docs/mobile)
 * [Atomic Swaps Desktop Guide](https://beam.mw/en/docs/atomic-swaps)
 * [Beam CLI User Guide](https://beam.mw/en/docs/cli)
 
