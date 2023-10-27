@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Web Wallet User Guide (Testnet)](README.md)
+* [Web Wallet User Guide](README.md)
 * [How-to Install Beam Web Wallet](how-to-install-beam-web-wallet.md)
 * [How-to Create Beam Web Wallet](how-to-create-wallet/README.md)
   * [Easy Onboarding](how-to-create-wallet/easy-onboarding.md)
@@ -14,12 +14,12 @@
 
 ## Additional Documentation
 
-* [Desktop Wallet User Guide](https://beamx.gitbook.io/desktop-wallet-user-guide/)
-* [Mobile Wallet User Guide](https://beamx.gitbook.io/mobile-wallet-user-guide/)
-* [Atomic Swaps Desktop Guide](https://beamx.gitbook.io/atomic-swaps-desktop-guide/)
-* [Beam CLI User Guide](https://beamx.gitbook.io/cli-guide/)
+* [Desktop Wallet User Guide](https://beam.mw/en/docs/desktop)
+* [Mobile Wallet User Guide]((https://beam.mw/en/docs/mobile))
+* [Atomic Swaps Desktop Guide](https://beam.mw/en/docs/atomic-swaps)
+* [Beam CLI User Guide](https://beam.mw/en/docs/cli)
 
 ***
 
 * [Beam Github](https://github.com/BeamMW)
-* [Beam Documentation](https://documentation.beam.mw/)
+* [Beam Documentation](https://beam.mw/docs)
