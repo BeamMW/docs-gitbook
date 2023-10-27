@@ -91,8 +91,8 @@ Before using the external miner, please review the sample Mining Architecture be
 {% hint style="info" %}
 **Things to consider:**
 
-* Beam node should connect to a different node on the network via `--peer` parameter, e.g., `--peer=3.0.115.1:8100` for TestNet 4.
-* Beam node can run Stratum server adding `--stratum_port` parameter, e.g.,`--stratum_port=10002.`
+* The Beam node should connect to a different node on the network via `--peer` parameter, e.g., `--peer=3.0.115.1:8100` for TestNet 4.
+* The Beam node can run Stratum server adding `--stratum_port` parameter, e.g.,`--stratum_port=10002.`
 * The Beam node should have the `mining_key` and `owner_key`, so the mining rewards accumulated are transferred to a specific wallet, e.g., parameters `--miner_key` and `--owner_ke`y. **`Miner_key` and `Owner_key` should be kept secret at all times.**﻿
 * Several Mining clients running on GPU rigs can connect to the same node.&#x20;
 * The connection between the Mining Client and Beam node is encrypted with TLS. For TLS to work, you need to provide a certificate file and secret keys for it.
@@ -104,7 +104,7 @@ Before using the external miner, please review the sample Mining Architecture be
 
 ### How to mine using an external miner
 
-1. Download CLI Wallet (available on all platforms) from the [Beam Website](https://www.beam.mw/downloads/).
+1. Download the CLI Wallet (available on all platforms) from the [Beam Website](https://www.beam.mw/downloads/).
 2. Extract the CLI Wallet to any folder on your machine and title it `wallet_folder.`
 3.  Launch the Command Line and change the directory to `wallet_folder`. Enter the following command:
 
