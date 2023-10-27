@@ -1,6 +1,6 @@
 # Validating Mode
 
-By default, Beam Node operates as "validating mode," meaning mining is disabled. For more information on Beam mining and how-to Mine Beam, see our Beam Mining Guide.&#x20;
+By default, the Beam Node operates as "validating mode," meaning mining is disabled. For more information on Beam mining and how-to Mine Beam, see our Beam Mining Guide.&#x20;
 
 Nodes set in "Validating mode" perform a critical component to the overall health and safety of the Beam network by:
 
