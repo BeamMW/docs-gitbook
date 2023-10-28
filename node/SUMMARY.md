@@ -8,14 +8,11 @@
 
 ## Additional Documentation
 
-* [FAQ](https://beamx.gitbook.io/faq/)
-* [Glossary](https://beamx.gitbook.io/glossary/)
-* [DAppnet User Guide](https://beamx.gitbook.io/dappnet-user-guide/)
-* [Atomic Swaps Desktop Guide](https://beamx.gitbook.io/atomic-swaps-desktop-guide/)
-* [Desktop Wallet User Guide](https://beamx.gitbook.io/desktop-wallet-user-guide/)
-* [Mobile Wallet User Guide](https://beamx.gitbook.io/mobile-wallet-user-guide/)
+* [Desktop Wallet User Guide](https://beam.mw/en/docs/desktop)
+* [Mobile Wallet User Guide](https://beam.mw/en/docs/mobile)
+* [Atomic Swaps Desktop Guide](https://beam.mw/en/docs/atomic-swaps)
 
 ***
 
-* [Beam Documentation](https://documentation.beam.mw/)
+* [Beam Documentation](https://beam.mw/docs)
 * [Beam Github](https://github.com/BeamMW)

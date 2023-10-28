@@ -1,6 +1,7 @@
 # Mining Mode
 
-Beam Node supports External Miner via Stratum Server API for mining Beam: Beam Node provides built-in support for Stratum API integration with multiple external mining clients to a single node. Stratum clients can be run together with the internal Miner. For more detailed information, and how-to mine Beam, please see our [Beam Mining guide](https://beamx.gitbook.io/beam-mining/-MdvMMR0TdumadxyPDa1/).
+The Beam Node supports External Miner via Stratum Server API for mining Beam: The Beam Node provides built-in support for Stratum API integration with multiple external mining clients to a single node.
+Stratum clients can be run together with the internal Miner. For more detailed information, and how-to mine Beam, please see our [Beam Mining guide](https://beam.mw/en/docs/mining/).
 
 {% hint style="info" %}
 **Obtain your Miner Keys!**
@@ -75,9 +76,9 @@ The distribution of the Treasury Coins will occur monthly in the following amoun
 
 Beam plans to keep mining ASIC resistant through the first 18 months to establish decentralization by performing one hard fork after six months and then a second hard fork after 12 months of Beams emission. Each hard fork will tweak the mining algorithm, the modifications releasing several weeks prior.
 
-## [Mining guide](https://beamx.gitbook.io/beam-mining/)
+## [Mining guide](https://beam.mw/docs/mining/)
 
-See our [mining guide](https://beamx.gitbook.io/beam-mining/) for more information on how-to mine Beam coins.
+See our [mining guide](https://beam.mw/docs/mining/) for more information on how-to mine Beam coins.
 
 ## Mining using external miner
 
@@ -90,8 +91,8 @@ Before using the external miner, please review the sample Mining Architecture be
 {% hint style="info" %}
 **Things to consider:**
 
-* Beam node should connect to a different node on the network via `--peer` parameter, e.g., `--peer=3.0.115.1:8100` for TestNet 4.
-* Beam node can run Stratum server adding `--stratum_port` parameter, e.g.,`--stratum_port=10002.`
+* The Beam node should connect to a different node on the network via `--peer` parameter, e.g., `--peer=3.0.115.1:8100` for TestNet 4.
+* The Beam node can run Stratum server adding `--stratum_port` parameter, e.g.,`--stratum_port=10002.`
 * The Beam node should have the `mining_key` and `owner_key`, so the mining rewards accumulated are transferred to a specific wallet, e.g., parameters `--miner_key` and `--owner_ke`y. **`Miner_key` and `Owner_key` should be kept secret at all times.**﻿
 * Several Mining clients running on GPU rigs can connect to the same node.&#x20;
 * The connection between the Mining Client and Beam node is encrypted with TLS. For TLS to work, you need to provide a certificate file and secret keys for it.
@@ -103,9 +104,9 @@ Before using the external miner, please review the sample Mining Architecture be
 
 ### How to mine using an external miner
 
-1. Download CLI Wallet (available on all platforms) from the [Beam Website](https://www.beam.mw/downloads/mainnet).
+1. Download the CLI Wallet (available on all platforms) from the [Beam Website](https://www.beam.mw/downloads/).
 2. Extract the CLI Wallet to any folder on your machine and title it `wallet_folder.`
-3.  Launch the Command Line and change the directory to `wallet_folder`. Enter the following command:
+3. Launch the Command Line and change the directory to `wallet_folder`. Enter the following command:
 
     ```
     cd /wallet_folder
@@ -145,7 +146,7 @@ Before using the external miner, please review the sample Mining Architecture be
 
 Save the exported `owner_key` in a `text_file` for later.
 
-7\. Download the Beam node archive (available on all platforms) from the [Beam Website](https://www.beam.mw/downloads/mainnet).
+7\. Download the Beam node archive (available on all platforms) from the [Beam Website](https://www.beam.mw/downloads/).
 
 8\. Extract Beam Node to any folder on your machine and title it `node_folder`.
 
@@ -235,7 +236,7 @@ Read more about each parameter in the table below:
 | `owner_key`            | `Owner_key`, exported via CLI wallet.                                                                                                                                                                                                                                                                                                             |
 | `pass`                 | Wallet password.                                                                                                                                                                                                                                                                                                                                  |
 
-12\. Next, download the miner client archive from the [Beam Website](https://www.beam.mw/downloads/mainnet).
+12\. Next, download the miner client archive from the [Beam Website](https://www.beam.mw/downloads/).
 
 Beam provides two mining clients for Equihash 150,5 with data path change: one for `OpenCL` and one for `CUDA.`
 
