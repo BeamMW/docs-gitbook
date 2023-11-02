@@ -64,11 +64,11 @@ Beam Wallets have a built-in Decentralized Application (DAPP) store that provide
 
 Beam Shaders enable distributed DeFi applications to run through the Beam Virtual Machine (BVM) built into all Beam nodes and wallets. The Dapp logic implements through Smart Contracts that are programmable with any language compilable to WASM (read: practically every language). The developer toolchain currently works for C++ with additional programming languages (Go, Rust, etc.) planned for future releases.
 
-Beam Shaders is a relatively new feature, and the documentation is still in progress. To learn more about creating DeFi applications on Beam, please refer to [these guides](https://github.com/BeamMW/beam/wiki#beam-confidential-defi-platform-in-progress) and join the Beam [Developers community on Telegram](https://t.me/BeamXDev).
+Beam Shaders is a relatively new feature, and the documentation is still in progress. To learn more about creating DeFi applications on Beam, please refer to [these guides](https://github.com/BeamMW/beam/wiki#beam-confidential-defi-platform-in-progress) and join the Beam [Developers community on Telegram](https://t.me/beamdevsupport).
 
 ### Beam Ethereum Bridges
 
-With great fanfare, we can announce that the Beam Bridge to Ethereum is now available on [**DAppnet**](https://beam.mw/downloads/dappnet-mac)! Users can seamlessly transfer assets across Beam and Ethereum blockchains using decentralized privacy-preserving cross-chain transactions. For more information on how to utilize Beam Bridges for cross-chain transactions, refer to our [**Bridges guide**](http://localhost:5000/o/-M\_G-3uaAbZMXViHLVZl/s/t8XYdvgJzK0nNLy0o0L1/)!
+With great fanfare, we can announce that the Beam Bridge to Ethereum is now available on [**Mainnet**](https://beam.mw/downloads/)! Users can seamlessly transfer assets across Beam and Ethereum blockchains using decentralized privacy-preserving cross-chain transactions. For more information on how to utilize Beam Bridges for cross-chain transactions, refer to our [**Bridges guide**](https://beam.mw/en/docs/bridges/)!
 
 ## Beam Essentials
 
