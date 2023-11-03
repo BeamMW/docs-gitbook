@@ -18,7 +18,7 @@ Beam is a profound, engaging, and long-term project with unique and innovative t
 * [Reddit](https://www.reddit.com/r/beamprivacy/)
 * [YouTube](https://www.youtube.com/channel/UCddqBnfSPWibf4f8OnEJm\_w)
 
-Don't hesitate to get in touch with Beam Support on Telegram or email us at support@beam.mw.
+Don't hesitate to get in touch with [Beam Support on Telegram](https://t.me/BeamSupport) or email us at support@beam.mw.
 
 ## A brief history of Beam
 
