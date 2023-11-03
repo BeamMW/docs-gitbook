@@ -137,10 +137,8 @@ If you have even the slightest suspicion that either your seed or wallet databas
 4. Once your transaction reads from "in progress" to "completed," you can be confident that your funds are safe, but we are still not done.
 5. Inform anyone you expect to receive payments from (Offline, Max Privacy, Public Offline), and provide them with new addresses from your new Beam wallet. Failure to do so might result in payments sent to your compromised wallet addresses.
 
-* How to restore Beam wallet from seed phrase ([desktop](https://app.gitbook.com/@beamx/s/desktop-wallet-user-guide/restore-wallet), [mobile](https://beamx.gitbook.io/mobile-wallet-user-guide/how-to-restore-wallet)).
+* How to restore Beam wallet from seed phrase ([desktop](https://beam.mw/en/docs/desktop/restore-wallet), [mobile](https://beam.mw/en/docs/mobile/how-to-restore-wallet).
 * [How Addresses work in Beam.](./#beam-addresses)
 * [What are Max Privacy transactions?](./#beam-transaction-types)
 
-[More frequently asked questions](https://beamx.gitbook.io/faq/-Ma0nlAGEBiCCDJJ\_Xhq/)
-
-[Glossary of Beam terms](https://beamx.gitbook.io/glossary/-Ma56WMqUB1AsnhoithB/)
+[Glossary of Beam terms](https://old.beam.mw/beampedia)
