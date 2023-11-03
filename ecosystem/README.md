@@ -122,8 +122,8 @@ Your wallet balance and transaction history can have inconsistencies if you have
 ## Getting Started
 
 * [Download](https://www.beam.mw/downloads) Beam wallet (available on every platform).
-* Read the guide for [desktop](https://app.gitbook.com/@beamx/s/desktop-wallet-user-guide/) and [mobile](https://app.gitbook.com/@beamx/s/mobile-wallet-user-guide/) wallets.
-* Get live [support ](https://t.me/BeamSupport)if you run into any issues or have questions.
+* Read the guide for [desktop](https://beam.mw/en/docs/desktop/) and [mobile](https://beam.mw/en/docs/mobile) wallets.
+* Get live [support](https://t.me/BeamSupport) if you run into any issues or have questions.
 
 ## FAQ
 
