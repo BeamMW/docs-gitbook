@@ -99,7 +99,7 @@ Even though all Beam transactions are confidential by default, there are three d
 
 **Offline transactions** have higher fees than online transactions. Suppose the Sender knows that the Receiver will not be online within the next 12 hours and has no way (or will) to communicate with the Sender. In this case, the Sender can use a previously received address to send funds without any additional communication with the Receiver. The Receiver will see those funds the next time they open their wallets.
 
-**Max Privacy transactions** is a special Offline transaction that uses the **maximum anonymity set**. In other words, it guarantees the user maximum privacy. Max Privacy transactions can take up to 72 hours to complete. Users can adjust the [lock times](https://beamx.gitbook.io/mobile-wallet-user-guide/settings#privacy) in their [wallets](https://beamx.gitbook.io/desktop-wallet-user-guide/settings#privacy). However, shorter lock times equals less privacy; the highest lock time guarantees your private information remains confidential.&#x20;
+**Max Privacy transactions** is a special Offline transaction that uses the **maximum anonymity set**. In other words, it guarantees the user maximum privacy. Max Privacy transactions can take up to 72 hours to complete. Users can adjust the [lock times](https://beam.mw/en/docs/mobile/settings#privacy) in their [wallets](https://beam.mw/en/docs/desktop/settings#privacy). However, shorter lock times equals less privacy; the highest lock time guarantees your private information remains confidential.&#x20;
 
 ### Beam Addresses
 
