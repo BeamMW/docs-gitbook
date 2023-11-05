@@ -25,7 +25,7 @@
 ## Confidential DeFi
 
 * [Confidential Assets](confidential-assets.md)
-* [DApp Store](daap-store.md)
+* [DApp Store](dapp-store.md)
 
 ## Advanced topics
 
