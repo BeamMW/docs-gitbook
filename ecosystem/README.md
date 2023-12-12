@@ -1,16 +1,14 @@
 # Beam Documentation
 
-## Welcome to Beam&#x20;
+## Welcome to Beam
 
-Beam is a best-in-class confidential cryptocurrency and DeFi platform.&#x20;
+Beam is a best-in-class confidential cryptocurrency and DeFi platform.
 
-![](https://pbs.twimg.com/profile\_banners/1006569151413063680/1623676593/600x200)
-
-
+![Beam Confidential Cryptocurrency and BeamX Confidential DeFi Platform](https://beam.mw/og-image.png)
 
 Our focus is to deliver the best possible level of privacy and confidentiality without compromising on usability. This article will provide a brief overview of Beam project, what it can do, and how to get started with our platform.
 
-Beam is a profound, engaging, and long-term project with unique and innovative technology, a great community, and ambitious goals. To learn more about Beam, you are welcome to visit our [website ](https://beam.mw/)and join us on:
+Beam is a profound, engaging, and long-term project with unique and innovative technology, a great community, and ambitious goals. To learn more about Beam, you are welcome to visit our [website](https://beam.mw/) and join us on:
 
 * [Telegram](https://t.me/BeamPrivacy)
 * [Twitter](https://twitter.com/beamprivacy)
@@ -26,13 +24,13 @@ Beam launched in March 2018 with a singular vision: creating the best possible p
 
 Beam is a deflationary coin with capped emission and periodic halving every four years (similar to bitcoin). Beam uses a Proof-of-Work consensus algorithm called BeamHash III (created by Wilke Trei, a.k.a., Lolliedieb, [pdf](https://docs.beam.mw/Beam\_Hash\_III\_Slides.pdf)) with emission starting from zero (e.g., no pre-mine or ICO) and is currently mined on GPUs. See our [mining guide](https://beam.mw/en/docs/mining) for more information on how-to mine Beam coins.
 
-During the last three years of the project's existence, we have made many improvements and additions to our technological stack. Currently, Beam uses a combination of Mimblewimble and Lelantus protocol on layer 1, with transactions routed through Dandelion++ and transactions merging in stem phase on Layer 0 for ultimate privacy. To learn more about Beam technology, please refer to our [wiki ](https://github.com/BeamMW/beam/wiki)page.&#x20;
+During the last three years of the project's existence, we have made many improvements and additions to our technological stack. Currently, Beam uses a combination of Mimblewimble and Lelantus protocol on layer 1, with transactions routed through Dandelion++ and transactions merging in stem phase on Layer 0 for ultimate privacy. To learn more about Beam technology, please refer to our [wiki ](https://github.com/BeamMW/beam/wiki)page.
 
 {% embed url="https://www.youtube.com/watch?v=oNsT3M6NWTI" %}
 
 ### Beam Wallets
 
-Beam implemented sleek, beautiful, and user-friendly wallets for all platforms ([Windows](https://beam.mw/downloads/), [Mac](https://beam.mw/downloads/), [Linux](https://beam.mw/downloads/), [iOS](https://itunes.apple.com/us/app/beam-privacy-wallet/id1459842353?ls=1\&mt=8), and [Android](https://play.google.com/store/apps/details?id=com.mw.beam.beamwallet.mainnet)). To get started using Beam wallets, proceed to [downloads](http://beam.mw/downloads/) and refer to our [Desktop ](https://beam.mw/en/docs/desktop)or [Mobile ](https://beam.mw/en/docs/mobile)User Guides.&#x20;
+Beam implemented sleek, beautiful, and user-friendly wallets for all platforms ([Windows](https://beam.mw/downloads/), [Mac](https://beam.mw/downloads/), [Linux](https://beam.mw/downloads/), [iOS](https://itunes.apple.com/us/app/beam-privacy-wallet/id1459842353?ls=1\&mt=8), and [Android](https://play.google.com/store/apps/details?id=com.mw.beam.beamwallet.mainnet)). To get started using Beam wallets, proceed to [downloads](http://beam.mw/downloads/) and refer to our [Desktop ](https://beam.mw/en/docs/desktop)or [Mobile ](https://beam.mw/en/docs/mobile)User Guides.
 
 ![](<.gitbook/assets/Main screen top.PNG>)
 
@@ -48,7 +46,7 @@ Beam has built an Atomic Swap functionality that allows peer-to-peer trading of 
 
 ### Direct Payment Channels (a.k.a. Laser Beam)
 
-Beam supports creating direct payment channels between wallets that work similarly to Lightning Network payment channels. The purpose of those channels is to allow instant payments along the funded channel between two wallets with almost instant confirmation time and later on-chain settlement. We called this feature "Laser Beam," and it is perfect for streaming and micropayments.&#x20;
+Beam supports creating direct payment channels between wallets that work similarly to Lightning Network payment channels. The purpose of those channels is to allow instant payments along the funded channel between two wallets with almost instant confirmation time and later on-chain settlement. We called this feature "Laser Beam," and it is perfect for streaming and micropayments.
 
 ### Tokens (a.k.a. Beam Confidential Assets) <a href="#tokens-a-k-a-beam-confidential-assets" id="tokens-a-k-a-beam-confidential-assets"></a>
 
@@ -95,17 +93,17 @@ Even though all Beam transactions are confidential by default, there are three d
 1. The Receiver launches their wallet, clicks "Receive," then copies the created "Regular" address before sending it to the Sender via any communication channel (email, Telegram, or other messenger apps). The Receiver leaves their wallet open as they wait for Sender.
 2. The Sender launches their wallet, clicks "send." In the "Send to" field, pastes the received address. The Sender enters the amount of Beam coins to send and clicks "send."
 3. The wallets then communicate with each other behind the scenes to complete the transaction. The Receiver's wallet automatically accepts the transaction, signs it, and sends it back to the Sender.
-4. The Sender wallet completes the transaction and sends it to the network. The transaction will reflect the Sender/Reciever wallet balance after the block containing the transaction is added to the blockchain. Your transaction will read from "in progress" to "completed." &#x20;
+4. The Sender wallet completes the transaction and sends it to the network. The transaction will reflect the Sender/Reciever wallet balance after the block containing the transaction is added to the blockchain. Your transaction will read from "in progress" to "completed." 
 
 **Offline transactions** have higher fees than online transactions. Suppose the Sender knows that the Receiver will not be online within the next 12 hours and has no way (or will) to communicate with the Sender. In this case, the Sender can use a previously received address to send funds without any additional communication with the Receiver. The Receiver will see those funds the next time they open their wallets.
 
-**Max Privacy transactions** is a special Offline transaction that uses the **maximum anonymity set**. In other words, it guarantees the user maximum privacy. Max Privacy transactions can take up to 72 hours to complete. Users can adjust the [lock times](https://beam.mw/en/docs/mobile/settings#privacy) in their [wallets](https://beam.mw/en/docs/desktop/settings#privacy). However, shorter lock times equals less privacy; the highest lock time guarantees your private information remains confidential.&#x20;
+**Max Privacy transactions** is a special Offline transaction that uses the **maximum anonymity set**. In other words, it guarantees the user maximum privacy. Max Privacy transactions can take up to 72 hours to complete. Users can adjust the [lock times](https://beam.mw/en/docs/mobile/settings#privacy) in their [wallets](https://beam.mw/en/docs/desktop/settings#privacy). However, shorter lock times equals less privacy; the highest lock time guarantees your private information remains confidential.
 
 ### Beam Addresses
 
 Even though Beam uses the term "Address" for convenience, Beam addresses are different from most other cryptocurrencies. Beam Addresses are not recorded on the blockchain and are only used to communicate with other wallets to create different transaction types. Beam wallets will generate an address for every new transaction (recommended for most cases) and support three types of addresses:
 
-**Regular addresses** will function for Online and Offline transactions. The Receiver generates and shares a Regular address with the Sender. Then the Sender decides to make the payment Offline or Online before completing the transaction. Offline payments offer users flexibility if both parties cannot be online within 12 hours. In some (rare) cases, the Regular address will expire, and both parties will need to restart the transaction.&#x20;
+**Regular addresses** will function for Online and Offline transactions. The Receiver generates and shares a Regular address with the Sender. Then the Sender decides to make the payment Offline or Online before completing the transaction. Offline payments offer users flexibility if both parties cannot be online within 12 hours. In some (rare) cases, the Regular address will expire, and both parties will need to restart the transaction.
 
 **Max anonymity set** is a special Offline address that guarantees users maximum privacy. If the Receiver shares a Max anonymity address with Sender, the transaction type will change to [**Max Privacy**](./#beam-transaction-types).
 
@@ -132,7 +130,7 @@ Your wallet balance and transaction history can have inconsistencies if you have
 If you have even the slightest suspicion that either your seed or wallet database file could have been exposed, follow these next steps immediately:
 
 1. Start the potentially exposed wallet or restore the wallet using the seed phrase on a clean device and verify your wallet balance hasn't changed
-2. Create a new wallet and record the new seed phrase.&#x20;
+2. Create a new wallet and record the new seed phrase.
 3. Transfer your coins from the old wallet to the new one and wait for the transaction to complete.
 4. Once your transaction reads from "in progress" to "completed," you can be confident that your funds are safe, but we are still not done.
 5. Inform anyone you expect to receive payments from (Offline, Max Privacy, Public Offline), and provide them with new addresses from your new Beam wallet. Failure to do so might result in payments sent to your compromised wallet addresses.
