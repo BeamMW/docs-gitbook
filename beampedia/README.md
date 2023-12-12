@@ -311,7 +311,7 @@ Merkle trees provide an efficient way to encode blockchain transaction data. Cli
 
 ### Mimblewimble 
 
-Mimblewimble is a blockchain protocol designed for privacy and scalability. It was [proposed anonymously by pseudonymous Tom Elvis Jedusor in 2016](/whitepaper.txt) as a radical change to Bitcoin.
+Mimblewimble is a blockchain protocol designed for privacy and scalability. It was [proposed anonymously by pseudonymous Tom Elvis Jedusor in 2016](/mimblewimble.txt) as a radical change to Bitcoin.
 
 
 The name comes from a Harry Potter tongue-tying curse, reflecting its goal of preventing the blockchain from leaking user information.
