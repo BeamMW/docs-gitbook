@@ -18,13 +18,13 @@ Beam is a profound, engaging, and long-term project with unique and innovative t
 * [Reddit](https://www.reddit.com/r/beamprivacy/)
 * [YouTube](https://www.youtube.com/channel/UCddqBnfSPWibf4f8OnEJm\_w)
 
-Don't hesitate to get in touch with Beam Support on Telegram or email us at support@beam.mw.
+Don't hesitate to get in touch with [Beam Support on Telegram](https://t.me/BeamSupport) or email us at support@beam.mw.
 
 ## A brief history of Beam
 
-Beam launched in March 2018 with a singular vision: creating the best possible privacy coin that does not compromise usability. We moved quickly to assemble a team of world-class developers that shared our vision of a genuinely confidential cryptocurrency. In nine short months, our team built the first version of the Beam blockchain, and on January 3rd, 2019, we launched the Mainnet. Since then, Beam has been delivering and expanding our promise of creating a truly confidential cryptocurrency (currently on version 6.0). Our entire project is [open source](https://github.com/BeamMW) from both a coding and development process. The Beam protocol is coded entirely from scratch; not a hard fork or cloning of another project.
+Beam launched in March 2018 with a singular vision: creating the best possible privacy coin that does not compromise usability. We moved quickly to assemble a team of world-class developers that shared our vision of a genuinely confidential cryptocurrency. In nine short months, our team built the first version of the Beam blockchain, and on January 3rd, 2019, we launched the Mainnet. Since then, Beam has been delivering and expanding our promise of creating a truly confidential cryptocurrency (currently on version 6.0). Our entire project is [open source](https://github.com/BeamMW) from both a coding and development process. The Beam protocol is coded entirely from scratch; not a hard fork or clone of another project.
 
-Beam is a deflationary coin with capped emission and periodic halving every four years (similar to bitcoin). Beam uses a Proof-of-Work consensus algorithm called BeamHash III (created by Wilke Trei, a.k.a., Lolliedieb, [pdf](https://docs.beam.mw/Beam\_Hash\_III\_Slides.pdf)) with emission starting from zero (e.g., no pre-mine or ICO) and is currently mined on GPUs. See our [mining guide](https://beamx.gitbook.io/beam-mining/-MdvMMR0TdumadxyPDa1/) for more information on how-to mine Beam coins.
+Beam is a deflationary coin with capped emission and periodic halving every four years (similar to bitcoin). Beam uses a Proof-of-Work consensus algorithm called BeamHash III (created by Wilke Trei, a.k.a., Lolliedieb, [pdf](https://docs.beam.mw/Beam\_Hash\_III\_Slides.pdf)) with emission starting from zero (e.g., no pre-mine or ICO) and is currently mined on GPUs. See our [mining guide](https://beam.mw/en/docs/mining) for more information on how-to mine Beam coins.
 
 During the last three years of the project's existence, we have made many improvements and additions to our technological stack. Currently, Beam uses a combination of Mimblewimble and Lelantus protocol on layer 1, with transactions routed through Dandelion++ and transactions merging in stem phase on Layer 0 for ultimate privacy. To learn more about Beam technology, please refer to our [wiki ](https://github.com/BeamMW/beam/wiki)page.&#x20;
 
@@ -32,7 +32,7 @@ During the last three years of the project's existence, we have made many improv
 
 ### Beam Wallets
 
-Beam implemented sleek, beautiful, and user-friendly wallets for all platforms ([Windows](https://beam.mw/downloads/mainnet-windows), [Mac](https://beam.mw/downloads/mainnet-mac), [Linux](https://beam.mw/downloads/mainnet-linux), [iOS](https://itunes.apple.com/us/app/beam-privacy-wallet/id1459842353?ls=1\&mt=8), and [Android](https://play.google.com/store/apps/details?id=com.mw.beam.beamwallet.mainnet)). To get started using Beam wallets, proceed to [downloads](http://beam.mw/downloads/) and refer to our [Desktop ](https://app.gitbook.com/@beamx/s/desktop-wallet-user-guide/)or [Mobile ](https://app.gitbook.com/@beamx/s/mobile-wallet-user-guide/)User Guides.&#x20;
+Beam implemented sleek, beautiful, and user-friendly wallets for all platforms ([Windows](https://beam.mw/downloads/), [Mac](https://beam.mw/downloads/), [Linux](https://beam.mw/downloads/), [iOS](https://itunes.apple.com/us/app/beam-privacy-wallet/id1459842353?ls=1\&mt=8), and [Android](https://play.google.com/store/apps/details?id=com.mw.beam.beamwallet.mainnet)). To get started using Beam wallets, proceed to [downloads](http://beam.mw/downloads/) and refer to our [Desktop ](https://beam.mw/en/docs/desktop)or [Mobile ](https://beam.mw/en/docs/mobile)User Guides.&#x20;
 
 ![](<.gitbook/assets/Main screen top.PNG>)
 
@@ -99,7 +99,7 @@ Even though all Beam transactions are confidential by default, there are three d
 
 **Offline transactions** have higher fees than online transactions. Suppose the Sender knows that the Receiver will not be online within the next 12 hours and has no way (or will) to communicate with the Sender. In this case, the Sender can use a previously received address to send funds without any additional communication with the Receiver. The Receiver will see those funds the next time they open their wallets.
 
-**Max Privacy transactions** is a special Offline transaction that uses the **maximum anonymity set**. In other words, it guarantees the user maximum privacy. Max Privacy transactions can take up to 72 hours to complete. Users can adjust the [lock times](https://beamx.gitbook.io/mobile-wallet-user-guide/settings#privacy) in their [wallets](https://beamx.gitbook.io/desktop-wallet-user-guide/settings#privacy). However, shorter lock times equals less privacy; the highest lock time guarantees your private information remains confidential.&#x20;
+**Max Privacy transactions** is a special Offline transaction that uses the **maximum anonymity set**. In other words, it guarantees the user maximum privacy. Max Privacy transactions can take up to 72 hours to complete. Users can adjust the [lock times](https://beam.mw/en/docs/mobile/settings#privacy) in their [wallets](https://beam.mw/en/docs/desktop/settings#privacy). However, shorter lock times equals less privacy; the highest lock time guarantees your private information remains confidential.&#x20;
 
 ### Beam Addresses
 
@@ -122,8 +122,8 @@ Your wallet balance and transaction history can have inconsistencies if you have
 ## Getting Started
 
 * [Download](https://www.beam.mw/downloads) Beam wallet (available on every platform).
-* Read the guide for [desktop](https://app.gitbook.com/@beamx/s/desktop-wallet-user-guide/) and [mobile](https://app.gitbook.com/@beamx/s/mobile-wallet-user-guide/) wallets.
-* Get live [support ](https://t.me/BeamSupport)if you run into any issues or have questions.
+* Read the guide for [desktop](https://beam.mw/en/docs/desktop/) and [mobile](https://beam.mw/en/docs/mobile) wallets.
+* Get live [support](https://t.me/BeamSupport) if you run into any issues or have questions.
 
 ## FAQ
 
@@ -137,10 +137,8 @@ If you have even the slightest suspicion that either your seed or wallet databas
 4. Once your transaction reads from "in progress" to "completed," you can be confident that your funds are safe, but we are still not done.
 5. Inform anyone you expect to receive payments from (Offline, Max Privacy, Public Offline), and provide them with new addresses from your new Beam wallet. Failure to do so might result in payments sent to your compromised wallet addresses.
 
-* How to restore Beam wallet from seed phrase ([desktop](https://app.gitbook.com/@beamx/s/desktop-wallet-user-guide/restore-wallet), [mobile](https://beamx.gitbook.io/mobile-wallet-user-guide/how-to-restore-wallet)).
+* How to restore Beam wallet from seed phrase ([desktop](https://beam.mw/en/docs/desktop/restore-wallet), [mobile](https://beam.mw/en/docs/mobile/how-to-restore-wallet)).
 * [How Addresses work in Beam.](./#beam-addresses)
 * [What are Max Privacy transactions?](./#beam-transaction-types)
 
-[More frequently asked questions](https://beamx.gitbook.io/faq/-Ma0nlAGEBiCCDJJ\_Xhq/)
-
-[Glossary of Beam terms](https://beamx.gitbook.io/glossary/-Ma56WMqUB1AsnhoithB/)
+* [Glossary of Beam terms](https://old.beam.mw/beampedia)
