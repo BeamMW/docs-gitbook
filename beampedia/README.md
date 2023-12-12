@@ -1,10 +1,12 @@
-# Beampedia  
+# Beampedia
+
+Beampedia is an encyclopedia of key terms and concepts related to Beam, a privacy-focused cryptocurrency built on Mimblewimble. It provides accessible explanations of Beam's technical underpinnings and ecosystem. Whether you're a beginner seeking to learn the basics or an expert looking to dive deeper, Beampedia aims to be a go-to reference for all things Beam. The entries cover a wide range of topics - from Beam's origins and goals, to the cryptography it leverages, the network architecture and components, terminology around usage and investment, details on software and configuration, and more. Beampedia serves as a knowledge base to empower users to fully utilize Beam's confidential transactions, understand its advances in areas like transaction privacy and scalability, and participate in the broader vision of an open, decentralized cryptocurrency ecosystem.
 
 ## A
 
 ### Account
 
-Similar to what is commonly referred to as a [wallet](/docs/beampedia#wallet), an _account_ in [Beam](/docs/beampedia#beam) is a private account owned and operated by the user.
+Similar to what is commonly referred to as a wallet an _account_ in Beam is a private account owned and operated by the user.
 
 An account contains all of the user's transaction history, as well as the resulting current total _balance_.
 
@@ -459,9 +461,9 @@ Wallets allow users to securely interact with the blockchain, acting as a gatewa
 
 Beam wallets store data in default user data folders based on the operating system:
 
-- Mac: `/Users/{your_user_name}/Library/Application Support/Beam Wallet/`
-- Windows: `\Users\{your_user_name}\AppData\Local\Beam Wallet`
-- Linux: `/home/{your_user_name}/.local/share/Beam Wallet`
+- Mac: `/Users/{username}/Library/Application Support/Beam Wallet/`  
+- Windows: `\Users\{username}\AppData\Local\Beam Wallet`
+- Linux: `/home/{username}/.local/share/Beam Wallet`
 
 ## Z
 
