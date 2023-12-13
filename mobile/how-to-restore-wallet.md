@@ -2,9 +2,9 @@
 
 If you have previously created a Beam wallet, you can recover your funds by restoring your wallet from your 12-word seed phrase. However, your wallet data (transaction history, contacts, addresses) is always stored locally on your device. If you are restoring an old wallet on a new device, be sure to [export the wallet data](settings.md#utilities) from your old device to the new one for consistent bookkeeping.
 
-{% hint style="danger" %}
+
 Always double-check your spelling! Don't let a misspelling prevent you from accessing your funds e.g. "principle" instead of "principal."
-{% endhint %}
+
 
 ## How-to restore your Beam mobile wallet
 
@@ -15,9 +15,9 @@ Always double-check your spelling! Don't let a misspelling prevent you from acce
 5. Select node connectivity mode.
 6. After you have selected node connectivity mode, your wallet will re-synch with the blockchain.
 
-{% hint style="info" %}
+
 For the restoration process, you must connect to the network via mobile node. Wallet restoration does not work with random remote node.
-{% endhint %}
+
 
 ## How it Looks in Your Wallet
 
@@ -39,9 +39,9 @@ Choose a strong password.
 
 ### Select node connectivity mode
 
-{% hint style="danger" %}
+
 When restoring funds in automatic mode, verify the timestamp for the most recent transaction is within the past hour. If not, the restored balance may be incorrect, and the user must delete and restore their wallet.
-{% endhint %}
+
 
 * **Automatic Restore:** Beam Wallet will download a snapshot of the blockchain and restore your funds on the device (recommended).
 * **Restore with own node:** Beam Wallet will connect to your trusted node and it will restore your funds. The node must be configured with your owner key.

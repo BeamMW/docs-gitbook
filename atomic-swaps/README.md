@@ -1,6 +1,6 @@
 # Introduction to Atomic Swaps
 
-{% hint style="danger" %}
+
 **Atomic Swaps is in beta.**
 
 **DO NOT USE THIS HIGHLY ADVANCED FEATURE FOR LARGE SUMS OF MONEY**
@@ -11,7 +11,7 @@
 
 **For Litecoin use version** [**Litecoin v0.17.1**](https://litecoin.org/#download) **.**\
 
-{% endhint %}
+
 
 ## Introduction to Atomic Swaps
 

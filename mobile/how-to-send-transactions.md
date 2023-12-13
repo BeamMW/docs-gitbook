@@ -2,20 +2,20 @@
 
 While your Beam mobile wallet puts users in complete control over their digital funds, however recovering funds sent or received by an incorrect address is not possible. Always double-check to make sure you are not sending Beam coins to an incorrect or expired address.
 
-{% hint style="warning" %}
+
 **Transaction Fees**
 
 Offline transactions (regular Offline and Public Offline) have significantly higher transaction fees than regular transactions due to the more significant blockchain requirements Offline payments have compared to Regular. **Max anonymity set carries the same fees as Offline**.
 
 * **Regular transaction**: Fee = 0.001 Beam (Before HF-3 100 GROTH).
 * **Offline transaction**: Fee = 0.011 BEAM (0.01-for shielded coin + 0.001-fee transaction).
-{% endhint %}
+
 
 ## To Send Beam
 
-{% hint style="danger" %}
+
 Always double-check your addresses before sending Beam. Viruses and malware hidden on your computer can alter your address even though it's copied to your clipboard.
-{% endhint %}
+
 
 1. **Launch** Beam mobile wallet app.
 2. From the wallet screen, tap **send**.
@@ -30,7 +30,7 @@ Always double-check your addresses before sending Beam. Viruses and malware hidd
 
 ### Regular and Offline transactions
 
-{% hint style="info" %}
+
 **Regular/Offline addresses differ from Public Offline address**.
 
 1. **Regular/Offline addresses have a default expiration date of 24 hours**.\
@@ -39,7 +39,7 @@ Always double-check your addresses before sending Beam. Viruses and malware hidd
    Once generated, the Offline address is only good for single payment.
 3. **Your Public Offline address will never expire**.\
    We strongly recommend your Public Offline address be used if you accept regular donations. It will be possible to trace your information from a Public Offline address. To find your Public Offline address, see this [page](hot-to-generate-address.md#public-offline-address).
-{% endhint %}
+
 
 The sender decides whether to send a Regular payment or an Offline payment.
 

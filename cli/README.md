@@ -59,9 +59,9 @@ I 2018-12-23.15:24:32.750 label = default
 
 The`rules signature`is a hash of the current node configuration that determines compatibility between different versions of nodes and wallets.
 
-{% hint style="danger" %}
+
 **Write down your seed phrase!** Keep your seed phrase secret, and never share your seed phrase with anyone!
-{% endhint %}
+
 
 Your seed phrase is the only way you (or anybody) can access your funds. Your seed phrase is not linked to your email or phone number. If you forget your wallet password or lose your device, the only way to restore your wallet is through your seed phrase!
 
@@ -255,12 +255,12 @@ I 2018-12-23.17:55:09.428 Get proof for kernel: 95a8e48587c452b3
 
 ## Sending Beam
 
-{% hint style="info" %}
+
 **Things to consider:**
 
 1. One Groth is equal to $$1e-8$$Beam.
 2. You can split a large UTXO by creating a transaction and sending a portion of the UTXO to yourself. Use the`-wallet send`command to send the required amount to your own SBBS wallet address. A transaction fee will still be required.
-{% endhint %}
+
 
 To Send Beam coins, enter the following command:
 
@@ -378,9 +378,9 @@ I 2018-12-23.18:16:45.392 New address generated:
 
 ### Create an Offline address
 
-{% hint style="info" %}
+
 It is essential to provide the number of payments (i.e., vouchers). If the payments reach zero, the Sender wallet will automatically request more payments to the Receiver wallet using SBBS. If the Receiver's wallet is online within 12 hours of the request (until the SBBS message expires), it will send 30 more offline payment vouchers to the Sender. Otherwise, the Sender will receive notification that there are no more vouchers and need to request another offline address via an external channel.
-{% endhint %}
+
 
 To create an Offline address, enter the following command:
 
@@ -403,9 +403,9 @@ New address: vn9cQCXgkE9UaCYbbtpwXdkmj9k7EycL8RHkcyCxkMij9rJduzUarm1w4jppqyoF29V
 
 ### Locate Public-Offline address
 
-{% hint style="info" %}
+
 A Public-Offline address is unique address to your Beam wallet and never expires. Public Offline addresses are a little less secure in one aspect: the Sender can potentially see when the Receiver spends the funds sent to this address (though, of course, not to whom or how much). We recommend using this address for donations or a Receiver wallet that is rarely online.
-{% endhint %}
+
 
 To locate your Beam wallet's Public-Offline address, enter the following command:
 
@@ -533,9 +533,9 @@ To import your`wallet.db`file, enter the following command:
 
 Since`Beam 1.1.4194`, the Receiver wallet has automatically signed proof of received transaction before sending it to the Sender. Upon request, the sender can generate proof of transaction.
 
-{% hint style="info" %}
+
 When Sending Beam coins, adding the`–payment_proof_required=1`tag will require the Receiver to send the payment proof to Sender.
-{% endhint %}
+
 
 ### Print transactions list
 

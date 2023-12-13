@@ -1,8 +1,8 @@
 # Create a New Wallet
 
-{% hint style="danger" %}
+
 _**Never share your seed phrase with anyone. Those who know your seed phrase will have access to your funds!**_
-{% endhint %}
+
 
 ## Full Browser View:
 
@@ -18,9 +18,9 @@ Launch your web wallet and "Create new wallet."
 
 ### Write down seed phrase
 
-{% hint style="info" %}
+
 _Double-check your spelling! Don't let a misspelling like 'funnel' and 'tunnel' prevent you from accessing your funds!_
-{% endhint %}
+
 
 ![](<../.gitbook/assets/Screen Shot 2021-06-01 at 4.44.20 PM (1).png>)
 
@@ -64,9 +64,9 @@ Launch your web wallet and "Create new wallet."
 
 ### Write down your seed phrase
 
-{% hint style="info" %}
+
 _Double-check your spelling! Don't let a misspelling like 'funnel' and 'tunnel' prevent you from accessing your funds!_
-{% endhint %}
+
 
 ![](<../.gitbook/assets/Screen Shot 2021-05-31 at 6.03.39 PM (1).png>)
 

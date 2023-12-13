@@ -6,9 +6,9 @@ description: The Beam Blockchain Explorer is currently running.
 
 ## [Blockchain Explorer](https://explorer.beam.mw)
 
-{% hint style="info" %}
+
 Select between Mainnet and Testnet blockchain explorers on the top left of the explorer dashboard.
-{% endhint %}
+
 
 The Beam Foundation and Beam development team are committed to creating a private _and_ fully transparent cryptocurrency. Beam offers users peace of mind in knowing their data is secure and will not wind up in a data leak and the confidence of knowing that every block recorded on the blockchain is legitimate.
 

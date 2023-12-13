@@ -4,7 +4,7 @@ Confidential Assets (known as "Tokens" in the Beam ecosystem) are new assets cre
 
 Use the command line to register a Confidential Asset.
 
-{% hint style="danger" %}
+
 **Warning**
 
 1. **Lock period** **will limit several asset operations for 1440 blocks (24 hours).** \
@@ -14,7 +14,7 @@ Use the command line to register a Confidential Asset.
     In the [CLI](broken-reference) and [API](https://github.com/BeamMW/beam/wiki/Beam-wallet-protocol-API#assets-support), specify the`--enable_assets`flag to perform any CA transactions.
 3. **The fixed fee for asset registration is 3000 Beam**.\
    Users must register all CAs on-chain Before before usage.
-{% endhint %}
+
 
 ## Register a Confidential Asset
 
@@ -120,9 +120,9 @@ The wallet log output should be similar to following:
 
 ## Issue Assets
 
-{% hint style="info" %}
+
 Maximum Asset emission is 2128-1 asset$$nth$$units. Maximum amount for a single issue transaction is 264-1 asset$$nth$$units.
-{% endhint %}
+
 
 New asset registration starts the total emission at zero. The owner must issue asset coins before performing transactions. Asset emissions are free, and the asset owner can mints coins as they deem necessary.
 
@@ -259,11 +259,11 @@ The wallet log output should be similar to the following:
   I 2020-06-05.13:10:18.284 [60b40deb3f4e4792896f520f3eaa69bf] Transaction completed
 ```
 
-{% hint style="danger" %}
+
 **Warning**
 
 Maximum amount for a single send transaction is 264-1 asset nth units.
-{% endhint %}
+
 
 ## Receive an Asset
 

@@ -6,9 +6,9 @@ description: >-
 
 # Using Beam Shaders with CLI wallet
 
-{% hint style="danger" %}
+
 This page is somewhat obsolete, and is replaced with [Using Beam Shaders](using-beam-shaders.md) tutorial
-{% endhint %}
+
 
 ### Prerequisites
 

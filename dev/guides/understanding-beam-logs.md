@@ -6,9 +6,9 @@ Beam logs are files that record the events that occur within the Beam software a
 
 ### Beam Log Locations
 
-{% hint style="info" %}
+
 _Find CLI wallet and Node logs in the same folder as the binaries._
-{% endhint %}
+
 
 | Operating System | Desktop Wallet Log Location                                        |
 | ---------------- | ------------------------------------------------------------------ |

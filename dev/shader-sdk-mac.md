@@ -2,9 +2,9 @@
 
 In this tutorial we will show how to setup Beam Shader SDK on Mac OS
 
-{% hint style="warning" %}
+
 The Shader SDK's current version can be characterized as an _**early developer preview**_, with a high possibility of encountering unusual issues and bugs.
-{% endhint %}
+
 
 ### Prerequisites
 
@@ -37,12 +37,12 @@ Also, set the OPENSSL\_ROOT\_DIR environment variable as follows:
 
 This will operation will install and build all the necessary components.
 
-{% hint style="warning" %}
+
 Here comes a small song and dance part that has to do with the fact that shader-sdk is still very raw
 
 1. Inside the shader-sdk folder create a 'bin' folder
 2. Copy shader-sdk/build/host/beam/bvm/sid\_generator/generate-sid to the newly created bin folder
-{% endhint %}
+
 
 
 
@@ -62,17 +62,17 @@ In our case:
 
 `~/Code/shader-sdk/shade create_project vault`
 
-{% hint style="warning" %}
+
 `Here comes another issue. Your Mac is very likely to warn you about the fact that generate-sid application was not created by a certified developer`
 
 ![](<.gitbook/assets/Screen Shot 2022-11-19 at 14.27.00 (1).png>)
-{% endhint %}
 
-{% hint style="warning" %}
+
+
 `To avoid this you will need to allow running this script anyway from the Settings -> Security & Privacy dialogue and then rerunning the command`
 
 ![](<.gitbook/assets/Screen Shot 2022-11-19 at 14.27.55.png>)
-{% endhint %}
+
 
 This will initialize the structure of the Shader project
 

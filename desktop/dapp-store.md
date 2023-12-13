@@ -34,9 +34,9 @@ The only public information for any publisher account will be available via the 
 
 ## How it looks in your wallet
 
-{% hint style="info" %}
+
 Users that have created a publisher account on a different wallet can log in using their publisher key.
-{% endhint %}
+
 
 ![](.gitbook/assets/2022-06-23\_15-47-25.png)
 

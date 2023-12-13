@@ -9,7 +9,7 @@ description: >-
 
 Atomic Swaps are a peer-to-peer marketplace built directly into your Beam wallet that allows users to swap Beam for another cryptocurrency. Trade your Beam for Bitcoin, Ehtereum, LiteCoin, DOGE, and more!
 
-{% hint style="danger" %}
+
 **Atomic Swaps is in beta.**
 
 **DO NOT USE THIS HIGHLY ADVANCED FEATURE FOR LARGE SUMS OF MONEY**
@@ -19,7 +19,7 @@ Atomic Swaps are a peer-to-peer marketplace built directly into your Beam wallet
 **For Bitcoin use version**[**`Bitcoin_core_v0.17.1`**](https://bitcoin.org/en/download)**.**
 
 **For Litecoin use version**[**`Litecoin_v0.17.1`**](https://litecoin.org/#download)**.**
-{% endhint %}
+
 
 ## Perform an Atomic Swap with LiteCoin
 
@@ -47,9 +47,9 @@ Alice and Bob can run a full LTC node by entering the following command:
  ./litecoind -server -datadir="Bob/path_to_litecoin_wallet_data" -rpcuser=Bob -rpcpassword=123 -printtoconsole
 ```
 
-{% hint style="danger" %}
+
 #### The nodes must be synced to the current blockchain height before an Atomic Swap can occur.
-{% endhint %}
+
 
 ### Run a full Beam node
 
@@ -81,13 +81,13 @@ To configure the Atomic Swap settings, enter the following command:
  ./beam-wallet set_swap_settings --swap_coin=ltc --swap_wallet_addr= --swap_wallet_user= --swap_wallet_pass= --swap_feerate=<Litecoin fee rate(Photons/Kb)> --active_connection=core
 ```
 
-{% hint style="info" %}
+
 **Each cryptocurrency has its own transaction fees**.
 
 Avoid transaction jamming or failure by double-checking the`--swap_feerate`for each currency before initiating an Atomic Swap.
 
 LTC, for example, has a`--swap_feerate`per 1KB of transaction size. LiteCoin's`--swap_amount`is denominated in "photons." 1 LTC = 1000000 photons, which is denominated in Beams while also offering fixed fee rates, regardless of transaction size.
-{% endhint %}
+
 
 #### Configuring swap settings for Alice
 
@@ -133,13 +133,13 @@ Alice can accept the swap by entering the following command:
 
 If Alice accepts the swap, it will create a swap transaction, and the LTC and Beam will lock on Bob's blockchain.
 
-{% hint style="info" %}
+
 **Each blockchain has its own block generation time**. Average block generation times (roughly):
 
 * **LiteCoin**: two and a half (2.5) minutes.
 * **Beam**: one minute.
 * **Bitcoin**: ten minutes.
-{% endhint %}
+
 
 After six blocks, Bob will redeem Alice's Beam coins, revealing a secret transaction code and completing Bob's portion of the Atomic Swap. ‌
 
@@ -169,9 +169,9 @@ Alice and Bob can run a full BTC node by entering the following command:
 ./bitcoind -server -datadir="Bob/path_to_litecoin_wallet_data" -rpcuser=Bob -rpcpassword=123 -printtoconsole
 ```
 
-{% hint style="danger" %}
+
 #### The nodes must be synced to the current blockchain height before an Atomic Swap can occur.
-{% endhint %}
+
 
 ### Run a full Beam node
 
@@ -199,13 +199,13 @@ To configure the Atomic Swap settings, enter the following command:
 ./beam-wallet set_swap_settings --swap_coin=btc --swap_wallet_addr= --swap_wallet_user= --swap_wallet_pass= --swap_feerate=<Bitcoin fee rate(Satoshs/Kb)> --active_connection=core
 ```
 
-{% hint style="info" %}
+
 **Each cryptocurrency has its own transaction fees**.
 
 Avoid transaction jamming or failure by double-checking the`--swap_feerate`for each currency before initiating an Atomic Swap.
 
 BTC, for example, has a`--swap_feerate`per 1KB of transaction size. Bitcoin's`--swap_amount`is denominated in "satoshis." 1 BTC = 1000000 satoshis, compared to Beam, which is denominated in Beams while also offering fixed fee rates, regardless of transaction size.
-{% endhint %}
+
 
 #### Configuring swap settings for Alice
 
@@ -251,13 +251,13 @@ Alice can accept the swap by entering the following command:
 
 If Alice accepts the swap, it will create a swap transaction, and the BTC and Beam will lock on Bob's blockchain.
 
-{% hint style="info" %}
+
 **Each blockchain has its own block generation time**. Average block generation times (roughly):
 
 * **LiteCoin**: two and a half (2.5) minutes.
 * **Beam**: one minute.
 * **Bitcoin**: ten minutes.
-{% endhint %}
+
 
 After six blocks, Bob will redeem Alice's Beam coins, revealing a secret transaction code and completing Bob's portion of the Atomic Swap. ‌
 

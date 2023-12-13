@@ -64,9 +64,9 @@ Remember that your new password can't be the same as your old password if you ch
 
 ### Troubleshooting
 
-{% hint style="info" %}
+
 Locate your current Beam wallet version in the upper right corner of your wallet. Your Beam wallet version is a crucial detail to remember when seeking technical support.
-{% endhint %}
+
 
 Locating your Beam wallet folder is crucial if you wish to save your transaction histories and other metadata between Beam software updates.
 

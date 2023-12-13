@@ -4,9 +4,9 @@ description: An in-depth guide for how to Send Beam coins from your web wallet.
 
 # Sending Beam
 
-{% hint style="danger" %}
+
 _**Always double-check your copied address before sending out your Beam coins! Malware, viruses, and other malicious actors on your computer can alter your address while copied to the clipboard!**_
-{% endhint %}
+
 
 ## Full Browser View:
 

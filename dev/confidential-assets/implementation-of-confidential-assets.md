@@ -23,9 +23,9 @@ Implementing confidential assets on the Beam blockchain takes advantage of the L
 
 ## Confidential assets support
 
-{% hint style="info" %}
+
 This current design differs significantly from the previous, older design.
-{% endhint %}
+
 
 We identify each asset by `AssetID` as a 32-bit integer. For each asset there's an appropriate NUMS generator, which is generates deterministically from the `AssetID` (via hashing). The `AssetID == 0` is reserved for default asset (Beam).
 
@@ -52,9 +52,9 @@ Asset controls grants any user permission to create new asset types vs Beam whic
 
 When sending an asset creating transaction type, it provides both the **Owner key** and associated **metadata**. Any proceeding asset actions will require a private key signature, and metadata visible to all users is immutable once the asset is created.
 
-{% hint style="info" %}
+
 Metadata reserves a significant number of Beams when locking an asset, meaning that this transaction implicitly uses up that amount. If the transaction is successful, the system assigns the lowest available and unused `AssetID` to the asset and links it to the asset.
-{% endhint %}
+
 
 #### Asset emission/burn
 
@@ -66,12 +66,12 @@ This transaction will automatically create or consume a certain amount of the as
 
 To destroy an asset, an asset-destroying kernel with owner key signature is required. Once the asset has been destroyed, the `AssetID` is no longer linked to the owner, and the locked Beams  return to the user.
 
-{% hint style="warning" %}
+
 Asset can be destroyed only if:
 
 * Total burn occurs.
 * Minimum lock period elapsed after asset burn completes without an emitted event.
-{% endhint %}
+
 
 This minimum lock period prevents any asset owner manipulation or tampering. For example, if a user requests a specific asset, the `AssetID` must be directly linked with the asset info (Metadata and owner key) before its transaction expires. This tweak prevents the asset owner from destroying or re-create an asset during the lock period.
 
@@ -85,11 +85,11 @@ The current state of the system includes a commitment to the latest state of ass
   * Asset owner can determine whether and when the asset can be destroyed, and consequently unlock the funds that were previously locked.
   * Other users can estimate the minimum height range within which the asset can be safely used. This helps determine whether the asset was subject to reorgs in the past or could be tampered with in the future.
 
-{% hint style="info" %}
+
 Locking funds for asset creation is necessary to prevent spamming in the system. If there are too many assets, it can cause the Nodes to become heavier and can also reduce the effectiveness of the asset surjection proof due to a limited anonymity set. Although a significant amount of funds need to be locked, this design should not be an issue for users who are experimenting with assets as they will receive their funds back upon completion.
 
 However, for organizations selling assets to users, it is unclear if they will ever be able to burn their assets back, as they must first own all of their assets. Despite this, the risk seems justified.
-{% endhint %}
+
 
 ### Note on transaction repeatability
 
@@ -138,11 +138,11 @@ The UTXO commitment $$C_{MW}$$ (without the serial number) is accounted for when
 
 The shielded outputs in the pool form a sequence of commitments (EC points).
 
-{% hint style="warning" %}
+
 The serial number (**s**) is obtained from a different public key (`SpendKey)` which discloses during the spending process. In addition, the prover will need to prove the knowledge of the appropriate private key.
 
 In addition, the $$C_s$$ commitment must be unique. This prevents accidental misuse, and avoids making subsequent element withdrawal impossible.
-{% endhint %}
+
 
 ### Shielded input
 
@@ -181,9 +181,9 @@ Ultimately, the following information is recovered:
 * Sender ID (a public key belonging to the sender).
 * Default 32-byte message.
 
-{% hint style="info" %}
+
 The aforementioned information can be retrieved through the `Owner` key. However, the `master` key is still necessary to spend it. This enables the utilization of the owner key in owned nodes to recognize owned TXOs and shielded elements without jeopardizing the funds in the event of a node compromise.
-{% endhint %}
+
 
 ### Implications and constraints
 

@@ -6,9 +6,9 @@ description: >-
 
 # Using Beam Shaders with CLI Wallet (masternet)
 
-{% hint style="info" %}
+
 _All examples refer to a sample application "mydapp" which has two_ [_Vault_](https://github.com/BeamMW/beam/tree/master/bvm/Shaders/vault) _Shaders: App Shader (`app.wasm`) and Contract Shader (`contract.wasm`)._
-{% endhint %}
+
 
 ### Overview
 
@@ -30,9 +30,9 @@ To perform any transactions with shaders, you must specify the `shader` command.
 3. Make sure you have Beam [CLI wallet](../beam-wallets/command-line-wallet.md) connected to your Beam node.
 4. You must have funds in your wallet to pay the fee.
 
-{% hint style="warning" %}
+
 Since this tutorial is based on a local network, each command must be specified with the `--FakePoW=1` flag. For convenience we recommend adding this flag to your `beam-node.cfg` and `beam-wallet.cfg` files.
-{% endhint %}
+
 
 ### Shader API
 
@@ -101,9 +101,9 @@ This means that if, for example, we want to deploy a contract (in Vault, deploym
 --shader_args="role=manager,action=create"
 ```
 
-{% hint style="warning" %}
+
 Specifying a `role` and an `action` in a `key=value` pair representation is a requirement for working with shaders. But each contract has its own API and the arguments can be different.
-{% endhint %}
+
 
 ### Cid
 

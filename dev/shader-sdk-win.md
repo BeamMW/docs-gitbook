@@ -2,9 +2,9 @@
 
 This tutorial demonstrates How-to set up Beam Shader SDK on the Windows operating system.
 
-{% hint style="warning" %}
+
 The Shader SDK's current version can be characterized as an _**early developer preview**_, with a high possibility of encountering unusual issues and bugs.
-{% endhint %}
+
 
 ### Prerequisites
 
@@ -66,13 +66,13 @@ This will build `.wasm` files following this folder structure:
 
 `C:\Code\vault\build\wasi\shaders`
 
-{% hint style="warning" %}
+
 If you are encountering errors, try the following before reaching out to support:
 
 1. Open Windows Explorer and delete the `out` folder.
 2. In the  **Project** menu, select **Delete Cache and Reconfigure.**
 3. Rebuild `wasm32-Release` project.
-{% endhint %}
+
 
 <figure><img src=".gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
 

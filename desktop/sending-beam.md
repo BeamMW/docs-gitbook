@@ -11,7 +11,7 @@ As you have probably noticed by now, Beam transactions work slightly differently
 
 Each payment, e.g.,[ transaction type](https://app.gitbook.com/@beamx/s/desktop-wallet-user-guide/\~/drafts/-McGeEd59nhcQ7IuTcTQ/receiving-beam#transaction-types) incurs different fees and utilizes different addresses. Be sure to understand the differences before sending out your Beam coins!
 
-{% hint style="info" %}
+
 **Transaction fees**
 
 Offline transactions (Regular Public Offline) have significantly higher transaction fees than Regular transactions due to the more significant blockchain requirements Offline payments have compared to regular.
@@ -19,7 +19,7 @@ Offline transactions (Regular Public Offline) have significantly higher transact
 * **Regular transaction**: Fee = 0.001 Beam (Before HF-3 100 GROTH).
 * **Offline transaction**: Fee = 0.011 BEAM (0.01-for shielded coin + 0.001-fee transaction).
 * **Max Privacy Transaction**: Minimum transaction fee for Max Privacy transactions is \~ 0.01 Beam (Shielded coin fee = 0.01 + 0.001 (fee transaction) = 0.011 BEAM).
-{% endhint %}
+
 
 ## To send Beam
 
@@ -34,9 +34,9 @@ Offline transactions (Regular Public Offline) have significantly higher transact
 
 You will see the outgoing transaction in the transaction list. Please wait for the status to change to "completed" to indicate the transaction was successful.
 
-{% hint style="danger" %}
+
 Viruses and malware hidden on your computer can alter your address even though it's copied to your clipboard. Always double-check your addresses before sending Beam.
-{% endhint %}
+
 
 ## **How it looks in your wallet**
 

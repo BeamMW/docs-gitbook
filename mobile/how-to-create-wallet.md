@@ -4,9 +4,9 @@ description: A handy guide for creating a Beam mobile wallet.
 
 # Getting Started
 
-{% hint style="info" %}
+
 Beam Wallet requires permission to run in the background. We recommend you give the Beam mobile wallet app permissions so you can accept transactions at any given moment.
-{% endhint %}
+
 
 ## How-to create your mobile wallet
 
@@ -39,9 +39,9 @@ Please do not write your seed phrase down electronically, take a screenshot or s
 
 ### Verify seed phrase
 
-{% hint style="info" %}
+
 Mobile users can skip the seed verification process and start using their wallets right away. Not verifying and writing down your seed phrase may result in you losing your Beam coins.
-{% endhint %}
+
 
 Verify your seed phrase by re-entering your seed phrase in random order.
 

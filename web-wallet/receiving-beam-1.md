@@ -6,7 +6,7 @@ description: >-
 
 # Receiving Beam
 
-{% hint style="danger" %}
+
 **Known Limitations:**
 
 * _SBBS addresses for Web Wallet are single-use only addresses._
@@ -14,7 +14,7 @@ description: >-
 * _Both Sender and Receiver wallets must be online to complete the transaction._
 * _Always send addresses over **secure** communication channels._
 * _It is possible to reuse an existing address (more information on that later)._
-{% endhint %}
+
 
 ### Generate an Address
 

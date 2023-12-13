@@ -11,11 +11,11 @@ To perform an instant transaction, both parties must submit Beam coins to an ope
 
 ## Create a Laser Channel
 
-{% hint style="info" %}
+
 **The`laser_fee`for both parties is 100 Groth's.**
 
 Both the Sender and Receiver must agree on the`locked_amount`to perform an instant payment.
-{% endhint %}
+
 
 ### Opening a Laser Channel between two wallets
 
@@ -183,13 +183,13 @@ Alice can close the open channel without Bob by entering following command:
 $ ./beam-wallet laser --laser_drop 7a0f1a491fe95f3fe453a298dd62ba12 -n 127.0.0.1:1000
 ```
 
-{% hint style="danger" %}
+
 **`laser_close`and`laser_drop`commands only closes the connection between the two Beam wallets.**
 
 **Laser Beam Channels with "Closed" status are deletable after 24 hours or 1440 blocks.**
 
 **Channels with "Waiting" or "OpenFailed" status are ready for immediate deletion. To delete the Laser Beam Channel, follow the steps below**:
-{% endhint %}
+
 
 ### Delete closed Laser Beam Channel
 

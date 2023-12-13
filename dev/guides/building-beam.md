@@ -45,9 +45,9 @@ Beam uses _CMake_ to generate the build environment with several options for bui
 
 ## Windows
 
-{% hint style="info" %}
+
 This guide assumes you have the latest version [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) installed on your machine.
-{% endhint %}
+
 
 1. Install _Microsoft Visual Studio_ with [_CMake_ support](https://docs.microsoft.com/en-us/cpp/build/cmake-projects-in-visual-studio?view=msvc-160#building-cmake-projects).
 2. Download and install the Boost [prebuilt](https://sourceforge.net/projects/boost/files/boost-binaries/1.68.0/boost\_1\_68\_0-msvc-14.1-64.exe) binaries, adding `BOOST_ROOT` to the _Environment Variables_.
@@ -58,17 +58,17 @@ This guide assumes you have the latest version [Git](https://git-scm.com/book/en
 
     ![](<../.gitbook/assets/Screen Shot 2021-11-28 at 3.27.04 PM.png>)
 
-    {% hint style="info" %}
+    
     For _Visual Studio 2017_ users, go to _**CMake**_** > Cache > Open Cache Folder > `Beam`**
 
     For _Visual Studio 2019_ users**, Project > **_**CMake**_** cache > Open in explorer** (the binaries can be found in **`beam/..., wallet/cli/..., explorer/... subfolders`**).
-    {% endhint %}
+    
 
 ## Linux
 
-{% hint style="danger" %}
+
 Locate the downloaded Beam node and Command Line (CLI) wallet in the `beam/wallet/cli` folder.
-{% endhint %}
+
 
 1.  Clone the Beam binaries from [Github](https://github.com/BeamMW) by entering the following command:
 
@@ -76,9 +76,9 @@ Locate the downloaded Beam node and Command Line (CLI) wallet in the `beam/walle
     git clone https://github.com/BeamMW/beam.git
     ```
 
-    {% hint style="info" %}
+    
     **Please note**: The above command will clone the latest master branch. The master branch is where the Beam team develops upcoming versions of Beam. Users should select the appropriate [branch](https://github.com/BeamMW/beam/branches) then `git checkout` after cloning the main Beam repository.
-    {% endhint %}
+    
 
     To clone the **`Double Doppler 4.0`** release branch, enter the following:
 
@@ -104,9 +104,9 @@ Locate the downloaded Beam node and Command Line (CLI) wallet in the `beam/walle
 
 #### Desktop
 
-{% hint style="info" %}
+
 The instructions below are valid for a default **Ubuntu 18.04.03 Desktop LTS install**. For older systems, verify that steps 1, 2 & 4 do not overwrite or conflict with more recent versions of `CMake` and `boost` previously installed on your machine.
-{% endhint %}
+
 
 1.  Install dependencies:
 
@@ -156,9 +156,9 @@ The instructions below are valid for a default **Ubuntu 18.04.03 Desktop LTS ins
 
 #### Desktop
 
-{% hint style="info" %}
+
 Instructions below are valid for a minimal **Ubuntu 19.10 Desktop install** ("update during install" option enabled).
-{% endhint %}
+
 
 1.  Install dependencies:
 
@@ -191,9 +191,9 @@ Instructions below are valid for a minimal **Ubuntu 19.10 Desktop install** ("up
 
 ### CentOS 7.0
 
-{% hint style="info" %}
+
 The instructions below are valid for a default **CentOS 7.0-1908 minimal install**. For older systems, verify that steps two and three do not overwrite or conflict with more recent versions of `CMake`and `boost` previously installed on your machine.
-{% endhint %}
+
 
 1.  Install dependencies:
 
@@ -228,9 +228,9 @@ The instructions below are valid for a default **CentOS 7.0-1908 minimal install
 
 ### CentOS 8.0
 
-{% hint style="info" %}
+
 The instructions below are valid for a default **CentOS 8.0-1905 minimal install**. For older systems, verify that step two does not overwrite or conflict with more recent versions of `CMake`and `boost` previously installed on your machine.
-{% endhint %}
+
 
 1.  Install dependencies:
 
@@ -256,9 +256,9 @@ The instructions below are valid for a default **CentOS 8.0-1905 minimal install
 
 #### Desktop
 
-{% hint style="info" %}
+
 The instructions below are valid for a default **Fedora 31-1.9 Workstation install**.
-{% endhint %}
+
 
 1.  Install dependencies:
 
@@ -275,9 +275,9 @@ The instructions below are valid for a default **Fedora 31-1.9 Workstation insta
 
 #### Server
 
-{% hint style="info" %}
+
 The instructions below are valid for a default **Fedora 31-1.9 Headless Server install**.
-{% endhint %}
+
 
 1.  Install dependencies:
 
@@ -300,9 +300,9 @@ The instructions below are valid for a default **Fedora 31-1.9 Headless Server i
     git clone https://github.com/BeamMW/beam.git
     ```
 
-    {% hint style="info" %}
+    
     **Please note:** The Git command above will clone the latest master branch. The master branch is where the Beam team develops upcoming versions of the Beam.
-    {% endhint %}
+    
 
     To clone the `mainnet`, enter the following command:
 

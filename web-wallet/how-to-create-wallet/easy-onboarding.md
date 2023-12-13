@@ -1,8 +1,8 @@
 # Easy Onboarding
 
-{% hint style="danger" %}
+
 _Your seed phrase is the only way you (or anybody) can access your funds. Your seed phrase is not linked to your email or phone number. If you forget your wallet password or lose your device, the only way to restore your wallet is through your seed phrase!_
-{% endhint %}
+
 
 ## Create New Wallet
 

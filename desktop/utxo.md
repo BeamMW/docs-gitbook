@@ -7,9 +7,9 @@ description: >-
 
 # UTXO
 
-{% hint style="danger" %}
+
 The Beam wallet minimizes the output value you receive by automatically selecting the UTXO for each transaction. You will not be able to send or spend your UTXOs until the transaction is complete.
-{% endhint %}
+
 
 ## UTXO in Your Beam Wallet
 

@@ -4,9 +4,9 @@ description: An overview the different settings you can adjust in your Beam web 
 
 # Settings
 
-{% hint style="info" %}
+
 _Find your Beam Wallet settings by clicking the action menu and selecting "settings"._
-{% endhint %}
+
 
 ## Full Browser View:
 

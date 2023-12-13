@@ -3,7 +3,7 @@
 The Beam Node supports External Miner via Stratum Server API for mining Beam: The Beam Node provides built-in support for Stratum API integration with multiple external mining clients to a single node.
 Stratum clients can be run together with the internal Miner. For more detailed information, and how-to mine Beam, please see our [Beam Mining guide](/docs/mining/).
 
-{% hint style="info" %}
+
 **Obtain your Miner Keys!**
 
 To ensure all the rewards you accrue mining Beam go directly to your wallet, you must obtain your secret **`miner_key`**. Your mining key is derived from your seed phrase. You can generate multiple mining keys for separate mining modes.
@@ -11,7 +11,7 @@ To ensure all the rewards you accrue mining Beam go directly to your wallet, you
 Conversely, to display your total mining rewards accrued to all the nodes on the Beam network, you must obtain an **owner\_key**. Owner keys only identify the cumulative mining rewards earned by a user, regardless of the node used.
 
 For more information on retrieving or displaying mining and owner keys, please see our Beam Mining guide_._
-{% endhint %}
+
 
 ## Mining Beam
 
@@ -88,7 +88,7 @@ Before using the external miner, please review the sample Mining Architecture be
 
 ![Mining usiex](.gitbook/assets/image.png)
 
-{% hint style="info" %}
+
 **Things to consider:**
 
 * The Beam node should connect to a different node on the network via `--peer` parameter, e.g., `--peer=3.0.115.1:8100` for TestNet 4.
@@ -100,7 +100,7 @@ Before using the external miner, please review the sample Mining Architecture be
 * Your wallet will earn mining rewards **if**:
   * It uses the exact wallet seed phrase associated with the original miner and owner keys.
   * The node connected has the`--owner_key`parameter.
-{% endhint %}
+
 
 ### How to mine using an external miner
 
@@ -130,13 +130,13 @@ Before using the external miner, please review the sample Mining Architecture be
 
     Save the exported `miner_key` in a `text_file` for later.
 
-    {% hint style="info" %}
+    
     **Running** **several mining nodes**:
 
     If you want to run several mining nodes, enter the`--export_miner_key`command again with other subkeys, e.g., enter`./beam-wallet export_miner_key --subkey=2`for the second node. Enter`./beam-wallet export_miner_key --subkey=3`for the third node and so on.
 
     **Your `miner_key`should be kept secret at all times.**
-    {% endhint %}
+    
 
 6\. Export the `owner_key`. Enter the following command:
 
@@ -152,9 +152,9 @@ Save the exported `owner_key` in a `text_file` for later.
 
 9\. Create certificate and API key for the Stratum server.
 
-{% hint style="info" %}
+
 **Note**: users interested in testing are welcome to download the sample certificate and API keys below.
-{% endhint %}
+
 
 ### Certificate and API keys
 
@@ -170,15 +170,15 @@ stratum.key
 stratum.api.keys
 {% endfile %}
 
-{% hint style="info" %}
+
 The files currently contain one API key: `aaaa1234`. The `--key=aaaa1234`parameter is necessary to operate the miner client.
 
 Users should save the API keys and certificate files to their`node_folder`.
-{% endhint %}
 
-{% hint style="warning" %}
+
+
 **Attention:** for production setup please read the following section carefully, otherwise skip to **step 10**.
-{% endhint %}
+
 
 Beam node utilizes the Stratum protocol for connecting external miner clients. Clients open a TCP connection to the node through which they receive opportunities to mine blocks using the Equihash mining protocol.
 
@@ -219,9 +219,9 @@ cd /node_folder
     --pass=<your wallet password (not seed phrase) >
 ```
 
-{% hint style="info" %}
+
 **Note:** the parameters above example are ideal for testing purposes. Users can always change the parameters if necessary. Users also have the option of plugging in custom parameters in their`beam-node.cfg`file in a text editor instead of the command line.
-{% endhint %}
+
 
 Read more about each parameter in the table below:
 
@@ -240,9 +240,9 @@ Read more about each parameter in the table below:
 
 Beam provides two mining clients for Equihash 150,5 with data path change: one for `OpenCL` and one for `CUDA.`
 
-{% hint style="warning" %}
+
 **Attention:** Testnet mining client is limited to `OpenCL` and only supported by Windows and Linux platforms.
-{% endhint %}
+
 
 13\. Download the miner client to a folder on your mining rig and title it `miner_folder`.
 
@@ -271,13 +271,13 @@ If you have set a different API key then `aaa1234` from the example set your key
 
 Your mining rig is now ready to begin mining.
 
-{% hint style="info" %}
+
 **To view your miner rewards:**
 
 Launch the CLI Wallet or Beam Desktop Wallet linked with the same seed phrase as the miner client and connect to the local node (or a remote node that knows the `owner_key`) within the wallet. The`owner_key`will automatically detect and the miner rewards will be reflected in the wallet balance.
 
 Linking to a random node on the network will NOT display your mining rewards.
-{% endhint %}
+
 
 ## GPU support
 
@@ -299,6 +299,6 @@ Here are some performance stats reported by our community:
 | _nVidia GTX 1080Ti_   | Yes           | \~10-11                 |
 | _nVidia GTX 2080_     | Yes           | \~10-11                 |
 
-{% hint style="info" %}
+
 **Note:**`CUDA`miner client is still in development.
-{% endhint %}
+

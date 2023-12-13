@@ -6,11 +6,11 @@ description: >-
 
 # Confidential Assets
 
-{% hint style="info" %}
+
 **Did you know you can create a new Confidential Asset in the Command Line?**
 
 See our Beam Wallet Command Line [User Guide](https://beamx.gitbook.io/cli-guide/-Ma54aPfLzmz7w0FPI32/) for more information. Also, see our asset creation [helper](https://explorer.beam.mw/asset-create) that conveniently generates the string to complete your new confidential asset!
-{% endhint %}
+
 
 ![](.gitbook/assets/Screenshot\_198.png)
 

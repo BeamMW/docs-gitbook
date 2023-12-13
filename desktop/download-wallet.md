@@ -7,10 +7,10 @@
 
 
 
-{% hint style="info" %}
+
 **Always verify that:**
 
 1. Your web browser displays an official Beam website by observing that the padlock icon is "locked" on the address bar and checking the certificate.
 2. After the download completes, verify the file hash matches the one published on the website.
-{% endhint %}
+
 

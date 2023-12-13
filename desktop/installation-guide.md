@@ -44,9 +44,9 @@ Launch Beam Wallet from the "applications" folder. Please note: Beam is in the a
 
 After you have downloaded the file, unzip it. Go to the folder and run `BeamWallet.AppImage`
 
-{% hint style="danger" %}
+
 **Ubuntu 16 is no longer officially supported!**
-{% endhint %}
+
 
 To run on Ubuntu 16, enter the following commands in Linux terminal:
 

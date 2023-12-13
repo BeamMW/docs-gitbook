@@ -24,9 +24,9 @@ Asset metadata has 2 groups of properties:
 * Standard properties
 * Optional properties
 
-{% hint style="warning" %}
+
 Both types of properties are immutable and can't be changed after the asset is created. Therefore, double-checking the values before starting the asset registration is strongly recommended
-{% endhint %}
+
 
 ### Required properties:
 

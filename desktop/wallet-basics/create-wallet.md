@@ -10,9 +10,9 @@ This step-by-step guide will get your new wallet up and running.
 
 ## Create your wallet
 
-{% hint style="success" %}
+
 Make sure you have the [latest ](/downloads/mainnet-mac)version of Beam downloaded!
-{% endhint %}
+
 
 1. **Launch** Beam desktop wallet <img src="../.gitbook/assets/Screen Shot 2022-07-31 at 8.29.33 PM.png" alt="" data-size="line">.
 2. Click **create new wallet**.
@@ -36,9 +36,9 @@ Make sure you have the [latest ](/downloads/mainnet-mac)version of Beam download
 
 Your seed phrase is the only way you (or anybody) can access your funds. Your seed phrase is not linked to your email or phone number. If you forget your wallet password or lose your device, the only way to restore your wallet is through your seed phrase!
 
-{% hint style="danger" %}
+
 Keep your wallet seed phrase secret, and never share your seed phrase with anyone!
-{% endhint %}
+
 
 Please do not write your seed phrase down electronically, take a screenshot or store it anywhere vulnerable to cyber attacks.    
 
@@ -46,9 +46,9 @@ Please do not write your seed phrase down electronically, take a screenshot or s
 
 ### Verify seed phrase
 
-{% hint style="danger" %}
+
 Double Check your spelling! "Axel" and "Axle" are two completely different words and could lead to you losing your funds!
-{% endhint %}
+
 
 Re-enter your seed phrase in random order to complete seed phrase verification.
 
@@ -78,8 +78,8 @@ Beam desktop wallet can connect to the Beam network through:
 
 Now that your wallet is set up, it's time to synchronize with the current blockchain state on the Beam network.
 
-{% hint style="info" %}
+
 Synchronizing with blockchain will take some time. Please be patient.
-{% endhint %}
+
 
 ![](../.gitbook/assets/2022-06-23\_14-11-52.png)

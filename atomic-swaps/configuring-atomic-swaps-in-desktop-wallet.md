@@ -72,9 +72,9 @@ To link your Ethereum and Beam wallets together, you must have an Infura account
 
 Note: [infura.io](https://www.infura.io) requires specific parameters from your Beam wallet as well as valid email address verification.
 
-{% hint style="info" %}
+
 Before attempting to create an Ethereum <> Beam Atomic Swap make sure your wallet balance has enough Ethereum to cover mining fees.
-{% endhint %}
+
 
 ## To connect to Ethereum
 

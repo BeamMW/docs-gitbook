@@ -8,9 +8,9 @@ We aim to make accessing your Beam coins as convenient and straightforward as po
 
 Users can now send, store or receive Beam and Confidential Assets (Tokens) across multiple wallets with the simplicity of mobile and all the advanced privacy settings of Beam desktop wallet.
 
-{% hint style="info" %}
+
 **Note:** advanced features such as [Atomic Swaps](https://beamx.gitbook.io/atomic-swaps-desktop-guide/-Ma18rFhhJ0iJaAAv2-M/) and the [DAPP](https://beamx.gitbook.io/desktop-wallet-user-guide/-MazOCfj5sWCcgrEum9r/daap-store) are only available on the Beam desktop wallet.
-{% endhint %}
+
 
 ## Downloading Beam mobile (Android)
 

@@ -8,9 +8,9 @@ description: This documents describes CLI Confidential Assets workflow.
 
 ### Assets Support
 
-{% hint style="info" %}
+
 Confidential Assets (CA) support requires [`Fork2`](https://github.com/BeamMW/beam/discussions/1889) and at least [`v5.0`](https://github.com/BeamMW/beam/wiki/Beam-wallet-protocol-API) CLI/API. Any CA operation before `Fork2` would fail with the `AssetsDisabledFork2 (45)` error code.
-{% endhint %}
+
 
 In `v5.0` CA support is disabled by default to prevent compatibility issues. Currently, CA transactions are not supported in the GUI wallet, and the GUI wallet would reject all incoming CA transactions with the `AssetsDisabled (43)` error code. Rejected CA transactions do not display in the GUI wallet. Full GUI assets support is planned for later releases.
 

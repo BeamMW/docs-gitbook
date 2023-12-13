@@ -23,6 +23,6 @@ Available 3rd Party Mining Software and configuration guides for Beam:
 * [Gminer](https://gminer.ac/en/home/)
 * [Bminer](https://www.bminer.me/)
 
-{% hint style="danger" %}
+
 The miner software listed and linked above is used at your discretion and risk. Beam accepts no liability for any misuse or error caused by the above mining software. Users must do their research before deciding on which 3rd party software to use for mining.
-{% endhint %}
+

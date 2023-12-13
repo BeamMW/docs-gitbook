@@ -18,9 +18,9 @@ The address book tab is where you will find:
 
 ### 'My Active' addresses
 
-{% hint style="info" %}
+
 **Remember**: the wallet address data listed in transactions or address book does not reflect the address data stored on the blockchain.
-{% endhint %}
+
 
 ![](<.gitbook/assets/photo\_2021-05-28\_12-47-34 (2).jpg>)
 

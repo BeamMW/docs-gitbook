@@ -6,9 +6,9 @@ description: This guide explains how to restore Beam wallet from an existing see
 
 Life is complicated: hard drives crash, devices get stolen, but if you have taken the proper steps of securing your seed phrase when first creating your Beam wallet, then you can breathe a little easier knowing your funds are safe and secure.
 
-{% hint style="danger" %}
+
 For the restoration process, you must connect to the network via the integrated node. Wallet restoration does not work with random remote node or specific remote node.
-{% endhint %}
+
 
 ## Restoring your wallet
 
@@ -21,9 +21,9 @@ For the restoration process, you must connect to the network via the integrated 
 
 Once you have completed the steps to restore your wallet, your wallet will refresh and automatically re-synch with the blockchain (please be patient as the process can be lengthy).
 
-{% hint style="danger" %}
+
 Your transaction history and addresses will not appear in your new wallet without also migrating your `wallet.db` file.
-{% endhint %}
+
 
 ## How it looks in your wallet
 

@@ -6,9 +6,9 @@ description: >-
 
 # Address Book
 
-{% hint style="danger" %}
+
 Beam addresses are only stored locally in the wallet database and not on the blockchain. Be sure to backup or export the wallet metadata before removing the wallet.
-{% endhint %}
+
 
 ## Address Book
 

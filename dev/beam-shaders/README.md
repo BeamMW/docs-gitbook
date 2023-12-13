@@ -8,9 +8,9 @@ This section will give an overview of Beam's Smart Contracts. Beam's blockchain 
 
 In Beam, Smart Contracts have two components, Contract Shaders and Application Shaders.
 
-{% hint style="info" %}
+
 The term "shader" originated from 3D graphics and refers to a custom program, as opposed to a pre-defined fixed function.
-{% endhint %}
+
 
 Deployed on the blockchain, Contract Shaders are executed by the Beam Virtual Machine when a wallet constructs a transaction that accesses one of the public methods of the contract.
 

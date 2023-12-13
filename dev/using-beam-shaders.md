@@ -4,7 +4,7 @@ description: This tutorial describes using Beam Shaders on DAppnet
 
 # Using Beam Shaders
 
-{% hint style="success" %}
+
 [Why DAppnet](https://dappnet.beam.mw/downloads/)?
 
 Beam consists of three public networks:
@@ -12,7 +12,7 @@ Beam consists of three public networks:
 1. **DAppnet:** a testing sandbox that produces a pseudo-mining block every 15 seconds.
 2. **Testnet:** produces genuine mining blocks but is mostly a testing site before Mainnet deployment.
 3. **Mainnet:** the living Beam network with real assets.
-{% endhint %}
+
 
 ### Install DAppnet wallet
 
@@ -20,9 +20,9 @@ The latest version of the Beam DAppnet Wallet is on our [website](https://dappne
 
 When [installing DAppnet](https://beamx.gitbook.io/dappnet-user-guide/settings), choose the default settings to operate the local node (required) to run Beam Shader contracts.  Create a new wallet (save the seed phrase).
 
-{% hint style="info" %}
+
 Beam Shaders require the use of the integrated node found in the DAppnet Wallet and must remain open for this tutorial.
-{% endhint %}
+
 
 ### Withdraw from the Faucet
 
@@ -42,9 +42,9 @@ Beam shaders are deployed via CLI wallet which can be found on our [website](htt
 
 Create a `shader` folder in your hard drive, and transfer CLI wallet archive. The `shader` folder should contain two files: two files: the `CLI wallet archive` and wallet `config` file.
 
-{% hint style="danger" %}
+
 For this tutorial, we will use our DAppnet's `wallet.db`(for testing purposes only. This practice is not recommended with wallets containing real assets).
-{% endhint %}
+
 
 ### Copy `wallet.db` from DAppnet Wallet
 
@@ -52,9 +52,9 @@ Beam wallets store wallet metadata (transaction history, balance, etc) locally o
 
 Locate your DAppnet `wallet.db` in the `%LOCALAPPDATA%\Beam Wallet folder`. Transfer the `wallet.db` in the same `shader` folder.
 
-{% hint style="info" %}
+
 Refer to our [Desktop Wallet guide](beam-wallets/desktop-wallet.md) for `wallet.db` file location for macOS and Linux operating systems.
-{% endhint %}
+
 
 <figure><img src=".gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
@@ -118,9 +118,9 @@ The [Dappnet Blockchain Explorer](https://dappnet.explorer.beam.mw/) (see **Cont
 
 For the purposes of this tutorial, we will select the **Vault** Shader application (copy the Vault Contract ID -- we will use this later).
 
-{% hint style="info" %}
+
 At thid time, the list of available contracts is DAppnet. The majority of deployed contracts don't contain a contract description. These features will be adjusted with future iterations of DAppnet.
-{% endhint %}
+
 
 **Please download the Vault application Shader from our** [**Beam repository.** ](https://github.com/BeamMW/beam/tree/master/bvm/Shaders/vault)The Shader contract will not respond to CLI commands without the precompiled source code.
 

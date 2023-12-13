@@ -71,9 +71,9 @@ The Command Line instructions for`Faucet`are compatible with macOS (Terminal Win
 
 #### Retrieving the Faucet contract
 
-{% hint style="info" %}
+
 We assume that your node is running on a local machine at `port 8501`. If your parameters differ from any of the instructions, please adjust them accordingly.
-{% endhint %}
+
 
 1.  Launch a Terminal Window and change the directory to your Beam CLI wallet by entering the following command:
 
@@ -115,9 +115,9 @@ To withdraw 0.05 Beams from the`Faucet`contract, enter the following command:
 
 You can replace the`CID`parameter with a different contract `ID` that you received in the previous [steps](using-beamx-faucet-contract-with-cli-wallet.md#view-contract).
 
-{% hint style="info" %}
+
 **A transaction fee of 0.011 Beams automatically subtracts from the`Faucet`contract withdrawal**. In total, the action draws 0.061 Beams + the transaction fee, leaving the user with 0.05 Beams.
-{% endhint %}
+
 
 This operation can result in several different outcomes:
 
@@ -219,9 +219,9 @@ Shader output: {"roles": {"manager": {"view": {},"explicit_upgrade": {"cid": "Co
 
 #### Retrieve the`DAO`contract
 
-{% hint style="info" %}
+
 Be sure the latest version of the`dao-core`contract folder is within the`shaders_folder` hierarchy as previously instructed. Both `app.wasm`(`Faucet`) and`contract.wasm`to deploy your `DAO`contract.
-{% endhint %}
+
 
 1.  Launch a Terminal Window and change the directory to your Beam CLI wallet by entering the following command:
 
@@ -258,9 +258,9 @@ Be sure the latest version of the`dao-core`contract folder is within the`shaders
 
 ### Staking Beam
 
-{% hint style="info" %}
+
 **The minimum amount of Beam coins users must stake in order to receive BeamX rewards is 16 Beams!**
-{% endhint %}
+
 
 To receive BeamX tokens, users must first stake their Beam coins by issuing a contract and claiming their BeamX tokens as rewards. To stake their Beam coins, enter the following command:
 
@@ -372,11 +372,11 @@ Creating new contract invocation tx on behalf of the shader
         Total fee: 1100000 GROTH
 ```
 
-{% hint style="info" %}
+
 To withdraw Beam and BeamX with one transaction, specify `"bLockOrUnlock= "in shader_args where : 0 - withdraw Beam , 1 - send Beam`
 
 `--shader_args role=manager,action=farm_update,cid=3f3d32e38cb27ac7b5b67343f81cf2f8bc53217eb995cc6c5d78ddc5e7b0642b,amountBeamX=635511,amountBeam=10000000,`<mark style="color:blue;">`bLockOrUnlock`</mark>`=`<mark style="color:red;">`1`</mark>
-{% endhint %}
+
 
 ### `Dao-core` contract parameters
 

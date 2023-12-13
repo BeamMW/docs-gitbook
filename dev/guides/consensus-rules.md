@@ -1,8 +1,8 @@
 # Beam Consensus Rules
 
-{% hint style="danger" %}
+
 _**WARNING:** Used for development and testing only!_
-{% endhint %}
+
 
 The following parameters allow to configuration of Consensus Rules in the Beam node and wallet.
 

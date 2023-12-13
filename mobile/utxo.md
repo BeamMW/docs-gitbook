@@ -9,7 +9,7 @@ description: >-
 
 
 
-{% hint style="info" %}
+
 **What is a UTXO, and how does it apply to your Beam coins?**
 
 1. **UXTO (unspent transaction value)**.\
@@ -19,7 +19,7 @@ description: >-
     Your Beam wallet automatically minimizes the output value you receive by automatically selecting the UTXO for each transaction.
 
     You will not be able to send or spend your UTXOs until each transaction is complete.                                                                           
-{% endhint %}
+
 
 ## UTXO screen
 

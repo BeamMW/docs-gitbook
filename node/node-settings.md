@@ -1,10 +1,10 @@
 # Node Settings
 
-{% hint style="info" %}
+
 #### Commands entered via Command-line do not override the settings of your `beam-node.cfg` file.
 
 The `beam-node.cfg` file loads all the settings not dictated by the Command-line. To revert to the original settings of your`beam-node.cfg`file, manually restart your Beam node.
-{% endhint %}
+
 
 Users can adjust and configure node settings via the Command Line or by editing the`beam-node.cfg` file (located in the `node_folder`).
 
@@ -29,11 +29,11 @@ Node options can be plugged directly into the`beam-node.cfg`file or enter them v
 | `--stratum_secrets_path` | `Path`to the folder containing stratum certificates.                                                                                                                                                                                     |
 | `--peer`                 | Nodes that are available for connection.                                                                                                                                                                                                 |
 
-{% hint style="danger" %}
+
 #### CPU Mining for Beam is not recommended.
 
 Beam uses an Equihash mining algorithm with (150,5) parameters and a customized data path that is inefficiently mined on CPUs.
-{% endhint %}
+
 
 ### Node options (continued)
 
