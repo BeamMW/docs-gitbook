@@ -26,7 +26,7 @@ Beam is a deflationary coin with capped emission and periodic halving every four
 
 During the last three years of the project's existence, we have made many improvements and additions to our technological stack. Currently, Beam uses a combination of Mimblewimble and Lelantus protocol on layer 1, with transactions routed through Dandelion++ and transactions merging in stem phase on Layer 0 for ultimate privacy. To learn more about Beam technology, please refer to our [wiki ](https://github.com/BeamMW/beam/wiki)page.
 
-{% embed url="https://www.youtube.com/watch?v=oNsT3M6NWTI" %}
+https://www.youtube.com/watch?v=oNsT3M6NWTI
 
 ### Beam Wallets
 
@@ -115,7 +115,7 @@ Unlike most cryptocurrencies, Beam does not record your transaction history, wal
 
 Your wallet balance and transaction history can have inconsistencies if you have multiple wallets on different devices using one seed phrase.
 
-{% embed url="https://www.youtube.com/watch?v=dm21bOh1TVg" %}
+https://www.youtube.com/watch?v=dm21bOh1TVg
 
 ## Getting Started
 

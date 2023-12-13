@@ -8,7 +8,7 @@ Beam combined Lelantus with Mimblewimble to create a hybrid[ LelantusMW protocol
 
 See [LelantusMW](https://github.com/BeamMW/beam/wiki/Lelantus-MW) and [MW Confidential Lelantus Assets](https://github.com/BeamMW/beam/wiki/MW-CLA) for a more in-depth description of our protocol.
 
-{% embed url="https://www.youtube.com/watch?v=cQGQZ1OWPmc&ab_channel=ZKProofStandards" %}
+https://www.youtube.com/watch?v=cQGQZ1OWPmc&ab_channel=ZKProofStandards
 
 
 

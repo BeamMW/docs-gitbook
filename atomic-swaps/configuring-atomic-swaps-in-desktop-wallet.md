@@ -2,7 +2,7 @@
 
 Currently, Atomic Swaps is Desktop Only. For more updates on upcoming Beam news, see our [Telegram page](https://t.me/BeamPrivacy).
 
-{% embed url="https://www.youtube.com/watch?v=_SOgPybgi8Y&t=504s" %}
+https://www.youtube.com/watch?v=_SOgPybgi8Y&t=504s
 
 ## Configuring Atomic Swaps
 

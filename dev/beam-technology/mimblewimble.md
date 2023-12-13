@@ -14,7 +14,7 @@ To balance the difference in blinding factors, each transaction also contains th
 
 Mathematician [Andrew Poelstra](https://www.linkedin.com/in/andrew-poelstra-958a75106/) first reviewed the protocol and published a paper validating the approach.
 
-{% embed url="https://www.youtube.com/watch?v=aHTRlbCaUyM&ab_channel=SFBitcoinDevelopers" %}
+https://www.youtube.com/watch?v=aHTRlbCaUyM&ab_channel=SFBitcoinDevelopers
 
 
 

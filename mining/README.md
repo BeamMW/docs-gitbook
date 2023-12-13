@@ -14,4 +14,4 @@ Both NVIDIA and AMD are compatible. Experienced miners will have a full solo min
 See our [mining pool](pool-mining-beam.md) or [solo mining](solo-mining-beam.md) guides to get started mining Beam!
 {% endhint %}
 
-{% embed url="https://www.youtube.com/watch?v=WC3aCWCWxB4" %}
+https://www.youtube.com/watch?v=WC3aCWCWxB4

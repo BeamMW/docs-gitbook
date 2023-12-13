@@ -2,7 +2,7 @@
 
 If you decide to participate in a Beam mining pool, you will need to select a mining pool (you can find a complete list on our [website](/mining)) and determine which mining pool best suits your needs. When selecting your pool, it is essential to consider the geographic locations, fee, hash rate, and user experience.
 
-{% embed url="https://www.youtube.com/watch?v=sM0SCGw8Puo" %}
+https://www.youtube.com/watch?v=sM0SCGw8Puo
 
 ## Things you'll need
 
