@@ -6,17 +6,14 @@ Mining Beam coins is the best way to support Beam! Miners strengthen the securit
 
 * Mining rig containing a minimum of one GPU with 3GB of RAM.
 * Basic knowledge of command line (CMD terminal) functions.
-* Text editor, e.g., [Atom](https://atom.io/).
-* High-speed internet connection.&#x20;
+* Text editor, e.g., [Visual Code Studio](https://code.visualstudio.com/).
+* High-speed internet connection.
 * Mining software, e.g., [lolMiner](https://github.com/Lolliedieb/lolMiner-releases).
 * An 'always-on PC' or a similar device to run your Beam Node.
 
 ## **Part one: installation**
 
-Download `Beam-Wallet-CLI` and `Beam-Node` files directly from our main [website](https://www.beam.mw/downloads) or click on the links below:
-
-* [`Beam-Wallet-CLI`](https://builds.beam.mw/mainnet/2021.06.08/Release/mac/beam-wallet-cli-6.0.11644.zip)
-* [`Beam-Node`](https://builds.beam.mw/mainnet/2021.06.08/Release/mac/beam-node-6.0.11644.zip)
+Download `Beam-Wallet-CLI` and `Beam-Node` files directly from our main [website](https://beam.mw/downloads).
 
 ‌Extract these files in a separate folder on your 'always-on PC' (or whichever device is running your Node) and label the folder as `beam-mining`.
 
