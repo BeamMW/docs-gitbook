@@ -23,7 +23,7 @@ We recommend that you join these groups and ask any questions
 
 ## Getting the binaries
 
-You can download BeamX compatible binaries for your platform at https://beam.mw/downloads/beamx
+You can download BeamX compatible binaries for your platform at https://beam.mw/downloads
 
 If you would like to build BeamX yourself from source code please refer to the [Building Instructions Guide](https://github.com/BeamMW/beam/wiki/How-to-build)
 

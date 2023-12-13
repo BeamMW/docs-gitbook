@@ -16,7 +16,7 @@ Beam Bridge connects Beam’s **Private DeFi (PriFi)** to Ethereum’s vast DeFi
 Users will need the following:
 
 * [**MetaMask wallet**](https://metamask.io/)
-* [**Beam Wallet**](https://beam.mw/en/downloads)
+* [**Beam Wallet**](https://beam.mw/downloads)
 
 MetaMask is required for storing and transferring crypto assets on the Ethereum blockchain.
 Beam Wallet is required to store crypto assets on the Beam blockchain.

@@ -8,9 +8,9 @@
 
 ## Additional Documentation
 
-* [Desktop Wallet User Guide](https://beam.mw/en/docs/desktop)
-* [Mobile Wallet User Guide](https://beam.mw/en/docs/mobile)
-* [Atomic Swaps Desktop Guide](https://beam.mw/en/docs/atomic-swaps)
+* [Desktop Wallet User Guide](https://beam.mw/docs/desktop)
+* [Mobile Wallet User Guide](https://beam.mw/docs/mobile)
+* [Atomic Swaps Desktop Guide](https://beam.mw/docs/atomic-swaps)
 
 ***
 

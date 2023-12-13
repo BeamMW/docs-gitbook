@@ -1,7 +1,7 @@
 # Mining Mode
 
 The Beam Node supports External Miner via Stratum Server API for mining Beam: The Beam Node provides built-in support for Stratum API integration with multiple external mining clients to a single node.
-Stratum clients can be run together with the internal Miner. For more detailed information, and how-to mine Beam, please see our [Beam Mining guide](https://beam.mw/en/docs/mining/).
+Stratum clients can be run together with the internal Miner. For more detailed information, and how-to mine Beam, please see our [Beam Mining guide](https://beam.mw/docs/mining/).
 
 {% hint style="info" %}
 **Obtain your Miner Keys!**
