@@ -7,7 +7,7 @@ description: >-
 
 # Sending Beam
 
-As you have probably noticed by now, Beam transactions work slightly differently than other cryptocurrencies. However, the sleek and minimalist Beam wallet UI (available on desktop and mobile), makes sending and receiving different payments a breeze.&#x20;
+As you have probably noticed by now, Beam transactions work slightly differently than other cryptocurrencies. However, the sleek and minimalist Beam wallet UI (available on desktop and mobile), makes sending and receiving different payments a breeze.
 
 Each payment, e.g.,[ transaction type](https://app.gitbook.com/@beamx/s/desktop-wallet-user-guide/\~/drafts/-McGeEd59nhcQ7IuTcTQ/receiving-beam#transaction-types) incurs different fees and utilizes different addresses. Be sure to understand the differences before sending out your Beam coins!
 
@@ -16,7 +16,7 @@ Each payment, e.g.,[ transaction type](https://app.gitbook.com/@beamx/s/desktop-
 
 Offline transactions (Regular Public Offline) have significantly higher transaction fees than Regular transactions due to the more significant blockchain requirements Offline payments have compared to regular.
 
-* **Regular transaction**: Fee = 0.001 Beam (Before HF-3 100 GROTH).&#x20;
+* **Regular transaction**: Fee = 0.001 Beam (Before HF-3 100 GROTH).
 * **Offline transaction**: Fee = 0.011 BEAM (0.01-for shielded coin + 0.001-fee transaction).
 * **Max Privacy Transaction**: Minimum transaction fee for Max Privacy transactions is \~ 0.01 Beam (Shielded coin fee = 0.01 + 0.001 (fee transaction) = 0.011 BEAM).
 {% endhint %}
@@ -24,11 +24,11 @@ Offline transactions (Regular Public Offline) have significantly higher transact
 ## To send Beam
 
 1. **Launch** Beam desktop wallet <img src=".gitbook/assets/Screen Shot 2022-07-31 at 8.29.33 PM.png" alt="" data-size="line">.
-2. From the main screen, click **Send.**&#x20;
+2. From the main screen, click **Send.**
 3. Enter your wallet address into the "send to" field.
 4. Choose transaction type. We recommend Regular transactions.
 5. Enter the amount of crypto you'd like to send. If your wallet holds different assets, you can send different [asset types](https://beamx.gitbook.io/beam-documentation/-Ma0T8Af9X0IpsYYqqnY/#confidential-assets).
-6. Leave a comment (optional). Comments are only visible inside your wallet for personal record-keeping.&#x20;
+6. Leave a comment (optional). Comments are only visible inside your wallet for personal record-keeping.
 7. Click **Send** to preview the transaction details.
 8. Click **Send** again to initiate the transaction.
 
@@ -40,13 +40,13 @@ Viruses and malware hidden on your computer can alter your address even though i
 
 ## **How it looks in your wallet**
 
-Offline payments differ from Public Offline payments, be sure to understand the differences between each transaction type before sending your Beam coins!&#x20;
+Offline payments differ from Public Offline payments, be sure to understand the differences between each transaction type before sending your Beam coins!
 
 ![Regular Transaction](<.gitbook/assets/2022-06-23\_15-35-46 copy.png>)
 
 ### **Max Privacy transaction**
 
-If the address you have received is for a Max Privacy transaction, you will not be able to choose between Online and Offline modes.&#x20;
+If the address you have received is for a Max Privacy transaction, you will not be able to choose between Online and Offline modes.
 
 ![](https://gblobscdn.gitbook.com/assets%2F-MaSm2QyXLRMULOUF0cE%2F-Mb3HlU4NRZG2T0CQICs%2F-Mb3PdNAxumltxgquq7S%2FScreenshot\_228.png?alt=media\&token=3f14a3f8-1820-436c-9d3c-2049179fd447)
 

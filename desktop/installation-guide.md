@@ -24,7 +24,7 @@ Drag the Beam Wallet icon into the Applications folder to complete the installat
 
 #### 3. Launch Beam Wallet
 
-Launch Beam Wallet from the "applications" folder. Please note: Beam is in the approval stages for the desktop wallet app on the Apple store, until then click "open" when the notification below appears:&#x20;
+Launch Beam Wallet from the "applications" folder. Please note: Beam is in the approval stages for the desktop wallet app on the Apple store, until then click "open" when the notification below appears:
 
 ![](.gitbook/assets/image\_2021-05-28\_13-08-05.png)
 

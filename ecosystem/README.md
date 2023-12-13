@@ -139,4 +139,4 @@ If you have even the slightest suspicion that either your seed or wallet databas
 * [How Addresses work in Beam.](./#beam-addresses)
 * [What are Max Privacy transactions?](./#beam-transaction-types)
 
-* [Glossary of Beam terms](https://old.beam.mw/beampedia)
+* [Glossary of Beam terms](https://beam.mw/docs/beampedia)

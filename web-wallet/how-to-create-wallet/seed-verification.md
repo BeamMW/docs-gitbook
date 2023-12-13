@@ -31,7 +31,7 @@ Record your seed phrase (pen and paper recommended), make multiple copies and st
 
 ### Verify Seed Phrase
 
-Verify your seed phrase.&#x20;
+Verify your seed phrase.
 
 ![](<../.gitbook/assets/Screen Shot 2021-06-01 at 4.17.23 PM.png>)
 

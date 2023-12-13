@@ -26,15 +26,15 @@ The non-atomic approach to swapping cryptocurrencies consists of many arduous st
 3. Wait.
 4. The verification process completes. Alice and Bob can deposit their crypto to the exchange, paying network and mining fees to do so.
 5. Wait.
-6. Alice and Bob's can exchange their crypto. They pay additional fees.&#x20;
-7. Alice now has some of Bob's bitcoin, and Bob has some of Alice's Litecoin.&#x20;
+6. Alice and Bob's can exchange their crypto. They pay additional fees.
+7. Alice now has some of Bob's bitcoin, and Bob has some of Alice's Litecoin.
 8. Alice and Bob transfer their shiny new crypto coins back to their wallets, but not before paying more network and mining fees.
 9. Wait some more.
-10. &#x20;Alice and Bob's coins have arrived in their wallets. Alice and Bob have now diversified their cryptocurrency portfolios.
+10. Alice and Bob's coins have arrived in their wallets. Alice and Bob have now diversified their cryptocurrency portfolios.
 
-This scenario is unnecessarily complex and creates lots of room for error.&#x20;
+This scenario is unnecessarily complex and creates lots of room for error.
 
-With Atomic Swaps, Alice can exchange her Litecoin for Bob's ~~Bitcoin~~ _Beam coins_ directly from their respective wallets!&#x20;
+With Atomic Swaps, Alice can exchange her Litecoin for Bob's ~~Bitcoin~~ _Beam coins_ directly from their respective wallets!
 
 No verification process. No depositing to cryptocurrency exchanges. Minimal fees and wait time.
 
@@ -42,7 +42,7 @@ No verification process. No depositing to cryptocurrency exchanges. Minimal fees
 
 1. Alice creates an offer for 200 of her Dogecoins for 10 of Bob's Beam coins, securing it with her secret passphrase before broadcasting the request to Bob over the Beam network.
 2. Bob receives Alice's offer for 200 of her Dogecoins for 10 of his Beam coins. Bob accepts, verifying the exchange with his secret passphrase.
-3. Alice receives a notification that Bob has accepted her offer.&#x20;
+3. Alice receives a notification that Bob has accepted her offer.
 4. Alice receives 10 Beam coins, and Bob gets 200 Dogecoin. Alice and Bob have now diversified their cryptocurrency portfolios.
 
 ### Atomic Swaps, Not-So-Simplified

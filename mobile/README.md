@@ -4,7 +4,7 @@ description: Everything you need to get your Beam mobile wallet up and running!
 
 # Mobile Wallet User Guide
 
-We aim to make accessing your Beam coins as convenient and straightforward as possible, which is why we introduced the Beam mobile app for iOS and Android. &#x20;
+We aim to make accessing your Beam coins as convenient and straightforward as possible, which is why we introduced the Beam mobile app for iOS and Android. 
 
 Users can now send, store or receive Beam and Confidential Assets (Tokens) across multiple wallets with the simplicity of mobile and all the advanced privacy settings of Beam desktop wallet.
 

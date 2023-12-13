@@ -63,7 +63,7 @@ The`rules signature`is a hash of the current node configuration that determines 
 **Write down your seed phrase!** Keep your seed phrase secret, and never share your seed phrase with anyone!
 {% endhint %}
 
-Your seed phrase is the only way you (or anybody) can access your funds. Your seed phrase is not linked to your email or phone number. If you forget your wallet password or lose your device, the only way to restore your wallet is through your seed phrase!&#x20;
+Your seed phrase is the only way you (or anybody) can access your funds. Your seed phrase is not linked to your email or phone number. If you forget your wallet password or lose your device, the only way to restore your wallet is through your seed phrase!
 
 Please do not write your seed phrase down electronically, take a screenshot or store it anywhere vulnerable to cyber attacks. Pen and paper are unhackable and recommended. Make multiple copies of your seed phrase and store them somewhere safe.
 
@@ -105,7 +105,7 @@ Once your wallet has synched with the Beam network, enter `-wallet info` command
 
 ### Exporting miner key
 
-The`miner_key`is a secret key that miners can use to collect their miner rewards.&#x20;
+The`miner_key`is a secret key that miners can use to collect their miner rewards.
 
 To export your`miner_key`, enter the following command:
 
@@ -125,11 +125,11 @@ Enter password: *******************
 Secret Subkey 1: OVBSdWQlOV3WuC6bLXRDJqyDfdxWSuzdA4jEGRAZ1zhy4gA3/KcBTEdcmN5wNOv0vQrBWwOlTdIxqyPFzFDFdaVYZPUDoXjqgUE=
 ```
 
-**Keep your`miner_key`secret!** Anyone with the`miner_key`can retrieve the Miner Rewards associated with said keys.&#x20;
+**Keep your`miner_key`secret!** Anyone with the`miner_key`can retrieve the Miner Rewards associated with said keys.
 
 ### Exporting owner key
 
-An`owner_key`connects all the nodes mining under that key and communicates with all the other nodes on the network of accumulated miner rewards. If a scenario occurs where a user has multiple mining nodes under one`owner_key`, the user would only need to connect to a single node to collect the miner rewards.&#x20;
+An`owner_key`connects all the nodes mining under that key and communicates with all the other nodes on the network of accumulated miner rewards. If a scenario occurs where a user has multiple mining nodes under one`owner_key`, the user would only need to connect to a single node to collect the miner rewards.
 
 Most cryptocurrencies allow users to connect mining nodes to a single address; however, the Mimblewimble protocol has no addresses. Unique blinding factors are deterministically derivative from the`master_key`code into the miner rewards tagged by a single`owner_key`.
 
@@ -211,7 +211,7 @@ To view transaction details, add the`--tx_id`tag:
 
 ### Synching with a specific node
 
-Users must connect to a specific node before they can start receiving Beam coins.&#x20;
+Users must connect to a specific node before they can start receiving Beam coins.
 
 To connect to a specific node, enter the following command:
 
@@ -284,7 +284,7 @@ I 2018-12-23.18:05:51.053 [b21f08337dd94603bb038c82c1888eac] Transaction kernel:
 
 ## Sending a specific UTXO
 
-For certain transactions, the user might consider sending a specific UTXO.&#x20;
+For certain transactions, the user might consider sending a specific UTXO.
 
 ### Print wallet info
 
@@ -426,7 +426,7 @@ I 2021-05-27.22:27:14.843 Generated public offline address: A4Y8nZvGgzE7hvGT5Lez
 New address: A4Y8nZvGgzE7hvGT5LezYpTJA5BqU1FX2ZSfEqsWcJU1dLh8Rpv8cKo7rcJpLcANFDYWv6ik82PoVGCjeoRu9JUccVCLU8t1HBdrT4jLik6vpZs2r1aDWmML3h4THG7LRWM58tJDjAkVEFgHiTePjmTX5QzLNKuT3MpcG2dXVcHU8dG9sBcf9iLx1b117qRwvb7Y19mqkVNb4qdcMPzmtEwV748ZqdXdMB9hZpdRuq1Qk5pBwfSYgtyG2kRdPmSnhggRYK3xvep5BVn6zuZ3LLpe2uo3krrXxhQ4MyQknV
 ```
 
-## Print address list&#x20;
+## Print address list
 
 To print your Beam wallet address list, enter the following command:
 
@@ -511,7 +511,7 @@ Enter the following command:
 
 ## Export and import wallet metadata
 
-If you have previously created a Beam wallet, you can recover your funds by restoring your wallet from your 12-word seed phrase. However, your wallet data (transaction history, contacts, addresses) is always stored locally onto your`wallet.db`file.&#x20;
+If you have previously created a Beam wallet, you can recover your funds by restoring your wallet from your 12-word seed phrase. However, your wallet data (transaction history, contacts, addresses) is always stored locally onto your`wallet.db`file.
 
 ### Exporting wallet metadata
 
@@ -534,7 +534,7 @@ To import your`wallet.db`file, enter the following command:
 Since`Beam 1.1.4194`, the Receiver wallet has automatically signed proof of received transaction before sending it to the Sender. Upon request, the sender can generate proof of transaction.
 
 {% hint style="info" %}
-When Sending Beam coins, adding the`–payment_proof_required=1`tag will require the Receiver to send the payment proof to Sender.&#x20;
+When Sending Beam coins, adding the`–payment_proof_required=1`tag will require the Receiver to send the payment proof to Sender.
 {% endhint %}
 
 ### Print transactions list
@@ -572,9 +572,9 @@ dae7f54592b00e84c6b3c9ea3e3ad9bc43661b6dcf7dbd818ccc92707d1d75b429697e8492653
 
 ### Send payment proof
 
-Copy, paste and send the payment proof (`exported form`) to the Receiver.&#x20;
+Copy, paste and send the payment proof (`exported form`) to the Receiver.
 
-The payment proof (from the above example) should resemble the following:&#x20;
+The payment proof (from the above example) should resemble the following:
 
 ```
 I 2019-01-14.14:40:37.465 Exported form: 000000000000004bd0ca080bd8c3ec4b3061bf5
@@ -586,7 +586,7 @@ dae7f54592b00e84c6b3c9ea3e3ad9bc43661b6dcf7dbd818ccc92707d1d75b429697e8492653
 
 ### Verifying the payment proof
 
-The Receiver can verify the payment proof by entering the following command:&#x20;
+The Receiver can verify the payment proof by entering the following command:
 
 ```
 ./beam-wallet payment_proof_verify --payment_proof=<proof>
@@ -600,7 +600,7 @@ In order to rescan the CLI wallet please follow the steps below:
 
 ### Run the node with your **owner key**
 
-Running a node with your [owner key](broken-reference) will verify if your wallet is synchornized with the network.&#x20;
+Running a node with your [owner key](broken-reference) will verify if your wallet is synchornized with the network.
 
 To run node with owner key, enter the following command:
 
@@ -626,7 +626,7 @@ To listen for any updates to the node, enter the`-wallet listen`command:
 
 ### Wait for synchronization
 
-After your wallet and node have syncronized, recheck your wallet balance, transaction histories by entering the`-wallet info`command:&#x20;
+After your wallet and node have syncronized, recheck your wallet balance, transaction histories by entering the`-wallet info`command:
 
 ```
 ./beam-wallet info

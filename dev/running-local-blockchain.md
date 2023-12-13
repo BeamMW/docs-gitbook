@@ -4,11 +4,11 @@ In this tutorial we will explain how to run local blockchain. It will be extreme
 
 
 
-### Download node and wallet&#x20;
+### Download node and wallet
 
 Create an empty folder (called dappnet in our examples) and download the binaries for the node and CLI wallet from [beam website](https://beam.mw/downloads/dappnet)
 
-### Initialize wallet&#x20;
+### Initialize wallet
 
 First, let's change the wallet configuration file to make everything easy and seamless when we run it later. Edit the beam-wallet.cfg file and set the following flags:
 
@@ -169,7 +169,7 @@ Stop the wallet (by clicking Ctrl + C) and check your current balance by running
 
 `beam-wallet-dappnet.exe info`
 
-You should see the mined BEAM coins in your wallet&#x20;
+You should see the mined BEAM coins in your wallet
 
 <figure><img src=".gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
 

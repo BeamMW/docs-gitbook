@@ -8,12 +8,12 @@ Use the command line to register a Confidential Asset.
 **Warning**
 
 1. **Lock period** **will limit several asset operations for 1440 blocks (24 hours).** \
-   An asset will "lock" when its total emission reaches or leaves 0. Lock periods prevent an asset owner from altering an asset during rollback, guaranteeing that a Receiver will receive the expected asset.&#x20;
-2.  **All incoming asset transactions will return an`assetsDisabled (43)`error code if CA is not enabled**.&#x20;
+   An asset will "lock" when its total emission reaches or leaves 0. Lock periods prevent an asset owner from altering an asset during rollback, guaranteeing that a Receiver will receive the expected asset.
+2.  **All incoming asset transactions will return an`assetsDisabled (43)`error code if CA is not enabled**.
 
     In the [CLI](broken-reference) and [API](https://github.com/BeamMW/beam/wiki/Beam-wallet-protocol-API#assets-support), specify the`--enable_assets`flag to perform any CA transactions.
 3. **The fixed fee for asset registration is 3000 Beam**.\
-   Users must register all CAs on-chain Before before usage.&#x20;
+   Users must register all CAs on-chain Before before usage.
 {% endhint %}
 
 ## Register a Confidential Asset
@@ -64,7 +64,7 @@ The wallet log should resemble the following:
 
 ## Unregister an Asset
 
-The owner of a Confidential Asset can unregister the asset from the blockchain. Asset emission must be zero and not in a lock period. The owner will pay a regular transaction fee and receive their initial asset registration fee of 3000 Beam.&#x20;
+The owner of a Confidential Asset can unregister the asset from the blockchain. Asset emission must be zero and not in a lock period. The owner will pay a regular transaction fee and receive their initial asset registration fee of 3000 Beam.
 
 To unregister an asset, enter the following command:
 
@@ -267,7 +267,7 @@ Maximum amount for a single send transaction is 264-1 asset nth units.
 
 ## Receive an Asset
 
-To recieve an a Confidential Asset, include the`--enable_assets`flag.&#x20;
+To recieve an a Confidential Asset, include the`--enable_assets`flag.
 
 To receive an asset, enter the following command:
 
@@ -368,7 +368,7 @@ To view assets info, assets UTXOs & assets transactions use the following comman
 ./beam-wallet info –assets –tx_history
 ```
 
-#### Shielded UTXO (Lelantus) asset info&#x20;
+#### Shielded UTXO (Lelantus) asset info
 
 ```
 ./beam-wallet info –assets –shielded_utxos

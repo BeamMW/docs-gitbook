@@ -31,7 +31,7 @@ Also, set the OPENSSL\_ROOT\_DIR environment variable as follows:
 
 1. Clone Shader SDK repository from here: [https://github.com/BeamMW/shader-sdk](https://github.com/BeamMW/shader-sdk)
 2. Open the Terminal application
-3. Change directory to the location of the shader-sdk and run:&#x20;
+3. Change directory to the location of the shader-sdk and run:
 
 `./shade init`
 

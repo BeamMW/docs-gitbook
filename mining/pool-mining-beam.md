@@ -8,7 +8,7 @@ If you decide to participate in a Beam mining pool, you will need to select a mi
 
 * Mining rig containing at least one GPU with a minimum of 3GB RAM.
 * Basic knowledge of command line (CMD terminal) functions.
-* High-speed internet connection.&#x20;
+* High-speed internet connection.
 * A [mining](https://beam.mw/mining) pool.
 * [Mining](pool-mining-beam.md#mining-software) software.
 

@@ -7,7 +7,7 @@ description: In this article, we will cover how UTXO's function within the Beam 
 UTXO (Unspent Transaction (TX) Output) is like a banknote of a specific amount. Simply said, if Beam is the currency, any UTXO can be considered a ‘bill’. You can have multiple ‘bills’ in your wallet at the same time. The UXTO represents the amount of cryptocurrency left after each transaction which then records the input for new transactions. Remaining outputs in your Beam web wallet can be found in the "UTXO" (swap icon) button of your wallet dashboard.
 
 {% hint style="info" %}
-_View the UTXOs controlled by your wallet on the UTXO dashboard. UTXOs have two types:_&#x20;
+_View the UTXOs controlled by your wallet on the UTXO dashboard. UTXOs have two types:_
 
 * _**Regular**: UTXO received during a transaction. Immediately available for spending._
 * _**Change:** UTXO leftover from a transaction or the "change." Immediately available for spending._

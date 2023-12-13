@@ -65,6 +65,6 @@ Choose a strong password
 
 ### Your Beam wallet is ready
 
-Your wallet is ready to Send, Receive and hold Beam coins and Confidential Assets.&#x20;
+Your wallet is ready to Send, Receive and hold Beam coins and Confidential Assets.
 
 ![](<.gitbook/assets/Screen Shot 2021-05-30 at 9.01.16 PM.png>)

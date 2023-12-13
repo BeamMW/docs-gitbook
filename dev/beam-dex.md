@@ -30,9 +30,9 @@ Some notes regarding the API:
 
 * pool\_view and pools\_view methods can be called by user role
 * "kind": "uint32\_t" parameter has three values for different types of pool with different fees:\
-  &#x20;    0 : low volatility, fee is 0.05%\
-  &#x20;    1 :  mid volatility, fee is 0.3%\
-  &#x20;    2 : high volatility, fee is 1% (default value)\
+      0 : low volatility, fee is 0.05%\
+      1 :  mid volatility, fee is 0.3%\
+      2 : high volatility, fee is 1% (default value)\
 
 
 

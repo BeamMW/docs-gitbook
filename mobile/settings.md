@@ -10,7 +10,7 @@ Your Beam desktop wallet offers users various preferences and advanced features 
 
 * **Allow opening external links**: toggle on or off to allow your wallet from opening external links
 * **Lock screen**: adjust your wallet lock times from 15 seconds to 1 minute or never.
-* **Show amounts in**: configure your wallet to display your Beam in USD, BTC and ETH.&#x20;
+* **Show amounts in**: configure your wallet to display your Beam in USD, BTC and ETH.
 * **Clear local wallet data**: clearing your Beam wallet's local data will permanently erase your wallet transaction history, contacts, wallet addresses.
 * **Language**: select your preferred language.
 * **Dark mode**
@@ -49,7 +49,7 @@ Turn your mobile wallet notifications on or off. We strongly recommend that tran
 * **Show Public Offline address** (mobile node only).
 * **Get Beams from Beam Community Faucet**: you can earn small amounts of Beam from the Beam Community Faucet
 * **Rescan**: re-synch with the Beam blockchain.
-* **Export wallet data**: export your transaction history, wallet addresses, and contact lists to a separate file.&#x20;
+* **Export wallet data**: export your transaction history, wallet addresses, and contact lists to a separate file.
 * **Import wallet data**: export your previous wallet data (only works if old/new wallet share the same seed phrase).
 
 

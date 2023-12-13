@@ -15,7 +15,7 @@ Select **start auto migration** for your Beam wallet to migrate your `wallet.db`
 1. **Launch** Beam desktop wallet<img src="../.gitbook/assets/Screen Shot 2022-07-31 at 8.29.33 PM.png" alt="" data-size="line">.
 2. Click **migrate wallet database file manually.**
 3. Select the `wallet.db` file you wish to migrate.
-4. Enter your wallet password.&#x20;
+4. Enter your wallet password.
 5. Wait for your wallet to synchronize with the blockchain (this may take a few minutes).
 
 ## How it looks in your wallet

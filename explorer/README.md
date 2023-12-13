@@ -10,7 +10,7 @@ description: The Beam Blockchain Explorer is currently running.
 Select between Mainnet and Testnet blockchain explorers on the top left of the explorer dashboard.
 {% endhint %}
 
-The Beam Foundation and Beam development team are committed to creating a private _and_ fully transparent cryptocurrency. Beam offers users peace of mind in knowing their data is secure and will not wind up in a data leak and the confidence of knowing that every block recorded on the blockchain is legitimate.&#x20;
+The Beam Foundation and Beam development team are committed to creating a private _and_ fully transparent cryptocurrency. Beam offers users peace of mind in knowing their data is secure and will not wind up in a data leak and the confidence of knowing that every block recorded on the blockchain is legitimate.
 
 ![](.gitbook/assets/Screenshot\_193.png)
 
@@ -39,7 +39,7 @@ The "blocks" tab contains a comprehensive list of the most recent blocks added t
 
 ![](<.gitbook/assets/Screen Shot 2021-06-02 at 5.47.24 PM.png>)
 
-Select a hash id to view more details about that specific block. &#x20;
+Select a hash id to view more details about that specific block. 
 
 ![](<.gitbook/assets/Screen Shot 2021-06-02 at 5.54.28 PM.png>)
 
@@ -49,4 +49,4 @@ Displays as list of active atomic swap offers.
 
 ![](<.gitbook/assets/Screen Shot 2021-06-02 at 5.57.06 PM.png>)
 
-&#x20;
+

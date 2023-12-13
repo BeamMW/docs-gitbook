@@ -27,7 +27,7 @@ To create an SSL Certificate and Key within `beam-mining`, open a new CMD termin
 openssl req -x509 -newkey rsa:4096 -keyout beam-stratum-key.pem -out beam-stratum-crt.pem -days 3650 -nodes -subj '/CN=localhost’
 ```
 
-Rename the SSL Certificate and Key files created by the output.&#x20;
+Rename the SSL Certificate and Key files created by the output.
 
 The output should be similar to the following:
 
@@ -36,7 +36,7 @@ mv beam-stratum-key.pem stratum.key
 mv beam-stratum-crt.pem stratum.crt
 ```
 
-Open your `beam-wallet.cfg` file in a text editor. Remove the `#` before `pass=password` and `node_addr=` . Enter your password and node address.&#x20;
+Open your `beam-wallet.cfg` file in a text editor. Remove the `#` before `pass=password` and `node_addr=` . Enter your password and node address.
 
 The output should be similar to the following:
 
@@ -92,7 +92,7 @@ stratum_port=3333
 stratum_secrets_path=.
 ```
 
-Save the changes made to your `beam-node.cfg` file.&#x20;
+Save the changes made to your `beam-node.cfg` file.
 
 ### Join the Beam network
 
@@ -102,7 +102,7 @@ To join the Beam network, open a new CMD terminal window. Enter the following co
 ./beam-node
 ```
 
-Leave the CMD terminal window open to keep the node running as you wait for the node to sync with the Beam network (this may take a few hours).&#x20;
+Leave the CMD terminal window open to keep the node running as you wait for the node to sync with the Beam network (this may take a few hours).
 
 After your node syncs with the network, open a separate CMD terminal (do not close node CMD terminal window), and enter the following command:
 
@@ -114,7 +114,7 @@ Leave this terminal open to keep the wallet listening to your node.
 
 ### Launch mining software
 
-Your mining rig can use your node's IP address and stratum port to begin solo mining Beam!&#x20;
+Your mining rig can use your node's IP address and stratum port to begin solo mining Beam!
 
 Using [lolMiner](https://github.com/Lolliedieb/lolMiner-releases) as an example, the command output is similar to the following:
 

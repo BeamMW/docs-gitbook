@@ -1,7 +1,7 @@
 # Easy Onboarding
 
 {% hint style="danger" %}
-&#x20;_Your seed phrase is the only way you (or anybody) can access your funds. Your seed phrase is not linked to your email or phone number. If you forget your wallet password or lose your device, the only way to restore your wallet is through your seed phrase!_
+_Your seed phrase is the only way you (or anybody) can access your funds. Your seed phrase is not linked to your email or phone number. If you forget your wallet password or lose your device, the only way to restore your wallet is through your seed phrase!_
 {% endhint %}
 
 ## Create New Wallet
@@ -34,7 +34,7 @@ Choose a strong password
 
 ## Synchronizing your Wallet
 
-Now that your web wallet is created, it's to synchronize with blockchain in its most current state on the Beam network.&#x20;
+Now that your web wallet is created, it's to synchronize with blockchain in its most current state on the Beam network.
 
 This may take a few minutes depending on your internet connection.
 

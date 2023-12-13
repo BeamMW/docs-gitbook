@@ -2,12 +2,12 @@
 
 ## Create Swap Offer
 
-Open Atomic Swaps<img src=".gitbook/assets/Screen Shot 2021-07-03 at 5.08.03 PM.png" alt="" data-size="line"> , select **create offer**<img src=".gitbook/assets/Screen Shot 2021-07-27 at 6.39.33 PM.png" alt="" data-size="line"> to start a new swap. &#x20;
+Open Atomic Swaps<img src=".gitbook/assets/Screen Shot 2021-07-03 at 5.08.03 PM.png" alt="" data-size="line"> , select **create offer**<img src=".gitbook/assets/Screen Shot 2021-07-27 at 6.39.33 PM.png" alt="" data-size="line"> to start a new swap. 
 
 {% hint style="info" %}
 Use Rate Selector to automatically convert your currencies.
 
-Rate Selector<img src=".gitbook/assets/Screen Shot 2021-07-27 at 6.39.50 PM.png" alt="" data-size="line">will automatically convert the currency value you want to trade to the type of currency received. You can manually enter the currency value you are receiving for the currency type you want to swap.&#x20;
+Rate Selector<img src=".gitbook/assets/Screen Shot 2021-07-27 at 6.39.50 PM.png" alt="" data-size="line">will automatically convert the currency value you want to trade to the type of currency received. You can manually enter the currency value you are receiving for the currency type you want to swap.
 {% endhint %}
 
 Enter the details for the Atomic Swap and complete the swap by swapping tokens with your friends or publishing your swap offer to the Beam network.

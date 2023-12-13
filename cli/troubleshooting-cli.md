@@ -21,7 +21,7 @@ D 2018-12-23.17:32:36.664 sqlite error code=26, file is not a database
 E 2018-12-23.17:32:36.665 Wallet data unreadable, restore wallet.db from latest backup or delete it and reinitialize the wallet
 ```
 
-**Diagnosis**: You have submitted an incorrect password. The wallet can not decrypt the database file, which is why it reports that data is unreadable. **If you are certain you are using the correct wallet password, delete the wallet database and perform a wallet restoration from your seed phrase**.&#x20;
+**Diagnosis**: You have submitted an incorrect password. The wallet can not decrypt the database file, which is why it reports that data is unreadable. **If you are certain you are using the correct wallet password, delete the wallet database and perform a wallet restoration from your seed phrase**.
 
 ### I am getting the`Failed. No inputs`exception when starting the command line wallet
 

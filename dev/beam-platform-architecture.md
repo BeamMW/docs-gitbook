@@ -8,7 +8,7 @@ Unlike Ethereum ERC-20 contracts, Beam assets are implemented on Layer 1 and are
 
 ## Transaction Kernels
 
-Beam transactions are comprised of inputs and outputs, which are represented by Pedersen Commitments with adjacent zero-knowledge range proofs to ensure committed values are positive within a specific range. While inputs and outputs can be removed during the cut-through process, transaction kernels remain in the blockchain and are crucial for protocol validation.&#x20;
+Beam transactions are comprised of inputs and outputs, which are represented by Pedersen Commitments with adjacent zero-knowledge range proofs to ensure committed values are positive within a specific range. While inputs and outputs can be removed during the cut-through process, transaction kernels remain in the blockchain and are crucial for protocol validation.
 
 Initially, kernels contained the signed difference between the blinding factors but were extended to support various purposes during Beam's development, including reflecting transaction type and supporting Lelantus shielded pool. Additionally, the kernels were further repurposed to enable the deployment of smart contracts on the Beam blockchain
 
@@ -20,7 +20,7 @@ A transaction kernel can identify any side effects, i.e., direct changes to the 
 
 The encapsulation of each node state is done using Beam Shaders while defining the state variables and correlating business logic to modify them. These shaders are coded using WebAssembly (WASM), allowing seamless deployment on Beam Virtual Machines.
 
-Beam uses WASM's binary instruction format for stack-based virtual machines and takes advantage of WASM's industry-standard support for various web for client and server applications.&#x20;
+Beam uses WASM's binary instruction format for stack-based virtual machines and takes advantage of WASM's industry-standard support for various web for client and server applications.
 
 ## Using Beam Shaders to Implement Smart Contracts
 
@@ -39,12 +39,12 @@ A **destructor** runs when the Beam Shader is deactivated and cleans all used re
 The section below details key properties of smart contract (Beam Chain Side Shaders) implementation on the Beam blockchain.
 
 * Beam Shaders utilize several limiting mechanisms (charging execution fees, maximum execution fees) to avoid blocking the node with an unbounded cycle and ensure bounded execution time.
-* **Shaders cannot be automated** and only record on the blockchain via sent transactions with required parameters, signatures, and fees.&#x20;
+* **Shaders cannot be automated** and only record on the blockchain via sent transactions with required parameters, signatures, and fees.
 * Shaders can claim a portion of fees from provided sources of decentralized application requests. Shaders can then store and issue disbursements, including refunding excess payments to special [Vault contracts](https://blog.giveth.io/the-vault-contract-open-sourced-by-giveth-fe2261f7b91b).
 * Shaders can communicate with other Shaders to delegate operations in the transaction context, activating the initial Shader on the chain.
-* The Shader that controls the assets can burn CA emissions, and the shaders defined logic conducts emission burning when manual emission burn cannot function.&#x20;
-* When a Shader deploys, it results in one of two outcomes: either the Shader consumes funds (transaction inputs) or unlocks funds (transaction outputs) recorded on the blockchain.&#x20;
-* **Overdraft protection**. BVM only validates equal amounts of locked and unlocked funds to discourage bad actors from creating confidential assets.&#x20;
+* The Shader that controls the assets can burn CA emissions, and the shaders defined logic conducts emission burning when manual emission burn cannot function.
+* When a Shader deploys, it results in one of two outcomes: either the Shader consumes funds (transaction inputs) or unlocks funds (transaction outputs) recorded on the blockchain.
+* **Overdraft protection**. BVM only validates equal amounts of locked and unlocked funds to discourage bad actors from creating confidential assets.
 
 ## Wallet Side Shaders
 

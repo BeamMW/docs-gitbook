@@ -24,7 +24,7 @@ git clone https://github.com/BeamMW/beam.git
 
 ### Creating submodules
 
-As a prerequisite, Beam requires the creation of submodules before starting the build. To create submodules, launch your terminal window and enter the following commands:&#x20;
+As a prerequisite, Beam requires the creation of submodules before starting the build. To create submodules, launch your terminal window and enter the following commands:
 
 ```
 cd beam
@@ -37,7 +37,7 @@ Beam is entirely open-source, and we encourage users interested in contributing 
 
 1. `Master` branch is for development.
 2. `Testnet` branch is a sandbox for users interested in testing Beam.
-3. `Mainnet` branch is the most recent version of each Beam project.&#x20;
+3. `Mainnet` branch is the most recent version of each Beam project.
 
 ### _CMake_ Options
 
@@ -77,7 +77,7 @@ Locate the downloaded Beam node and Command Line (CLI) wallet in the `beam/walle
     ```
 
     {% hint style="info" %}
-    **Please note**: The above command will clone the latest master branch. The master branch is where the Beam team develops upcoming versions of Beam. Users should select the appropriate [branch](https://github.com/BeamMW/beam/branches) then `git checkout` after cloning the main Beam repository.&#x20;
+    **Please note**: The above command will clone the latest master branch. The master branch is where the Beam team develops upcoming versions of Beam. Users should select the appropriate [branch](https://github.com/BeamMW/beam/branches) then `git checkout` after cloning the main Beam repository.
     {% endhint %}
 
     To clone the **`Double Doppler 4.0`** release branch, enter the following:
@@ -100,12 +100,12 @@ Locate the downloaded Beam node and Command Line (CLI) wallet in the `beam/walle
 
 ## Ubuntu and desktop server
 
-### Ubuntu  18.04&#x20;
+### Ubuntu  18.04
 
 #### Desktop
 
 {% hint style="info" %}
-The instructions below are valid for a default **Ubuntu 18.04.03 Desktop LTS install**. For older systems, verify that steps 1, 2 & 4 do not overwrite or conflict with more recent versions of `CMake` and `boost` previously installed on your machine.&#x20;
+The instructions below are valid for a default **Ubuntu 18.04.03 Desktop LTS install**. For older systems, verify that steps 1, 2 & 4 do not overwrite or conflict with more recent versions of `CMake` and `boost` previously installed on your machine.
 {% endhint %}
 
 1.  Install dependencies:
@@ -301,7 +301,7 @@ The instructions below are valid for a default **Fedora 31-1.9 Headless Server i
     ```
 
     {% hint style="info" %}
-    **Please note:** The Git command above will clone the latest master branch. The master branch is where the Beam team develops upcoming versions of the Beam.&#x20;
+    **Please note:** The Git command above will clone the latest master branch. The master branch is where the Beam team develops upcoming versions of the Beam.
     {% endhint %}
 
     To clone the `mainnet`, enter the following command:

@@ -5,11 +5,11 @@ description: This tutorial describes using Beam Shaders on DAppnet
 # Using Beam Shaders
 
 {% hint style="success" %}
-[Why DAppnet](https://dappnet.beam.mw/downloads/)?&#x20;
+[Why DAppnet](https://dappnet.beam.mw/downloads/)?
 
-Beam consists of three public networks:&#x20;
+Beam consists of three public networks:
 
-1. **DAppnet:** a testing sandbox that produces a pseudo-mining block every 15 seconds.&#x20;
+1. **DAppnet:** a testing sandbox that produces a pseudo-mining block every 15 seconds.
 2. **Testnet:** produces genuine mining blocks but is mostly a testing site before Mainnet deployment.
 3. **Mainnet:** the living Beam network with real assets.
 {% endhint %}
@@ -18,7 +18,7 @@ Beam consists of three public networks:&#x20;
 
 The latest version of the Beam DAppnet Wallet is on our [website](https://dappnet.beam.mw/downloads/).
 
-When [installing DAppnet](https://beamx.gitbook.io/dappnet-user-guide/settings), choose the default settings to operate the local node (required) to run Beam Shader contracts.  Create a new wallet (save the seed phrase).&#x20;
+When [installing DAppnet](https://beamx.gitbook.io/dappnet-user-guide/settings), choose the default settings to operate the local node (required) to run Beam Shader contracts.  Create a new wallet (save the seed phrase).
 
 {% hint style="info" %}
 Beam Shaders require the use of the integrated node found in the DAppnet Wallet and must remain open for this tutorial.
@@ -28,7 +28,7 @@ Beam Shaders require the use of the integrated node found in the DAppnet Wallet 
 
 All DAppnet transactions (including Beam Shader deployment) contain transaction fees that are paid in Beam coins, and require a positive wallet balance.
 
-Launch [My DApp Store](https://beamx.gitbook.io/dappnet-user-guide/my-dapp-store) <img src=".gitbook/assets/Screen Shot 2023-05-10 at 10.27.02 PM.png" alt="" data-size="line"> and find the **Faucet Application** <img src=".gitbook/assets/Screen Shot 2023-05-11 at 5.38.24 PM.png" alt="" data-size="line">.&#x20;
+Launch [My DApp Store](https://beamx.gitbook.io/dappnet-user-guide/my-dapp-store) <img src=".gitbook/assets/Screen Shot 2023-05-10 at 10.27.02 PM.png" alt="" data-size="line"> and find the **Faucet Application** <img src=".gitbook/assets/Screen Shot 2023-05-11 at 5.38.24 PM.png" alt="" data-size="line">.
 
 <figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
@@ -40,7 +40,7 @@ Launch **Faucet >>> Get your first Beam >>> Confirm,**  and Beam coins will depo
 
 Beam shaders are deployed via CLI wallet which can be found on our [website](https://dappnet.beam.mw/downloads/). This tutorial uses Windows Command Prompt, but users can substitute [Mac](shader-sdk-mac.md) and Linux commands if desired.
 
-Create a `shader` folder in your hard drive, and transfer CLI wallet archive. The `shader` folder should contain two files: two files: the `CLI wallet archive` and wallet `config` file.&#x20;
+Create a `shader` folder in your hard drive, and transfer CLI wallet archive. The `shader` folder should contain two files: two files: the `CLI wallet archive` and wallet `config` file.
 
 {% hint style="danger" %}
 For this tutorial, we will use our DAppnet's `wallet.db`(for testing purposes only. This practice is not recommended with wallets containing real assets).
@@ -48,7 +48,7 @@ For this tutorial, we will use our DAppnet's `wallet.db`(for testing purposes on
 
 ### Copy `wallet.db` from DAppnet Wallet
 
-Beam wallets store wallet metadata (transaction history, balance, etc) locally on your hard drive in the `wallet.db` file.&#x20;
+Beam wallets store wallet metadata (transaction history, balance, etc) locally on your hard drive in the `wallet.db` file.
 
 Locate your DAppnet `wallet.db` in the `%LOCALAPPDATA%\Beam Wallet folder`. Transfer the `wallet.db` in the same `shader` folder.
 
@@ -60,7 +60,7 @@ Refer to our [Desktop Wallet guide](beam-wallets/desktop-wallet.md) for `wallet.
 
 ### Configure CLI wallet settings
 
-One more crucial step before running Shader contracts involves configuring the CLI wallet settings to simplify and shorten commands.&#x20;
+One more crucial step before running Shader contracts involves configuring the CLI wallet settings to simplify and shorten commands.
 
 To connect CLI wallet's to the built-in node, first edit the `config` file using text editor (such as [Visual Studio Code](https://code.visualstudio.com/)) and enter the following:
 
@@ -110,9 +110,9 @@ wallet_path=wallet.db
 
 The testing environment is ready to deploy Shaders, all that remains is selecting the Shader contract.
 
-### Choosing a  Shader application&#x20;
+### Choosing a  Shader application
 
-The [Dappnet Blockchain Explorer](https://dappnet.explorer.beam.mw/) (see **Contracts** tab) contains a list of Shader contract applications ready for testing.&#x20;
+The [Dappnet Blockchain Explorer](https://dappnet.explorer.beam.mw/) (see **Contracts** tab) contains a list of Shader contract applications ready for testing.
 
 <figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
@@ -128,7 +128,7 @@ Download [`app.wasm`](https://github.com/BeamMW/beam/blob/master/bvm/Shaders/vau
 
 ### Running Shader commands
 
-Open as command line interface and change directory to the location of the CLI wallet executable.&#x20;
+Open as command line interface and change directory to the location of the CLI wallet executable.
 
 First, print the contract API with the following command:
 
@@ -233,7 +233,7 @@ In the above example, there are currently no accounts within the contract. To cr
 beam-wallet-dappnet.exe shader --shader_app_file vault\app.wasm --shader_args="cid=d9c5d1782b2d2b6f733486be480bb0d8bcf34d5fdc63bbac996ed76af541cc14,role=my_account,action=deposit,amount=100000000"
 ```
 
-**Note:** `amount` is set in Groth, which is $$1^10-8$$  of Beam.&#x20;
+**Note:** `amount` is set in Groth, which is $$1^10-8$$  of Beam.
 
 The above action creates and sends the transaction to the network (so it will take a moment). When completed, the output should resemble the following:
 

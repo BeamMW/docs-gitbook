@@ -1,6 +1,6 @@
 # Proof of Transaction
 
-Since Beam 2.0., the receiver wallet has automatically signed proof of received transaction before sending it to the sender. Proof of transaction is only available for transactions whose status reads as "sent" and is not available for transactions with different transaction statuses, e.g. "expired," "failed," "completed," "received." &#x20;
+Since Beam 2.0., the receiver wallet has automatically signed proof of received transaction before sending it to the sender. Proof of transaction is only available for transactions whose status reads as "sent" and is not available for transactions with different transaction statuses, e.g. "expired," "failed," "completed," "received." 
 
 To view, send or verify proof of transaction, please follow the steps below:
 

@@ -32,7 +32,7 @@ Node options can be plugged directly into the`beam-node.cfg`file or enter them v
 {% hint style="danger" %}
 #### CPU Mining for Beam is not recommended.
 
-Beam uses an Equihash mining algorithm with (150,5) parameters and a customized data path that is inefficiently mined on CPUs.&#x20;
+Beam uses an Equihash mining algorithm with (150,5) parameters and a customized data path that is inefficiently mined on CPUs.
 {% endhint %}
 
 ### Node options (continued)

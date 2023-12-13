@@ -22,9 +22,9 @@ Locate sensitive Beam wallet data or contact Beam technical support.
 * **Resources**: locate your wallet metadata with the wallet folder location feature.
 * **Report a Problem**: follow all the [**steps**](settings.md#troubleshooting-1) to contact Beam tech support.
 
-### **Connectivity**&#x20;
+### **Connectivity**
 
-Toggle between your preferred Beam integrated node (integrated node or remote node) or connect your wallet to multiple cryptocurrencies for [Atomic Swaps](https://beamx.gitbook.io/atomic-swaps-desktop-guide/-Ma18rFhhJ0iJaAAv2-M/) (not available on Beam mobile app).&#x20;
+Toggle between your preferred Beam integrated node (integrated node or remote node) or connect your wallet to multiple cryptocurrencies for [Atomic Swaps](https://beamx.gitbook.io/atomic-swaps-desktop-guide/-Ma18rFhhJ0iJaAAv2-M/) (not available on Beam mobile app).
 
 ## How it looks in your wallet
 
@@ -46,7 +46,7 @@ Turn your desktop wallet notifications on or off. We strongly recommend that tra
 
 Your Beam wallet constantly monitors the blockchain and synchs new data with your wallet as soon as it records on the blockchain. If you suspect that your wallet balance, transaction, or UTXO status is not up to date, you can always rescan your wallet to sync with the blockchain.
 
-You can earn small amounts of Beam from the Beam Community Faucet. If you expect to receive Offline Beam payments regularly, we recommend using your Beam wallet's Public Offline address. Public Offline addresses differ from Regular wallet addresses in that your Public Offline address never expires.&#x20;
+You can earn small amounts of Beam from the Beam Community Faucet. If you expect to receive Offline Beam payments regularly, we recommend using your Beam wallet's Public Offline address. Public Offline addresses differ from Regular wallet addresses in that your Public Offline address never expires.
 
 However, an address that never expires means less privacy and more transparency. It will be possible (however unlikely) to trace your Public Offline addresses transaction history! We strongly recommend that public offline addresses be used only for receiving donations or for charity organizations.
 
@@ -70,7 +70,7 @@ Locate your current Beam wallet version in the upper right corner of your wallet
 
 Locating your Beam wallet folder is crucial if you wish to save your transaction histories and other metadata between Beam software updates.
 
-As many Beam wallet features remain in the beta phase, it is natural to encounter the occasional bug or glitch. If your wallet keeps crashing as you attempt to perform a specific function or have a transaction status that reads as "in progress" for longer than 24 hours, it is time to contact Beam technical support.&#x20;
+As many Beam wallet features remain in the beta phase, it is natural to encounter the occasional bug or glitch. If your wallet keeps crashing as you attempt to perform a specific function or have a transaction status that reads as "in progress" for longer than 24 hours, it is time to contact Beam technical support.
 
 Go to **Report a Problem** and follow the steps listed, or view them below:
 
@@ -84,7 +84,7 @@ Go to **Report a Problem** and follow the steps listed, or view them below:
 
 ### Connectivity
 
-When running an integrated node, you should specify the port on which the node will be listening and the node peers list. You can switch to a remote node and specify a specific or local node.&#x20;
+When running an integrated node, you should specify the port on which the node will be listening and the node peers list. You can switch to a remote node and specify a specific or local node.
 
 #### Beam integrated node
 

@@ -2,11 +2,11 @@
 
 ## Getting Started
 
-Beam compatible binaries are available for [all platforms](https://beam.mw/downloads/mainnet-mac) on our main website.&#x20;
+Beam compatible binaries are available for [all platforms](https://beam.mw/downloads/mainnet-mac) on our main website.
 
-Advanced users that wish to build Beam directly from our source code can see this [guide](https://github.com/BeamMW/beam/wiki/How-to-build) for a more detailed run down. &#x20;
+Advanced users that wish to build Beam directly from our source code can see this [guide](https://github.com/BeamMW/beam/wiki/How-to-build) for a more detailed run down. 
 
-We strongly recommend for all users, casual and hardcore, that you download the node, CLI wallet in addition to the Desktop wallet. The application for smart contracts is in its infancy, with many unique and helpful smart contracts lacking a graphical interface, meaning they are only available through the Command-Line.&#x20;
+We strongly recommend for all users, casual and hardcore, that you download the node, CLI wallet in addition to the Desktop wallet. The application for smart contracts is in its infancy, with many unique and helpful smart contracts lacking a graphical interface, meaning they are only available through the Command-Line.
 
 Building out your node and operating the CLI wallet will keep you at the forefront of all the latest and coolest features that Beam has to offer. It is a simple process that only takes a minute.
 
@@ -14,7 +14,7 @@ Building out your node and operating the CLI wallet will keep you at the forefro
 
 Beam Smart Contracts deploy via an application called **Beam Shaders**. Beam Shaders are small (or not so small) programs compatible with several different programming languages before being compiled as a `.wasm` file since Beam Virtual Machine (BVM) runs on WebAssembly.
 
-No coding experience is necessary; several Beam Shader applications are ready and available to [download](https://github.com/BeamMW/beam/tree/mainnet/bvm/Shaders).&#x20;
+No coding experience is necessary; several Beam Shader applications are ready and available to [download](https://github.com/BeamMW/beam/tree/mainnet/bvm/Shaders).
 
 Select from the list of Beam Shader apps and get into some 'shady business!'
 
@@ -33,7 +33,7 @@ Now let's see how we can run some apps!
 
 ## `Faucet` contract
 
-The Beam `Faucet` contract allows users to withdraw or deposit small amounts of Beam coins.&#x20;
+The Beam `Faucet` contract allows users to withdraw or deposit small amounts of Beam coins.
 
 ### All `Faucet` contract commands
 
@@ -248,7 +248,7 @@ Be sure the latest version of the`dao-core`contract folder is within the`shaders
     "current_version": 0}]}
     ```
 
-    The result will display the contract registered to the Beam blockchain.&#x20;
+    The result will display the contract registered to the Beam blockchain.
 
     The`CID`contract output should resemble the following:
 
@@ -268,7 +268,7 @@ To receive BeamX tokens, users must first stake their Beam coins by issuing a co
 ./beam-wallet  shader --shader_app_file Shaders/dao-core-masternet/app.wasm --shader_args role=manager,action=farm_update,cid=3f3d32e38cb27ac7b5b67343f81cf2f8bc53217eb995cc6c5d78ddc5e7b0642b,amountBeam=1600000000,bLockOrUnlock=1 -n 127.0.0.1:8501
 ```
 
-For this example, we will use the minimum 16 Beam coins required to fulfill the staking requirements of this contract.&#x20;
+For this example, we will use the minimum 16 Beam coins required to fulfill the staking requirements of this contract.
 
 ```
 ./beam-wallet  shader --shader_app_file Shaders/dao-core-masternet/app.wasm --shader_args role=manager,action=farm_update,cid=3f3d32e38cb27ac7b5b67343f81cf2f8bc53217eb995cc6c5d78ddc5e7b0642b,amountBeam=1600000000,bLockOrUnlock=1 -n 127.0.0.1:8501
@@ -321,7 +321,7 @@ The `dao-core` contract parameters are as follows:
 
 ### Withdraw BeamX
 
-To view the amount of BeamX available in your wallet with the [f`arm_view`](using-beamx-faucet-contract-with-cli-wallet.md#farm-view) command.&#x20;
+To view the amount of BeamX available in your wallet with the [f`arm_view`](using-beamx-faucet-contract-with-cli-wallet.md#farm-view) command.
 
 To withdraw BeamX, enter the following command:
 
@@ -373,7 +373,7 @@ Creating new contract invocation tx on behalf of the shader
 ```
 
 {% hint style="info" %}
-To withdraw Beam and BeamX with one transaction, specify `"bLockOrUnlock= "in shader_args where : 0 - withdraw Beam , 1 - send Beam`&#x20;
+To withdraw Beam and BeamX with one transaction, specify `"bLockOrUnlock= "in shader_args where : 0 - withdraw Beam , 1 - send Beam`
 
 `--shader_args role=manager,action=farm_update,cid=3f3d32e38cb27ac7b5b67343f81cf2f8bc53217eb995cc6c5d78ddc5e7b0642b,amountBeamX=635511,amountBeam=10000000,`<mark style="color:blue;">`bLockOrUnlock`</mark>`=`<mark style="color:red;">`1`</mark>
 {% endhint %}

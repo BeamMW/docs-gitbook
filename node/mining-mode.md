@@ -94,7 +94,7 @@ Before using the external miner, please review the sample Mining Architecture be
 * The Beam node should connect to a different node on the network via `--peer` parameter, e.g., `--peer=3.0.115.1:8100` for TestNet 4.
 * The Beam node can run Stratum server adding `--stratum_port` parameter, e.g.,`--stratum_port=10002.`
 * The Beam node should have the `mining_key` and `owner_key`, so the mining rewards accumulated are transferred to a specific wallet, e.g., parameters `--miner_key` and `--owner_ke`y. **`Miner_key` and `Owner_key` should be kept secret at all times.**﻿
-* Several Mining clients running on GPU rigs can connect to the same node.&#x20;
+* Several Mining clients running on GPU rigs can connect to the same node.
 * The connection between the Mining Client and Beam node is encrypted with TLS. For TLS to work, you need to provide a certificate file and secret keys for it.
 * Mining Client and Beam Node should use the same API key.
 * Your wallet will earn mining rewards **if**:
@@ -131,7 +131,7 @@ Before using the external miner, please review the sample Mining Architecture be
     Save the exported `miner_key` in a `text_file` for later.
 
     {% hint style="info" %}
-    **Running** **several mining nodes**:&#x20;
+    **Running** **several mining nodes**:
 
     If you want to run several mining nodes, enter the`--export_miner_key`command again with other subkeys, e.g., enter`./beam-wallet export_miner_key --subkey=2`for the second node. Enter`./beam-wallet export_miner_key --subkey=3`for the third node and so on.
 
@@ -182,13 +182,13 @@ Users should save the API keys and certificate files to their`node_folder`.
 
 Beam node utilizes the Stratum protocol for connecting external miner clients. Clients open a TCP connection to the node through which they receive opportunities to mine blocks using the Equihash mining protocol.
 
-Stratum server connections are protected using Transport Layer Security (TLS) protocol and require TLS certificates to function correctly. TLS certificates are available for purchase, and advanced users have the option to create self-signed certificates on their local machines; however, instructions for creating self-signed TLS certificates are outside the scope of this guide.&#x20;
+Stratum server connections are protected using Transport Layer Security (TLS) protocol and require TLS certificates to function correctly. TLS certificates are available for purchase, and advanced users have the option to create self-signed certificates on their local machines; however, instructions for creating self-signed TLS certificates are outside the scope of this guide.
 
 TLS protocols should be accompanied by two files: one for the certificate and one with the certificate secret key. For testing purposes, you can always use sample files provided in the note above.
 
-In addition, users should create a file and title it `stratum.api.keys`. Each line of the text file will represent one API key (one row per API key). The miner client then uses these keys via the `--key` parameter.&#x20;
+In addition, users should create a file and title it `stratum.api.keys`. Each line of the text file will represent one API key (one row per API key). The miner client then uses these keys via the `--key` parameter.
 
-If done correctly, it should produce three files:&#x20;
+If done correctly, it should produce three files:
 
 * `stratum.crt`: TLS certificate.
 * `stratum.key`: private key for TLS certificate.
@@ -274,7 +274,7 @@ Your mining rig is now ready to begin mining.
 {% hint style="info" %}
 **To view your miner rewards:**
 
-Launch the CLI Wallet or Beam Desktop Wallet linked with the same seed phrase as the miner client and connect to the local node (or a remote node that knows the `owner_key`) within the wallet. The`owner_key`will automatically detect and the miner rewards will be reflected in the wallet balance.&#x20;
+Launch the CLI Wallet or Beam Desktop Wallet linked with the same seed phrase as the miner client and connect to the local node (or a remote node that knows the `owner_key`) within the wallet. The`owner_key`will automatically detect and the miner rewards will be reflected in the wallet balance.
 
 Linking to a random node on the network will NOT display your mining rewards.
 {% endhint %}

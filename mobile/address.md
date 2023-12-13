@@ -10,9 +10,9 @@ description: >-
 
 The address book tab is where you will find:
 
-* **My Active Addresses**: active wallet addresses secure and ready to send or receive Beam coins.&#x20;
+* **My Active Addresses**: active wallet addresses secure and ready to send or receive Beam coins.
 * **My Expired Addresses**: expired wallet addresses from previous transactions.
-* **Contacts Lists**: a helpful list of previously sent wallet addresses.&#x20;
+* **Contacts Lists**: a helpful list of previously sent wallet addresses.
 
 ## How it looks in your wallet
 
@@ -36,9 +36,9 @@ Always double-check that you are not using an expired address to receive or send
 
 To edit a wallet address:
 
-1. **Select** a wallet address to view the address details.&#x20;
+1. **Select** a wallet address to view the address details.
 2. **Tap and hold** to copy your wallet address or tap<img src=".gitbook/assets/Screen Shot 2021-07-01 at 9.38.55 PM.png" alt="" data-size="line">to reveal your address QR code.
-3. Select **edit**<img src=".gitbook/assets/IMG_3381.jpg" alt="" data-size="line">to change wallet address expiration date.&#x20;
+3. Select **edit**<img src=".gitbook/assets/IMG_3381.jpg" alt="" data-size="line">to change wallet address expiration date.
 4. Delete an address, reactivate an expired address or set a wallet address to "never expire," (not recommended).
 5. Tap **save**.
 

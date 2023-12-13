@@ -1,3 +1,3 @@
 # Contributor guidelines
 
-Information on how&#x20;
+Information on how

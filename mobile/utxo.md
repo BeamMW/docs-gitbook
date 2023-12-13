@@ -16,14 +16,14 @@ description: >-
    UTXO represents the amount of cryptocurrency remaining after each transaction. The "output" for each UXTO creates a new "input" for new transactions.
 2.  **Your Beam wallet automatically selects the UTXO for each transaction**.
 
-    Your Beam wallet automatically minimizes the output value you receive by automatically selecting the UTXO for each transaction.&#x20;
+    Your Beam wallet automatically minimizes the output value you receive by automatically selecting the UTXO for each transaction.
 
-    You will not be able to send or spend your UTXOs until each transaction is complete.                                                                           &#x20;
+    You will not be able to send or spend your UTXOs until each transaction is complete.                                                                           
 {% endhint %}
 
 ## UTXO screen
 
-Access your wallet UTXO's by tapping **menu**<img src=".gitbook/assets/Screen Shot 2021-07-01 at 9.19.58 PM (1).png" alt="" data-size="line">**> UTXO**<img src=".gitbook/assets/IMG_3379.jpg" alt="" data-size="line">in your Beam mobile wallet.&#x20;
+Access your wallet UTXO's by tapping **menu**<img src=".gitbook/assets/Screen Shot 2021-07-01 at 9.19.58 PM (1).png" alt="" data-size="line">**> UTXO**<img src=".gitbook/assets/IMG_3379.jpg" alt="" data-size="line">in your Beam mobile wallet.
 
 ![](.gitbook/assets/photo\_2021-05-27\_19-02-14.jpg)
 

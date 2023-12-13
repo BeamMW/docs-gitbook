@@ -17,8 +17,8 @@ Make sure you have the [latest ](https://beam.mw/downloads/mainnet-mac)version o
 1. **Launch** Beam desktop wallet <img src="../.gitbook/assets/Screen Shot 2022-07-31 at 8.29.33 PM.png" alt="" data-size="line">.
 2. Click **create new wallet**.
 3. Generate and **record your seed phrase** **(pen and paper recommended)**. Make multiple copies of your seed phrase and store it somewhere safe.
-4. Verify your seed phrase.&#x20;
-5. Create a strong wallet password.&#x20;
+4. Verify your seed phrase.
+5. Create a strong wallet password.
 6. Select node connectivity.
 7. Synchronize your wallet with the blockchain (this may take some time).
 
@@ -40,7 +40,7 @@ Your seed phrase is the only way you (or anybody) can access your funds. Your se
 Keep your wallet seed phrase secret, and never share your seed phrase with anyone!
 {% endhint %}
 
-Please do not write your seed phrase down electronically, take a screenshot or store it anywhere vulnerable to cyber attacks.    &#x20;
+Please do not write your seed phrase down electronically, take a screenshot or store it anywhere vulnerable to cyber attacks.    
 
 ![](../.gitbook/assets/2022-06-23\_14-07-58.png)
 
@@ -69,14 +69,14 @@ Choosing the node connectivity mode
 Beam desktop wallet can connect to the Beam network through:
 
 * **Integrated node (recommended)**: Running an integrated node within your Beam wallet enables the trusted node to verify the blockchain automatically. So your wallet will connect to a node the second you open your wallet.
-* **Random remote node:** "Random mode" allows connects you automatically to a random bootstrap node, enabling your Beam wallet to act as a "light client,"; creating transactions but trusting the remote node for blockchain verification. Recommended for weak devices with limited CPU power or RAM.&#x20;
+* **Random remote node:** "Random mode" allows connects you automatically to a random bootstrap node, enabling your Beam wallet to act as a "light client,"; creating transactions but trusting the remote node for blockchain verification. Recommended for weak devices with limited CPU power or RAM.
 * **Specific remote node**: If you are operating your own node (maybe even more than one) and want to connect to it, provide the node's IP and port address.
 
 ![](../.gitbook/assets/2022-06-23\_14-11-18.png)
 
 ### Synchronizing your wallet
 
-Now that your wallet is set up, it's time to synchronize with the current blockchain state on the Beam network.&#x20;
+Now that your wallet is set up, it's time to synchronize with the current blockchain state on the Beam network.
 
 {% hint style="info" %}
 Synchronizing with blockchain will take some time. Please be patient.

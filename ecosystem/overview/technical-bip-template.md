@@ -4,15 +4,15 @@
 
 `BIP#: <# to be assigned>`
 
-&#x20;`Title: <BIP title>`
+`Title: <BIP title>`
 
 `Author(s): <list of authors' names and/or email addresses and GitHub handles>`
 
-&#x20;`Contributors: <list of contributor's names and/or email addresses and GitHub handles>`
+`Contributors: <list of contributor's names and/or email addresses and GitHub handles>`
 
 `Tags: template`
 
-`Type: BIP Type`&#x20;
+`Type: BIP Type`
 
 `Status: <Assigned by BIP Facilitator>`
 
@@ -20,9 +20,9 @@
 
 `Date Ratified:<yyyy-mm-dd>`
 
-&#x20;`Dependencies: <List of dependent BIPs>`
+`Dependencies: <List of dependent BIPs>`
 
-&#x20;`Replaces: <List of BIP it is replacing>`
+`Replaces: <List of BIP it is replacing>`
 
 `License: <added by BIP Author>`
 
@@ -52,7 +52,7 @@
 
 The details of the proposed technical solution. The specification should be detailed enough to allow an implementation team to begin development as well as testing. The specification for technical BIPs must include the following components:
 
-### **Proposed Code**&#x20;
+### **Proposed Code**
 
 The final code that can be used directly in the executive vote to accept or reject the BIP.
 
@@ -65,7 +65,7 @@ For the implementation or testing of the proposed code
 ### Security Considerations
 
 * This is one of the most important aspects of the Technical BIP proposal. The purpose of this section is to proactively document any security-relevant design information, decisions, potential failure modes, implementation details, and important discussions related to the proposed change. This section helps to optimize the BIP process by providing proactive guidance on security considerations when proposing a change that will affect the Beam network.
-* &#x20;Backwards compatibility
+* Backwards compatibility
 
 ### Auditor Information and Report
 

@@ -15,11 +15,11 @@ If you are new to Beam please review the Beam Essentials section. and learn abou
 ## **To receive Beam**
 
 1. **Launch** Beam desktop wallet <img src=".gitbook/assets/Screen Shot 2022-07-31 at 8.29.33 PM.png" alt="" data-size="line">.
-2. From the main screen, select **receive**.&#x20;
+2. From the main screen, select **receive**.
 3. Choose address type ([regular](receiving-beam.md#regular-offline-transactions) or [max privacy](receiving-beam.md#max-privacy-transaction)).
 4. Enter a requested amount (optional).
-5. Leave a comment (optional). Comments are only visible inside your wallet for personal record-keeping.&#x20;
-6. Click **copy and close** and **send** your unique wallet address over a secure messaging app. The Sender can scan your QR code if using Beam mobile.&#x20;
+5. Leave a comment (optional). Comments are only visible inside your wallet for personal record-keeping.
+6. Click **copy and close** and **send** your unique wallet address over a secure messaging app. The Sender can scan your QR code if using Beam mobile.
 
 {% hint style="info" %}
 Always use a secure channel when sending your wallet addresses.
@@ -30,7 +30,7 @@ Always use a secure channel when sending your wallet addresses.
 ![](<.gitbook/assets/2022-06-23\_15-32-55 copy.png>)
 
 {% hint style="danger" %}
-For regular payments, your wallet must be online within 12 hours of the amount being sent for your payment to be received.&#x20;
+For regular payments, your wallet must be online within 12 hours of the amount being sent for your payment to be received.
 {% endhint %}
 
 ## How it looks in your wallet
@@ -39,7 +39,7 @@ For regular payments, your wallet must be online within 12 hours of the amount b
 
 The sender decides whether the transaction is Regular or Offline. Things to consider about receiving Offline payments:
 
-* Offline addresses can receive ten Offline transactions before expiring.&#x20;
+* Offline addresses can receive ten Offline transactions before expiring.
 * Offline addresses are sent automatically via SBBS address.
 * If both parties aren't online within 12 hours, the SBBS address will expire and send a new SBBS address.
 * After 30 failed attempts, the Offline transaction will void, and the sender will need to create a new transaction.
@@ -55,10 +55,10 @@ Exchange pools require SBBS addresses to guarantee maximum privacy. Click "more 
 ### Max Privacy transaction
 
 {% hint style="info" %}
-Max Privacy transaction is a special type of Offline transaction that guarantees a maximum anonymity set. Max Privacy transactions can take up to 72 hours to complete&#x20;
+Max Privacy transaction is a special type of Offline transaction that guarantees a maximum anonymity set. Max Privacy transactions can take up to 72 hours to complete
 {% endhint %}
 
-Create a Max Privacy address by toggling the max privacy slider in receive before copy/pasting your wallet address. Once the transaction has started you can view the unlock time, e.g., time remaining before your coins are available for spending.&#x20;
+Create a Max Privacy address by toggling the max privacy slider in receive before copy/pasting your wallet address. Once the transaction has started you can view the unlock time, e.g., time remaining before your coins are available for spending.
 
 ![](<.gitbook/assets/2022-06-23\_15-33-33 copy.png>)
 
@@ -66,7 +66,7 @@ Create a Max Privacy address by toggling the max privacy slider in receive befor
 
 ![](.gitbook/assets/2022-06-23\_15-33-51.png)
 
-## Completed transactions&#x20;
+## Completed transactions
 
 ### Transactions list
 
@@ -85,7 +85,7 @@ To view address details, select **more details** (below the QR code) to view add
 We recommend public offline addresses for users expecting to receive donations while their wallet is constantly offline. Public offline addresses do not expire but they are less secure since they allow the receiver to know when (though not how much or to whom) these funds are spent.
 
 {% hint style="danger" %}
-Public offline addresses should only be used for donations or cases when the wallet is always offline.&#x20;
+Public offline addresses should only be used for donations or cases when the wallet is always offline.
 {% endhint %}
 
 To find your public offline address, follow the steps below:

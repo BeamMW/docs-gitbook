@@ -4,15 +4,15 @@
 
 `BIP#: <# to be assigned>`
 
-&#x20;`Title: <BIP title>`
+`Title: <BIP title>`
 
 `Author(s): <list of authors' names and/or email addresses and GitHub handles>`
 
-&#x20;`Contributors:`&#x20;
+`Contributors:`
 
 `Tags: template`
 
-`Type: BIP Type`&#x20;
+`Type: BIP Type`
 
 `Status: <Assigned by BIP Facilitator>`
 
@@ -20,9 +20,9 @@
 
 `Date Ratified:<yyyy-mm-dd>`
 
-&#x20;`Dependencies: <List of dependent BIPs>`
+`Dependencies: <List of dependent BIPs>`
 
-&#x20;`Replaces: <List of BIP it is replacing>`
+`Replaces: <List of BIP it is replacing>`
 
 ### References
 

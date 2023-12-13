@@ -9,15 +9,15 @@ The main screen of your Beam wallet is where you will be able to find:
   * **Shielded**: the amount of Beam coins received from Offline or Max Privacy transactions.
   * **Locked**: the amount of Beam coins currently "locked" in a shielded pool.
   * **Maximum Anonymity**: the amount of Beam coins locked in a max privacy transaction.
-  * **Change**: the amount of Beam coins received as of "change leftover" from a transaction.&#x20;
+  * **Change**: the amount of Beam coins received as of "change leftover" from a transaction.
 * **Assets:** displays confidential assets on the Beam network, (see [Rays](https://explorer.beam.mw/assets/details/2) as an example in the screenshot below)
 * **Transactions**: a complete list of your transaction history and their statuses (in progress, sent, received).
 * **Sidebar Menu**: the icons on the left side of the main screen take you to different screens within your Beam wallet, such as:
   * **Main Screen** <img src=".gitbook/assets/Screen Shot 2021-07-03 at 5.08.12 PM.png" alt="" data-size="line">view your available balance and transactions list.
   * **Atomic Swaps** <img src=".gitbook/assets/Screen Shot 2021-07-03 at 5.08.03 PM.png" alt="" data-size="line">skip transferring your coins to a DEX and swap your Beam for a different cryptocurrency directly from your Beam wallet!
-  * **Addresses Book**<img src=".gitbook/assets/Screen Shot 2021-07-03 at 5.07.56 PM.png" alt="" data-size="line">a complete list of your active and expired wallet addresses.&#x20;
+  * **Addresses Book**<img src=".gitbook/assets/Screen Shot 2021-07-03 at 5.07.56 PM.png" alt="" data-size="line">a complete list of your active and expired wallet addresses.
   * **Notifications**<img src=".gitbook/assets/Screen Shot 2021-07-03 at 5.07.34 PM.png" alt="" data-size="line">review transactions statuses or wallet updates sent to your Beam (wallet.
-  * &#x20;**UTXO**<img src=".gitbook/assets/Screen Shot 2021-07-03 at 5.07.08 PM.png" alt="" data-size="line">view the unspent transaction outputs (UXTO) available in your Beam wallet.
+  * **UTXO**<img src=".gitbook/assets/Screen Shot 2021-07-03 at 5.07.08 PM.png" alt="" data-size="line">view the unspent transaction outputs (UXTO) available in your Beam wallet.
   * **DApp Store** <img src=".gitbook/assets/Screen Shot 2021-07-03 at 5.06.51 PM.png" alt="" data-size="line">Beam's decentralized application store.
   * **Settings** <img src=".gitbook/assets/Screen Shot 2021-07-03 at 5.06.40 PM.png" alt="" data-size="line">wallet settings and preferences.
 
@@ -47,7 +47,7 @@ All your rewards given for staking Beam coins will be disbursed as BeamX tokens 
 
 #### Maximum anonymity set
 
-Max privacy transactions can take up to 72 hours to complete (the longer your assets remain in the maximum anonymity set, the higher the security for the transaction).&#x20;
+Max privacy transactions can take up to 72 hours to complete (the longer your assets remain in the maximum anonymity set, the higher the security for the transaction).
 
 ![](.gitbook/assets/2022-06-23\_15-43-47.png)
 
@@ -83,7 +83,7 @@ Accessing the **search bar**<img src=".gitbook/assets/Screen Shot 2021-07-14 at 
 
 ![](<.gitbook/assets/2022-06-23\_15-36-57 copy.png>)
 
-### Export CSV&#x20;
+### Export CSV
 
 **Export** <img src=".gitbook/assets/Screen Shot 2021-07-14 at 4.54.20 PM.png" alt="" data-size="line">your transactions list into a downloadable `.CSV` file.
 

@@ -51,9 +51,9 @@ If you have an Electrum wallet, connecting to a remote node follows a similar ye
 
 ### Edit Electrum Wallet Settings
 
-1. **Settings**<img src=".gitbook/assets/Screen Shot 2021-07-03 at 5.06.40 PM.png" alt="" data-size="line">**> toggle "Node" to "Electrum."**&#x20;
-2. Enter your Electrum address.&#x20;
-3. Enter an existing seed phrase or generate a new one (you can change wallets at any time).&#x20;
+1. **Settings**<img src=".gitbook/assets/Screen Shot 2021-07-03 at 5.06.40 PM.png" alt="" data-size="line">**> toggle "Node" to "Electrum."**
+2. Enter your Electrum address.
+3. Enter an existing seed phrase or generate a new one (you can change wallets at any time).
 
 Once connected, you should be able to see the list of all wallet addresses in your Electrum wallet by clicking "Show wallet addresses."\
 
@@ -81,11 +81,11 @@ Before attempting to create an Ethereum <> Beam Atomic Swap make sure your walle
 1. **Launch** [infura.io.](http://www.infura.io)
 2. Go to **Settings > "keys" > Copy Project ID.**
 3. **Launch** your Beam wallet.
-4. &#x20;Go to **Settings**<img src=".gitbook/assets/Screen Shot 2021-07-03 at 5.06.40 PM.png" alt="" data-size="line">**> "Connectivity" > "Ethereum" > Paste Project ID.**
+4. Go to **Settings**<img src=".gitbook/assets/Screen Shot 2021-07-03 at 5.06.40 PM.png" alt="" data-size="line">**> "Connectivity" > "Ethereum" > Paste Project ID.**
 5. **Click "Generate Seed Phrase"** to generate the seed phrase you will import to your Metamask. You can also use an existing seed phrase.
 6. **Copy seed phrase > "apply changes" > "Connect to node."**
 7. **Launch** **Metamask > click "import using account seed phrase."**
-8. Enter your seed phrase and create a strong wallet password.&#x20;
+8. Enter your seed phrase and create a strong wallet password.
 
 If you have successfully linked your accounts, a green light will appear next to the Ethereum node indicating the connection was a success!
 

@@ -14,7 +14,7 @@ Once your MetaMask Wallet configuration is complete, it is time to bridge assets
 3. Select **“bETH (id:36)” from the drop-down currency list and select “AUTOMATIC WAY”** prompting a browser pop-up. _(Always double-check a token's asset ID. Multiple tokens can have identical names, but their asset IDs always remain unique.)_
 4. In the browser, connect your **MetaMask Wallet**<img src=".gitbook/assets/Screen Shot 2022-10-22 at 1.45.13 PM.png" alt="" data-size="line">. Select **"Ethereum to Beam"**.
 5. When bridging tokens other than ETH, users must "approve token" to enable them for cross-chain transfers to Beam (this process only needs to be done once).
-6. Enter the transfer amount. **Click "transfer".**&#x20;
+6. Enter the transfer amount. **Click "transfer".**
 7. A pop-up will open up in your MetaMask Wallet to "Confirm the transaction". A transaction notification will appear in the browser.
 8. When the transaction is complete (it might take a few minutes), your bETH can be withdrawn to your Beam Wallet.
 9. Your new balance will also be reflected in your Beam wallet!
@@ -23,7 +23,7 @@ Once your MetaMask Wallet configuration is complete, it is time to bridge assets
 
 ### The Bridges app is located in the Beam Wallet DApp store
 
-Launch the DApp Store in Beam Wallet and select the "Bridges app".&#x20;
+Launch the DApp Store in Beam Wallet and select the "Bridges app".
 
 <figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
@@ -55,7 +55,7 @@ Select the amount of Ethereum you wish to transfer and then select "Transfer".
 
 ### **Confirm Transaction**
 
-Confirm the transaction details that appear in the MetaMask pop-up.&#x20;
+Confirm the transaction details that appear in the MetaMask pop-up.
 
 <figure><img src=".gitbook/assets/Screenshot 2566-09-06 at 15.52.45.png" alt=""><figcaption></figcaption></figure>
 
@@ -81,7 +81,7 @@ Once the transfer is complete, the bETH will be available to withdraw from the B
 
 ### Transaction Completion
 
-After the transaction is complete, the new balance will be reflected directly in your Beam wallet.&#x20;
+After the transaction is complete, the new balance will be reflected directly in your Beam wallet.
 
 <figure><img src=".gitbook/assets/14 Beam Wallet done v2.png" alt=""><figcaption></figcaption></figure>
 
@@ -103,7 +103,7 @@ Now let's focus on conducting cross-chain transactions to send back bETH (id:36)
 
 ### Beam DApp Store
 
-Launch the DApp in Beam Wallet and select the "Bridges app".&#x20;
+Launch the DApp in Beam Wallet and select the "Bridges app".
 
 <figure><img src="https://lh6.googleusercontent.com/SSF9ap9-YzYT2ZCg-vUNpYl3r_wKiQdckQKhOWt0INItGhevfVW1RzbwVGMXXwYFRr5NO8BzN7QDEwnpQqbxK-77M_WZCzqdtHL_h2GZA19jfFBpUuOmBvETlSBqiuJ0YP4oPTQ-IGAwyP04I1p6MB5YHLJ4QJLHf9E_ty_T-ZMVl74P0bT_DTIKsw" alt=""><figcaption></figcaption></figure>
 
@@ -133,7 +133,7 @@ Enter the amount of bETH you wish to send. Verify all transaction details before
 
 Double-check all transaction details before completing any transaction.
 
-&#x20;
+
 
 <figure><img src=".gitbook/0.05confirmdeposit.png" alt=""><figcaption></figcaption></figure>
 

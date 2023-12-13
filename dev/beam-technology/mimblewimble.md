@@ -1,6 +1,6 @@
 # Mimblewimble
 
-Mimblewimble is an innovative confidential cryptocurrency protocol described initially in a whitepaper published in October 2016 by an anonymous author under the pseudonym of Tom Elvis Jedusor.&#x20;
+Mimblewimble is an innovative confidential cryptocurrency protocol described initially in a whitepaper published in October 2016 by an anonymous author under the pseudonym of Tom Elvis Jedusor.
 
 ![Screenshot of MW whitepaper as it was published](../.gitbook/assets/MW.PNG)
 
@@ -10,7 +10,7 @@ To achieve this, replacing the UTXO with Pedersen Commitments and then validatin
 
 ![Explanation of the UTXO structure using Pedersen Commitments](../.gitbook/assets/mw2.PNG)
 
-To balance the difference in blinding factors, each transaction also contains the "kernel," which includes the signed difference in its simplest form.&#x20;
+To balance the difference in blinding factors, each transaction also contains the "kernel," which includes the signed difference in its simplest form.
 
 Mathematician [Andrew Poelstra](https://www.linkedin.com/in/andrew-poelstra-958a75106/) first reviewed the protocol and published a paper validating the approach.
 

@@ -75,7 +75,7 @@ Users can check their LTC balance by entering the following command:
 
 ### Initialize Atomic Swap settings
 
-&#x20;To configure the Atomic Swap settings, enter the following command:&#x20;
+To configure the Atomic Swap settings, enter the following command:
 
 ```
  ./beam-wallet set_swap_settings --swap_coin=ltc --swap_wallet_addr= --swap_wallet_user= --swap_wallet_pass= --swap_feerate=<Litecoin fee rate(Photons/Kb)> --active_connection=core
@@ -101,7 +101,7 @@ LTC, for example, has a`--swap_feerate`per 1KB of transaction size. LiteCoin's`-
  ./beam-wallet set_swap_settings --swap_coin=ltc --swap_wallet_addr=127.0.0.1:13400 --swap_wallet_user=Bob --swap_wallet_pass=123 --swap_feerate=90000 --active_connection=core
 ```
 
-### Swapping LTC for Beam&#x20;
+### Swapping LTC for Beam
 
 Both parties can initiate the Atomic Swap by entering the following command:
 
@@ -134,14 +134,14 @@ Alice can accept the swap by entering the following command:
 If Alice accepts the swap, it will create a swap transaction, and the LTC and Beam will lock on Bob's blockchain.
 
 {% hint style="info" %}
-**Each blockchain has its own block generation time**. Average block generation times (roughly):&#x20;
+**Each blockchain has its own block generation time**. Average block generation times (roughly):
 
 * **LiteCoin**: two and a half (2.5) minutes.
 * **Beam**: one minute.
 * **Bitcoin**: ten minutes.
 {% endhint %}
 
-After six blocks, Bob will redeem Alice's Beam coins, revealing a secret transaction code and completing Bob's portion of the Atomic Swap. ‌&#x20;
+After six blocks, Bob will redeem Alice's Beam coins, revealing a secret transaction code and completing Bob's portion of the Atomic Swap. ‌
 
 Alice will redeem Bob's LTCs using the secret transaction code revealed to her, completing the Atomic Swap.
 
@@ -149,7 +149,7 @@ Bob and Alice can return to their respective Beam and LTC wallets to confirm the
 
 ## Perform an Atomic Swap with Bitcoin
 
-Using Alice and Bob as an example, we will go over how to perform an Atomic Swap of Alice's Beam coins for Bob's Bitcoin (BTC).&#x20;
+Using Alice and Bob as an example, we will go over how to perform an Atomic Swap of Alice's Beam coins for Bob's Bitcoin (BTC).
 
 ### Run a full BTC node
 
@@ -191,7 +191,7 @@ Alice and Bob can check their BTC balance by entering the following command
 ./bitcoin-cli -rpcuser=Bob -rpcpassword=123 getbalance
 ```
 
-### &#x20;Initialize Atomic Swap settings
+### Initialize Atomic Swap settings
 
 To configure the Atomic Swap settings, enter the following command:
 
@@ -252,14 +252,14 @@ Alice can accept the swap by entering the following command:
 If Alice accepts the swap, it will create a swap transaction, and the BTC and Beam will lock on Bob's blockchain.
 
 {% hint style="info" %}
-**Each blockchain has its own block generation time**. Average block generation times (roughly):&#x20;
+**Each blockchain has its own block generation time**. Average block generation times (roughly):
 
 * **LiteCoin**: two and a half (2.5) minutes.
 * **Beam**: one minute.
 * **Bitcoin**: ten minutes.
 {% endhint %}
 
-After six blocks, Bob will redeem Alice's Beam coins, revealing a secret transaction code and completing Bob's portion of the Atomic Swap. ‌&#x20;
+After six blocks, Bob will redeem Alice's Beam coins, revealing a secret transaction code and completing Bob's portion of the Atomic Swap. ‌
 
 Alice will redeem Bob's BTCs using the secret transaction code revealed to her, completing the Atomic Swap.
 

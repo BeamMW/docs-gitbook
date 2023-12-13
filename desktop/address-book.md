@@ -14,9 +14,9 @@ Beam addresses are only stored locally in the wallet database and not on the blo
 
 Your **Address Book**<img src=".gitbook/assets/Screen Shot 2021-07-03 at 5.07.56 PM.png" alt="" data-size="line">is where you will find:
 
-* **My Active Addresses**: active wallet addresses are secure and ready to send or receive Beam coins.&#x20;
+* **My Active Addresses**: active wallet addresses are secure and ready to send or receive Beam coins.
 * **My Expired Addresses**: expired wallet addresses from previous transactions.
-* **Contacts Lists**: a helpful list of previously sent wallet addresses.&#x20;
+* **Contacts Lists**: a helpful list of previously sent wallet addresses.
 
 ## **How it looks in your wallet**
 
@@ -40,7 +40,7 @@ Always double-check that you are not using an expired address to receive or send
 
 ### **Contacts**
 
-Delete previously sent to wallet addresses or send them more Beam by clicking the **kebab menu**<img src=".gitbook/assets/Screen Shot 2021-07-14 at 5.19.47 PM.png" alt="" data-size="line"> &#x20;
+Delete previously sent to wallet addresses or send them more Beam by clicking the **kebab menu**<img src=".gitbook/assets/Screen Shot 2021-07-14 at 5.19.47 PM.png" alt="" data-size="line"> 
 
 ![](.gitbook/assets/2022-06-23\_16-11-30.png)
 

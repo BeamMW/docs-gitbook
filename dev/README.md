@@ -18,7 +18,7 @@ This developer portal will provide comprehensive information about the developme
 
 * [Core Technology Overview](./#core-technology-overview)
 * [Confidential Assets](./#confidential-assets)
-* [Smart Contracts (aka Shaders)](./#smart-contracts)&#x20;
+* [Smart Contracts (aka Shaders)](./#smart-contracts)
 * [Wallet API (and integration guides)](./#wallet-api)
 * [Web Wallet ](./#web-wallet)
 * [Desktop Wallet](./#desktop-wallet)
@@ -28,17 +28,17 @@ This developer portal will provide comprehensive information about the developme
 
 In the beginning, Beam was originally designed as an implementation of the [Mimblewimble ](beam-technology/mimblewimble.md)([original whitepaper](https://docs.beam.mw/Mimblewimble.pdf)) protocol. Since then, Beam version 5.0 included support for a [Lelantus](https://github.com/BeamMW/beam/wiki/Lelantus-MW) shielded pool which became the [LelantusMW](beam-technology/lelantusmw.md) protocol that is the core of Beam's Privacy Layer one.
 
-The Beam network uses the [Dandelion protocol](https://blockonomi.com/dandelion-protocol/), merging non-interactive transactions along the stem phase. Additional technical information regarding this implementation can be found [here](https://github.com/BeamMW/beam/wiki/Transaction-graph-obfuscation).&#x20;
+The Beam network uses the [Dandelion protocol](https://blockonomi.com/dandelion-protocol/), merging non-interactive transactions along the stem phase. Additional technical information regarding this implementation can be found [here](https://github.com/BeamMW/beam/wiki/Transaction-graph-obfuscation).
 
 **Beam also features:**
 
 * [Atomic Swaps](beam-technology/atomic-swaps.md): Allows the exchange of Beam for Bitcoin, Ethereum, and several other currencies without needing a trusted third party.
-* Laser Beam: A direct payment channel implementation similar to those used in the [Lightning Network](https://lightning.network/).&#x20;
-* Secure Bulletin Board System ([SBBS](beam-technology/sbbs.md)): An encrypted, decentralized messaging system that broadcasts information and creates transactions between Beam wallets.&#x20;
+* Laser Beam: A direct payment channel implementation similar to those used in the [Lightning Network](https://lightning.network/).
+* Secure Bulletin Board System ([SBBS](beam-technology/sbbs.md)): An encrypted, decentralized messaging system that broadcasts information and creates transactions between Beam wallets.
 
 ### Confidential Assets
 
-Beam offers the creation of new asset types on the blockchain called Confidential Assets (CA). Each new CA is designated as a first-class citizen in Beam nodes due to the Layer 1 implementation and does not require using Smart Contracts like Ethereum ERC-20 tokens.&#x20;
+Beam offers the creation of new asset types on the blockchain called Confidential Assets (CA). Each new CA is designated as a first-class citizen in Beam nodes due to the Layer 1 implementation and does not require using Smart Contracts like Ethereum ERC-20 tokens.
 
 **This results in Beam tokens offering the same privacy and security as Beam coins** while seamlessly integrating with Beam Wallets and dApps. Confidential Assets can be emitted manually or deployed via Smart Contracts within Beam Virtual Machine.
 
@@ -58,9 +58,9 @@ For more information regarding Wallet API, refer to this [Beam wiki](https://git
 
 ### Web Wallet
 
-Beam offers a simplified version of the Beam Desktop Wallet in a web wallet metamask that runs in the background of [Google Chrome](https://chrome.google.com/webstore/search/beam). The Beam Web Wallet allows users to store, send and receive Beam coins but does not currently offer Atomic Swaps or dApp support.&#x20;
+Beam offers a simplified version of the Beam Desktop Wallet in a web wallet metamask that runs in the background of [Google Chrome](https://chrome.google.com/webstore/search/beam). The Beam Web Wallet allows users to store, send and receive Beam coins but does not currently offer Atomic Swaps or dApp support.
 
-All wallet balances will be reflected accurately across all devices connected with your seed phrase (Desktop wallet, Mobile wallet, Web Wallet, etc.). However, web wallet metadata is not available for export.&#x20;
+All wallet balances will be reflected accurately across all devices connected with your seed phrase (Desktop wallet, Mobile wallet, Web Wallet, etc.). However, web wallet metadata is not available for export.
 
 Refer to this [web wallet guide](http://localhost:5000/o/-M\_G-3uaAbZMXViHLVZl/s/PPXXGuwTXZfforCZnW03/) for more information on getting started.
 

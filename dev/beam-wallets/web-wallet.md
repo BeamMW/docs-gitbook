@@ -1,8 +1,8 @@
 # Web Wallet
 
-Beam Web Wallet is the latest addition to the Beam wallet family. It is implemented as a chrome extension and can be used for sending and receiving Beam coins and Confidential Assets as well as interacting with decentralized applications (DApps) on Beam chain.&#x20;
+Beam Web Wallet is the latest addition to the Beam wallet family. It is implemented as a chrome extension and can be used for sending and receiving Beam coins and Confidential Assets as well as interacting with decentralized applications (DApps) on Beam chain.
 
-To get started with Beam Web Wallet you can get the latest mainnet version here, or install the testnet version for experiments. You are also welcome to review the user documentation here.&#x20;
+To get started with Beam Web Wallet you can get the latest mainnet version here, or install the testnet version for experiments. You are also welcome to review the user documentation here.
 
 Source code for Beam Web Wallet is available in this [repository](https://github.com/BeamMW/web-wallet).
 

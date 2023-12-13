@@ -33,7 +33,7 @@ Your transaction history and addresses will not appear in your new wallet withou
 
 ### 'Restore wallet...' dialogue box
 
-A dialogue will appear, notifying you that your wallet transaction history and saved addresses will be lost if you proceed.&#x20;
+A dialogue will appear, notifying you that your wallet transaction history and saved addresses will be lost if you proceed.
 
 ![](.gitbook/assets/2022-06-23\_16-22-35.png)
 
@@ -45,7 +45,7 @@ Click **restore wallet.**
 
 ### 'Restore wallet...' dialogue box
 
-A dialogue box will notify you that your wallet transaction history and saved addresses will be lost if you proceed.&#x20;
+A dialogue box will notify you that your wallet transaction history and saved addresses will be lost if you proceed.
 
 ![](.gitbook/assets/2022-06-23\_16-23-05.png)
 
@@ -57,7 +57,7 @@ Enter your seed phrase (double-check your spelling).
 
 ### Confirmation screen
 
-A dialogue box will alert you to the dangers of running two wallets from one seed phrase simultaneously. Your transaction histories may not synch up.&#x20;
+A dialogue box will alert you to the dangers of running two wallets from one seed phrase simultaneously. Your transaction histories may not synch up.
 
 ![](.gitbook/assets/2022-06-23\_16-24-49.png)
 

@@ -40,7 +40,7 @@ Due Mimblewimble (MW), it is feasible to encode UTXOs (asset types) using differ
 
 #### Asset surjection proof
 
-Derived from the Sigma protocol, where the prover specifies a range of `AssetID` values, and proves that the specified generator with arbitrary blinded factor is one of the generators within that range.&#x20;
+Derived from the Sigma protocol, where the prover specifies a range of `AssetID` values, and proves that the specified generator with arbitrary blinded factor is one of the generators within that range.
 
 Meanwhile, the verifier generates a list of asset generators for the provided range, methodically subtracting the provided blinded generator from each element on the list. The Prover confirms the Sigma protocol by providing the opening of one of the elements for the blinding factor, i.e., the `G` generator.
 
@@ -58,7 +58,7 @@ Metadata reserves a significant number of Beams when locking an asset, meaning t
 
 #### Asset emission/burn
 
-The user initiates a transaction by sending a unique asset emission kernel, which can have a positive or negative emission amount. To complete the transaction, the kernel excess blinding factor must be signed by the appropriate private key of the asset owner.&#x20;
+The user initiates a transaction by sending a unique asset emission kernel, which can have a positive or negative emission amount. To complete the transaction, the kernel excess blinding factor must be signed by the appropriate private key of the asset owner.
 
 This transaction will automatically create or consume a certain amount of the asset, which should be balanced out by other transaction elements such as inputs and outputs.
 
@@ -86,7 +86,7 @@ The current state of the system includes a commitment to the latest state of ass
   * Other users can estimate the minimum height range within which the asset can be safely used. This helps determine whether the asset was subject to reorgs in the past or could be tampered with in the future.
 
 {% hint style="info" %}
-Locking funds for asset creation is necessary to prevent spamming in the system. If there are too many assets, it can cause the Nodes to become heavier and can also reduce the effectiveness of the asset surjection proof due to a limited anonymity set. Although a significant amount of funds need to be locked, this design should not be an issue for users who are experimenting with assets as they will receive their funds back upon completion.&#x20;
+Locking funds for asset creation is necessary to prevent spamming in the system. If there are too many assets, it can cause the Nodes to become heavier and can also reduce the effectiveness of the asset surjection proof due to a limited anonymity set. Although a significant amount of funds need to be locked, this design should not be an issue for users who are experimenting with assets as they will receive their funds back upon completion.
 
 However, for organizations selling assets to users, it is unclear if they will ever be able to burn their assets back, as they must first own all of their assets. Despite this, the risk seems justified.
 {% endhint %}
@@ -172,7 +172,7 @@ The shielded pool enables one-side payments (MW transactions require mutual agre
 
 However, this method is not totally anonymous as the sender can see when the receiver spends the funds. To solve this issue, the shielded output consists of two parts: the $$C_s$$ and $$C_{MW}$$. During the initial setup, the receiver generates and sends an arbitrary number of different $$C_s$$ elements (with their Schnorr's signatures). The sender then uses these elements in the shielded output without knowledge of the serial number.
 
-Our scheme enables the receiver to scan the blockchain to detect all its shielded outputs without needing an auxiliary channel. For $$C_s$$ all the owner info is embedded within the Schnorr's signature (which has a degree of freedom). For the $$C_{MW}$$, the owner info is embedded in the Schnorr's signature, while the requires info recovery from the bulletproof.&#x20;
+Our scheme enables the receiver to scan the blockchain to detect all its shielded outputs without needing an auxiliary channel. For $$C_s$$ all the owner info is embedded within the Schnorr's signature (which has a degree of freedom). For the $$C_{MW}$$, the owner info is embedded in the Schnorr's signature, while the requires info recovery from the bulletproof.
 
 Ultimately, the following information is recovered:
 
@@ -206,7 +206,7 @@ Thus, in order to create a sensible system that reaps the advantages of MW while
 * The number of shielded inputs/outputs in a block is limited, creating a competitive fee market.
 * The spend window, which determines the anonymity set size, is limited, and this limit is further reduced if the element being spent is not one of the most recent.
 
-The maximum spend window or anonymity set size is yet to be decided but will likely be between 50,000 to 100,000 KB. The number of shielded elements in a block will be limited to create this window over several days.&#x20;
+The maximum spend window or anonymity set size is yet to be decided but will likely be between 50,000 to 100,000 KB. The number of shielded elements in a block will be limited to create this window over several days.
 
 Additionally, users can only spend their shielded elements with the maximum spend window if it references the most recent elements. If they miss their opportunity, they will have to spend it in a smaller spend window of around 1,000 elements. However, they can recycle it through the shielded pool again.
 
@@ -219,9 +219,9 @@ But importantly, those restrictions will also lead to **better privacy**. Here's
 
 ### Privacy
 
-In order to understand how effectively privacy is achieved through hiding within a crowd, it's important to define two terms: absolute and relative anonymity sets.&#x20;
+In order to understand how effectively privacy is achieved through hiding within a crowd, it's important to define two terms: absolute and relative anonymity sets.
 
-* The absolute anonymity set size refers to the total number of individuals in the set that the user has chosen to hide among.&#x20;
+* The absolute anonymity set size refers to the total number of individuals in the set that the user has chosen to hide among.
 * The relative anonymity set size, on the other hand, is the ratio of the chosen absolute set size to the overall set size weighted by the probabilities of hiding in each potential subset.
 
 In simpler terms, the relative set size represents the probability that a user will choose a specific absolute set. To achieve a high level of privacy, both the absolute and relative sets should be maximized. If the absolute set size is small, the user may already be suspected. If the relative set size is small, the user can still be de-anonymized through repeated transactions, even if the absolute anonymity set is large. [A good explanation by Ian Miers is here](https://zfnd.org/blockchain-privacy-equal-parts-theory-and-practice/).
@@ -231,6 +231,6 @@ Due to the finite size of the anonymity set in Lelantus, a compromise must be ma
 * If too few users use the system, then each user's activity can be easily identified.
 * However, if too many users use the system, the anonymity set is filled up quickly, resulting in a smaller relative set size and a lower probability of an unrelated user falling into the same set.
 
-In contrast, systems with an unlimited anonymity set size, such as Zcash, have an advantage in this regard. However, in practice, the difference may not be significant since users typically spend their recent outputs, which can be assumed by attackers with a significant probability even in Lelantus.&#x20;
+In contrast, systems with an unlimited anonymity set size, such as Zcash, have an advantage in this regard. However, in practice, the difference may not be significant since users typically spend their recent outputs, which can be assumed by attackers with a significant probability even in Lelantus.
 
 To accurately estimate the practical privacy of the system, real-world usage data may be needed.

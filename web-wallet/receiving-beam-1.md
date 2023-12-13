@@ -24,7 +24,7 @@ From your wallet dashboard, select "receive" to be directed the receiving window
 
 ### Copy Address
 
-Copy and paste the newly generated Beam address (highlight right-click or "copy transaction address" from the drop-down menu) and forward it to the Sender over a **secure** communication channel.&#x20;
+Copy and paste the newly generated Beam address (highlight right-click or "copy transaction address" from the drop-down menu) and forward it to the Sender over a **secure** communication channel.
 
 ![](<.gitbook/assets/Screen Shot 2021-06-01 at 6.15.40 PM.png>)
 
@@ -38,6 +38,6 @@ From your wallet dashboard, select "receive" to be directed the receiving window
 
 ### Copy address
 
-Copy and paste the newly generated Beam address (highlight right-click or "copy transaction address" from the drop-down menu) and forward it to the Sender over a **secure** communication channel.&#x20;
+Copy and paste the newly generated Beam address (highlight right-click or "copy transaction address" from the drop-down menu) and forward it to the Sender over a **secure** communication channel.
 
 ![](.gitbook/assets/0216.png)

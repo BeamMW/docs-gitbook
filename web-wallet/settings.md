@@ -16,12 +16,12 @@ _Find your Beam Wallet settings by clicking the action menu and selecting "setti
 
 ### Settings Screen
 
-The setting options of your Beam web wallet are:&#x20;
+The setting options of your Beam web wallet are:
 
-* General,&#x20;
-* Privacy&#x20;
-* Utilities&#x20;
-* Report a problem&#x20;
+* General,
+* Privacy
+* Utilities
+* Report a problem
 * Remove current wallet
 
 ### General
@@ -64,12 +64,12 @@ Delete your current wallet from the Beam network on this menu. Back up any metad
 
 ### Settings Screen
 
-The setting options of your Beam web wallet are:&#x20;
+The setting options of your Beam web wallet are:
 
-* General,&#x20;
-* Privacy&#x20;
-* Utilities&#x20;
-* Report a problem&#x20;
+* General,
+* Privacy
+* Utilities
+* Report a problem
 * Remove current wallet
 
 ![](<.gitbook/assets/Screen Shot 2021-06-02 at 4.53.16 PM.png>)

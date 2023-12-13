@@ -2,14 +2,14 @@
 
 ## My DApp Store
 
-Beam's DApp store is open-source and entirely built on the Beam blockchain. Users can become developers and contribute decentralized applications to the DApp Store.&#x20;
+Beam's DApp store is open-source and entirely built on the Beam blockchain. Users can become developers and contribute decentralized applications to the DApp Store.
 
 This article contains all the information you need to start contributing decentralized applications to the Beam ecosystem, including:
 
 * [Becoming a publisher on the DApp Store](daap-store.md#become-a-certified-publisher).
 * [Installing your first DApp](daap-store.md#installing-your-first-dapp).
-* [Test environment for DApps](http://localhost:5000/o/-M\_G-3uaAbZMXViHLVZl/s/TaU03xduRbmYUVdmsds8/).&#x20;
-* [Register](daap-store.md#registering-a-bans-domain), [sell](daap-store.md#selling-a-bans-domain) [or send Beam coins through the BANS DApp](daap-store.md#sending-beam-to-a-bans-domain).&#x20;
+* [Test environment for DApps](http://localhost:5000/o/-M\_G-3uaAbZMXViHLVZl/s/TaU03xduRbmYUVdmsds8/).
+* [Register](daap-store.md#registering-a-bans-domain), [sell](daap-store.md#selling-a-bans-domain) [or send Beam coins through the BANS DApp](daap-store.md#sending-beam-to-a-bans-domain).
 
 To learn more about creating the perfect environment to test your DApps before implementing on the Beam blockchain, check out our [**DAppnet guide**](https://beamx.gitbook.io/dappnet-user-guide/)!
 
@@ -19,7 +19,7 @@ To learn more about creating the perfect environment to test your DApps before i
 
 The Beam ecosystem is open source and welcomes any user interested in becoming a **certified Publisher** to create an account.
 
-### &#x20;Create an account
+### Create an account
 
 All information provided to the DApp store publisher account will remain **100% anonymous**.
 
@@ -28,9 +28,9 @@ The only public information for any publisher account will be available via the 
 1. Launch the **Desktop wallet** <img src=".gitbook/assets/Screen Shot 2022-07-31 at 8.29.33 PM.png" alt="" data-size="line">.
 2. Select the DApp store icon<img src=".gitbook/assets/Screen Shot 2022-07-31 at 8.35.02 PM.png" alt="" data-size="line">.
 3. Click **become a publisher**.
-4. Fill out the account details for the publisher account (your information will remain 100% anonymous). **Create account.**&#x20;
-5. **Confirm** **payment of .011 Beams** to create your publisher account. Please wait for your account approval (remember to record and save your publisher key).&#x20;
-6. You are ready to start publishing DApps!&#x20;
+4. Fill out the account details for the publisher account (your information will remain 100% anonymous). **Create account.**
+5. **Confirm** **payment of .011 Beams** to create your publisher account. Please wait for your account approval (remember to record and save your publisher key).
+6. You are ready to start publishing DApps!
 
 ## How it looks in your wallet
 
@@ -74,10 +74,10 @@ Please visit the previous sections (if you haven't already) before proceeding.
 
 1. **Launch** Beam desktop wallet <img src=".gitbook/assets/Screen Shot 2022-07-31 at 8.29.33 PM.png" alt="" data-size="line">.
 2. Open the DApp Store<img src=".gitbook/assets/Screen Shot 2022-08-06 at 2.56.29 PM.png" alt="" data-size="line">.
-3. Click on your **publisher page** or **Install DApp from file**.&#x20;
+3. Click on your **publisher page** or **Install DApp from file**.
 4. **Upload your** **`.dapp`** file from your desktop (note: **all files must be in `.dapp` format**).
-5. Wait for installation (may take a few minutes, depending on file size).&#x20;
-6. &#x20;You are ready to begin testing your DApp!
+5. Wait for installation (may take a few minutes, depending on file size).
+6. You are ready to begin testing your DApp!
 
 ## How it looks in your wallet
 
@@ -93,7 +93,7 @@ Users already signed in with their Publisher account can upload a DApp file dire
 
 ### Uploading your first DApp
 
-Users can drag and drop or load their .**`dapp`** files. Files must be in .**`dapp`** format.&#x20;
+Users can drag and drop or load their .**`dapp`** files. Files must be in .**`dapp`** format.
 
 ![](.gitbook/assets/2022-06-23\_15-49-45.png)
 
@@ -127,7 +127,7 @@ Users can register, sell, and gift BANS domains in just a few clicks. Users can 
 2. **Open BANS DApp** ![](<.gitbook/assets/Screen Shot 2022-08-09 at 7.49.05 PM.png>).
 3. Search for the BANS domain you wish to register.
 4. **Choose your desired registration period** (minimum one year). Review the gas and registration fees.
-5. &#x20;Click **confirm** to complete your BANS domain registration.
+5. Click **confirm** to complete your BANS domain registration.
 6. Registered BANS domains will be listed under **My domains** ![](<.gitbook/assets/Screen Shot 2022-08-09 at 7.51.10 PM.png>) in the BANS DApp.
 7. Your BANS domain is ready to receive funds!
 
@@ -162,25 +162,25 @@ Users can sell their BANS domains by listing them on the BANS marketplace or sel
 3. Select the BANS domain you wish to sell. **Click** **sell.**
 4. Enter your selling price (in Beams). **Click sell** again.
 5. Review the transaction details. **Confirm transaction.**
-6. **Your BANS domain is available for purchase on the BANS Marketplace**. Users renew their registration, alter the sale price or remove it entirely from BANS marketplace.&#x20;
+6. **Your BANS domain is available for purchase on the BANS Marketplace**. Users renew their registration, alter the sale price or remove it entirely from BANS marketplace.
 
 ## How it looks in your wallet
 
-### Launch BANS DApp&#x20;
+### Launch BANS DApp
 
 ![](<.gitbook/assets/Screen Shot 2022-08-10 at 4.19.45 PM.png>)
 
-### Select domain to sell&#x20;
+### Select domain to sell
 
 You can find all purchased domains under **My domains**.
 
 ![](<.gitbook/assets/Screen Shot 2022-08-10 at 4.20.17 PM.png>)
 
-### Determine sale price&#x20;
+### Determine sale price
 
 ![](<.gitbook/assets/Screen Shot 2022-08-10 at 4.20.29 PM.png>)
 
-### Confirm transaction&#x20;
+### Confirm transaction
 
 ![](<.gitbook/assets/Screen Shot 2022-08-10 at 4.20.51 PM.png>)
 
@@ -200,7 +200,7 @@ Users can send Beam directly to a BANS domain and avoid the headache of sending 
 
 1. Launch **Beam Desktop wallet** <img src=".gitbook/assets/Screen Shot 2022-07-31 at 8.29.33 PM.png" alt="" data-size="line">.
 2. **Open BANS DApp** ![](<.gitbook/assets/Screen Shot 2022-08-09 at 7.49.05 PM.png>).
-3. Search for the BANS domain to create the transaction.&#x20;
+3. Search for the BANS domain to create the transaction.
 4. Select the domain and click **send funds to the BANS**.
 5. Enter the amount of Beam coin to transfer to the BANS user. **Click send**.
 6. Review the transaction details. **Click confirm**.
@@ -208,11 +208,11 @@ Users can send Beam directly to a BANS domain and avoid the headache of sending 
 
 ## How it looks in your wallet
 
-### **Launch BANS**&#x20;
+### **Launch BANS**
 
 ![](<.gitbook/assets/Screen Shot 2022-08-10 at 4.19.45 PM (2).png>)
 
-### **Create a transaction**&#x20;
+### **Create a transaction**
 
 Search for the BANS domain and initiate a transaction.
 

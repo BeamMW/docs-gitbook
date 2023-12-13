@@ -14,7 +14,7 @@ Additionally, [Python 3.x](https://www.python.org/downloads/) must be installed 
 
 ### Building Shader SDK
 
-1. [**Clone Shader SDK repository**](https://github.com/BeamMW/shader-sdk)**.** &#x20;
+1. [**Clone Shader SDK repository**](https://github.com/BeamMW/shader-sdk)**.** 
 2. Open Developer Command Prompt for VS. This can be done from either Tools Menu within the VS IDE or by finding an entry in the Start menu items
 3. Change directory to the location of the shader-sdk and run: `shade init`
 

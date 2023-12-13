@@ -24,7 +24,7 @@ All fees (transaction fees and registration deposit) are always paid in BEAM/Gro
 
 ### Asset Owner
 
-`Asset Owner` is the person (wallet) who registered the asset. The asset owner owns the private key used for signing asset `issue/consume/unreg` operations.&#x20;
+`Asset Owner` is the person (wallet) who registered the asset. The asset owner owns the private key used for signing asset `issue/consume/unreg` operations.
 
 ### Asset ID
 
