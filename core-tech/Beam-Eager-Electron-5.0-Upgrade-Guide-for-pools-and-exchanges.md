@@ -12,7 +12,7 @@ Before starting the upgrade procedure it is highly recommended to stop the walle
 
 ## Upgrading the node and the wallet
 
-1. Download the new binaries from [Beam Website](https://beam.mw/downloads) or build from [source](https://github.com/BeamMW/beam/tree/mainnet)
+1. Download the new binaries from [Beam Website](/downloads) or build from [source](https://github.com/BeamMW/beam/tree/mainnet)
 
 2. When you first run the new wallet and node binaries on the old databases, the database structure will be upgraded to a new version. This can take a lot of time and it is normal.
 

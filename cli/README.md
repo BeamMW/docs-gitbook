@@ -332,7 +332,7 @@ To delete a canceled transaction, enter the following command:
 
 ## Create a new wallet address
 
-Due to Beam's [LelantusMW protocol](https://app.gitbook.com/@beamx/s/developer-documentation/beam-technology/lelantusmw), your wallet address will never record on the blockchain. Beam wallets automatically create a new wallet address for every transaction. Beam offers users three different wallet address types; read about the different address types [here](https://beam.mw/fr/docs/ecosystem#beam-addresses).
+Due to Beam's [LelantusMW protocol](https://app.gitbook.com/@beamx/s/developer-documentation/beam-technology/lelantusmw), your wallet address will never record on the blockchain. Beam wallets automatically create a new wallet address for every transaction. Beam offers users three different wallet address types; read about the different address types [here](/fr/docs/ecosystem#beam-addresses).
 
 ### Create a regular address
 

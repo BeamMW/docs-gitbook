@@ -1,6 +1,6 @@
 # Download Wallet
 
-1. Go to the [Downloads](https://beam.mw/downloads/mainnet) section on Beam's Website.
+1. Go to the [Downloads](/downloads/mainnet) section on Beam's Website.
 2. Choose your preferred platform: Mac, Windows, Linux, click **download**.
 
 ![](<.gitbook/assets/Screen Shot 2022-07-31 at 7.49.07 PM.png>)

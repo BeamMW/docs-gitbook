@@ -6,7 +6,7 @@ In this tutorial we will explain how to run local blockchain. It will be extreme
 
 ### Download node and wallet
 
-Create an empty folder (called dappnet in our examples) and download the binaries for the node and CLI wallet from [beam website](https://beam.mw/downloads/dappnet)
+Create an empty folder (called dappnet in our examples) and download the binaries for the node and CLI wallet from [beam website](/downloads/dappnet)
 
 ### Initialize wallet
 

@@ -6,7 +6,7 @@
 ## Getting binaries
 First of all, define the network you'd like to "play" with:
 - `mainnet` - it's the latest released production version, working with real money and you can get binaries from the [official website](https://www.beam.mw/downloads), see [Github Releases](https://github.com/BeamMW/beam/releases) or build yourself from the sources of ([mainnet branch](https://github.com/BeamMW/beam/tree/mainnet)).
-- `testnet` - to check the features will be released soon to production and  you can get binaries from the [official website](https://beam.mw/downloads/testnet) 
+- `testnet` - to check the features will be released soon to production and  you can get binaries from the [official website](/downloads/testnet) 
  , see [Github Releases](https://github.com/BeamMW/beam/releases) or build from the [testnet branch](https://github.com/BeamMW/beam/tree/testnet).
 - `master` - to see the latest changes in development build the [master branch](https://github.com/BeamMW/beam/tree/master).
 

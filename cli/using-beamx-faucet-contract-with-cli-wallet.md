@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-Beam compatible binaries are available for [all platforms](https://beam.mw/downloads/mainnet-mac) on our main website.
+Beam compatible binaries are available for [all platforms](/downloads/mainnet-mac) on our main website.
 
 Advanced users that wish to build Beam directly from our source code can see this [guide](https://github.com/BeamMW/beam/wiki/How-to-build) for a more detailed run down. 
 

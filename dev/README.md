@@ -66,7 +66,7 @@ Refer to this [web wallet guide](http://localhost:5000/o/-M\_G-3uaAbZMXViHLVZl/s
 
 ### Desktop Wallet
 
-The Beam Desktop Wallet offers advanced privacy and security features in a user-friendly interface that allows users to hold, send or receive Beam, BeamX coins, and other confidential assets. The desktop wallet ([currently version 7.3](https://beam.mw/downloads/mainnet-mac)) is available on Mac, Windows, and Linux platforms and provides access to Beam’s advanced features like dApps, and Atomic swaps.
+The Beam Desktop Wallet offers advanced privacy and security features in a user-friendly interface that allows users to hold, send or receive Beam, BeamX coins, and other confidential assets. The desktop wallet ([currently version 7.3](/downloads/mainnet-mac)) is available on Mac, Windows, and Linux platforms and provides access to Beam’s advanced features like dApps, and Atomic swaps.
 
 Refer to our [desktop wallet guide](http://localhost:5000/o/-M\_G-3uaAbZMXViHLVZl/s/-MaSm2QyXLRMULOUF0cE/) for more information!
 

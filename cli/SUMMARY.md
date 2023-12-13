@@ -14,7 +14,7 @@
 
 ***
 
-* [Beam Documentation](https://beam.mw/docs)
+* [Beam Documentation](/docs)
 * [Beam Desktop Wallet Guide](https://beamx.gitbook.io/desktop-wallet-user-guide/)
 * [DAppnet User Guide](https://beamx.gitbook.io/dappnet-user-guide/)
 * [Developer Docs](https://beamx.gitbook.io/developer-documentation/)

@@ -20,5 +20,5 @@
 
 ***
 
-* [Beam Documentation](https://beam.mw/docs)
+* [Beam Documentation](/docs)
 * [Beam Github](https://github.com/BeamMW)

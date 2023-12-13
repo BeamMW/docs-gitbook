@@ -23,7 +23,7 @@ We recommend that you join these groups and ask any questions
 
 ## Getting the binaries
 
-You can download BeamX compatible binaries for your platform at https://beam.mw/downloads
+You can download BeamX compatible binaries for your platform at /downloads
 
 If you would like to build BeamX yourself from source code please refer to the [Building Instructions Guide](https://github.com/BeamMW/beam/wiki/How-to-build)
 
@@ -33,7 +33,7 @@ We strongly recommend that you get the node and the CLI wallet in addition to th
 
 Once you download and unzip CLI binary, put it in a folder called 'beamx' anywhere on your machine. Once this is done, open your favorite Terminal or Command Prompt and change directory to the 'beamx' folder you have just created.
 
-TIP: Since BeamX CLI wallet is an extended version of Beam CLI wallet most of the documentation [here](https://beam.mw/docs/cli) is applicable to BeamX CLI Wallet as well.
+TIP: Since BeamX CLI wallet is an extended version of Beam CLI wallet most of the documentation [here](/docs/cli) is applicable to BeamX CLI Wallet as well.
 
 ### Initializing the wallet
 

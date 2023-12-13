@@ -9,5 +9,5 @@
 * [Beam Desktop Wallet Guide](https://beamx.gitbook.io/desktop-wallet-user-guide/)
 * [Beam Mobile Wallet Guide](https://beamx.gitbook.io/mobile-wallet-user-guide/)
 * [Beam Web Wallet Guide](https://beamx.gitbook.io/web-wallet-masternet/)
-* [Beam Documentation Portal](https://beam.mw/docs)
+* [Beam Documentation Portal](/docs)
 * [Beam GitHub](https://github.com/BeamMW)

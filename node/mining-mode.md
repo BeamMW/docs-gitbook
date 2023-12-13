@@ -1,7 +1,7 @@
 # Mining Mode
 
 The Beam Node supports External Miner via Stratum Server API for mining Beam: The Beam Node provides built-in support for Stratum API integration with multiple external mining clients to a single node.
-Stratum clients can be run together with the internal Miner. For more detailed information, and how-to mine Beam, please see our [Beam Mining guide](https://beam.mw/docs/mining/).
+Stratum clients can be run together with the internal Miner. For more detailed information, and how-to mine Beam, please see our [Beam Mining guide](/docs/mining/).
 
 {% hint style="info" %}
 **Obtain your Miner Keys!**
@@ -76,9 +76,9 @@ The distribution of the Treasury Coins will occur monthly in the following amoun
 
 Beam plans to keep mining ASIC resistant through the first 18 months to establish decentralization by performing one hard fork after six months and then a second hard fork after 12 months of Beams emission. Each hard fork will tweak the mining algorithm, the modifications releasing several weeks prior.
 
-## [Mining guide](https://beam.mw/docs/mining/)
+## [Mining guide](/docs/mining/)
 
-See our [mining guide](https://beam.mw/docs/mining/) for more information on how-to mine Beam coins.
+See our [mining guide](/docs/mining/) for more information on how-to mine Beam coins.
 
 ## Mining using external miner
 

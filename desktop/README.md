@@ -8,7 +8,7 @@ description: >-
 
 ## Welcome to Beam's Desktop Wallet Guide!
 
-If you are new to Beam make sure to read [Beam Essentials](https://beam.mw/docs):
+If you are new to Beam make sure to read [Beam Essentials](/docs):
 
 ### Prerequisites
 

@@ -14,12 +14,12 @@
 
 ## Additional Documentation
 
-* [Desktop Wallet User Guide](https://beam.mw/docs/desktop)
-* [Mobile Wallet User Guide](https://beam.mw/docs/mobile)
-* [Atomic Swaps Desktop Guide](https://beam.mw/docs/atomic-swaps)
-* [Beam CLI User Guide](https://beam.mw/docs/cli)
+* [Desktop Wallet User Guide](/docs/desktop)
+* [Mobile Wallet User Guide](/docs/mobile)
+* [Atomic Swaps Desktop Guide](/docs/atomic-swaps)
+* [Beam CLI User Guide](/docs/cli)
 
 ***
 
 * [Beam Github](https://github.com/BeamMW)
-* [Beam Documentation](https://beam.mw/docs)
+* [Beam Documentation](/docs)

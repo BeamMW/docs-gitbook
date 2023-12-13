@@ -11,7 +11,7 @@ This step-by-step guide will get your new wallet up and running.
 ## Create your wallet
 
 {% hint style="success" %}
-Make sure you have the [latest ](https://beam.mw/downloads/mainnet-mac)version of Beam downloaded!
+Make sure you have the [latest ](/downloads/mainnet-mac)version of Beam downloaded!
 {% endhint %}
 
 1. **Launch** Beam desktop wallet <img src="../.gitbook/assets/Screen Shot 2022-07-31 at 8.29.33 PM.png" alt="" data-size="line">.

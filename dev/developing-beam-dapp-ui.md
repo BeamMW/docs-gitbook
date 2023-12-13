@@ -8,7 +8,7 @@ In this tutorial we will review how to set up the development environment for bu
 
 ### Configure the 'testapp' in the wallet
 
-1. Download and install [Beam Desktop wallet](https://beam.mw/downloads/dappnet)\
+1. Download and install [Beam Desktop wallet](/downloads/dappnet)\
    \
    We recommend using DAPPNET (the testing network created especially for testing dapps), as it is the most convenient for this purpose. You will also need to get some DAPPNET Beam to pay transaction fees, which can be done using the Faucet application you can find in the built in DApp Store.\
 

@@ -13,7 +13,7 @@ Mining Beam coins is the best way to support Beam! Miners strengthen the securit
 
 ## **Part one: installation**
 
-Download `Beam-Wallet-CLI` and `Beam-Node` files directly from our main [website](https://beam.mw/downloads).
+Download `Beam-Wallet-CLI` and `Beam-Node` files directly from our main [website](/downloads).
 
 ‌Extract these files in a separate folder on your 'always-on PC' (or whichever device is running your Node) and label the folder as `beam-mining`.
 

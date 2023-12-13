@@ -16,7 +16,7 @@ Users can now send, store or receive Beam and Confidential Assets (Tokens) acros
 
 ![](.gitbook/assets/android10hero.jpg)
 
-Android users can download the APK file directly from our main [website](https://beam.mw/downloads/mainnet-mac) or download it from the [Google Play Store](https://play.google.com/store/apps/details?id=com.mw.beam.beamwallet.mainnet).
+Android users can download the APK file directly from our main [website](/downloads/mainnet-mac) or download it from the [Google Play Store](https://play.google.com/store/apps/details?id=com.mw.beam.beamwallet.mainnet).
 
 
 
@@ -26,7 +26,7 @@ Android users can download the APK file directly from our main [website](https:/
 
 ![](.gitbook/assets/imgonline-com-ua-Resize-xn0woxejZG.jpg)
 
-iOS users can search for Beam mobile wallet on the App Store or click on the App Store logo on our [main website](https://beam.mw/downloads/mainnet-mac) to redirect to the download page on the [App Store](https://apps.apple.com/us/app/beam-privacy-wallet/id1459842353?ls=1).
+iOS users can search for Beam mobile wallet on the App Store or click on the App Store logo on our [main website](/downloads/mainnet-mac) to redirect to the download page on the [App Store](https://apps.apple.com/us/app/beam-privacy-wallet/id1459842353?ls=1).
 
 
 

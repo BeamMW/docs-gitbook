@@ -30,7 +30,7 @@ The difference between new addresses and old are the following
 
  Before starting the upgrade procedure it is highly recommended to stop the wallets and back up the _wallet.db_ and _node.db_ files.
 
-1. Download the new binaries from [Beam Website](https://beam.mw/downloads) or build from [source](https://github.com/BeamMW/beam/tree/mainnet)
+1. Download the new binaries from [Beam Website](/downloads) or build from [source](https://github.com/BeamMW/beam/tree/mainnet)
 1. [Enable](https://github.com/BeamMW/beam/wiki/Adding-support-for-Beam-Confidential-Asset) CA support if needed
 1. Update address verification. Now, `validate_address` method returns additional info about address:
 
