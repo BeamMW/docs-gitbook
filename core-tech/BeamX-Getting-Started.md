@@ -33,7 +33,7 @@ We strongly recommend that you get the node and the CLI wallet in addition to th
 
 Once you download and unzip CLI binary, put it in a folder called 'beamx' anywhere on your machine. Once this is done, open your favorite Terminal or Command Prompt and change directory to the 'beamx' folder you have just created.
 
-TIP: Since BeamX CLI wallet is an extended version of Beam CLI wallet most of the documentation [here](https://documentation.beam.mw/en/latest/rtd_pages/user_cli_wallet_guide.html) is applicable to BeamX CLI Wallet as well.
+TIP: Since BeamX CLI wallet is an extended version of Beam CLI wallet most of the documentation [here](https://beam.mw/docs/cli) is applicable to BeamX CLI Wallet as well.
 
 ### Initializing the wallet
 

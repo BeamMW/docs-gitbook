@@ -12,7 +12,7 @@
 
 ## Additional Documentation
 
-* [Beam Documentation](https://documentation.beam.mw/)
+* [Beam Documentation](https://beam.mw/docs)
 * [DAppnet User Guide](https://beamx.gitbook.io/dappnet-user-guide/)
 * [Beam Ethereum Bridges](https://beamx.gitbook.io/beam-ethereum-bridges/)
 * [Desktop Wallet User Guide](https://beamx.gitbook.io/desktop-wallet-user-guide/)

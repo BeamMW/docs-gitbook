@@ -24,7 +24,7 @@ For effective investigation please attach the following items for every issue:
 
 # Documentation
 
-[User Guides](https://documentation.beam.mw)
+[User Guides](https://beam.mw/docs)
 
 [Exchange integration Guide](https://github.com/BeamMW/beam/wiki/Exchange-Pool-integration-guide)
 
