@@ -50,7 +50,7 @@ Beam supports creating direct payment channels between wallets that work similar
 
 ### Tokens (a.k.a. Beam Confidential Assets) <a href="#tokens-a-k-a-beam-confidential-assets" id="tokens-a-k-a-beam-confidential-assets"></a>
 
-The Beam blockchain supports creating Confidential Assets, which just like Beam are **private by default**. This differs from Ethereum, which supports creating new tokens using Smart Contracts (e.g., ERC-20 and others), Confidential Assets on Beam boasts a **Layer 1** **implementation as a first-class citizen** with native support offered by all nodes, wallets, and Dapps. This implementation makes new asset creation more effortless, as the security and reliability would not require verifying and auditing a different smart contract for each new asset. To create a new asset on Beam, please refer to [this guide](https://www.raskul.com/creating-a-confidential-asset-on-beam/).
+The Beam blockchain supports creating Confidential Assets, which just like Beam are **private by default**. This differs from Ethereum, which supports creating new tokens using Smart Contracts (e.g., ERC-20 and others), Confidential Assets on Beam boasts a **Layer 1** **implementation as a first-class citizen** with native support offered by all nodes, wallets, and Dapps. This implementation makes new asset creation more effortless, as the security and reliability would not require verifying and auditing a different smart contract for each new asset.
 
 ### Decentralized Apps (a.k.a. Dapps) and Dapp Store
 
