@@ -24,7 +24,7 @@ Beam launched in March 2018 with a singular vision: creating the best possible p
 
 Beam is a deflationary coin with capped emission and periodic halving every four years (similar to bitcoin). Beam uses a Proof-of-Work consensus algorithm called BeamHash III (created by Wilke Trei, a.k.a., Lolliedieb, [pdf](https://docs.beam.mw/Beam\_Hash\_III\_Slides.pdf)) with emission starting from zero (e.g., no pre-mine or ICO) and is currently mined on GPUs. See our [mining guide](/docs/mining) for more information on how-to mine Beam coins.
 
-During the last three years of the project's existence, we have made many improvements and additions to our technological stack. Currently, Beam uses a combination of Mimblewimble and Lelantus protocol on layer 1, with transactions routed through Dandelion++ and transactions merging in stem phase on Layer 0 for ultimate privacy. To learn more about Beam technology, please refer to our [wiki ](https://github.com/BeamMW/beam/wiki)page.
+During the last five years of the project's existence, we have made many improvements and additions to our technological stack. Currently, Beam uses a combination of Mimblewimble and Lelantus protocol on layer 1, with transactions routed through Dandelion++ and transactions merging in stem phase on Layer 0 for ultimate privacy. To learn more about Beam technology, please refer to our [wiki ](https://github.com/BeamMW/beam/wiki)page.
 
 https://www.youtube.com/watch?v=oNsT3M6NWTI
 
