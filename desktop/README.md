@@ -32,7 +32,7 @@ If you are new to Beam make sure to read [Beam Essentials](/docs):
 
 ### DeFi
 
-[Decentralized Applications](daap-store.md)
+[Decentralized Applications](dapp-store.md)
 
 ## Supported platforms
 
