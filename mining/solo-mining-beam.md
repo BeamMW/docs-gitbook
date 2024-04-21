@@ -6,7 +6,7 @@ Mining Beam coins is the best way to support Beam! Miners strengthen the securit
 
 * Mining rig containing a minimum of one GPU with 3GB of RAM.
 * Basic knowledge of command line (CMD terminal) functions.
-* Text editor, e.g., [Visual Code Studio](https://code.visualstudio.com/).
+* Text editor, e.g., [Visual Studio Code](https://code.visualstudio.com/).
 * High-speed internet connection.
 * Mining software, e.g., [lolMiner](https://github.com/Lolliedieb/lolMiner-releases).
 * An 'always-on PC' or a similar device to run your Beam Node.
