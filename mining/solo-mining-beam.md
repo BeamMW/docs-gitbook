@@ -24,7 +24,7 @@ Download `Beam-Wallet-CLI` and `Beam-Node` files directly from our main [website
 To create an SSL Certificate and Key within `beam-mining`, open a new CMD terminal window. Enter the following command:
 
 ```
-openssl req -x509 -newkey rsa:4096 -keyout beam-stratum-key.pem -out beam-stratum-crt.pem -days 3650 -nodes -subj '/CN=localhost’
+openssl req -x509 -newkey rsa:4096 -keyout beam-stratum-key.pem -out beam-stratum-crt.pem -days 3650 -nodes -subj /CN=localhost
 ```
 
 Rename the SSL Certificate and Key files created by the output.
