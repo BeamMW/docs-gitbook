@@ -1,10 +1,5 @@
 # Introduction to Atomic Swaps
 
-
-**Atomic Swaps is in beta.**
-
-**DO NOT USE THIS HIGHLY ADVANCED FEATURE FOR LARGE SUMS OF MONEY**
-
 **For Electrum we support only Legacy type seeds and SSL connection**
 
 **For Bitcoin use version** [**Bitcoin Core v0.17.1**](https://bitcoin.org/en/download) **.**
