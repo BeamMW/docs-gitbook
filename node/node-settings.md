@@ -58,7 +58,7 @@ Beam uses an Equihash mining algorithm with (150,5) parameters and a customized 
 Make running your local node in fast sync mode easier with the following command:
 
 ```
-./beam-node --port=10000 --peer=eu-nodes.mainnet.beam.mw:8100,us-nodes.mainnet.beam.mw:8100,ap-nodes.mainnet.beam.mw:8100,ap-hk-nodes.mainnet.beam.mw:8100 --fast_sync=on
+./beam-node --port=10000 --peer=eu-nodes.mainnet.beam.mw:8100,us-nodes.mainnet.beam.mw:8100 --fast_sync=on
 ```
 
 ![](<.gitbook/assets/image (2).png>)
