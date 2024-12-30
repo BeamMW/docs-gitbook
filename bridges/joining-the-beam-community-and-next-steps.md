@@ -6,7 +6,7 @@ The Beam Team is rigorously testing the Beam Bridge on the Testnet before its up
 
 ## Join the Beam Community!
 
-* Download Beam Wallet for [desktop](https://www.beam.mw/downloads), [iOS](https://itunes.apple.com/us/app/beam-privacy-wallet/id1459842353), [Android](https://play.google.com/store/apps/details?id=com.mw.beam.beamwallet.mainnet), [Web](https://chrome.google.com/webstore/detail/beam-web-wallet/ilhaljfiglknggcoegeknjghdgampffk?hl=en)
+* Download Beam Wallet for [desktop](https://www.beam.mw/downloads), [iOS](https://itunes.apple.com/us/app/beam-privacy-wallet/id1459842353), [Web](https://chrome.google.com/webstore/detail/beam-web-wallet/ilhaljfiglknggcoegeknjghdgampffk?hl=en)
 * Learn more about Beam on our [website](http://beam.mw) and [blog](https://medium.com/beam-mw)
 * Subscribe to our [YouTube](https://www.youtube.com/channel/UCddqBnfSPWibf4f8OnEJm\_w) channel
 * Read about [Shaders](https://github.com/BeamMW/beam/wiki/Beam-Smart-Contracts) and [BVM](https://github.com/BeamMW/beam/wiki/BVM-functions-for-shaders)

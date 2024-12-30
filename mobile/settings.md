@@ -58,7 +58,7 @@ Turn your mobile wallet notifications on or off. We strongly recommend that tran
 
 ### Rate/Report/Remove
 
-* **Rate the app:** support Beam by giving us a good review on the app or Google Play stores.
+* **Rate the app:** support Beam by giving us a good review on the App Store.
 * **Report a problem:** creates an archive of your wallet that you can send to Beam technical support.
 * **Remove current wallet:** deletes your wallet and wallet database
 
