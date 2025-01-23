@@ -109,7 +109,7 @@ Launch the DApp in Beam Wallet and select the "Bridges app".
 
 ### Beam to Ethereum
 
-Click on "Beam to Ethereum" in the next window. Click "Ethereum side of the bride", prompting a browser pop-up to appear in your browser.
+Click on "Beam to Ethereum" in the next window. Click "Ethereum side of the bridge", prompting a browser pop-up to appear in your browser.
 
 <figure><img src="https://lh3.googleusercontent.com/oYFSYb50FlTEAt2CWb1Dp4jmKczqjtWd-B6ko8PoTJau7QPoKWa8rE2Mw9NpmzK5-zwjYe6pjeywI2IBsYFuJc54BO0uo_XdvSO7GaWKYMMqq-dI9hdFstQc0SorqmKj-e3Gke72halqKPQrszK4q8mtIudXeOaXZwYSgm_flO1gWCCMkhQMubjghw" alt=""><figcaption></figcaption></figure>
 
