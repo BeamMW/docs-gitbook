@@ -1,8 +1,3 @@
-
-# Current version: Groovy Gluon 7.2.13533
-
-Download latest binaries here: https://www.beam.mw/downloads
-
 ## IMPORTANT
 [Upgrade guide for pools and exchanges](https://github.com/BeamMW/beam/wiki/Beam-Fierce-Fermion-6.0-Upgrade-Guide-for-pools-and-exchanges)
 
