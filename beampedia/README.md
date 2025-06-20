@@ -48,7 +48,7 @@ Beam implements leading research across areas like Confidential Transactions, Bu
 
 ### Block
 
-In blockchain networks, a block contains a batch of transactions to be verified and added to the chain. Blocks have a maximum size and contain a cryptographic hash of the previous block to link together.
+In [blockchain](https://nym.com/blog/using-blockchain-privately) networks, a block contains a batch of transactions to be verified and added to the chain. Blocks have a maximum size and contain a cryptographic hash of the previous block to link together.
 
 Valid blocks must follow the network's consensus rules. Nodes express acceptance by building on top of blocks, while invalid blocks are rejected. The mining process creates new blocks by solving a computational puzzle. 
 
@@ -56,7 +56,7 @@ In Bitcoin and Beam, blocks contain a Merkle root hash of all transactions. This
 
 ### Blockchain 
 
-A blockchain is a decentralized ledger achieved by cryptographic linking of transaction batches (blocks) in an append-only data structure. This prevents revision and establishes an authoritative transaction history.
+A [blockchain is a [decentralized](https://nym.com/blog/what-is-web3) ledger achieved by cryptographic linking of transaction batches (blocks) in an append-only data structure. This prevents revision and establishes an authoritative transaction history.
 
 Satoshi Nakamoto proposed using proof-of-work and economic incentives to operate blockchains in a trustless way. Network nodes cryptographically agree on the valid chain with the greatest proof-of-work. Technologies like Mimblewimble improve privacy and scalability.  
 
@@ -175,7 +175,7 @@ As the block reward decreases over time, transaction fees will become a larger p
 
 ### Encryption
 
-Encryption encodes messages to prevent unauthorized access. Symmetric encryption uses a shared secret key. Asymmetric public key encryption uses public keys for encryption and private keys for decryption.
+[Encryption](https://nym.com/blog/what-is-encryption) encodes messages to prevent unauthorized access. Symmetric encryption uses a shared secret key. Asymmetric public key encryption uses public keys for encryption and private keys for decryption.
 
 Public key cryptography enabled e-commerce by providing authentication without prior shared secrets. RSA is the most common algorithm. Elliptic curve cryptography (ECC) provides stronger security per bit.
 
@@ -401,7 +401,7 @@ Commitments prevent external parties from inferring the hidden data. The blindin
 
 ### Privacy 
 
-Privacy is preventing unauthorized extraction of information in communications. Encryption protects privacy just as locked doors prevent unwanted entry.
+[Privacy](https://nym.com/privacy-hub) is preventing unauthorized extraction of information in communications. Encryption protects privacy just as locked doors prevent unwanted entry.
 
 While not enumerated explicitly, privacy is assumed as a right in liberal democracies. Wiretaps and invasive surveillance require judicial approval.
 
