@@ -28,7 +28,7 @@ If you are new to Beam make sure to read [Beam Essentials](/docs):
 
 [Confidential Assets](confidential-assets.md)
 
-[Atomic Swaps](../atomic-swaps/README.md)
+[Atomic Swaps](/docs/atomic-swaps/)
 
 ### DeFi
 
