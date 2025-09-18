@@ -1,5 +1,5 @@
 ---
-description: The "official" Beam command line reference guide!
+description: The official Beam command line reference guide!
 ---
 
 # Beam command line (CLI) guide

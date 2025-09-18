@@ -2,11 +2,6 @@
 
 **For Electrum we support only Legacy type seeds and SSL connection**
 
-**For Bitcoin use version** [**Bitcoin Core v0.17.1**](https://bitcoin.org/en/download) **.**
-
-**For Litecoin use version** [**Litecoin v0.17.1**](https://litecoin.org/#download) **.**
-
-
 
 ## Introduction to Atomic Swaps
 
