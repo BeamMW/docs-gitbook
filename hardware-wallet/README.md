@@ -4,7 +4,7 @@ description: Hardware Wallet support
 
 # Hardware wallets
 
-
+We currently do not support smart contract transactions for the Hardware Wallets.
 
 ## Ledger
 
