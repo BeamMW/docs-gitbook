@@ -103,6 +103,9 @@ Even though all Beam transactions are confidential by default, there are three d
 
 Even though Beam uses the term "Address" for convenience, Beam addresses are different from most other cryptocurrencies. Beam Addresses are not recorded on the blockchain and are only used to communicate with other wallets to create different transaction types. Beam wallets will generate an address for every new transaction (recommended for most cases) and support three types of addresses:
 
+**SBBS addresses** are mostly used for CEX withdrawals and mining pools.  
+The receiver wallet must be online to receive the transaction. See **Online transactions** section above.
+
 **Regular addresses** will function for Online and Offline transactions. The Receiver generates and shares a Regular address with the Sender. Then the Sender decides to make the payment Offline or Online before completing the transaction. Offline payments offer users flexibility if both parties cannot be online within 12 hours. In some (rare) cases, the Regular address will expire, and both parties will need to restart the transaction.
 
 **Max anonymity set** is a special Offline address that guarantees users maximum privacy. If the Receiver shares a Max anonymity address with Sender, the transaction type will change to [**Max Privacy**](./#beam-transaction-types).
