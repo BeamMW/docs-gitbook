@@ -14,12 +14,12 @@ If you are new to Beam please review the Beam Essentials section. and learn abou
 
 ## **To receive Beam**
 
-1. **Launch** Beam desktop wallet <img src=".gitbook/assets/Screen Shot 2022-07-31 at 8.29.33 PM.png" alt="" data-size="line">.
-2. From the main screen, select **receive**.
-3. Choose address type ([regular](receiving-beam.md#regular-offline-transactions) or [max privacy](receiving-beam.md#max-privacy-transaction)).
-4. Enter a requested amount (optional).
-5. Leave a comment (optional). Comments are only visible inside your wallet for personal record-keeping.
-6. Click **copy and close** and **send** your unique wallet address over a secure messaging app. The Sender can scan your QR code if using Beam mobile.
+1. **Launch** Beam desktop wallet
+2. From the main screen, select **receive**
+3. Choose address type ([regular](receiving-beam.md#regular-offline-transactions) or [max privacy](receiving-beam.md#max-privacy-transaction))
+4. Enter a requested amount (optional)
+5. Leave a comment (optional). Comments are only visible inside your wallet for personal record-keeping
+6. Click **copy and close** and **send** your unique wallet address over a secure messaging app. The Sender can scan your QR code if using Beam mobile
 
 
 Always use a secure channel when sending your wallet addresses.
