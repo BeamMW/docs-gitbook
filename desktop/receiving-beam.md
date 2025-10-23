@@ -44,18 +44,17 @@ The sender decides whether the transaction is Regular or Offline. Things to cons
 * If both parties aren't online within 12 hours, the SBBS address will expire and send a new SBBS address.
 * After 30 failed attempts, the Offline transaction will void, and the sender will need to create a new transaction.
 
-![](.gitbook/assets/2022-06-23\_15-32-55.png)
+### Receiving from an exchange or pool
 
-### Receiving from an exchange pool
+Exchanges and mining pools require SBBS addresses. Click "Address details," to find your SBBS address or copy it directly via the "copy SBBS address and close"-button
 
-Exchange pools require SBBS addresses to guarantee maximum privacy. Click "more details," to find your SBBS address.
-
-![](.gitbook/assets/2022-06-23\_15-33-12.png)
+![](.gitbook/assets/CopySBBS.png)
 
 ### Max Privacy transaction
 
 
-Max Privacy transaction is a special type of Offline transaction that guarantees a maximum anonymity set. Max Privacy transactions can take up to 72 hours to complete
+Max Privacy transaction is a special type of Offline transaction that guarantees a maximum anonymity set.
+Max Privacy transactions can take up to 72 hours to complete
 
 
 Create a Max Privacy address by toggling the max privacy slider in receive before copy/pasting your wallet address. Once the transaction has started you can view the unlock time, e.g., time remaining before your coins are available for spending.
