@@ -13,7 +13,7 @@ Mining Beam coins is the best way to support Beam! Miners strengthen the securit
 
 ## **Part one: installation**
 
-Download `Beam-Wallet-CLI` and `Beam-Node` files directly from our main [website](/downloads).
+Download `Command Line Interface` and `Node` files directly from our main [website](/downloads).
 
 ‌Extract these files in a separate folder on your 'always-on PC' (or whichever device is running your Node) and label the folder as `beam-mining`.
 
@@ -87,7 +87,7 @@ Add the following parameters (one per line) to your `beam-node.cfg` file:
 port=10000
 log_level=verbose
 file_log_level=verbose
-peer=eu-nodes.mainnet.beam.mw:8100,us-nodes.mainnet.beam.mw:8100,ap-nodes.mainnet.beam.mw:8100,ap-hk-nodes.mainnet.beam.mw:8100,shanghai-node.mainnet.beam.mw:8100
+peer=eu-nodes.mainnet.beam.mw:8100,us-nodes.mainnet.beam.mw:8100
 stratum_port=3333
 stratum_secrets_path=.
 ```
@@ -119,7 +119,7 @@ Your mining rig can use your node's IP address and stratum port to begin solo mi
 Using [lolMiner](https://github.com/Lolliedieb/lolMiner-releases) as an example, the command output is similar to the following:
 
 ```
-./lolMiner --coin BEAM --pool 127.0.0.1:3333 --user yourwalletaddress
+./lolMiner --coin BEAM --pool 127.0.0.1:3333 --user your-SBBS-address
 ```
 
 After you mine a block, your block rewards will show up in your wallet summary.
