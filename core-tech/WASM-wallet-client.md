@@ -1,18 +1,23 @@
 # Overview
-WASM wallet client is a thin wrapper around Beam client library build into WASM using Emscripten toolchain. This wrapper allows to run BEAM wallet inside any browser supporting WebAssembly and it provides the regular [BEAM wallet API](Beam-wallet-protocol-API) to communicated with it from external(javascript) code. It's available via `npm` for different network types:
+WASM wallet client is a thin wrapper around Beam client library built into WASM using Emscripten toolchain. This wrapper allows to run BEAM wallet inside any browser supporting WebAssembly and it provides the regular [BEAM wallet API](Beam-wallet-protocol-API) to communicate with it from external(javascript) code. 
+
+Starting from version 7.3.13702 all network types are handled by a single  [npm](https://www.npmjs.com/package/beam-wasm-client) package.
+
+
+ Older versions are available via `npm` for different network types:
 * [mainnet](https://www.npmjs.com/package/beam-wasm-client)
 * [testnet](https://www.npmjs.com/package/beam-wasm-client-testnet)
 * [dappnet](https://www.npmjs.com/package/beam-wasm-client-dappnet)
 * [masternet (developer)](https://www.npmjs.com/package/beam-wasm-client-masternet)
 
 # API
-WASM wallet client module exports following classes:
+WASM wallet client module exports the following classes:
 * [WasmWalletClient](#WasmWalletClient) - the main object provides a set of static and member methods to control the wallet. It could be used to implement BEAM wallet as a browser extension
 
 	Method | Description
 	--- | ---
-	[Constructor](#Constructor) |  Creates new regular wallet object
-	[Headless constructor](#Headless-constructor) |  Creates new headless wallet object
+	[Constructors](#Constructors) |  Creates new regular wallet object
+	[Headless constructors](#Headless-constructors) |  Creates new headless wallet object
 	[startWallet](#startWallet) |  Starts the wallet in the background thread
 	[stopWallet](#stopWallet) |  Asynchronously stops the wallet running in the background
 	[isRunning](#isRunning) |  Checks if the wallet is running
@@ -20,7 +25,7 @@ WASM wallet client module exports following classes:
 	[sendRequest](#sendRequest) |  Sends [API](Beam-wallet-protocol-API) request to the wallet 
 	[subscribe](#subscribe) |  Subscribes for API responses
 	[unsubscribe](#unsubscribe) |  Unsubscribes from response notifications 
-	[setSyncHandler](#setSyncHandler) |  Sets synchronization handler, allows to track sync progress
+	[setSyncHandler](#setSyncHandler) |  Sets synchronization handler, allows tracking sync progress
 	[setApproveSendHandler](#setApproveSendHandler) |  Sets handler which allows to approve or reject any send operation initiated by DAPPs
 	[setApproveContractInfoHandler](#setApproveContractInfoHandler) |  Sets handler which allows to approve or reject any operation which requires user's attention from application shader
 	[createAppAPI](#createAppAPI) |  Asynchronously creates new application wallet API for given application
@@ -39,10 +44,10 @@ WASM wallet client module exports following classes:
 
 	Method | Description
 	--- | --- 
-	[callWalletApi](#callWalletApi) | Allows to call wallet API methods from application
-	[setHandler](#setHandler) | Sets handler to receive response for API request
+	[callWalletApi](#callWalletApi) | Allows to call wallet API methods from the application
+	[setHandler](#setHandler) | Sets handler to receive a response for API request
 
-* [AppAPICallback](#AppAPICallback) - a callback object for applications, it allows the wallet to control the action which application want to perform.
+* [AppAPICallback](#AppAPICallback) - a callback object for applications, it allows the wallet to control the action which the application wants to perform.
         
 	Method | Description
 	--- | --- 
@@ -60,7 +65,7 @@ WasmWalletClient.GeneratePhrase()
 Generates new seed phrase
 
 ### Return value
-* seed phrase, a string of 12 words from the dictionary separated separated by ` `
+* seed phrase, a string of 12 words from the dictionary separated by ` `
 
 ### Example 
 ```javascript
@@ -95,7 +100,7 @@ WasmWalletClient.IsValidPhrase(phrase : String)
 Validates given seed `phrase` 
 
 ### Parameters
-* `phrase` : a string of the words separated by ` `
+* `phrase` : a string of words separated by ` `
 
 ### Return value
 * `true` if seed `phrase` is valid otherwise `false`
@@ -237,9 +242,10 @@ Tests asynchronously if given password fits to the database
   })
 ```
 
-## Constructor
+## Constructors
 ```javascript
-WasmWalletClient(database : String, password : String, nodeURL : String)
+WasmWalletClient(database : String, password : String, nodeURL : String);
+WasmWalletClient(database : String, password : String, nodeURL : String, network : Network);
 ```
 Creates new wallet client object
 
@@ -247,6 +253,14 @@ Creates new wallet client object
 * `database` : path to encrypted database in browser's IndexDB
 * `password` : password to the database
 * `nodeURL` : URL to BEAM node to communicate with
+* `network` : network type, acceptable values are, available from version 7.3.13702
+
+```javascript
+Module.Network.mainnet;
+Module.Network.masternet;
+Module.Network.testnet;
+Module.Network.dappnet;
+```
 
 ### Return value
 * object of the wallet client
@@ -254,23 +268,37 @@ Creates new wallet client object
 ### Notes
 * wallet client can communicate with node over Web Sockets only, ensure that node located by `nodeURL` has WebSocket proxy enabled
 * ensure that `MountFS()` has been called before
+* if no `network` param is passed `mainnet` client is created
 
 ### Example 
 ```javascript
- var walletClient = new Module.WasmWalletClient("/beam_wallet/wallet.db",
+ var mainnetWalletClient = new Module.WasmWalletClient("/beam_wallet/wallet.db",
                                                 "123",
-
-                                                "eu-node01.masternet.beam.mw:8200");
+                                                "eu-node01.mainnet.beam.mw:8200");
+ var dappnetWalletClient = new Module.WasmWalletClient("/beam_wallet/wallet.db",
+                                                "123",
+                                                "eu-node01.dappnet.beam.mw:8200",
+                                                Module.Network.dappnet);
 ```
 
-## Headless constructor
+
+## Headless constructors
 ```javascript
-WasmWalletClient(nodeURL : String)
+WasmWalletClient(nodeURL : String);
+WasmWalletClient(nodeURL : String, network : Network); // available from version 7.3.13702
 ```
 Creates new headless wallet client object. It doesn't have a master key. The wallet with such a database can communicate with the node, but cannot make transactions or detect any UTXO event. It can generate public keys, but they all are temporary and provided only for the reason to have viewer access to dapps
 
 ### Parameters
 * `nodeURL` : URL to BEAM node to communicate with
+* `network` : network type, acceptable values are
+
+```javascript
+Module.Network.mainnet;
+Module.Network.masternet;
+Module.Network.testnet;
+Module.Network.dappnet;
+```
 
 ### Return value
 * object of the wallet client
@@ -281,7 +309,8 @@ Creates new headless wallet client object. It doesn't have a master key. The wal
 
 ### Example 
 ```javascript
- var walletClient = new Module.WasmWalletClient("eu-node01.masternet.beam.mw:8200");
+ var mainnetWalletClient = new Module.WasmWalletClient("eu-node01.mainnet.beam.mw:8200");
+ var walletClient = new Module.WasmWalletClient("eu-node01.masternet.beam.mw:8200", Module::Network::masternet);
 ```
 
 ## startWallet
@@ -458,14 +487,19 @@ Sets handler which allows to approve or reject any operation which requires user
 
 ## createAppAPI
 ```javascript
-function createAppAPI(appid : String, appname : String, callback : function)
+function createAppAPI(appid : String, appname : String, callback : function);
+function createAppAPI(apiver: String, minapiver : String, appid : String, appname : String, callback : function);
+function createAppAPI(apiver: String, minapiver : String, appid : String, appname : String, callback : function, privilegeLevel : Integer);
 ```
 Asynchronously creates new application wallet API for given application
 
 ### Parameters
+* `apiver` : desired version of API, acceptable values are strings like: "6.0", "7.3" or "current" if you want to use the latest version
+* `minapiver` : a fallback version of API in case if desired API version is inaccessible
 * `appid` : ID of the application
 * `appname` : the name of the app
 * `callback` : the callback with API object in the case of success
+* `privilegeLevel` : level of privilege for app shader running via requested API, possible values are `0`, `1`, `2`, the higher value the higher privilege, available from version 7.3.13702
 
 ### Example 
 ```javascript

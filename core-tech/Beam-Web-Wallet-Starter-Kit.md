@@ -1,5 +1,3 @@
-
-
 # Beam Web Wallet Starter Kit [working draft]
 
 Web wallet starter allows you easily integrate Beam with your service, create a bunch of wallets and manage them... (TODO)

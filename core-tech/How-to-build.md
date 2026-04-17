@@ -24,14 +24,8 @@ For earlier versions, build instructions are located [here](https://github.com/B
     git submodule update --init --recursive
     ```
 
-## Branch convention
-1. We use `master` branch for development.
-1. To be able to connect to `testnet` you have to checkout `testnet` branch
-1. To be able to connect to `mainnet` you have to checkout `mainnet` branch
-
-
 ## CMake options
-Beam uses CMake to generate a build. Beam has several options to say how to build the project, which feature to turn ON/OFF. T
+Beam uses CMake to generate a build. Beam has several options to say how to build the project, which feature to turn ON/OFF.
 Please, look reference to root `CMakeLists.txt` file.
 
 # Windows
@@ -80,7 +74,7 @@ git checkout double_doppler_4.0RC
 
 ## Ubuntu 18.04 Desktop
 
-Instructions below are valid for a clean default Ubuntu 18.04.03 Desktop LTS install. If your're building on an aged system please check that steps 1, 2 & 4 do not overwrite/conflict with more recent versions of cmake and boost that might have been installed before. You can omit cmake/boost installation if you already have more recent versions.
+Instructions below are valid for a clean default Ubuntu 18.04.03 Desktop LTS install. If you're building on an aged system please check that steps 1, 2 & 4 do not overwrite/conflict with more recent versions of cmake and boost that might have been installed before. You can omit cmake/boost installation if you already have more recent versions.
 
 1. Install dependencies
     ```
@@ -249,16 +243,9 @@ Instructions below are valid for a default Fedora 31-1.9 Headless Server install
     ```
     git clone https://github.com/BeamMW/beam.git
     ```
-    this will give you a master branch which is developer's version of Beam. To get _mainnet_ or _testnet_ use 
-    ```
-    git clone --branch mainnet https://github.com/BeamMW/beam.git
-    ```
-    or 
-    ```
-    git clone --branch testnet https://github.com/BeamMW/beam.git
-    ```
 
 1. Install Brew Package Manager.
+
 1. Install necessary packages using:  
     ```
     brew install openssl cmake
@@ -269,12 +256,12 @@ Instructions below are valid for a default Fedora 31-1.9 Headless Server install
     ```
 1. Download and install a compatible version of boost:  
     ```
-    curl -O https://raw.githubusercontent.com/Homebrew/homebrew-core/5da5895add2f6b9320d654dd844d4827f6876c8b/Formula/boost.rb
-    brew install ./boost.rb
+    brew install boost@1.76
+    brew link --force --overwrite boost@1.76
     ```
 1. Set your Environment Variables by using the following:  
     ```
-    - export OPENSSL_ROOT_DIR="/usr/local/opt/openssl@1.1"
+    - export OPENSSL_ROOT_DIR="/usr/local/opt/openssl@3"
     ```
 1. Go to Beam project folder and call  
     ```

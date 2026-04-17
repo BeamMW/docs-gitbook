@@ -51,7 +51,7 @@ The external miner software is available for download [here](https://www.beam.mw
 
 # How can you help?
 * Want to help developing Beam mining infrastructure? Have GPU development skills or experience with mining pools? Write to us at mining@beam.mw. Fair compensation will be offered to qualified developers.
-* Own a mining farm and want to mine Beam at launch? Join Beam Mining community on Telegram or contact us at mining@beam.mw.
+* Own a mining farm and want to mine Beam? Join Beam Mining community on [Telegram](https://t.me/BeamMiners) or contact us at mining@beam.mw.
 
 
 
