@@ -159,7 +159,7 @@ On a confirmed owned connection, `FlyClient::OnOwnedNode(nodeID, true)` is calle
 
 ### Online mining finalization
 
-If `m_PreferOnlineMining` is set, the fly client advertises `LoginFlags::MiningFinalization` during the handshake. The node may then call back with `GetBlockFinalization(height, fees)`, asking the wallet to construct and return a coinbase transaction for block assembly. The fly client responds with `BlockFinalization` containing the signed transaction. See [Node-Mining-Modes](Node-Mining-Modes) for the trade-offs between online and offline mining.
+If `m_PreferOnlineMining` is set, the fly client advertises `LoginFlags::MiningFinalization` during the handshake. The node may then call back with `GetBlockFinalization(height, fees)`, asking the wallet to construct and return a coinbase transaction for block assembly. The fly client responds with `BlockFinalization` containing the signed transaction. See [Node-Mining-Modes](Node-Mining-Modes.md) for the trade-offs between online and offline mining.
 
 ---
 
@@ -234,8 +234,8 @@ The fly client never downloads full block bodies (unless `RequestBody` is explic
 
 ## Related Pages
 
-- [Core-Block-And-Chain-State](Core-Block-And-Chain-State) — `SystemState`, DMMR, chain work
-- [Core-Merkle-Structures](Core-Merkle-Structures) — MMR proof structures used in verification
-- [Node-P2P-Protocol](Node-P2P-Protocol) — full-node wire protocol that fly client messages ride on
-- [Node-Mining-Modes](Node-Mining-Modes) — online vs offline mining, `MiningFinalization` detail
-- [Wallet-SBBS](Wallet-SBBS) — BBS channel derivation and encryption
+- [Core-Block-And-Chain-State](../core/Core-Block-And-Chain-State.md) — `SystemState`, DMMR, chain work
+- [Core-Merkle-Structures](../core/Core-Merkle-Structures.md) — MMR proof structures used in verification
+- [Node-P2P-Protocol](Node-P2P-Protocol.md) — full-node wire protocol that fly client messages ride on
+- [Node-Mining-Modes](Node-Mining-Modes.md) — online vs offline mining, `MiningFinalization` detail
+- [Wallet-SBBS](../wallet/Wallet-SBBS.md) — BBS channel derivation and encryption

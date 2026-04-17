@@ -2,7 +2,7 @@
 
 The Beam Virtual Machine (BVM) is a sandboxed WASM interpreter embedded in the Beam node and wallet. It executes *shaders* — custom programs that implement on-chain contract logic and wallet-side application interfaces. BVM was introduced at Hard Fork 2 and has evolved through subsequent forks.
 
-Related pages: [Transactions-Hi-Frequency](Transactions-Hi-Frequency) · [Core-transaction-elements](Core-transaction-elements) · [Consensus-Hard-Forks](Consensus-Hard-Forks)
+Related pages: [Transactions-Hi-Frequency](../transactions/Transactions-Hi-Frequency.md) · [Core-transaction-elements](../core/Core-transaction-elements.md) · [Consensus-Hard-Forks](../consensus/Consensus-Hard-Forks.md)
 
 ---
 

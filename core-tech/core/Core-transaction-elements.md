@@ -2,7 +2,7 @@
 
 This page documents the fundamental data structures that compose a Beam transaction: inputs, outputs, and kernels. It also covers the balance invariant that all valid transactions and blocks must satisfy, the validation rules applied by the node, and the serialization model.
 
-> **Related pages:** [Core Cryptographic Primitives](Core-Cryptographic-Primitives) · [UTXO Set, Horizons and Cut-Through](UTXO-set,-horizons-and-cut-through) · [Transaction Creation Protocol](Transaction-creation-protocol) · [Confidential Assets](Confidential-assets) · [Lelantus MW (Shielded Pool)](Lelantus-MW)
+> **Related pages:** [Core Cryptographic Primitives](Core-Cryptographic-Primitives.md) · [Core Block and Chain State — Horizons](Core-Block-And-Chain-State.md#horizon-based-history-pruning-and-sparse-synchronization) · [Transaction Creation Protocol](../transactions/Transactions-Creation-Protocol.md) · [Confidential Assets](../transactions/Transactions-Confidential-Assets.md) · [Lelantus MW (Shielded Pool)](../transactions/Transactions-Lelantus-Shielded-Pool.md)
 
 ---
 
@@ -32,7 +32,7 @@ struct TxElement {
 };
 ```
 
-The commitment encodes both value and blinding factor: `C = v·H + k·G`, where `H` and `G` are fixed generators, `v` is the amount in Groth, and `k` is the secret blinding factor. See [Core Cryptographic Primitives](Core-Cryptographic-Primitives) for details.
+The commitment encodes both value and blinding factor: `C = v·H + k·G`, where `H` and `G` are fixed generators, `v` is the amount in Groth, and `k` is the secret blinding factor. See [Core Cryptographic Primitives](Core-Cryptographic-Primitives.md) for details.
 
 ---
 
@@ -87,7 +87,7 @@ The public range proof consists of an explicit `Amount m_Value` and an `ECC::Sig
 - Under PBFT consensus (`Rules::Consensus::Pbft`) coinbase outputs are disabled entirely.
 
 ### Asset Outputs
-Outputs for [Confidential Assets](Confidential-assets) carry an additional `m_pAsset` (`Asset::Proof`) — a Sigma proof that ties the commitment to a specific registered asset generator instead of the default BEAM generator `H`.
+Outputs for [Confidential Assets](../transactions/Transactions-Confidential-Assets.md) carry an additional `m_pAsset` (`Asset::Proof`) — a Sigma proof that ties the commitment to a specific registered asset generator instead of the default BEAM generator `H`.
 
 ---
 
@@ -202,7 +202,7 @@ struct TxKernelStd : public TxKernel {
 };
 ```
 
-**`HashLock`:** The kernel is only valid when submitted with the preimage of `m_Value`. Used in atomic swap HTLC constructions (see [Atomic Swap](Atomic-swap)).
+**`HashLock`:** The kernel is only valid when submitted with the preimage of `m_Value`. Used in atomic swap HTLC constructions (see [Atomic Swap](../transactions/Transactions-Atomic-Swaps.md)).
 
 **`RelativeLock`:** This kernel is not valid unless the referenced kernel is already in the chain at some height `h`, and `currentHeight ≥ h + m_LockHeight`.
 
@@ -218,7 +218,7 @@ struct TxKernelAssetControl : public TxKernelNonStd {
 
 **`TxKernelAssetEmit`** — adds `m_AssetID` and `m_Value` (`AmountSigned`): positive = issuance, negative = burn.
 
-**`TxKernelAssetCreate`** — adds `m_MetaData` (`Asset::Metadata`, up to 16 KB). The metadata hash is included in the signing message, making it immutable after asset creation. See [Confidential Assets](Confidential-assets).
+**`TxKernelAssetCreate`** — adds `m_MetaData` (`Asset::Metadata`, up to 16 KB). The metadata hash is included in the signing message, making it immutable after asset creation. See [Confidential Assets](../transactions/Transactions-Confidential-Assets.md).
 
 **`TxKernelAssetDestroy`** — adds `m_AssetID` and `m_Deposit` for the optional refundable deposit return.
 
@@ -230,7 +230,7 @@ struct TxKernelShieldedOutput : public TxKernelNonStd {
 };
 ```
 
-Must be nested inside a `TxKernelStd` to prevent the receiver from surgically removing it from the transaction pool. See [Lelantus MW](Lelantus-MW) for the full shielded protocol.
+Must be nested inside a `TxKernelStd` to prevent the receiver from surgically removing it from the transaction pool. See [Lelantus MW](../transactions/Transactions-Lelantus-Shielded-Pool.md) for the full shielded protocol.
 
 ### TxKernelShieldedInput
 
@@ -242,7 +242,7 @@ struct TxKernelShieldedInput : public TxKernelNonStd {
 };
 ```
 
-The anonymity set is the range `[0, m_WindowEnd)` in the shielded pool. The spend proof does not reveal which element is being spent. See [Lelantus MW](Lelantus-MW) for proof construction and anonymity set sizing.
+The anonymity set is the range `[0, m_WindowEnd)` in the shielded pool. The spend proof does not reveal which element is being spent. See [Lelantus MW](../transactions/Transactions-Lelantus-Shielded-Pool.md) for proof construction and anonymity set sizing.
 
 ### TxKernelContractControl (base for BVM kernels)
 

@@ -192,7 +192,7 @@ Body request `FlagP` / `FlagE` control which part is returned: `Full=0` (both), 
 
 ### Proof Messages
 
-These implement the fly-client SPV proof protocol (see [Node-Fly-Client-Protocol](Node-Fly-Client-Protocol)):
+These implement the fly-client SPV proof protocol (see [Node-Fly-Client-Protocol](Node-Fly-Client-Protocol.md)):
 
 | Request | Response | What it proves |
 |---|---|---|
@@ -278,7 +278,7 @@ Returned in the `Status` message (`Value` field) after `NewTransaction`:
 | `0x3b` | `BbsSubscribe` | `Channel: BbsChannel`, `TimeFrom: Timestamp`, `On: bool` |
 | `0x3e` | `BbsResetSync` | `TimeFrom: Timestamp` |
 
-Max BBS message body: 1 MiB. Wallet channels are sharded across up to 1024 channels (`s_MaxWalletChannels`). Special channels: swap offers (`s_SwapOffersChannel`), broadcast (`s_BroadcastChannel`), DEX offers (`s_DexOffersChannel`). The `Nonce` field enables proof-of-work spam filtering. See [Wallet-SBBS](Wallet-SBBS) for the wallet-side encryption details.
+Max BBS message body: 1 MiB. Wallet channels are sharded across up to 1024 channels (`s_MaxWalletChannels`). Special channels: swap offers (`s_SwapOffersChannel`), broadcast (`s_BroadcastChannel`), DEX offers (`s_DexOffersChannel`). The `Nonce` field enables proof-of-work spam filtering. See [Wallet-SBBS](../wallet/Wallet-SBBS.md) for the wallet-side encryption details.
 
 ### Statistics Messages
 
@@ -292,7 +292,7 @@ Max BBS message body: 1 MiB. Wallet channels are sharded across up to 1024 chann
 
 ### PBFT / Warp Messages
 
-Used for the Beam Warp dPoS consensus layer (see [Consensus-Beam-Warp-dPoS](Consensus-Beam-Warp-dPoS)):
+Used for the Beam Warp dPoS consensus layer (see [Consensus-Beam-Warp-dPoS](../consensus/Consensus-Beam-Warp-dPoS.md)):
 
 | Code | Message | Fields |
 |---|---|---|
@@ -416,8 +416,8 @@ struct Node::Config::Dandelion {
 
 ## Related Pages
 
-- [Node-Architecture](Node-Architecture) — block processing, mempool integration
-- [Node-Fly-Client-Protocol](Node-Fly-Client-Protocol) — SPV proof types requested over this protocol
-- [Core-Block-And-Chain-State](Core-Block-And-Chain-State) — `SystemState`, DMMR, chain work
-- [Wallet-SBBS](Secure-bulletin-board-system-(SBBS)) — BBS channel encryption
-- [Consensus-Beam-Warp-dPoS](Consensus-Hard-Forks) — PBFT messages context
+- [Node-Architecture](Node-Architecture.md) — block processing, mempool integration
+- [Node-Fly-Client-Protocol](Node-Fly-Client-Protocol.md) — SPV proof types requested over this protocol
+- [Core-Block-And-Chain-State](../core/Core-Block-And-Chain-State.md) — `SystemState`, DMMR, chain work
+- [Wallet-SBBS](../wallet/Wallet-SBBS.md) — BBS channel encryption
+- [Consensus-Beam-Warp-dPoS](../consensus/Consensus-Hard-Forks.md) — PBFT messages context

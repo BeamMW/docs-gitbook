@@ -68,7 +68,7 @@ API has the following methods:
 
 ## SWAP API Methods
 
-If you build `wallet-api` with `BEAM_ATOMIC_SWAP_SUPPORT` then you can use additional [SWAP API methods](https://github.com/BeamMW/beam/wiki/Beam-wallet-protocol-SWAP-API-(BETA)).
+If you build `wallet-api` with `BEAM_ATOMIC_SWAP_SUPPORT` then additional atomic swap API methods are available. See [Atomic Swaps](../transactions/Transactions-Atomic-Swaps.md) for the full protocol details.
 
 ## create_address
 
@@ -96,7 +96,7 @@ Creates new receiver address.
   * `public_offline` - address for donation, could be used as many times as you wish
   * `regular_new` - since v6.0, regular new-style address (base58), this address has SBBS internally 
 
-  Details of some address types are described [in this document](https://github.com/BeamMW/beam/wiki/Lelantus-CLI). Since v6.0, UI gives the sender an opportunity to choose between regular and offline send operation and the default address type provided via the "receive" UI dialog is an `offline` address with `offline_payments=1`
+  Details of some address types are described [in this document](../historical/Lelantus-CLI-(historical,-below-v6.0).md). Since v6.0, UI gives the sender an opportunity to choose between regular and offline send operation and the default address type provided via the "receive" UI dialog is an `offline` address with `offline_payments=1`
 
 * `expiration` 
   * before v6.0 can be `expired/never/24h`. 

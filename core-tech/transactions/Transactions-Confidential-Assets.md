@@ -4,7 +4,7 @@ Beam supports two classes of on-chain value: native **BEAM** (asset ID 0) and us
 
 All fees are always paid in BEAM/Groth regardless of which asset is being transacted.
 
-Related pages: [Core Transaction Elements](Core-transaction-elements) | [Wallet Architecture](Wallet-Architecture) | [Asset Descriptor v1.0](Asset-Descriptor-v1.0) | [Consensus Hard Forks](Consensus-Hard-Forks)
+Related pages: [Core Transaction Elements](../core/Core-transaction-elements.md) | [Wallet Architecture](../wallet/Wallet-Architecture.md) | [Asset Descriptor v1.0](../Asset-Descriptor-v1.0.md) | [Consensus Hard Forks](../consensus/Consensus-Hard-Forks.md)
 
 ---
 
@@ -317,7 +317,7 @@ STD:key1=value1;key2=value2;...
 
 The wallet parses metadata via `WalletAssetMeta`, which exposes typed getters (`GetName()`, `GetShortName()`, etc.) and `isStd()` / `isStd_v6_0()` / `isStd_v5_0()` validators.
 
-Full specification: [Asset Descriptor v1.0](Asset-Descriptor-v1.0).
+Full specification: [Asset Descriptor v1.0](../Asset-Descriptor-v1.0.md).
 
 ---
 

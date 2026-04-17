@@ -2,7 +2,7 @@
 
 Creating a Beam transaction is an **interactive** process: the sender and receiver must exchange cryptographic material before a valid transaction can be assembled. This page documents the wire protocol, the internal state machine, and the cryptographic mechanics of partial-signature aggregation.
 
-Related pages: [Core-Transaction-Elements](Core-transaction-elements), [Wallet-SBBS](Wallet-SBBS), [Wallet-Addresses-And-Key-Derivation](Wallet-Addresses-And-Key-Derivation), [Transactions-Confidential-Assets](Transactions-Confidential-Assets)
+Related pages: [Core-Transaction-Elements](../core/Core-transaction-elements.md), [Wallet-SBBS](../wallet/Wallet-SBBS.md), [Wallet-Addresses-And-Key-Derivation](../wallet/Wallet-Addresses-And-Key-Derivation.md), [Transactions-Confidential-Assets](Transactions-Confidential-Assets.md)
 
 ---
 
@@ -52,7 +52,7 @@ struct SetTxParameter {
 
 This prevents a malicious peer from overwriting critical values (such as amount or blinding factors) after the first message is received.
 
-The message itself is transport-agnostic. It may be delivered via [SBBS](Wallet-SBBS), a direct wallet-to-wallet TCP connection, or the offline token mechanism.
+The message itself is transport-agnostic. It may be delivered via [SBBS](../wallet/Wallet-SBBS.md), a direct wallet-to-wallet TCP connection, or the offline token mechanism.
 
 ---
 
@@ -328,7 +328,7 @@ Max-privacy transactions use Lelantus shielded outputs. Instead of an interactiv
 3. The sender picks a voucher (`get_UniqueVoucher()`), constructs a shielded output without a live reply from the receiver.
 4. The receiver detects the incoming shielded coin on its next wallet sync.
 
-This eliminates the synchronous requirement but adds a pre-negotiation phase for voucher exchange. See [Transactions-Lelantus-Shielded-Pool](Transactions-Lelantus-Shielded-Pool) for shielded proof construction details.
+This eliminates the synchronous requirement but adds a pre-negotiation phase for voucher exchange. See [Transactions-Lelantus-Shielded-Pool](Transactions-Lelantus-Shielded-Pool.md) for shielded proof construction details.
 
 ---
 
@@ -349,7 +349,7 @@ Key classes:
 
 The `Gateway::IBase` interface abstracts message delivery; `Storage::IBase` abstracts persistence. The `Router` inner class remaps storage and gateway namespaces for sub-negotiations inside composed protocols.
 
-For full channel lifecycle documentation see [Transactions-Laser-Channels](Transactions-Laser-Channels).
+For full channel lifecycle documentation see [Transactions-Laser-Channels](Transactions-Laser-Channels.md).
 
 ---
 

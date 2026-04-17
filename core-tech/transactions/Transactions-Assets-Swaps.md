@@ -1,6 +1,6 @@
 # Transactions: Asset Swaps (DEX)
 
-Beam's decentralized exchange (DEX) allows two parties to atomically swap any two [Confidential Assets](Transactions-Confidential-Assets) — or an asset against BEAM — without a trusted third party. The mechanism is built entirely on the wallet layer: orders are propagated over the [SBBS broadcast network](Wallet-SBBS) and settled through an on-chain [interactive signing protocol](Transactions-Creation-Protocol).
+Beam's decentralized exchange (DEX) allows two parties to atomically swap any two [Confidential Assets](Transactions-Confidential-Assets.md) — or an asset against BEAM — without a trusted third party. The mechanism is built entirely on the wallet layer: orders are propagated over the [SBBS broadcast network](../wallet/Wallet-SBBS.md) and settled through an on-chain [interactive signing protocol](Transactions-Creation-Protocol.md).
 
 ---
 
@@ -118,7 +118,7 @@ Only the maker can cancel their own order (`isMine()` check in `cancelDexOrder`)
 
 ## Settlement: DexTransaction
 
-Settlement is a standard Beam interactive transaction (`TxType::DexSimpleSwap`) using the mutual signing protocol documented in [Transactions: Creation Protocol](Transactions-Creation-Protocol). Both parties contribute inputs for the asset they send and create one output for the asset they receive.
+Settlement is a standard Beam interactive transaction (`TxType::DexSimpleSwap`) using the mutual signing protocol documented in [Transactions: Creation Protocol](Transactions-Creation-Protocol.md). Both parties contribute inputs for the asset they send and create one output for the asset they receive.
 
 ### Builder: DexSimpleSwapBuilder
 
@@ -187,7 +187,7 @@ DEX transactions are stored in the standard transaction tables alongside all oth
 
 ## Relationship to Atomic Swaps
 
-[Atomic Swaps](Transactions-Atomic-Swaps) in Beam use HTLC kernels to swap BEAM against Bitcoin or other external chains. The DEX described here is a different, purely on-chain mechanism for swapping two Beam Confidential Assets within the same Beam transaction. No time-lock or hash reveal is required because both sides of the exchange are committed in a single kernel.
+[Atomic Swaps](Transactions-Atomic-Swaps.md) in Beam use HTLC kernels to swap BEAM against Bitcoin or other external chains. The DEX described here is a different, purely on-chain mechanism for swapping two Beam Confidential Assets within the same Beam transaction. No time-lock or hash reveal is required because both sides of the exchange are committed in a single kernel.
 
 ---
 
@@ -202,4 +202,4 @@ The DEX is exposed through the `v7_2` Wallet API (requires `BEAM_ASSET_SWAP_SUPP
 | `assets_swap_cancel` | Write | Cancel a maker order by ID |
 | `assets_swap_accept` | Write | Accept a taker order, start settlement transaction |
 
-See the [Wallet API](Beam-wallet-protocol-API) reference for full request/response schemas.
+See the [Wallet API](../api/Beam-wallet-protocol-API.md) reference for full request/response schemas.

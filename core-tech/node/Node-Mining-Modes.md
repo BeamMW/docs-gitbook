@@ -56,7 +56,7 @@ while (true) {
 }
 ```
 
-When CPU AVX extensions are available, the solver uses a vectorised code path; see [AVX](AVX.md) for the build-time flag.
+When CPU AVX extensions are available, the solver uses a vectorised code path.
 
 ---
 
@@ -74,7 +74,7 @@ The initial nonce seed is randomised with `ECC::GenRandom` at construction, so m
 
 A separate, smaller thread validates difficulty against the packed `Difficulty` value before dispatching the `BlockFound` callback to the node.
 
-See [Supported nVidia Cards (OpenCL)](Supported-nVidia-cards-for-mining-using-OpenCL-miner.md) for the tested GPU list.
+See [Supported nVidia Cards (OpenCL)](../historical/Supported-nVidia-cards-for-mining-using-OpenCL-miner.md) for the tested GPU list.
 
 ---
 
@@ -184,13 +184,12 @@ The node regenerates a new mining job when:
 - A new block is received (immediate), or
 - A new transaction enters the mempool's fluff phase (rate-limited by `miner_job_latency`, default 1,000 ms).
 
-Miners should not discard incoming jobs prematurely. Since the Equihash solver switches jobs at zero cost (nonce increment is the only state), accepting every job maximises fee revenue and is required for correct operation of [Hi-Frequency Transactions](Hi-Frequency-transactions).
+Miners should not discard incoming jobs prematurely. Since the Equihash solver switches jobs at zero cost (nonce increment is the only state), accepting every job maximises fee revenue and is required for correct operation of [Hi-Frequency Transactions](../transactions/Transactions-Hi-Frequency.md).
 
 ---
 
 ## Cross-references
 
-- BeamHash algorithm and difficulty encoding: [Consensus BeamHash](Consensus-BeamHash.md)
-- Fork activation heights: [Consensus Hard Forks](Consensus-Hard-Forks.md)
-- Stratum wire protocol reference: [Beam Mining API (Stratum)](Beam-mining-protocol-API-(Stratum).md)
-- AVX CPU optimisation: [AVX](AVX.md)
+- BeamHash algorithm and difficulty encoding: [Consensus BeamHash](../consensus/Consensus-BeamHash.md)
+- Fork activation heights: [Consensus Hard Forks](../consensus/Consensus-Hard-Forks.md)
+- Stratum wire protocol reference: [Beam Mining API (Stratum)](../api/Beam-mining-protocol-API-(Stratum).md).md)

@@ -1,4 +1,4 @@
-> **Historical Document** — This document covers Lelantus CLI usage for wallet versions below v6.0. It is retained for historical reference only. For v6.0 and later, see [Transactions-Lelantus-Shielded-Pool](transactions/Transactions-Lelantus-Shielded-Pool).
+> **Historical Document** — This document covers Lelantus CLI usage for wallet versions below v6.0. It is retained for historical reference only. For v6.0 and later, see [Transactions-Lelantus-Shielded-Pool](../transactions/Transactions-Lelantus-Shielded-Pool.md).
 
 ## Overview
 Conceptually, Lelantus is a mean which allows to avoid UXTO linkability in transactions graph. To make UTXOs unlinked user should insert regular BEAM UTXO into _shielded pool_, converting these UTXOs into _shielded UTXOs_ and then, after some time extract them back as _unlinked_ UTXOs. _Shielded UTXO_ belonging to the wallet could be detected by the node with owner key (as regular utxo), and the user can use this info to extract these coins back.

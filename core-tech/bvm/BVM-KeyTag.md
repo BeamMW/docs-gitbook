@@ -32,4 +32,4 @@ All variable types except `InternalStealth` are stored in a special Merkle tree,
 Contracts may use `InternalStealth` to avoid some of their variables from being-accounted in the Merkle tree. This may be beneficial if the contract developers don't want to enable zero-knowledge proofs for those variables (by using zk-proofs malicious contract developers can use use commercially valuable data in other contracts).
 
 ### App shaders
-App shaders (that run outside the blockchain) can read all the variables of all the contracts without limitations. [VarGetProof](VarGetProof) can be used to get a Merkle proof for any existing variable (except `InternalStealth` type).
+App shaders (that run outside the blockchain) can read all the variables of all the contracts without limitations. [VarGetProof](BVM-VarGetProof.md) can be used to get a Merkle proof for any existing variable (except `InternalStealth` type).

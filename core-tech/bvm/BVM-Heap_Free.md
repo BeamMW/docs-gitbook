@@ -3,7 +3,7 @@
 ```C++
 void Heap_Free(void* pPtr);
 ```
-Frees the memory allocated previously on heap with [Heap_Alloc](Heap_Alloc)
+Frees the memory allocated previously on heap with [Heap_Alloc](BVM-Heap_Alloc.md)
 
 ## Parameters
 * `pPtr` : pointer to the memory region to free
@@ -12,7 +12,7 @@ Frees the memory allocated previously on heap with [Heap_Alloc](Heap_Alloc)
 * none
 
 ## Notes
-* `Halt()` if the specified pointer is incorrect (i.e. was not returned by [Heap_Alloc](Heap_Alloc))
+* `Halt()` if the specified pointer is incorrect (i.e. was not returned by [Heap_Alloc](BVM-Heap_Alloc.md))
 * `null` is NOT a valid parameter
 
 

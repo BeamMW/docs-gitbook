@@ -28,9 +28,9 @@ In contrast to `GenerateKernel` provides more control of the exact kernel being-
 * `iMethod ` : method number to call
 * `pArg` : pointer to arguments buffer
 * `nArg` : length of the arguments buffer
-* `pFunds` : optional pointer to an array of [FundsChange](FundsChange) structures
+* `pFunds` : optional pointer to an array of [FundsChange](BVM-FundsChange.md) structures
 * `nFunds` : number of elements in the above array
-* `pSig` : optional pointer to an array of [SigRequest](SigRequest) structures
+* `pSig` : optional pointer to an array of [SigRequest](BVM-SigRequest.md) structures
 * `nSig` : number of elements in the above array
 * `szComment` : Transaction comment (0-terminated character string)
 * `nCharge` : estimate of the BVM charge (in charge uints) that the transaction execution is supposed to consume

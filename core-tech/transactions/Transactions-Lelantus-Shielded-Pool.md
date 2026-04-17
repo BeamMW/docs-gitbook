@@ -2,7 +2,7 @@
 
 Beam's shielded pool implements a variant of the [Lelantus](https://eprint.iacr.org/2019/373) zero-knowledge protocol, adapted to the Mimblewimble framework (Lelantus-MW). It provides a privacy layer on top of standard MW transactions: instead of cutting through directly visible inputs and outputs, coins pass through an opaque accumulator pool. The spending transaction proves membership in a set of commitments without revealing which element is being spent, breaking the transaction graph at the point of entry and exit.
 
-The shielded pool is enabled at [Fork 2](Consensus-Hard-Forks) (mainnet height 321,321).
+The shielded pool is enabled at [Fork 2](../consensus/Consensus-Hard-Forks.md) (mainnet height 321,321).
 
 ---
 
@@ -270,11 +270,11 @@ These caps prevent individual blocks from being flooded with expensive Lelantus 
 
 ## Related Pages
 
-- [Core Cryptographic Primitives](Core-Cryptographic-Primitives) — Sigma / Bulletproof / Schnorr primitives
-- [Core Transaction Elements](Core-transaction-elements) — `TxKernelShieldedInput`, `TxKernelShieldedOutput` kernel subtypes
-- [Consensus Hard Forks](Consensus-Hard-Forks) — Fork 2 activation height for the shielded pool
-- [Transactions Confidential Assets](Transactions-Confidential-Assets) — how asset proofs appear inside shielded outputs
-- [Wallet Addresses And Key Derivation](Wallet-Addresses-And-Key-Derivation) — max-privacy address type that uses shielded pool
+- [Core Cryptographic Primitives](../core/Core-Cryptographic-Primitives.md) — Sigma / Bulletproof / Schnorr primitives
+- [Core Transaction Elements](../core/Core-transaction-elements.md) — `TxKernelShieldedInput`, `TxKernelShieldedOutput` kernel subtypes
+- [Consensus Hard Forks](../consensus/Consensus-Hard-Forks.md) — Fork 2 activation height for the shielded pool
+- [Transactions Confidential Assets](Transactions-Confidential-Assets.md) — how asset proofs appear inside shielded outputs
+- [Wallet Addresses And Key Derivation](../wallet/Wallet-Addresses-And-Key-Derivation.md) — max-privacy address type that uses shielded pool
 
 ---
 

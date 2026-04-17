@@ -4,7 +4,7 @@ Let's play some games!
 
 In this example we will interact with the contract that 
 
-As usual we assume that you have read [BeamX Getting Started Guide](https://github.com/BeamMW/beam/wiki/BeamX-Getting-Started) and [Using BeamX Faucet contract with CLI Wallet](https://github.com/BeamMW/beam/wiki/Using-BeamX-Faucet-contract-with-CLI-Wallet)
+As usual we assume that you have read [BeamX Getting Started Guide](BeamX-Getting-Started.md) and [Using BeamX Faucet contract with CLI Wallet](Using-BeamX-Faucet-contract-with-CLI-Wallet.md)
 
 We also assume that you have the app.wasm and contract.was in the shaders/roulette folder under the 'beamx' folder where you keep your wallet binary file.
 

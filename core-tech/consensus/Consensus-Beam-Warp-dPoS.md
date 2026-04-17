@@ -283,7 +283,7 @@ So **tip trimming** is not a periodic background prune of arbitrary forks; it is
 
 ## See Also
 
-- [Consensus-Hard-Forks](Consensus-Hard-Forks) — Fork heights and activation rules per network
-- [Consensus-BeamHash](Consensus-BeamHash) — BeamHash III PoW algorithm used in non-Warp mode
-- [BVM-Internals](../bvm/BVM-Internals) — BVM execution environment that hosts the dPoS contract
-- [BVM-Shader-Development](../bvm/BVM-Shader-Development) — SDK for writing BVM contracts
+- [Consensus-Hard-Forks](Consensus-Hard-Forks.md) — Fork heights and activation rules per network
+- [Consensus-BeamHash](Consensus-BeamHash.md) — BeamHash III PoW algorithm used in non-Warp mode
+- [BVM-Internals](../bvm/BVM-Internals.md) — BVM execution environment that hosts the dPoS contract
+- [BVM-Shader-Development](../bvm/BVM-Shader-Development.md) — SDK for writing BVM contracts

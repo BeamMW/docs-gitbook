@@ -1,6 +1,6 @@
 # Node Architecture
 
-This page documents the internals of the Beam full node: how blocks are applied and rolled back, how the transaction pool operates, how the database is organized, and how initial synchronization works. For the P2P wire protocol and peer management see [Node-P2P-Protocol](Node-P2P-Protocol.md). For the UTXO horizon and cut-through mechanics see [UTXO Set, Horizons and Cut-Through](UTXO-set,-horizons-and-cut-through.md).
+This page documents the internals of the Beam full node: how blocks are applied and rolled back, how the transaction pool operates, how the database is organized, and how initial synchronization works. For the P2P wire protocol and peer management see [Node-P2P-Protocol](Node-P2P-Protocol.md). For the UTXO horizon and cut-through mechanics see [Core Block and Chain State](../core/Core-Block-And-Chain-State.md#horizon-based-history-pruning-and-sparse-synchronization).
 
 ---
 
@@ -120,7 +120,7 @@ struct Horizon {
 - Below `TxoLo`: output entry fully deleted from the TXO table
 - Below `Fossil`: original block bodies deleted from `NodeDB`
 
-See [UTXO Set, Horizons and Cut-Through](UTXO-set,-horizons-and-cut-through) for the full semantics.
+See [Core Block and Chain State — Horizons](../core/Core-Block-And-Chain-State.md#horizon-based-history-pruning-and-sparse-synchronization) for the full semantics.
 
 ### Mapped Files (UTXO and Contract Radix Trees)
 
@@ -334,7 +334,7 @@ struct BlockContext {
 3. **Coinbase:** create a single coinbase output using `m_Coin` KDF at sub-index `m_SubIdx`. The coinbase kernel carries the block reward + fees.
 4. **Header fields:** set `Height`, `Prev` (previous state hash from `m_Cursor.m_History`), `Definition` (Merkle root of UTXO + kernel + log trees), `TimeStamp`, `PoW` (left zeroed for the external solver).
 
-In **online mining mode** (`m_PreferOnlineMining = true` and owner key present), the node requests the coinbase UTXO from a connected wallet instead of creating it locally. If no wallet responds, the node falls back to offline coinbase creation. See [Node Mining Modes](Node-Mining-Modes) for the full discussion.
+In **online mining mode** (`m_PreferOnlineMining = true` and owner key present), the node requests the coinbase UTXO from a connected wallet instead of creating it locally. If no wallet responds, the node falls back to offline coinbase creation. See [Node Mining Modes](Node-Mining-Modes.md) for the full discussion.
 
 ---
 
@@ -408,8 +408,8 @@ struct SyncData {
 
 ## Related Pages
 
-- [UTXO Set, Horizons and Cut-Through](UTXO-set,-horizons-and-cut-through.md) — detailed cut-through and horizon semantics
-- [Core Block and Chain State](Core-Block-And-Chain-State.md) — block header structure and system state
+- [Core Block and Chain State — Horizons](../core/Core-Block-And-Chain-State.md#horizon-based-history-pruning-and-sparse-synchronization) — detailed cut-through and horizon semantics
+- [Core Block and Chain State](../core/Core-Block-And-Chain-State.md) — block header structure and system state
 - [Node Mining Modes](Node-Mining-Modes.md) — integrated, OpenCL, stratum, and online/offline coinbase modes
-- [Consensus BeamHash](Consensus-BeamHash.md) — PoW algorithm and difficulty
-- [Consensus Hard Forks](Consensus-Hard-Forks.md) — fork-gated validation changes
+- [Consensus BeamHash](../consensus/Consensus-BeamHash.md) — PoW algorithm and difficulty
+- [Consensus Hard Forks](../consensus/Consensus-Hard-Forks.md) — fork-gated validation changes

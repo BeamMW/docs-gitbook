@@ -12,7 +12,7 @@ For more specific questions please contact the developer team on Telegram: https
 
 ## Code Style
 
-Before contributing C++ code, please read the [Beam C++ Style and Conventions](Beam-Cpp-Style-And-Conventions) guide. It covers naming conventions, memory ownership, error handling, serialization, the IO/reactor model, logging, and CMake module structure used across `core/`, `node/`, `wallet/`, `bvm/`, and `utility/`.
+Before contributing C++ code, please read the [Beam C++ Style and Conventions](Beam-Cpp-Style-And-Conventions.md) guide. It covers naming conventions, memory ownership, error handling, serialization, the IO/reactor model, logging, and CMake module structure used across `core/`, `node/`, `wallet/`, `bvm/`, and `utility/`.
 
 ## Projects overview
 

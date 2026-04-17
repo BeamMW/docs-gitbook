@@ -10,7 +10,7 @@ Save the new value of the variable denoted by `{nType, [pKey, nKey]}`
 * `nKey` : the size of the key
 * `pVal` : pointer to the value buffer
 * `nVal` : the size of the value buffer
-* `nType` : the type of the variable (see [KeyTag](KeyTag) for possible values)
+* `nType` : the type of the variable (see [KeyTag](BVM-KeyTag.md) for possible values)
 
 
 ## Return value

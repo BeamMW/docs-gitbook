@@ -26,7 +26,7 @@ We recommend that you join these groups and ask any questions
 
 You can download BeamX compatible binaries for your platform at https://beam.mw/downloads/beamx
 
-If you would like to build BeamX yourself from source code please refer to the [Building Instructions Guide](https://github.com/BeamMW/beam/wiki/How-to-build)
+If you would like to build BeamX yourself from source code please refer to the [Building Instructions Guide](../How-to-build.md)
 
 We strongly recommend that you get the node and the CLI wallet in addition to the Desktop wallet even if you only intend to use BeamX. The reason for that is that many interesting contracts you might want to run will take time to provide graphical applications. Having your own node and running CLI wallet will allow you to use the newest and coolest features. It is not complicated, as we will see in a minute.
 
@@ -90,6 +90,6 @@ We suggest to create a folder called 'shaders' under the 'beamx' folder and put 
 
 Now let's see how we can run some apps!
 
-1. Get some coins from [Faucet contract](https://github.com/BeamMW/beam/wiki/Using-BeamX-Faucet-contract-with-CLI-Wallet)
-2. Put some coins in a [Vault contract](https://github.com/BeamMW/beam/wiki/Using-BeamX-Vault-contract-with-CLI-Wallet)
-3. Play Roulette with [Roulette contract](https://github.com/BeamMW/beam/wiki/Using-BeamX-Roulette-contract-with-CLI-Wallet)
+1. Get some coins from [Faucet contract](Using-BeamX-Faucet-contract-with-CLI-Wallet.md)
+2. Put some coins in a [Vault contract](Using-BeamX-Vault-contract-with-CLI-Wallet.md)
+3. Play Roulette with [Roulette contract](Using-BeamX-Roulette-contract-with-CLI-Wallet.md)

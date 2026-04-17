@@ -1,4 +1,4 @@
-> **Historical Proposal** — This document is an early design proposal that was never fully implemented in its described form. It is preserved for historical reference only. The wallet messaging layer that was actually built is documented in [Secure-bulletin-board-system-(SBBS)](Secure-bulletin-board-system-(SBBS)).
+> **Historical Proposal** — This document is an early design proposal that was never fully implemented in its described form. It is preserved for historical reference only. The wallet messaging layer that was actually built is documented in [Secure-bulletin-board-system-(SBBS)](../wallet/Wallet-SBBS.md).
 
 ## Wallets discovery and dialog proposal
 

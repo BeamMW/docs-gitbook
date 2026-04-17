@@ -1,6 +1,6 @@
 > **Historical Document** — This guide covers the BeamX Vault contract on the experimental BeamX testnet. It is preserved for historical reference only.
 
-NOTE: If you haven't already, please review [BeamX Getting Started Guide](https://github.com/BeamMW/beam/wiki/BeamX-Getting-Started) and [Using BeamX Faucet contract with CLI Wallet](https://github.com/BeamMW/beam/wiki/Using-BeamX-Faucet-contract-with-CLI-Wallet)
+NOTE: If you haven't already, please review [BeamX Getting Started Guide](BeamX-Getting-Started.md) and [Using BeamX Faucet contract with CLI Wallet](Using-BeamX-Faucet-contract-with-CLI-Wallet.md)
 
 In this section we will learn how to use BeamX Vault example. It is very similar to the Faucet example, only there are no limitation on deposits and withdrawals. It's basically just a simple vault contract you can keep money in.
 

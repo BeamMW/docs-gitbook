@@ -1,8 +1,8 @@
 # BVM Shader Development
 
-Beam smart contracts are implemented as *shaders* — WASM binaries that run inside the [BVM](BVM-Internals). Each contract is split across two compilation units: a **contract shader** that executes on every validating node, and an **app shader** that executes inside the wallet to build transactions and query state.
+Beam smart contracts are implemented as *shaders* — WASM binaries that run inside the [BVM](BVM-Internals.md). Each contract is split across two compilation units: a **contract shader** that executes on every validating node, and an **app shader** that executes inside the wallet to build transactions and query state.
 
-Related pages: [BVM-Internals](BVM-Internals) · [Transactions-Hi-Frequency](Transactions-Hi-Frequency) · [BVM-functions-for-shaders](BVM-functions-for-shaders)
+Related pages: [BVM-Internals](BVM-Internals.md) · [Transactions-Hi-Frequency](../transactions/Transactions-Hi-Frequency.md) · [BVM-functions-for-shaders](BVM-functions-for-shaders.md)
 
 ---
 
@@ -214,7 +214,7 @@ uint8_t Env::AssetEmit(AssetID aid, Amount amount, uint8_t bEmit); // mint (1) o
 uint8_t Env::AssetDestroy(AssetID aid);
 ```
 
-Asset metadata follows the `Asset-Descriptor-v1.0` standard. Assets created inside a contract are owned by that contract — only that contract can emit or destroy them. See [Transactions-Confidential-Assets](Transactions-Confidential-Assets).
+Asset metadata follows the `Asset-Descriptor-v1.0` standard. Assets created inside a contract are owned by that contract — only that contract can emit or destroy them. See [Transactions-Confidential-Assets](../transactions/Transactions-Confidential-Assets.md).
 
 ---
 

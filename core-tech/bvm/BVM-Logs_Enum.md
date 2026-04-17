@@ -17,6 +17,6 @@ Starts log enumeration process in key range `[key0, key1]`
 * the slot number which could be used to work with this enumeration
 
 ## Notes
-* the slot number should be used with [Logs_MoveNext](Logs_MoveNext) and [Logs_Close](Logs_Close) functions
+* the slot number should be used with [Logs_MoveNext](BVM-Logs_MoveNext.md) and [Logs_Close](BVM-Logs_Close.md) functions
 
 ## Example 

@@ -3,7 +3,7 @@
 ```C++
 void StackFree(uint32_t size);
 ```
-Frees the stack memory allocated previously by [StackAlloc](StackAlloc).
+Frees the stack memory allocated previously by [StackAlloc](BVM-StackAlloc.md).
     
 ## Parameters
 * `size` : number of bytes to free

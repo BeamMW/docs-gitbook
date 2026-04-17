@@ -239,7 +239,7 @@ std::string GenerateMaxPrivacyToken (const WalletAddress&, const IWalletDB&, Amo
 std::string GeneratePublicToken     (const WalletAddress&, const IWalletDB&, const std::string& clientVersion);
 ```
 
-For address encoding and key derivation details see [Wallet Addresses and Key Derivation](Wallet-Addresses-And-Key-Derivation).
+For address encoding and key derivation details see [Wallet Addresses and Key Derivation](Wallet-Addresses-And-Key-Derivation.md).
 
 ---
 
@@ -292,7 +292,7 @@ Coin types displayed alongside status: `Regular`, `Regular (change)`, `Transacti
 
 ## See Also
 
-- [Wallet Database Schema](Wallet-Database-Schema) — SQLite table definitions
-- [Fly Client Protocol](Node-Fly-Client-Protocol) — the node communication layer `Wallet` extends
-- [Secure Bulletin Board System (SBBS)](Secure-bulletin-board-system-(SBBS)) — encrypted wallet-to-wallet messaging
-- [Core Transaction Elements](Core-transaction-elements) — kernel and UTXO primitives used by transactions
+- [Wallet Database Schema](Wallet-Database-Schema.md) — SQLite table definitions
+- [Fly Client Protocol](../node/Node-Fly-Client-Protocol.md) — the node communication layer `Wallet` extends
+- [Secure Bulletin Board System (SBBS)](Wallet-SBBS.md) — encrypted wallet-to-wallet messaging
+- [Core Transaction Elements](../core/Core-transaction-elements.md) — kernel and UTXO primitives used by transactions

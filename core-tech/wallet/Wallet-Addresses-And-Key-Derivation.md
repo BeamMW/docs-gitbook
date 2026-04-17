@@ -40,7 +40,7 @@ wid.m_Pk = pid;
 wid.SetChannelFromPk();   // channel = first word of pid mod Bbs::s_MaxWalletChannels
 ```
 
-`IWalletDB::get_SbbsWalletID()` / `get_SbbsPeerID()` in `wallet_db.cpp` implement this. See also [Wallet SBBS](Wallet-SBBS).
+`IWalletDB::get_SbbsWalletID()` / `get_SbbsPeerID()` in `wallet_db.cpp` implement this. See also [Wallet SBBS](Wallet-SBBS.md).
 
 ---
 
@@ -176,7 +176,7 @@ Uses Lelantus-MW shielded transactions (`TxType::PushTransaction`). The sender d
 
 **Generation** (`GenerateOfflineToken`): calls `GenerateVoucherList()` via KeyKeeper to produce N vouchers (default: 10). Each voucher is a shielded ticket pre-signed by the receiver's Endpoint key.
 
-**Privacy note:** the sender knows the ticket internals and can detect when the receiver spends the corresponding shielded coin. Third-party observers cannot link the spend to the deposit, but the original sender can. See [Wallet SBBS](Wallet-SBBS) and [Addresses in Beam](Addresses-in-Beam) for the detailed privacy analysis.
+**Privacy note:** the sender knows the ticket internals and can detect when the receiver spends the corresponding shielded coin. Third-party observers cannot link the spend to the deposit, but the original sender can. See [Wallet SBBS](Wallet-SBBS.md) and [Addresses in Beam](Wallet-Addresses-And-Key-Derivation.md) for the detailed privacy analysis.
 
 ### Max Privacy
 
@@ -271,10 +271,10 @@ static constexpr uint64_t AddressExpirationAuto  = 24 * 60 * 60 * 61; // ~2 mont
 
 ## Related Pages
 
-- [Wallet Architecture](Wallet-Architecture) — `IWalletDB` interface and key storage
-- [Wallet SBBS](Wallet-SBBS) — BBS channel subscription and message encryption
-- [Wallet Key Keeper](Wallet-Key-Keeper) — `IPrivateKeyKeeper2` interface and voucher generation
-- [Wallet Database Schema](Wallet-Database-Schema) — `addresses` table schema
+- [Wallet Architecture](Wallet-Architecture.md) — `IWalletDB` interface and key storage
+- [Wallet SBBS](Wallet-SBBS.md) — BBS channel subscription and message encryption
+- [Wallet Key Keeper](Wallet-Key-Keeper.md) — `IPrivateKeyKeeper2` interface and voucher generation
+- [Wallet Database Schema](Wallet-Database-Schema.md) — `addresses` table schema
 
 ---
 

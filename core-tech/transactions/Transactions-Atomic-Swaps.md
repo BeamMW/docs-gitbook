@@ -250,7 +250,7 @@ The hash-preimage approach links the swap transactions on both chains: anyone wh
 
 The EC-scalar variant (used in the Bitcoin bridge via `publicKeySecret`) partially mitigates this by making the link non-obvious to on-chain observers who don't know the relationship between the Beam kernel excess and the Bitcoin redeem key, but correlation by timing and amounts remains possible.
 
-See also: [Transactions-Lelantus-Shielded-Pool](Transactions-Lelantus-Shielded-Pool) for shielding BEAM funds before or after a swap to break the transaction graph.
+See also: [Transactions-Lelantus-Shielded-Pool](Transactions-Lelantus-Shielded-Pool.md) for shielding BEAM funds before or after a swap to break the transaction graph.
 
 ---
 

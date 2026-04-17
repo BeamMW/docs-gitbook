@@ -30,7 +30,7 @@ WebAssembly (abbreviated Wasm) is a binary instruction format for a stack-based 
 
 ## Using Beam Shaders to implement Smart Contracts
 
-For a more technical description of Beam Smart Contracts read [here](https://github.com/BeamMW/beam/wiki/Beam-Smart-Contracts)
+For a more technical description of Beam Smart Contracts read [here](BVM-Beam-Smart-Contracts.md)
 
 According to Wikipedia definition, Smart Contract [2] is a computer program or a transaction protocol which is intended to automatically execute, control or document legally relevant events and actions according to the terms of a contract or an agreement. Beam Shaders specify *implementation* of Smart Contracts on the Beam blockchain. 
 

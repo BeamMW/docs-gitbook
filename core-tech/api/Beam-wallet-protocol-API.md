@@ -1,13 +1,13 @@
 Starting with v6.0 BEAM wallet supports API versioning using the `--api_version` option. Please choose the corresponding API version in the list below to get the description of the available methods.
 
-* [version 6.0](https://github.com/BeamMW/beam/wiki/Beam-wallet-protocol-API-v6.0)
-* [version 6.1](https://github.com/BeamMW/beam/wiki/Beam-wallet-protocol-API-v6.1)
-* [version 6.2](https://github.com/BeamMW/beam/wiki/Beam-wallet-protocol-API-v6.2)
-* [version 7.0](https://github.com/BeamMW/beam/wiki/Beam-wallet-protocol-API-v7.0)
-* [version 7.1](https://github.com/BeamMW/beam/wiki/Beam-wallet-protocol-API-v7.1)
-* [version 7.2](https://github.com/BeamMW/beam/wiki/Beam-wallet-protocol-API-v7.2)
-* [version 7.3](https://github.com/BeamMW/beam/wiki/Beam-wallet-protocol-API-v7.3)
-* [version 7.4](https://github.com/BeamMW/beam/wiki/Beam-wallet-protocol-API-v7.4)
+* [version 6.0](Beam-wallet-protocol-API-v6.0.md)
+* [version 6.1](Beam-wallet-protocol-API-v6.1.md)
+* [version 6.2](Beam-wallet-protocol-API-v6.2.md)
+* [version 7.0](Beam-wallet-protocol-API-v7.0.md)
+* [version 7.1](Beam-wallet-protocol-API-v7.1.md)
+* [version 7.2](Beam-wallet-protocol-API-v7.2.md)
+* [version 7.3](Beam-wallet-protocol-API-v7.3.md)
+* [version 7.4](Beam-wallet-protocol-API-v7.4.md)
 
 The sections below apply to the API versions starting with 6.0 if the other is not explicitly stated.
 
@@ -234,5 +234,4 @@ In most method responses an additional `asset_id` field is returned by default e
 
 String with v6.3 BEAM comes with built-in IPFS support. Please refer to the following pages for more details
 
-* [BEAM IPFS Support](https://github.com/BeamMW/beam/wiki/BEAM-IPFS-Support)
-* [v6.3 API](https://github.com/BeamMW/beam/wiki/Beam-wallet-protocol-API-v6.3)
+* [BEAM IPFS Support](../BEAM-IPFS-Support.md)

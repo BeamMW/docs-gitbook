@@ -15,6 +15,6 @@ Starts variable enumeration process in key range `[key0, key1]`
 * the slot number which could be used to work with this enumeration
 
 ## Notes
-* the slot number should be used with [Vars_MoveNext](Vars_MoveNext) and [Vars_Close](Vars_Close) functions
+* the slot number should be used with [Vars_MoveNext](BVM-Vars_MoveNext.md) and [Vars_Close](BVM-Vars_Close.md) functions
 
 ## Example 

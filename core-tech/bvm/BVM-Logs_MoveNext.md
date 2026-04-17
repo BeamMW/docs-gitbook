@@ -7,7 +7,7 @@ uint8_t Logs_MoveNext(uint32_t iSlot, void* pKey, uint32_t& nKey,
 Reads the next variable specified by `iSlot`
 
 ## Parameters
-* `iSlot` : enumeration slot returned by [Logs_Enum](Logs_Enum)
+* `iSlot` : enumeration slot returned by [Logs_Enum](BVM-Logs_Enum.md)
 * `pKey` : pointer to the key buffer
 * `nKey` : the size of the key buffer
 * `pVal` : pointer to the value buffer
@@ -20,7 +20,7 @@ Reads the next variable specified by `iSlot`
 * 0 otherwise
 
 ## Notes
-* the slot number should be obtained with [Logs_Enum](Logs_Enum) function
+* the slot number should be obtained with [Logs_Enum](BVM-Logs_Enum.md) function
 * this function copies `nKey` bytes to `pKey` and then overrides `nKey` with exact size of the key
 * this function copies `nVal` bytes to `pVal` and then overrides `nVal` with exact size of the value
 

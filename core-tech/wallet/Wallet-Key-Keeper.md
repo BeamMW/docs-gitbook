@@ -231,4 +231,4 @@ All `InvokeAsync` calls post a typed `Task` to the in-queue; the background thre
 | Nonce reuse prevented | Hash-chain regeneration | Slot regeneration after signature |
 | Host compromise → funds at risk | Yes | No (spend requires device approval) |
 
-For the full security rationale and the interactive signing protocol design, see [HW Wallet Design](HW-wallet-design).
+For the full security rationale and the interactive signing protocol design, see [HW Wallet Design](../HW-wallet-design.md).

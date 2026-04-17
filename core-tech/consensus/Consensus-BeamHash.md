@@ -132,6 +132,5 @@ The damp factor (`M=1, N=3`) blends one-third of the actual measured rate with t
 
 ## Cross-references
 
-- Fork activation heights per network: [Consensus Hard Forks](Consensus-Hard-Forks)
-- Mining operational modes (stratum, OpenCL, integrated): [Node Mining Modes](Node-Mining-Modes)
-- AVX CPU optimisation path: [AVX](AVX)
+- Fork activation heights per network: [Consensus Hard Forks](Consensus-Hard-Forks.md)
+- Mining operational modes (stratum, OpenCL, integrated): [Node Mining Modes](../node/Node-Mining-Modes.md)

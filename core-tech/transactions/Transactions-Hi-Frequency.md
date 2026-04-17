@@ -2,7 +2,7 @@
 
 Hi-Frequency Transactions (HFTX) are **contract-driven, dependent transactions** that are cryptographically bound to a specific position in a block's transaction tree. Unlike ordinary Beam transactions — which float in the mempool for hours and can be included in any future block — HFTX must be included at an exact position relative to a parent context, or they are rejected. This makes HFTX suitable for DeFi flows where transaction ordering and the observable contract state matter.
 
-Related pages: [Core-Transaction-Elements](Core-transaction-elements), [Consensus-Hard-Forks](Consensus-Hard-Forks), [Transactions-Creation-Protocol](Transactions-Creation-Protocol)
+Related pages: [Core-Transaction-Elements](../core/Core-transaction-elements.md), [Consensus-Hard-Forks](../consensus/Consensus-Hard-Forks.md), [Transactions-Creation-Protocol](Transactions-Creation-Protocol.md)
 
 ---
 
@@ -270,4 +270,4 @@ For a batched transaction with N entries, the total minimum fee is the sum of ea
 
 App shaders that produce dependent `ContractInvokeData` can be invoked from the wallet API via `invoke_contract`. Methods marked with the DAPPs-allowed badge in the API docs may build HFTX internally when the app shader sets `Flags::Dependent` on one or more entries. The wallet API returns a transaction ID immediately; the caller should poll `tx_status` to track the `RebuildHft` rebuild cycles and eventual confirmation.
 
-See [Beam-wallet-api-versioning](Beam-wallet-api-versioning) for how wallet API versions expose contract invocation methods.
+See [Beam-wallet-api-versioning](../api/Beam-wallet-api-versioning.md) for how wallet API versions expose contract invocation methods.

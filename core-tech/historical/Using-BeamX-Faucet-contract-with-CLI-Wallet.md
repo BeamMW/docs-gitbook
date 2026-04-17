@@ -1,6 +1,6 @@
 > **Historical Document** — This guide covers the BeamX Faucet contract on the experimental BeamX testnet. It is preserved for historical reference only.
 
-NOTE: If you have not installed BeamX please follow the instructions in the [Getting Started Guide](https://github.com/BeamMW/beam/wiki/BeamX-Getting-Started)
+NOTE: If you have not installed BeamX please follow the instructions in the [Getting Started Guide](BeamX-Getting-Started.md)
 
 Make sure you have downloaded the latest version of the '[faucet](https://github.com/BeamMW/beam/tree/beamX/bvm/Shaders/faucet)' contract folder and put it under the 'shaders' folder as instructed. You need app.wasm to use the faucet and contract.wasm to deploy your own contract.
 
@@ -12,7 +12,7 @@ In this section we will use BeamX Faucet contract to get some coins on the BeamX
 
 `beam-wallet-beamx.exe shader --shader_app_file shaders/faucet/app.wasm -n 127.0.0.1:8501 --shader_args="role=manager,action=view"`
 
-NOTE: We assume that your wallet is initialized and your node is running on local machine at port 8501 and that faucet app.wasm is located in the shaders/faucet folder. If your parameters are different please adjust them accordingly. Follow the [Getting Started Guide](https://github.com/BeamMW/beam/wiki/BeamX-Getting-Started) for more detailed instructions.
+NOTE: We assume that your wallet is initialized and your node is running on local machine at port 8501 and that faucet app.wasm is located in the shaders/faucet folder. If your parameters are different please adjust them accordingly. Follow the [Getting Started Guide](BeamX-Getting-Started.md) for more detailed instructions.
 
 The result of this command will be the list of *contract ids* of shaders of type 'faucet' that are currently deployed on the network. The reason that there can be more than one such shader is because the same Application Shader (app.wasm) can interact with several different Contract Shaders (contract.wasm) of the same type. 
 
@@ -44,7 +44,7 @@ This means that from this faucet, you can extract up to 5 Beam every 10 blocks
 
 No problem, however there are few things that you need to know:
 
-1. Since faucet is not an 'ownable' contract (it will be explained later, but basically it means that it does not have an implicit owner) you can not create another faucet contract with the same parameters (see [BeamX Smart Contracts Guide](https://github.com/BeamMW/beam/wiki/Beam-Smart-Contracts) for more details on that). Therefore you should just invent a couple of parameters of your own, which should not be difficult enough in this case.
+1. Since faucet is not an 'ownable' contract (it will be explained later, but basically it means that it does not have an implicit owner) you can not create another faucet contract with the same parameters (see [BeamX Smart Contracts Guide](../bvm/BVM-Beam-Smart-Contracts.md) for more details on that). Therefore you should just invent a couple of parameters of your own, which should not be difficult enough in this case.
 2. Since you are deploying a new contract on BeamX blockchain, you need to make sure you have the appropriate contract.wasm file for it. We will assume that you have it in the same folder as the app.wasm
 
 Now that these two things are out of the way, let's run the following command:

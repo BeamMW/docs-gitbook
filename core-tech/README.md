@@ -1,18 +1,18 @@
 # Beam Confidential DeFi Platform
 
-[BVM Internals](https://github.com/BeamMW/beam/wiki/bvm/BVM-Internals)
+[BVM Internals](bvm/BVM-Internals.md)
 
-[BVM Host Functions Reference](https://github.com/BeamMW/beam/wiki/bvm/BVM-functions-for-shaders)
+[BVM Host Functions Reference](bvm/BVM-functions-for-shaders.md)
 
-[Web wallet client](https://github.com/BeamMW/beam/wiki/WASM-wallet-client)
+[Web wallet client](WASM-wallet-client.md)
 
 # Documentation
 
 [User Guides](https://beam.mw/docs)
 
-[Exchange Integration Guide](https://github.com/BeamMW/beam/wiki/Exchange-Pool-integration-guide)
+[Exchange Integration Guide](Exchange-Pool-integration-guide.md)
 
-[How To Build](https://github.com/BeamMW/beam/wiki/How-to-build)
+[How To Build](How-to-build.md)
 
 ---
 
@@ -20,113 +20,111 @@
 
 Reference documentation for Beam's cryptographic primitives, transaction anatomy, block format, and chain state structures.
 
-* [Beam Technical Specifications](https://github.com/BeamMW/beam/wiki/Beam-Technical-Specifications)
-* [Cryptographic Primitives](https://github.com/BeamMW/beam/wiki/core/Core-Cryptographic-Primitives)
-* [Core Transaction Elements](https://github.com/BeamMW/beam/wiki/core/Core-transaction-elements)
-* [Merkle Structures](https://github.com/BeamMW/beam/wiki/core/Core-Merkle-Structures)
-* [Block and Chain State](https://github.com/BeamMW/beam/wiki/core/Core-Block-And-Chain-State)
+* [Beam Technical Specifications](Beam-Technical-Specifications.md)
+* [Cryptographic Primitives](core/Core-Cryptographic-Primitives.md)
+* [Core Transaction Elements](core/Core-transaction-elements.md)
+* [Merkle Structures](core/Core-Merkle-Structures.md)
+* [Block and Chain State](core/Core-Block-And-Chain-State.md)
 
 ## Node — Architecture, P2P, Mining, Sync
 
 Full-node internals: block processing, transaction pool, peer-to-peer protocol, proof-of-work, and synchronization.
 
-* [Node Architecture](https://github.com/BeamMW/beam/wiki/node/Node-Architecture)
-* [P2P Network Protocol](https://github.com/BeamMW/beam/wiki/node/Node-P2P-Protocol)
-* [Fly Client Protocol (SPV)](https://github.com/BeamMW/beam/wiki/node/Node-Fly-Client-Protocol)
-* [Beam Mining](https://github.com/BeamMW/beam/wiki/BEAM-Mining)
-  * [Mining Modes](https://github.com/BeamMW/beam/wiki/node/Node-Mining-Modes)
-  * [AVX Optimization](https://github.com/BeamMW/beam/wiki/AVX)
-  * [Supported nVidia Cards (OpenCL)](https://github.com/BeamMW/beam/wiki/Supported-nVidia-cards-for-mining-using-OpenCL-miner)
+* [Node Architecture](node/Node-Architecture.md)
+* [P2P Network Protocol](node/Node-P2P-Protocol.md)
+* [Fly Client Protocol (SPV)](node/Node-Fly-Client-Protocol.md)
+* [Beam Mining](BEAM-Mining.md)
+  * [Mining Modes](node/Node-Mining-Modes.md)
+  * [Supported nVidia Cards (OpenCL)](historical/Supported-nVidia-cards-for-mining-using-OpenCL-miner.md)
 
 ## Wallet — Engine, DB, Addresses, Key Management
 
 Wallet architecture, database schema, key derivation, address formats, SBBS messaging, and hardware wallet support.
 
-* [Wallet Architecture](https://github.com/BeamMW/beam/wiki/wallet/Wallet-Architecture)
-* [Wallet Database Schema](https://github.com/BeamMW/beam/wiki/wallet/Wallet-Database-Schema)
-  * [Payment Confirmation](https://github.com/BeamMW/beam/wiki/Payment-confirmation-(proof))
-  * [One-Side Payment](https://github.com/BeamMW/beam/wiki/One-side-payments)
-  * [Transactions over TOR](https://github.com/BeamMW/beam/wiki/transactions/Transactions-with-Beam-Wallet-CLI-over-TOR-network)
-* [Addresses and Key Derivation](https://github.com/BeamMW/beam/wiki/wallet/Wallet-Addresses-And-Key-Derivation)
-* [Secure Bulletin Board System (SBBS)](https://github.com/BeamMW/beam/wiki/wallet/Wallet-SBBS)
-* [WASM Wallet Client](https://github.com/BeamMW/beam/wiki/WASM-wallet-client)
-* [Wallet Audit (Read-Only)](https://github.com/BeamMW/beam/wiki/wallet/Wallet-audit)
-  * [Setting Up Read-Only Wallet](https://github.com/BeamMW/beam/wiki/Setting-up-read-only-wallet-for-monitoring)
-* [Key Keeper and Hardware Wallet Support](https://github.com/BeamMW/beam/wiki/wallet/Wallet-Key-Keeper)
-  * [Hardware Wallet Design](https://github.com/BeamMW/beam/wiki/HW-wallet-design)
-  * [How to Test with Trezor T](https://github.com/BeamMW/beam/wiki/How-to-test-Beam-with-Trezor-wallet)
-* [Beam URI Scheme](https://github.com/BeamMW/beam/wiki/Beam-URI-scheme)
+* [Wallet Architecture](wallet/Wallet-Architecture.md)
+* [Wallet Database Schema](wallet/Wallet-Database-Schema.md)
+  * [Payment Confirmation](historical/Payment-confirmation-(proof).md))
+  * [One-Side Payment](historical/One-side-payments.md)
+  * [Transactions over TOR](transactions/Transactions-with-Beam-Wallet-CLI-over-TOR-network.md)
+* [Addresses and Key Derivation](wallet/Wallet-Addresses-And-Key-Derivation.md)
+* [Secure Bulletin Board System (SBBS)](wallet/Wallet-SBBS.md)
+* [WASM Wallet Client](WASM-wallet-client.md)
+* [Wallet Audit (Read-Only)](wallet/Wallet-audit.md)
+  * [Setting Up Read-Only Wallet](historical/Setting-up-read-only-wallet-for-monitoring.md)
+* [Key Keeper and Hardware Wallet Support](wallet/Wallet-Key-Keeper.md)
+  * [Hardware Wallet Design](HW-wallet-design.md)
+  * [How to Test with Trezor T](How-to-test-Beam-with-Trezor-wallet.md)
+* [Beam URI Scheme](Beam-URI-scheme.md)
 
 ## Transactions — Simple, Assets, Shielded, Swaps, Channels
 
 Transaction types and creation protocols: plain BEAM transfers, Confidential Assets, Lelantus shielded pool, atomic swaps, hi-frequency transactions, and payment channels.
 
-* [Transaction Creation Protocol](https://github.com/BeamMW/beam/wiki/transactions/Transactions-Creation-Protocol)
-  * [Token Format](https://github.com/BeamMW/beam/wiki/Atomic-swap-token)
-* [Simple Transactions and Confidential Assets](https://github.com/BeamMW/beam/wiki/transactions/Transactions-Confidential-Assets)
-  * [Asset Descriptor v1.0](https://github.com/BeamMW/beam/wiki/Asset-Descriptor-v1.0)
-* [Lelantus-MW Shielded Pool](https://github.com/BeamMW/beam/wiki/transactions/Transactions-Lelantus-Shielded-Pool)
-  * [Confidential Lelantus Assets (MW-CLA)](https://github.com/BeamMW/beam/wiki/MW-CLA)
-* [Hi-Frequency Transactions (HFTX)](https://github.com/BeamMW/beam/wiki/transactions/Transactions-Hi-Frequency)
-* [Atomic Swaps](https://github.com/BeamMW/beam/wiki/transactions/Transactions-Atomic-Swaps)
-* [Asset Swaps / DEX](https://github.com/BeamMW/beam/wiki/transactions/Transactions-Assets-Swaps)
-* [Laser Channels (Payment Channels)](https://github.com/BeamMW/beam/wiki/transactions/Transactions-Laser-Channels)
-  * [Laser Beam Commands](https://github.com/BeamMW/beam/wiki/Laser-BEAM-commands)
-* [Transaction Ordering and Front-Running Protection](https://github.com/BeamMW/beam/wiki/historical/Transaction-ordering-and-front-running-protection)
+* [Transaction Creation Protocol](transactions/Transactions-Creation-Protocol.md)
+* [Simple Transactions and Confidential Assets](transactions/Transactions-Confidential-Assets.md)
+  * [Asset Descriptor v1.0](Asset-Descriptor-v1.0.md)
+* [Lelantus-MW Shielded Pool](transactions/Transactions-Lelantus-Shielded-Pool.md)
+  * [Confidential Lelantus Assets (MW-CLA)](MW-CLA.md)
+* [Hi-Frequency Transactions (HFTX)](transactions/Transactions-Hi-Frequency.md)
+* [Atomic Swaps](transactions/Transactions-Atomic-Swaps.md)
+  * [Swap Token Format](transactions/Transactions-Atomic-Swaps.md#swap-token-format)
+* [Asset Swaps / DEX](transactions/Transactions-Assets-Swaps.md)
+* [Laser Channels (Payment Channels)](transactions/Transactions-Laser-Channels.md)
+  * [CLI Reference](transactions/Transactions-Laser-Channels.md#cli-reference)
+* [Transaction Ordering and Front-Running Protection](historical/Transaction-ordering-and-front-running-protection.md)
 
 ## BVM — Smart Contracts, Shaders, IPFS
 
 Beam Virtual Machine internals, shader (smart contract) development SDK, IPFS integration, and EVM compatibility.
 
-* [BVM Internals](https://github.com/BeamMW/beam/wiki/bvm/BVM-Internals)
-* [Smart Contracts Overview](https://github.com/BeamMW/beam/wiki/bvm/BVM-Beam-Smart-Contracts)
-* [BVM Host Functions Reference](https://github.com/BeamMW/beam/wiki/bvm/BVM-functions-for-shaders)
-* [Building Beam Shaders](https://github.com/BeamMW/beam/wiki/bvm/BVM-Building-Beam-Shaders)
-* [Running Shaders with CLI Wallet](https://github.com/BeamMW/beam/wiki/bvm/BVM-Running-Beam-Shaders-using-CLI-Wallet)
-* [Shader SDK Index](https://github.com/BeamMW/beam/wiki/bvm/BVM-Shader-SDK-Index)
-* [Ethash Verification in Contracts](https://github.com/BeamMW/beam/wiki/Ethash-verification-in-contracts)
-* [BEAM IPFS Support](https://github.com/BeamMW/beam/wiki/BEAM-IPFS-Support)
+* [BVM Internals](bvm/BVM-Internals.md)
+* [Smart Contracts Overview](bvm/BVM-Beam-Smart-Contracts.md)
+* [BVM Host Functions Reference](bvm/BVM-functions-for-shaders.md)
+* [Building Beam Shaders](bvm/BVM-Building-Beam-Shaders.md)
+* [Running Shaders with CLI Wallet](bvm/BVM-Running-Beam-Shaders-using-CLI-Wallet.md)
+* [Shader SDK Index](bvm/BVM-Shader-SDK-Index.md)
+* [Ethash Verification in Contracts](historical/Ethash-verification-in-contracts.md)
+* [BEAM IPFS Support](BEAM-IPFS-Support.md)
 
 **BeamX Contract Examples**
-* [BeamX Getting Started](https://github.com/BeamMW/beam/wiki/BeamX-Getting-Started)
-* [Using BeamX Faucet with CLI Wallet](https://github.com/BeamMW/beam/wiki/Using-BeamX-Faucet-contract-with-CLI-Wallet)
-* [Using BeamX Vault with CLI Wallet](https://github.com/BeamMW/beam/wiki/Using-BeamX-Vault-contract-with-CLI-Wallet)
-* [Using BeamX Roulette with CLI Wallet](https://github.com/BeamMW/beam/wiki/Using-BeamX-Roulette-contract-with-CLI-Wallet)
+* [BeamX Getting Started](historical/BeamX-Getting-Started.md)
+* [Using BeamX Faucet with CLI Wallet](historical/Using-BeamX-Faucet-contract-with-CLI-Wallet.md)
+* [Using BeamX Vault with CLI Wallet](historical/Using-BeamX-Vault-contract-with-CLI-Wallet.md)
+* [Using BeamX Roulette with CLI Wallet](historical/Using-BeamX-Roulette-contract-with-CLI-Wallet.md)
 
 ## Consensus — Hard Forks, BeamHash, Upgrade Guides
 
 Consensus parameter evolution, proof-of-work algorithm history, and network upgrade guides for pools and exchanges.
 
-* [Hard Forks — Rules, Heights, and Consensus Changes](https://github.com/BeamMW/beam/wiki/consensus/Consensus-Hard-Forks)
-* [BeamHash PoW Algorithm](https://github.com/BeamMW/beam/wiki/consensus/Consensus-BeamHash)
-* [Beam Warp: dPoS / PBFT Consensus](https://github.com/BeamMW/beam/wiki/consensus/Consensus-Beam-Warp-dPoS)
-* [Upgrade Guide: Eager Electron 5.0](https://github.com/BeamMW/beam/wiki/Beam-Eager-Electron-5.0-Upgrade-Guide-for-pools-and-exchanges)
-* [Upgrade Guide: Fierce Fermion 6.0](https://github.com/BeamMW/beam/wiki/Beam-Fierce-Fermion-6.0-Upgrade-Guide-for-pools-and-exchanges)
-* [Testing Hard Forks on Local Testnet](https://github.com/BeamMW/beam/wiki/Testing-Beam-Hard-Fork-on-Local-Testnet)
+* [Hard Forks — Rules, Heights, and Consensus Changes](consensus/Consensus-Hard-Forks.md)
+* [BeamHash PoW Algorithm](consensus/Consensus-BeamHash.md)
+* [Beam Warp: dPoS / PBFT Consensus](consensus/Consensus-Beam-Warp-dPoS.md)
+* [Upgrade Guide: Eager Electron 5.0](historical/Beam-Eager-Electron-5.0-Upgrade-Guide-for-pools-and-exchanges.md)
+* [Upgrade Guide: Fierce Fermion 6.0](historical/Beam-Fierce-Fermion-6.0-Upgrade-Guide-for-pools-and-exchanges.md)
 
 ## API — Wallet, Explorer, Stratum
 
 JSON-RPC and protocol API references for wallet integration, blockchain data access, and mining pool operation.
 
-* [Beam Wallet API](https://github.com/BeamMW/beam/wiki/api/Beam-wallet-protocol-API)
-  * [v6.0](https://github.com/BeamMW/beam/wiki/api/Beam-wallet-protocol-API-v6.0)
-  * [v6.1](https://github.com/BeamMW/beam/wiki/api/Beam-wallet-protocol-API-v6.1)
-  * [v6.2](https://github.com/BeamMW/beam/wiki/api/Beam-wallet-protocol-API-v6.2)
-  * [v7.0](https://github.com/BeamMW/beam/wiki/api/Beam-wallet-protocol-API-v7.0)
-  * [v7.1](https://github.com/BeamMW/beam/wiki/api/Beam-wallet-protocol-API-v7.1)
-  * [v7.2](https://github.com/BeamMW/beam/wiki/api/Beam-wallet-protocol-API-v7.2)
-  * [v7.3](https://github.com/BeamMW/beam/wiki/api/Beam-wallet-protocol-API-v7.3)
-  * [v7.4](https://github.com/BeamMW/beam/wiki/api/Beam-wallet-protocol-API-v7.4)
-* [Beam Node Explorer API](https://github.com/BeamMW/beam/wiki/api/Beam-Node-Explorer-API)
-* [Beam Mining API (Stratum)](https://github.com/BeamMW/beam/wiki/api/Beam-mining-protocol-API-(Stratum))
+* [Beam Wallet API](api/Beam-wallet-protocol-API.md)
+  * [v6.0](api/Beam-wallet-protocol-API-v6.0.md)
+  * [v6.1](api/Beam-wallet-protocol-API-v6.1.md)
+  * [v6.2](api/Beam-wallet-protocol-API-v6.2.md)
+  * [v7.0](api/Beam-wallet-protocol-API-v7.0.md)
+  * [v7.1](api/Beam-wallet-protocol-API-v7.1.md)
+  * [v7.2](api/Beam-wallet-protocol-API-v7.2.md)
+  * [v7.3](api/Beam-wallet-protocol-API-v7.3.md)
+  * [v7.4](api/Beam-wallet-protocol-API-v7.4.md)
+* [Beam Node Explorer API](api/Beam-Node-Explorer-API.md)
+* [Beam Mining API (Stratum)](api/Beam-mining-protocol-API-(Stratum).md))
 
 ## Contributing — C++ Conventions and Codebase Guide
 
 Conventions, idioms, and patterns used throughout the Beam C++ codebase.
 
-* [C++ Style and Conventions](https://github.com/BeamMW/beam/wiki/Beam-Cpp-Style-And-Conventions)
-* [How To Build](https://github.com/BeamMW/beam/wiki/How-to-build)
-* [Contribution Guidelines](https://github.com/BeamMW/beam/wiki/Contribution-Guidelines)
+* [C++ Style and Conventions](Beam-Cpp-Style-And-Conventions.md)
+* [How To Build](How-to-build.md)
+* [Contribution Guidelines](Contribution-Guidelines.md)
 
 ---
 
@@ -134,9 +132,9 @@ Conventions, idioms, and patterns used throughout the Beam C++ codebase.
 
 Design proposals and research documents preserved for historical reference. These were not fully implemented in their described form.
 
-* [Eliminating Transaction Kernels](https://github.com/BeamMW/beam/wiki/historical/Thoughts-about-eliminating-transaction-kernels)
-* [Wallets Discovery and Dialog Proposal](https://github.com/BeamMW/beam/wiki/historical/Wallets-discovery-and-dialog-proposal)
-* [Proposal for I/O Layer and P2P](https://github.com/BeamMW/beam/wiki/historical/Proposal-for-I-O-layer-and-P2P)
-* [Mimblewimble Whitepaper (June 2016)](https://github.com/BeamMW/beam/wiki/Mimblewimble-Whitepaper-(June-2016))
-* [Beam Position Paper](https://github.com/BeamMW/beam/wiki/historical/Beam-Position-Paper)
-* [News Channels](https://github.com/BeamMW/beam/wiki/Beam-news-channels)
+* [Eliminating Transaction Kernels](historical/Thoughts-about-eliminating-transaction-kernels.md)
+* [Wallets Discovery and Dialog Proposal](historical/Wallets-discovery-and-dialog-proposal.md)
+* [Proposal for I/O Layer and P2P](historical/Proposal-for-I-O-layer-and-P2P.md)
+* [Mimblewimble Whitepaper (June 2016)](Mimblewimble-Whitepaper-(June-2016).md))
+* [Beam Position Paper](historical/Beam-Position-Paper.md)
+* [News Channels](Beam-news-channels.md)

@@ -101,7 +101,7 @@ _Example 2:_ 1 BEAM = 1.23456789 BTC:
 
 ### averify — confidential asset verification
 
-Publishes verification metadata for a [Confidential Asset](Confidential-assets). Wallets use this to display verified asset status, icons, and color branding.
+Publishes verification metadata for a [Confidential Asset](transactions/Transactions-Confidential-Assets.md). Wallets use this to display verified asset status, icons, and color branding.
 
 | Option | Description |
 |--------|-------------|

@@ -302,7 +302,7 @@ Common key types:
 | **HMAC-SHA-256** | `Hash::Mac` | NonceGenerator — produces cryptographic nonces from secret data and transcript |
 | **AES-256-CTR** | `core/aes.h` | Symmetric encryption for SBBS messages and secure communication channels |
 | **Keccak-256/512** | `core/keccak.h` | Ethereum bridge: address derivation, EVM transaction hashing |
-| **Blake2b** | `3rdparty/crypto/blake/` | BeamHash PoW algorithm (Equihash seed hashing) — see [Consensus-BeamHash](Consensus-BeamHash) |
+| **Blake2b** | `3rdparty/crypto/blake/` | BeamHash PoW algorithm (Equihash seed hashing) — see [Consensus-BeamHash](../consensus/Consensus-BeamHash.md) |
 
 ### SHA-256 Hash Processor
 
@@ -431,4 +431,4 @@ oracle → challenge for Sigma protocol (x)
 
 ---
 
-*See also:* [Core-Transaction-Elements](Core-transaction-elements) for how commitments and signatures compose into transactions. [Transactions-Lelantus-Shielded-Pool](Transactions-Lelantus-Shielded-Pool) for how the Biased Sigma protocol is used in the full Lelantus-MW spend proof.
+*See also:* [Core-Transaction-Elements](Core-transaction-elements.md) for how commitments and signatures compose into transactions. [Transactions-Lelantus-Shielded-Pool](../transactions/Transactions-Lelantus-Shielded-Pool.md) for how the Biased Sigma protocol is used in the full Lelantus-MW spend proof.

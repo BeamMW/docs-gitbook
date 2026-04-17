@@ -1,5 +1,5 @@
 # Overview
-WASM wallet client is a thin wrapper around Beam client library built into WASM using Emscripten toolchain. This wrapper allows to run BEAM wallet inside any browser supporting WebAssembly and it provides the regular [BEAM wallet API](Beam-wallet-protocol-API) to communicate with it from external(javascript) code. 
+WASM wallet client is a thin wrapper around Beam client library built into WASM using Emscripten toolchain. This wrapper allows to run BEAM wallet inside any browser supporting WebAssembly and it provides the regular [BEAM wallet API](api/Beam-wallet-protocol-API.md) to communicate with it from external(javascript) code. 
 
 Starting from version 7.3.13702 all network types are handled by a single  [npm](https://www.npmjs.com/package/beam-wasm-client) package.
 
@@ -22,7 +22,7 @@ WASM wallet client module exports the following classes:
 	[stopWallet](#stopWallet) |  Asynchronously stops the wallet running in the background
 	[isRunning](#isRunning) |  Checks if the wallet is running
 	[isHeadless](#isHeadless) |  Checks if the wallet is `headless`, i.e. without master and owner keys
-	[sendRequest](#sendRequest) |  Sends [API](Beam-wallet-protocol-API) request to the wallet 
+	[sendRequest](#sendRequest) |  Sends [API](api/Beam-wallet-protocol-API.md) request to the wallet 
 	[subscribe](#subscribe) |  Subscribes for API responses
 	[unsubscribe](#unsubscribe) |  Unsubscribes from response notifications 
 	[setSyncHandler](#setSyncHandler) |  Sets synchronization handler, allows tracking sync progress
@@ -370,7 +370,7 @@ Checks if the wallet is `headless`, i.e. without master and owner keys
 ```javascript
 function sendRequest(jsonRequest : String)
 ```
-Sends [API](Beam-wallet-protocol-API) request to the wallet 
+Sends [API](api/Beam-wallet-protocol-API.md) request to the wallet 
 
 ### Parameters
 * `jsonRequest` : API request

@@ -10,7 +10,7 @@
 
 ### New methods
 
-v7.0 API adds IPFS support. Refer [BEAM IPFS Support](https://github.com/BeamMW/beam/wiki/BEAM-IPFS-Support) for details.
+v7.0 API adds IPFS support. Refer [BEAM IPFS Support](../BEAM-IPFS-Support.md) for details.
 
 - [ipfs_add](#ipfs_add) ![](https://img.shields.io/badge/-DAPPs%20allowed-green)![](https://img.shields.io/badge/-async-orange)
 - [ipfs_hash](#ipfs_hash) ![](https://img.shields.io/badge/-DAPPs%20allowed-green)![](https://img.shields.io/badge/-async-orange) 
@@ -105,7 +105,7 @@ List of the possible error codes (with messages):
 
 ### SWAP methods
 
-If you build `wallet-api` with `BEAM_ATOMIC_SWAP_SUPPORT` then you can use additional [SWAP API methods](https://github.com/BeamMW/beam/wiki/Beam-wallet-protocol-SWAP-API-(BETA)).
+If you build `wallet-api` with `BEAM_ATOMIC_SWAP_SUPPORT` then additional atomic swap API methods are available. See [Atomic Swaps](../transactions/Transactions-Atomic-Swaps.md) for the full protocol details.
 
 ## API events
 
@@ -157,7 +157,7 @@ Creates new receiver address.
   * `public_offline` - address for donation, could be used as many times as you wish
   * `regular_new` - since v6.0, regular new-style address (base58), this address has SBBS internally 
 
-  Details of some address types are described [in this document](https://github.com/BeamMW/beam/wiki/Lelantus-CLI). Since v6.0, UI gives the sender an opportunity to choose between regular and offline send operation and the default address type provided via the "receive" UI dialog is an `offline` address with `offline_payments=1`
+  Details of some address types are described [in this document](../historical/Lelantus-CLI-(historical,-below-v6.0).md). Since v6.0, UI gives the sender an opportunity to choose between regular and offline send operation and the default address type provided via the "receive" UI dialog is an `offline` address with `offline_payments=1`
 
 * `expiration` 
   * before v6.0 can be `expired/never/24h`. 
@@ -1092,7 +1092,7 @@ Returns full asset info or [error code](#api-error-codes).
 * `metadata_kv` true if metadata was parsed successfully as key=value pairs
 * `metadata_pairs` present only if `metadata_kv` is true, provides actual parsed key=value pairs
 * `metadata_std_min` true if metadata is k=v pairs and minimal necessary pairs are present, i.e. N(Name), UN(Unit Name), SN(Short Name), NTHUN (Smallest Unit Name)
-* `metadata_std` true if metadata is k=v pairs and fully adheres to the [Asset Descriptor Specification](https://github.com/BeamMW/beam/wiki/Asset-Descriptor-v1.0)
+* `metadata_std` true if metadata is k=v pairs and fully adheres to the [Asset Descriptor Specification](../Asset-Descriptor-v1.0.md)
 
 ## generate_tx_id
 Generates ID for a transaction.

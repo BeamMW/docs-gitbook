@@ -2,7 +2,6 @@ Starting from version 5.0 we separated core beam library project and its UI.
 
 Desktop UI is a separte git repostotry now [https://github.com/BeamMW/beam-ui](https://github.com/BeamMW/beam-ui).
 
-For earlier versions, build instructions are located [here](https://github.com/BeamMW/beam/wiki/How-to-build(old)).
 
 # Before build
 

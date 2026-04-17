@@ -124,7 +124,7 @@ Elements with an odd index carry the most extra data; elements at positions `2^n
 
 In this layout, each element stores the hashes it *created* when appended (marked with `*`) and pointers to the sibling elements that own the other half of each ancestor. Elements 0 and 1 store no extra hashes. Element 1 stores 1 extra hash and 1 sibling pointer. Element 3 stores 2 extra hashes and 2 sibling pointers. Elements at `2^n - 1` positions (1, 3, 7) are sole peaks and need no peak-pointer. All other elements include a pointer to the last element of the previous peak.
 
-**Use in Beam:** Every `SystemState::Full` implicitly extends the DMMR of all inherited states. The DMMR root contributes directly to the `m_Definition` field checked during block validation. See [Core Block and Chain State](Core-Block-And-Chain-State).
+**Use in Beam:** Every `SystemState::Full` implicitly extends the DMMR of all inherited states. The DMMR root contributes directly to the `m_Definition` field checked during block validation. See [Core Block and Chain State](Core-Block-And-Chain-State.md).
 
 ### MultiProof
 

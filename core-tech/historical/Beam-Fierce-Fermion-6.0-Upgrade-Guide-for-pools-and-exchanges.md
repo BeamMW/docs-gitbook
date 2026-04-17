@@ -6,7 +6,7 @@ Beam Fierce Fermion 6.0 includes breaking Hard Fork that will be activated on he
 
 ## What new in version 6.0 
 1. Smart contracts.
-1. Confidential Assets support in wallet API. Read more [here](https://github.com/BeamMW/beam/wiki/Adding-support-for-Beam-Confidential-Asset)
+1. Confidential Assets support in wallet API.
 1. New types of transaction are available in the wallet API:
     * Maximum privacy transaction
     * Offline transaction
@@ -33,7 +33,7 @@ The difference between new addresses and old are the following
  Before starting the upgrade procedure it is highly recommended to stop the wallets and back up the _wallet.db_ and _node.db_ files.
 
 1. Download the new binaries from [Beam Website](https://beam.mw/downloads) or build from [source](https://github.com/BeamMW/beam/tree/mainnet)
-1. [Enable](https://github.com/BeamMW/beam/wiki/Adding-support-for-Beam-Confidential-Asset) CA support if needed
+1. Enable CA support if needed (see wallet API docs)
 1. Update address verification. Now, `validate_address` method returns additional info about address:
 
     `<--`

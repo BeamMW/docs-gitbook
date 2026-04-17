@@ -1,4 +1,4 @@
-> **Historical Proposal** — This document is an early design proposal for transaction ordering and front-running protection. The mechanism that was actually implemented is described in [Transactions-Hi-Frequency](transactions/Transactions-Hi-Frequency). This document is preserved for historical reference only.
+> **Historical Proposal** — This document is an early design proposal for transaction ordering and front-running protection. The mechanism that was actually implemented is described in [Transactions-Hi-Frequency](../transactions/Transactions-Hi-Frequency.md). This document is preserved for historical reference only.
 
 The following is a design of a trading system, which aims to achieve 2 goals:
 1. Front-running protection.

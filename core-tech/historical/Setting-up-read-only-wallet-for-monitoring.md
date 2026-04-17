@@ -26,7 +26,7 @@ In this scenario user should have:
 ## Setup read only monitoring wallet
 
 1. On a different machine, setup another instance of wallet API
-1. [Setup access to you wallet API](https://github.com/BeamMW/beam/wiki/Beam-wallet-protocol-API#user-authorization).
+1. [Setup access to you wallet API](../api/Beam-wallet-protocol-API.md#user-authorization).
 1. Stop monitoring wallet
 1. Copy `wallet.db` from live wallet to a monitoring wallet.
 1. Launch wallet API server.

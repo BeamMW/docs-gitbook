@@ -96,7 +96,7 @@ Establishes the initial Beam consensus:
 
 ### Fork 2 — Height 777,777 (mainnet)  *(Eager Electron 5.0)*
 
-**PoW algorithm change:** BeamHash II → **BeamHash III**. BeamHash III replaces the Equihash construction entirely with a GPU-friendly memory-hard function (see [Beam Equihash specification](Beam-Equihash-specification)).
+**PoW algorithm change:** BeamHash II → **BeamHash III**. BeamHash III replaces the Equihash construction entirely with a GPU-friendly memory-hard function (see [Beam Equihash specification](Consensus-BeamHash.md)).
 
 **Confidential Assets (CA) activated:**
 
@@ -126,7 +126,7 @@ Before Fork 2, a parent kernel's excess commitment was supposed to absorb the ne
 
 **Smart contracts / BVM activated:**
 
-`TxKernelContractControl` (and its subtypes `ContractCreate`, `ContractInvoke`, `ContractDestroy`) require `TestForkAtLeast_<3>`. The BVM WASM interpreter begins executing shaders embedded in contract kernels. See [Programming Beam](Programming-Beam) for shader development.
+`TxKernelContractControl` (and its subtypes `ContractCreate`, `ContractInvoke`, `ContractDestroy`) require `TestForkAtLeast_<3>`. The BVM WASM interpreter begins executing shaders embedded in contract kernels. See [Programming Beam](../bvm/BVM-Shader-Development.md) for shader development.
 
 **Live state Merkle root restructured:**
 
@@ -211,5 +211,5 @@ When a fork is approaching:
 6. **Address validation regex (Fork 3+):** Both legacy hex addresses (64 chars) and new Base58 addresses are valid. Use `/[0-9a-zA-Z]{64,500}/` to accept both.
 
 For network-specific upgrade announcements, see:
-- [Upgrade Guide: Eager Electron 5.0](Beam-Eager-Electron-5.0-Upgrade-Guide-for-pools-and-exchanges) (Fork 2)
-- [Upgrade Guide: Fierce Fermion 6.0](Beam-Fierce-Fermion-6.0-Upgrade-Guide-for-pools-and-exchanges) (Fork 3)
+- [Upgrade Guide: Eager Electron 5.0](../historical/Beam-Eager-Electron-5.0-Upgrade-Guide-for-pools-and-exchanges.md) (Fork 2)
+- [Upgrade Guide: Fierce Fermion 6.0](../historical/Beam-Fierce-Fermion-6.0-Upgrade-Guide-for-pools-and-exchanges.md) (Fork 3)

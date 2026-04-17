@@ -4,7 +4,7 @@ Beam wallet service allows to implement lightweight wallets using BEAM API.
 
 Wallet service and related projects are supposed to be run on Linux only. It is possible to build everything for Windows and using Windows but it is not oficially supported. Releases are also provided only for Linux.
 
-1. Install required tools to build the generic BEAM project. Refer [BEAM build instructions](https://github.com/BeamMW/beam/wiki/How-to-build) for detals. For example if you're using Ubuntu 18.04 Desktop you need to execute steps `1. Install dependencies` & `2. Install cmake` from the `Ubuntu 18.04 Desktop` section.
+1. Install required tools to build the generic BEAM project. Refer [BEAM build instructions](../How-to-build.md) for detals. For example if you're using Ubuntu 18.04 Desktop you need to execute steps `1. Install dependencies` & `2. Install cmake` from the `Ubuntu 18.04 Desktop` section.
 
 2. Install golang. You need at least v1.13.0 to build the project. If the relevant package is provided with your OS it is better to use it. For example `sudo dnf install golang` on Fedora. If your OS doesn't not provide recent golang packages (like Ubuntu 18.04) use instructions [from the official website](https://golang.org/doc/install).
 
@@ -27,7 +27,7 @@ Wallet service and related projects are supposed to be run on Linux only. It is 
     git submodule update --init --recursive
     ```
 
-6. Build `wallet-service` & `sbbs-monitor`. Use build commands from the [BEAM build instructions](https://github.com/BeamMW/beam/wiki/How-to-build) according to your OS. 
+6. Build `wallet-service` & `sbbs-monitor`. Use build commands from the [BEAM build instructions](../How-to-build.md) according to your OS. 
 
     For example for Fedora
     ```
@@ -352,7 +352,7 @@ Just a convenience ping (are you alive?) method. It is recommended not to use th
 
 ### <a name="wallet-api-methods">wallet API methods</a>
 
-Wallet service also implements all the BEAM Wallet Protocol API methods. Please consult the [Beam wallet protocol API](https://github.com/BeamMW/beam/wiki/Beam-wallet-protocol-API) section for details.
+Wallet service also implements all the BEAM Wallet Protocol API methods. Please consult the [Beam wallet protocol API](../api/Beam-wallet-protocol-API.md) section for details.
 
 ### <a name="wasm-key-keeper">WebAssembly Keykeeper</a>
 

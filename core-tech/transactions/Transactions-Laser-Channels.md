@@ -559,8 +559,8 @@ A working demo covering graceful open/close, one-side closure, and cheat/punishm
 
 ## Related Pages
 
-- [Core-Cryptographic-Primitives](Core-Cryptographic-Primitives) — Pedersen commitments, Bulletproofs, Schnorr multi-sig
-- [Core-Transaction-Elements](Core-transaction-elements) — `TxKernelStd` relative lock fields
-- [Transactions-Creation-Protocol](Transactions-Creation-Protocol) — `BaseTransaction` / negotiator framework used for standard txs
-- [Wallet-SBBS](Wallet-SBBS) — message transport used for channel negotiation
-- [Node-Fly-Client-Protocol](Node-Fly-Client-Protocol) — chain monitoring used by `Mediator`
+- [Core-Cryptographic-Primitives](../core/Core-Cryptographic-Primitives.md) — Pedersen commitments, Bulletproofs, Schnorr multi-sig
+- [Core-Transaction-Elements](../core/Core-transaction-elements.md) — `TxKernelStd` relative lock fields
+- [Transactions-Creation-Protocol](Transactions-Creation-Protocol.md) — `BaseTransaction` / negotiator framework used for standard txs
+- [Wallet-SBBS](../wallet/Wallet-SBBS.md) — message transport used for channel negotiation
+- [Node-Fly-Client-Protocol](../node/Node-Fly-Client-Protocol.md) — chain monitoring used by `Mediator`

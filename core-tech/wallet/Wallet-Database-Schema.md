@@ -210,7 +210,7 @@ Both tables share the schema `(name TEXT UNIQUE, value BLOB)`.
 | `Height` | INTEGER NOT NULL PRIMARY KEY | Block height |
 | `State` | BLOB NOT NULL | Serialized `Block::SystemState::Full` |
 
-Provides the header chain the FlyClient uses to verify Merkle proofs from the node. See [Fly Client Protocol](Node-Fly-Client-Protocol) for how this table is consumed.
+Provides the header chain the FlyClient uses to verify Merkle proofs from the node. See [Fly Client Protocol](../node/Node-Fly-Client-Protocol.md) for how this table is consumed.
 
 ---
 
@@ -334,7 +334,7 @@ struct IWalletDbObserver {
 
 ## See Also
 
-- [Wallet Architecture](Wallet-Architecture) — `Wallet` class, transaction lifecycle, SBBS transport
-- [Core Transaction Elements](Core-transaction-elements) — kernel and UTXO on-chain structures
-- [Fly Client Protocol](Node-Fly-Client-Protocol) — how `States` table powers SPV proofs
-- [Secure Bulletin Board System (SBBS)](Secure-bulletin-board-system-(SBBS)) — messaging layer backed by `WalletMessages` tables
+- [Wallet Architecture](Wallet-Architecture.md) — `Wallet` class, transaction lifecycle, SBBS transport
+- [Core Transaction Elements](../core/Core-transaction-elements.md) — kernel and UTXO on-chain structures
+- [Fly Client Protocol](../node/Node-Fly-Client-Protocol.md) — how `States` table powers SPV proofs
+- [Secure Bulletin Board System (SBBS)](Wallet-SBBS.md) — messaging layer backed by `WalletMessages` tables

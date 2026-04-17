@@ -243,6 +243,6 @@ The EVM `Processor` is not exposed as a BVM host function. Instead, contracts th
 
 ## Related Pages
 
-- [BVM Internals](BVM-Internals) — WASM execution model, host functions, gas/charge model
-- [BVM Shader Development](BVM-Shader-Development) — writing contract and app shaders
-- [Consensus — BeamHash](../consensus/Consensus-BeamHash) — Beam's own PoW algorithm
+- [BVM Internals](BVM-Internals.md) — WASM execution model, host functions, gas/charge model
+- [BVM Shader Development](BVM-Shader-Development.md) — writing contract and app shaders
+- [Consensus — BeamHash](../consensus/Consensus-BeamHash.md) — Beam's own PoW algorithm

@@ -305,7 +305,7 @@ The wallet may register multiple addresses. Each address maps to exactly one cha
 
 ### Comparison to Direct Transport
 
-The [Wallet Architecture](Wallet-Architecture) page describes how newer address types (max-privacy, public-offline) bypass SBBS entirely, using the node as a one-way relay or requiring no online round-trip. SBBS is used for:
+The [Wallet Architecture](Wallet-Architecture.md) page describes how newer address types (max-privacy, public-offline) bypass SBBS entirely, using the node as a one-way relay or requiring no online round-trip. SBBS is used for:
 
 - Classic regular addresses (interactive signing with two live parties)
 - Swap offer discovery (`s_SwapOffersChannel`)
@@ -316,7 +316,7 @@ The [Wallet Architecture](Wallet-Architecture) page describes how newer address 
 
 ## Related Pages
 
-- [Wallet Architecture](Wallet-Architecture) — overall wallet engine, how SBBS fits into the network layer
-- [Node P2P Protocol](Node-P2P-Protocol) — full message framing and peer management
-- [Node Fly Client Protocol](Node-Fly-Client-Protocol) — how wallets connect to nodes to post and receive BBS messages
-- [Addresses in Beam](Addresses-in-Beam) — address types and when SBBS is used vs. direct transport
+- [Wallet Architecture](Wallet-Architecture.md) — overall wallet engine, how SBBS fits into the network layer
+- [Node P2P Protocol](../node/Node-P2P-Protocol.md) — full message framing and peer management
+- [Node Fly Client Protocol](../node/Node-Fly-Client-Protocol.md) — how wallets connect to nodes to post and receive BBS messages
+- [Addresses in Beam](Wallet-Addresses-And-Key-Derivation.md) — address types and when SBBS is used vs. direct transport

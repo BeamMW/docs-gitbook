@@ -4,7 +4,7 @@ Beam embeds a full [IPFS](https://ipfs.tech/) (InterPlanetary File System) node 
 
 ## Why IPFS Is Embedded
 
-Beam DApps are implemented as [shader pairs](BVM-Shader-Development): a contract shader running inside the BVM and an app shader that runs in the wallet and builds the UI. The UI assets — HTML, JavaScript, images — must be delivered to the wallet client without relying on a centralized server. IPFS provides content-addressed immutable storage, so a CID embedded in the shader's metadata permanently identifies the exact UI bundle. When a user opens a DApp the wallet fetches the bundle by CID from the IPFS network.
+Beam DApps are implemented as [shader pairs](bvm/BVM-Shader-Development.md): a contract shader running inside the BVM and an app shader that runs in the wallet and builds the UI. The UI assets — HTML, JavaScript, images — must be delivered to the wallet client without relying on a centralized server. IPFS provides content-addressed immutable storage, so a CID embedded in the shader's metadata permanently identifies the exact UI bundle. When a user opens a DApp the wallet fetches the bundle by CID from the IPFS network.
 
 Secondary use cases include NFT metadata storage and application-level content pinning from DApp shaders via the wallet API.
 
@@ -127,7 +127,7 @@ These operations are also exposed as JSON-RPC methods in the wallet API (since v
 | `ipfs_unpin` | write | yes |
 | `ipfs_gc` | write | yes |
 
-See the [Wallet API v7.0](api/Beam-wallet-protocol-API-v7.0) documentation for parameter schemas.
+See the [Wallet API v7.0](api/Beam-wallet-protocol-API-v7.0.md) documentation for parameter schemas.
 
 ## Interaction with Shader Invocation
 

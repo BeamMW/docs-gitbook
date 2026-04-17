@@ -18,6 +18,6 @@ Emits or burns the specified `amount` of the specified asset type
 * `Halt()` if asset specified by `aid` was not created by this contract
 * fails in case of overflow (i.e. attempt to burn more than was emitted)
 * the emitted/burned asset is NOT automatically added/subtracted to/from the current transaction. It's only locked/unlocked to the current contract
-* to move it to the current transaction call [FundsLock](FundsLock) / [FundsUnlock](FundsUnlock) explicitly.
+* to move it to the current transaction call [FundsLock](BVM-FundsLock.md) / [FundsUnlock](BVM-FundsUnlock.md) explicitly.
 
 ## Example 
