@@ -144,7 +144,7 @@ So, to start API with HTTP support use the command:
 `./wallet-api --node_addr=x.x.x.x:port --use_http=1`  
 where `node_addr` is your node address and port.
 
-See detailed [wallet API documentation](api/Beam-wallet-protocol-API.md).
+See detailed [wallet API documentation](api/README.md).
 
 ## Node Explorer API
 

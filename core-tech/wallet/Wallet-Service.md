@@ -352,7 +352,7 @@ Just a convenience ping (are you alive?) method. It is recommended not to use th
 
 ### <a name="wallet-api-methods">wallet API methods</a>
 
-Wallet service also implements all the BEAM Wallet Protocol API methods. Please consult the [Beam wallet protocol API](../api/Beam-wallet-protocol-API.md) section for details.
+Wallet service also implements all the BEAM Wallet Protocol API methods. Please consult the [Beam wallet protocol API](../api/README.md) section for details.
 
 ### <a name="wasm-key-keeper">WebAssembly Keykeeper</a>
 

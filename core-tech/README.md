@@ -82,7 +82,7 @@ Beam Virtual Machine internals, shader (smart contract) development SDK, IPFS in
 * [BVM Host Functions Reference](bvm/BVM-functions-for-shaders.md)
 * [Building Beam Shaders](bvm/BVM-Building-Beam-Shaders.md)
 * [Running Shaders with CLI Wallet](bvm/BVM-Running-Beam-Shaders-using-CLI-Wallet.md)
-* [Shader SDK Index](bvm/BVM-Shader-SDK-Index.md)
+* [Shader SDK Index](bvm/README.md)
 * [Ethash Verification in Contracts](historical/Ethash-verification-in-contracts.md)
 * [BEAM IPFS Support](BEAM-IPFS-Support.md)
 
@@ -106,7 +106,7 @@ Consensus parameter evolution, proof-of-work algorithm history, and network upgr
 
 JSON-RPC and protocol API references for wallet integration, blockchain data access, and mining pool operation.
 
-* [Beam Wallet API](api/Beam-wallet-protocol-API.md)
+* [Beam Wallet API](api/README.md)
   * [v6.0](api/Beam-wallet-protocol-API-v6.0.md)
   * [v6.1](api/Beam-wallet-protocol-API-v6.1.md)
   * [v6.2](api/Beam-wallet-protocol-API-v6.2.md)

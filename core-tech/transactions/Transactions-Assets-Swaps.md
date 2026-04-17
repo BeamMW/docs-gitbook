@@ -202,4 +202,4 @@ The DEX is exposed through the `v7_2` Wallet API (requires `BEAM_ASSET_SWAP_SUPP
 | `assets_swap_cancel` | Write | Cancel a maker order by ID |
 | `assets_swap_accept` | Write | Accept a taker order, start settlement transaction |
 
-See the [Wallet API](../api/Beam-wallet-protocol-API.md) reference for full request/response schemas.
+See the [Wallet API](../api/README.md) reference for full request/response schemas.

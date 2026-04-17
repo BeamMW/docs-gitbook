@@ -38,7 +38,7 @@
 * [BVM Host Functions](bvm/BVM-functions-for-shaders.md)
 * [Building Shaders](bvm/BVM-Building-Beam-Shaders.md)
 * [Running Shaders (CLI)](bvm/BVM-Running-Beam-Shaders-using-CLI-Wallet.md)
-* [Shader SDK Index](bvm/BVM-Shader-SDK-Index.md)
+* [Shader SDK Index](bvm/README.md)
 * [EVM Integration](bvm/BVM-EVM-Integration.md)
 * [BEAM IPFS Support](BEAM-IPFS-Support.md)
 
@@ -53,8 +53,8 @@
 * [C++ Style and Conventions](Beam-Cpp-Style-And-Conventions.md)
 
 **API**
-* [Mining (Stratum)](api/Beam-mining-protocol-API-(Stratum).md))
-* [Wallet API](api/Beam-wallet-protocol-API.md)
+* [Mining (Stratum)](api/Beam-mining-protocol-API-(Stratum).md)
+* [Wallet API](api/README.md)
     * [v6.0](api/Beam-wallet-protocol-API-v6.0.md)
     * [v6.1](api/Beam-wallet-protocol-API-v6.1.md)
     * [v6.2](api/Beam-wallet-protocol-API-v6.2.md)
