@@ -43,7 +43,7 @@ Wallet architecture, database schema, key derivation, address formats, SBBS mess
 
 * [Wallet Architecture](wallet/Wallet-Architecture.md)
 * [Wallet Database Schema](wallet/Wallet-Database-Schema.md)
-  * [Payment Confirmation](historical/Payment-confirmation-(proof).md))
+  * [Payment Confirmation](historical/Payment-confirmation-(proof).md)
   * [One-Side Payment](historical/One-side-payments.md)
   * [Transactions over TOR](transactions/Transactions-with-Beam-Wallet-CLI-over-TOR-network.md)
 * [Addresses and Key Derivation](wallet/Wallet-Addresses-And-Key-Derivation.md)
@@ -116,7 +116,7 @@ JSON-RPC and protocol API references for wallet integration, blockchain data acc
   * [v7.3](api/Beam-wallet-protocol-API-v7.3.md)
   * [v7.4](api/Beam-wallet-protocol-API-v7.4.md)
 * [Beam Node Explorer API](api/Beam-Node-Explorer-API.md)
-* [Beam Mining API (Stratum)](api/Beam-mining-protocol-API-(Stratum).md))
+* [Beam Mining API (Stratum)](api/Beam-mining-protocol-API-(Stratum).md)
 
 ## Contributing — C++ Conventions and Codebase Guide
 
@@ -135,6 +135,6 @@ Design proposals and research documents preserved for historical reference. Thes
 * [Eliminating Transaction Kernels](historical/Thoughts-about-eliminating-transaction-kernels.md)
 * [Wallets Discovery and Dialog Proposal](historical/Wallets-discovery-and-dialog-proposal.md)
 * [Proposal for I/O Layer and P2P](historical/Proposal-for-I-O-layer-and-P2P.md)
-* [Mimblewimble Whitepaper (June 2016)](Mimblewimble-Whitepaper-(June-2016).md))
+* [Mimblewimble Whitepaper (June 2016)](Mimblewimble-Whitepaper-(June-2016).md)
 * [Beam Position Paper](historical/Beam-Position-Paper.md)
 * [News Channels](Beam-news-channels.md)
