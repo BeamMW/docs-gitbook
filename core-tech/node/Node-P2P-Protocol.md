@@ -398,6 +398,10 @@ This breaks the graph between individual senders even on the network level.
 
 To improve privacy, the node creates **dummy outputs** with the miner key during the stem phase. These are spent later (randomly, between `m_DummyLifetimeLo = 720` and `m_DummyLifetimeHi = 10080` blocks), making the transaction graph harder to analyze. Decoy creation requires `m_Keys.m_pMiner` to be set; setting `m_DummyLifetimeHi = 0` disables decoys entirely.
 
+**When decoys are added.** Dummy outputs are not added to every transaction — they are the *padding* for an aggregation that did not fill up. When the aggregation timer fires (`Dandelion::OnTimedOut`) and the stem transaction is still below `m_OutputsMin`, the node calls `AddDummyOutputs()` to top it up to `m_OutputsMin` before fluffing. The number added is therefore `m_OutputsMin − (current outputs)`, further capped by the transaction's remaining fee reserve: each dummy output costs a standard output fee, and the node stops once the reserve can no longer cover one (so a low-fee transaction may get fewer than the gap). Each dummy is recorded in `NodeDB::Dummies` with a scheduled spend height sampled from `[m_DummyLifetimeLo, m_DummyLifetimeHi]`.
+
+**When decoys are spent.** Spending is *opportunistic*, not scheduled. At the start of each stem aggregation, `AddDummyInputs()` pulls in the dummy with the lowest scheduled spend height that has come due (`GetLowestDummy() ≤ tip`) and adds it as an input. A dummy whose height has passed is therefore *eligible* to be spent but waits for the node's next outgoing/relayed transaction to carry it — so on a node that isn't actively relaying, due dummies accumulate in `NodeDB::Dummies` until the next aggregation consumes them. Spending a dummy deletes it from the table (the kernel-less output is later cut through), which is why dummies leave no permanent chain footprint.
+
 ### Configuration
 
 ```cpp
