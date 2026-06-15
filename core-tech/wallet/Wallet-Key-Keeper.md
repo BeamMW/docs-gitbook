@@ -44,7 +44,7 @@ virtual void         InvokeAsync(Method::X&,     // non-blocking
 | `get_Kdf` | Out → host | Return root or SBBS KDF (public half always; private half only in trusted mode) |
 | `get_NumSlots` | Out → host | Number of nonce slots available on the device |
 | `get_Commitment` | Out → host | Pedersen commitment for a given `CoinID` |
-| `CreateOutput` | Out → host | Full UTXO output (commitment + bulletproof) for a `CoinID` |
+| `CreateOutput` | Out → host | Full UTXO output (commitment + [bulletproof](../HW-wallet-design.md)) for a `CoinID` |
 | `CreateInputShielded` | Out → host | Lelantus spend proof for a shielded coin |
 | `CreateVoucherShielded` | Out → host | One or more shielded vouchers for offline/max-privacy sends |
 | `CreateOfflineAddr` | Out → host | Public generator for offline address + ownership signature |

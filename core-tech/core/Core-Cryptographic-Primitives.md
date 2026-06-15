@@ -141,7 +141,7 @@ Verification: `IsValid(commitment, Oracle&)` — standalone, or `IsValid(commitm
 
 **Recovery:** If the prover embeds the `Key::ID` and value in the proof (using the `m_Seed` derived from the commitment and master secret), the owner can call `Recover(Oracle&, Params::Recover&)` to extract the amount and key ID. Up to 2 extra scalars (`m_pExtra`) and a user blob (`m_Blob`) can also be embedded.
 
-**Multi-sig bulletproofs:** Two parties can co-sign a range proof via the `MultiSig` / `CoSign` protocol in three phases (`Step2`, `Finalize`) without revealing their blinding factors to each other.
+**Multi-sig bulletproofs:** Two parties can co-sign a range proof via the `MultiSig` / `CoSign` protocol in three phases (`Step2`, `Finalize`) without revealing their blinding factors to each other. The host/device variant of this split — and why the device still performs part of the work — is described in [Hardware Wallet Design](../HW-wallet-design.md).
 
 ### InnerProduct (Proof Substructure)
 

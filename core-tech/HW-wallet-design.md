@@ -137,11 +137,21 @@ On the second invocation it verifies receiver part, verifies the `PaymentProof` 
 
 ## Note regarding rangeproof generation
 
-Beam uses bulletproof as a rangeproof, which is computationally heavy for a device with limited capabilities. To improve the performance the host and HW wallet perform a multi-party computation. The HW wallet participates only where the _blinding factor_ is necessary.
+Beam uses a bulletproof as its rangeproof, which is computationally heavy for a device with limited capabilities. To improve performance the host and the HW wallet perform a multi-party computation, dividing the work by **what depends on the secret _blinding factor_ and what does not**:
 
-However, apart from being valid, the generated bulletproof must also be detectable by the user `OwnerKey`. This is obviously unacceptable if a malicious host can generate an output which would be "invisible" to the user after the transaction.
+* Everything that does not need the secret is derivable from the exported owner `P-Kdf`, so the host performs the bulk of the heavy elliptic-curve computation on its own — in particular the [inner-product argument](core/Core-Cryptographic-Primitives.md) (the logarithmic `L,R` recursion), which is the largest part of the proof.
+* The HW wallet contributes only the secret-dependent parts: its share of the `T1,T2` commitments and the scalar that masks the _blinding factor_ with the proof challenges (`tauX`).
 
-Because of this there's a considerable amount of computation that HW wallet needs to do. In particular it needs to calculate a multi-exponentiation of 129 generators. Yet it's only a fairly small fraction of the overall computation.
+So far this is just a performance optimization. But a _valid_ rangeproof is not enough — the resulting output must also be **recoverable by the user's `OwnerKey`**. The blockchain only enforces that an output is valid (in range) and that the transaction balances; it does not, and cannot, enforce that the rightful owner can detect and later spend the output. A compromised host could thus craft a perfectly valid output that the user can never recover — the funds leave the wallet and are irrecoverably lost, while every full node still accepts the transaction.
+
+To prevent this, the HW wallet does not trust the host with the recovery-bearing part of the proof; it re-derives it from the genuine seed itself. This is why — even though it offloads the inner-product argument — it still performs a multi-exponentiation of **129 generators** (the `S` commitment). Doing so binds the output to the owner's seed and guarantees recoverability. It is a considerable computation, yet only a fairly small fraction of the whole proof.
+
+The same reasoning governs sending to a **shielded** output ([Lelantus pool](transactions/Transactions-Lelantus-Shielded-Pool.md)), where the host builds the _entire_ bulletproof and the HW wallet only signs the kernel. Before signing, the HW wallet **recovers** the host-built proof against the seed derived from the recipient's voucher — it folds the seed-derived `S`-vectors through the proof challenges, and deliberately does _not_ recompute or re-verify the `L,R` pairs (soundness is every full node's job). This recovery checks two things:
+
+1. **Recoverability** — that the output opens from the recipient's seed, i.e. the receiver will actually be able to detect and spend it.
+1. **Authentic attribution** — the bulletproof also carries data the receiver decodes: the sender `Identity` and an optional short message. The HW wallet verifies these are the authorized values, so a compromised host cannot make the payment appear to come from a different sender (impersonation, i.e. a forged `PaymentProof`).
+
+The common principle: on-chain validation covers soundness and balance, while the HW wallet — the only component trusted against a possibly compromised host — is responsible for the properties the chain cannot see: that every output it helps create is **recoverable by its rightful owner** and carries **genuine authorship**.
 
 ## Note regarding `PaymentProof` and BBS addresses
 

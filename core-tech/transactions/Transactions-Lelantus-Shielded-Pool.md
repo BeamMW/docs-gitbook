@@ -280,7 +280,7 @@ These caps prevent individual blocks from being flooded with expensive Lelantus 
 
 ## Shielded Output Coloring and DH Encoding
 
-Lelantus-MW allows non-interactive payments: the sender creates a shielded output for the receiver without interaction. To make outputs recognizable only by the intended receiver, a *coloring* scheme embeds metadata (the *Coin ID*) into the bulletproof.
+Lelantus-MW allows non-interactive payments: the sender creates a shielded output for the receiver without interaction. To make outputs recognizable only by the intended receiver, a *coloring* scheme embeds metadata (the *Coin ID*) into the bulletproof. A hardware wallet re-derives and verifies this embedding before signing the kernel — see [Hardware Wallet Design](../HW-wallet-design.md).
 
 ### Standard Bulletproof Coloring
 
