@@ -36,9 +36,9 @@ Append to any URL:
 
 ## Endpoints
 
-From `ExplorerNodeDirs` in `server.h`: `status`, `block`, `blocks`, `hdrs`, `peers`, `swap_offers`, `swap_totals`, `contracts`, `contract`, `asset`, `assets`.
+From `ExplorerNodeDirs` in `server.h`: `status`, `block`, `blocks`, `hdrs`, `peers`, `swap_offers`, `swap_totals`, `asset_swaps`, `asset_swaps_totals`, `contracts`, `contract`, `asset`, `assets`.
 
-Examples use host `http://127.0.0.1:8888`. Responses are **illustrative**; field sets vary by chain (PoW vs PBFT), build flags (e.g. atomic swap), and data volume. Large arrays are often truncated with `/* … */`.
+Examples use host `http://127.0.0.1:8888`. Responses are **illustrative**; field sets vary by chain (PoW vs PBFT), build flags (e.g. atomic / asset swap), and data volume. Large arrays are often truncated with `/* … */`.
 
 ---
 
@@ -345,6 +345,76 @@ Host: 127.0.0.1:8888
   "dai_offered": "0",
   "usdt_offered": "0",
   "wbtc_offered": "0"
+}
+```
+
+---
+
+### `GET /asset_swaps`
+
+Only when built with asset-swap support (`BEAM_ASSET_SWAP_SUPPORT`). Live asset-swap offers, which the node receives over SBBS broadcast. Shape from `get_asset_swaps` in `adapter.cpp`.
+
+Offers are reported in **maker terms**: `send_*` is what the maker offers, `receive_*` is what the maker wants. Amounts are formatted decimal strings (`PrintableAmount`, may include thousands separators); `send_asset_id` / `receive_asset_id` are numeric asset IDs (`0` = BEAM). `create_time` / `expire_time` are raw unix seconds (formatted client-side). Expired offers are omitted.
+
+**Request**
+
+```http
+GET /asset_swaps HTTP/1.1
+Host: 127.0.0.1:8888
+```
+
+```bash
+curl -sS "http://127.0.0.1:8888/asset_swaps"
+```
+
+**Response** `200` — JSON array:
+
+```json
+[
+  {
+    "id": "5f8d3c2b1a094e6f7d8c9b0a1e2f3d4c",
+    "send_asset_id": 0,
+    "send_currency": "BEAM",
+    "send_amount": "4,862.63068319",
+    "receive_asset_id": 7,
+    "receive_currency": "USDT",
+    "receive_amount": "500",
+    "create_time": 1781784005,
+    "expire_time": 1781785805
+  }
+]
+```
+
+(`id` is the 32-hex-char order UUID. Empty array `[]` when there are no live offers.)
+
+---
+
+### `GET /asset_swaps_totals`
+
+Only when built with asset-swap support (`BEAM_ASSET_SWAP_SUPPORT`). Aggregate of the live offers, grouped per asset, plus the total offer count. Shape from `get_asset_swaps_totals` in `adapter.cpp`.
+
+`total_offers_count` is the number of non-expired offers. Each `assets` entry sums, per asset ID, `amount_offered` (the asset on makers' send side) and `amount_wanted` (the asset on makers' receive side); both are formatted decimal strings.
+
+**Request**
+
+```http
+GET /asset_swaps_totals HTTP/1.1
+Host: 127.0.0.1:8888
+```
+
+```bash
+curl -sS "http://127.0.0.1:8888/asset_swaps_totals"
+```
+
+**Response** `200`:
+
+```json
+{
+  "total_offers_count": 12,
+  "assets": [
+    { "asset_id": 0, "currency": "BEAM", "amount_offered": "5,000", "amount_wanted": "0" },
+    { "asset_id": 7, "currency": "USDT", "amount_offered": "0", "amount_wanted": "2,500" }
+  ]
 }
 ```
 
