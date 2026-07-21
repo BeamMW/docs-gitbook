@@ -1,5 +1,5 @@
 # Abstract
-The assets are described [here](https://github.com/BeamMW/beam/wiki/Confidential-assets)
+The assets are described [here](transactions/Transactions-Confidential-Assets.md)
 
 This document's purpose is to specify the asset metadata, to enable 3rd party tools to consume and display the subset of asset-related information in a simple and well-standardized manner.
 

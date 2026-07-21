@@ -6,11 +6,11 @@
 ## Getting binaries
 First of all, define the network you'd like to "play" with:
 - `mainnet` - it's the latest released production version, working with real money and you can get binaries from the [official website](https://www.beam.mw/downloads), see [Github Releases](https://github.com/BeamMW/beam/releases) or build yourself from the sources of ([mainnet branch](https://github.com/BeamMW/beam/tree/mainnet)).
-- `testnet` - to check the features will be released soon to production and  you can get binaries from the [official website](/downloads/testnet) 
+- `testnet` - to check the features will be released soon to production and  you can get binaries from the [official website](https://beam.mw/downloads/testnet) 
  , see [Github Releases](https://github.com/BeamMW/beam/releases) or build from the [testnet branch](https://github.com/BeamMW/beam/tree/testnet).
 - `master` - to see the latest changes in development build the [master branch](https://github.com/BeamMW/beam/tree/master).
 
-Here are [detailed instructions on how to build a project](https://github.com/BeamMW/beam/wiki/How-to-build) for *Windows*, *Linux*, *Mac* platforms .
+Here are [detailed instructions on how to build a project](How-to-build.md) for *Windows*, *Linux*, *Mac* platforms .
 > Add `-DBEAM_NO_QT_UI_WALLET=On` command line parameter to the Cmake if you need only CLI version of the wallet without UI and QT5 library dependencies.
 
 You will need to build 4 binaries: `beam-node`, `explorer-node`, `beam-wallet` and `wallet-api`.
@@ -126,11 +126,11 @@ Beam Node also provides built-in support for *Stratum API* allowing to connect m
 ## Wallet API
 
 With Wallet API you can 
-* check current [wallet status and (balance)](https://github.com/BeamMW/beam/wiki/Beam-wallet-protocol-API-v6.1#wallet_status)
-* get all your [UTXO](https://github.com/BeamMW/beam/wiki/Beam-wallet-protocol-API-v6.1#get_utxo)/[transactions](https://github.com/BeamMW/beam/wiki/Beam-wallet-protocol-API-v6.1#tx_list) list
-* [create](https://github.com/BeamMW/beam/wiki/Beam-wallet-protocol-API-v6.1#create_address)/[verify](https://github.com/BeamMW/beam/wiki/Beam-wallet-protocol-API-v6.1#validate_address) address 
-* [send funds](https://github.com/BeamMW/beam/wiki/Beam-wallet-protocol-API-v6.1#tx_send) and [cancel](https://github.com/BeamMW/beam/wiki/Beam-wallet-protocol-API-v6.1#tx_cancel) transactions
-* make a [split of UTXO](https://github.com/BeamMW/beam/wiki/Beam-wallet-protocol-API-v6.1#tx_split) - create a specific set of outputs with given set of values
+* check current [wallet status and (balance)](api/Beam-wallet-protocol-API-v6.1.md#wallet_status)
+* get all your [UTXO](api/Beam-wallet-protocol-API-v6.1.md#get_utxo)/[transactions](api/Beam-wallet-protocol-API-v6.1.md#tx_list) list
+* [create](api/Beam-wallet-protocol-API-v6.1.md#create_address)/[verify](api/Beam-wallet-protocol-API-v6.1.md#validate_address) address 
+* [send funds](api/Beam-wallet-protocol-API-v6.1.md#tx_send) and [cancel](api/Beam-wallet-protocol-API-v6.1.md#tx_cancel) transactions
+* make a [split of UTXO](api/Beam-wallet-protocol-API-v6.1.md#tx_split) - create a specific set of outputs with given set of values
 
 There are two ways to send JSON RPC commands to the API, 
 * using TCP socket 
@@ -144,7 +144,7 @@ So, to start API with HTTP support use the command:
 `./wallet-api --node_addr=x.x.x.x:port --use_http=1`  
 where `node_addr` is your node address and port.
 
-See detailed [wallet API documentation](https://github.com/BeamMW/beam/wiki/Beam-wallet-protocol-API).
+See detailed [wallet API documentation](api/README.md).
 
 ## Node Explorer API
 
@@ -156,4 +156,4 @@ To run explorer use the command:
 
 >Please, make sure you pass proper peer address for the current network you have chosen before.
   
-See detailed [explorer API documentation](https://github.com/BeamMW/beam/wiki/Beam-Node-Explorer-API)
+See detailed [explorer API documentation](api/Beam-Node-Explorer-API.md)

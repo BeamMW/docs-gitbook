@@ -1,5 +1,3 @@
-
-
 # Beam Web Wallet Starter Kit [working draft]
 
 Web wallet starter allows you easily integrate Beam with your service, create a bunch of wallets and manage them... (TODO)
@@ -139,7 +137,7 @@ Here is an example:
 </script>
 </html>
 ```
-Now, when you got your wallet ID, you can call any [Wallet API](https://github.com/BeamMW/beam/wiki/Beam-wallet-protocol-API#api) method, like check status, create an address or do a transaction.
+Now, when you got your wallet ID, you can call any [Wallet API](api/README.md#api) method, like check status, create an address or do a transaction.
 
 ## Open wallet
 Open wallet with given ID and password.

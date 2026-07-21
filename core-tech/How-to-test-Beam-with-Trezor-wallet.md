@@ -34,7 +34,7 @@ python3 setup.py prebuild
 - Call `trezorctl firmware-update -f <path to firmware folder>/firmware.bin` to install firmware.
 
 ## Test Beam with Trezor
-- Go to https://builds.beam-mw.com/trezor_build and download/install the latest build.
+- Go to https://builds.beam.mw/#trezor_build and download/install the latest build.
 - Connect your device, go to https://trezor.io/start, create a new wallet or recover with your seed phrase.
 - Run installed **Beam Wallet** and push `create new Trezor wallet` button.
 - Agree with generating **Owner Key** on Trezor device and wait, it usually takes about 15 sec.

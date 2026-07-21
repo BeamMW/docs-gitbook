@@ -1,121 +1,182 @@
-**THIS DOCUMENT DESCRIBES UPCOMING AND NOT YET RELEASED v6.3 IPFS SUPPORT. Subject to change without prior notice.**
+# BEAM IPFS Support
 
-As of v6.3 BEAM adds IPFS support and IPFS can be accessed via API. Refer [version 6.3 API](https://github.com/BeamMW/beam/wiki/Beam-wallet-protocol-API-v6.3) docs for details on supported IPFS calls. 
+Beam embeds a full [IPFS](https://ipfs.tech/) (InterPlanetary File System) node into the wallet process, enabling decentralized content-addressed storage for DApp user interfaces and other on-chain assets.
 
-* in Desktop UI client IPFS is enabled by default. IPFS node is started when user launches any DApp granting full IPFS support to DApps. After IPFS node is started it continues to run until desktop client is closed.
+## Why IPFS Is Embedded
 
-* in wallet-api IPFS support is disabled by default, `--enable_ipfs=true` option should be specified to start IPFS node granting full IPFS support
+Beam DApps are implemented as [shader pairs](bvm/BVM-Shader-Development.md): a contract shader running inside the BVM and an app shader that runs in the wallet and builds the UI. The UI assets — HTML, JavaScript, images — must be delivered to the wallet client without relying on a centralized server. IPFS provides content-addressed immutable storage, so a CID embedded in the shader's metadata permanently identifies the exact UI bundle. When a user opens a DApp the wallet fetches the bundle by CID from the IPFS network.
 
-* in Mobile clients & WASM client limited IPFS support is enabled. No local IPFS node is started, write-only methods like ipfs_add/ipfs_pin would fail. Read-only methods like ipfs_get are enabled via HTTP calls to BEAM managed IPFS nodes.
+Secondary use cases include NFT metadata storage and application-level content pinning from DApp shaders via the wallet API.
 
-## BEAM IPFS Config
+## Client Modes
 
-BEAM IPFS repository is located in the `[wallet data folder]/ipfs-repo` until `--ipfs_repo=[path]` option is specified for API CLI or `[ipfsnode] ipfs_repo=[path]` in Desktop `settings.ini` file. When there is no initialized IPFS repository in the given path it would be automatically initialized with the default 'server' IPFS profile for API CLI and with the default (client) profile for Desktop Client except the following custom BEAM settings:
+| Client type | IPFS node | Write operations | Read operations |
+|---|---|---|---|
+| Desktop wallet | Full local node (optional, starts on DApp launch by default) | `ipfs_add`, `ipfs_pin`, `ipfs_unpin`, `ipfs_gc` | `ipfs_get`, `ipfs_hash` |
+| `wallet-api` CLI | Full local node (opt-in: `--enable_ipfs=true`) | All methods | All methods |
+| Mobile / WASM clients | No local node | Not available (fail) | Via HTTP to BEAM-managed IPFS nodes |
 
-* `Swarm.ConnMgr.LowWater` - is set to `100`. Can be changed using `--ipfs_low_water` option in API CLI and using `[ipfsnode] ipfs_low_water=` in Desktop client 'settings.ini' file.
+The compile-time guard `BEAM_IPFS_SUPPORT` controls whether any of this code is included; builds without it expose none of the IPFS symbols.
 
-* `Swarm.ConnMgr.HighWater` - `200` / `--ipfs_high_water`, `settings.ini -> [ipfsnode] ipfs_high_water=`
+## Architecture
 
-* Swarm.ConnMgr.GracePeriod - `20s` / `--ipfs_grace_period`, `settings.ini -> [ipfsnode] ipfs_grace_period=` as uint32 seconds
+### Threading Model
 
-* Bootstrap - default BEAM bootstrap node(s) / `--ipfs_bootstrap` (space separated [multiaddr](https://github.com/multiformats/multiaddr) list), `settings.ini -> [ipfsnode] ipfs_bootstrap=`
+`IPFSService` (`wallet/ipfs/ipfs.h`) is the public interface. The underlying `asio_ipfs::node` runs on a dedicated **service thread** with its own `boost::asio::io_context`. All IPFS operations are non-blocking from the caller's perspective.
 
-* Addresses.Swarm - custom `10100` listening port / `--ipfs_swarm_port`, `settings.ini -> [ipfsnode] ipfs_swarm_port=`
+```cpp
+struct IPFSService {
+    struct Handler {
+        // Called from the IPFS service thread — must dispatch back to the
+        // wallet's reactor thread, not execute work inline.
+        virtual void AnyThread_pushToClient(std::function<void()>&&) = 0;
+        virtual void AnyThread_onStatus(const std::string& error, uint32_t peercnt) = 0;
+    };
 
-* Addresses.API - custom `/ip4/127.0.0.1/tcp/6100` listening address for API / empty (API disabled) on Desktop / `--ipfs_api_addr`, `settings.ini -> [ipfsnode] ipfs_api_addr=`
+    static Ptr AnyThread_create(HandlerPtr);
 
-* Addresses.Gateway - custom `/ip4/127.0.0.1/tcp/6200` listening address in API / empty (Gateway disabled) on Desktop / `--ipfs_gateway_addr`, `settings.ini -> [ipfsnode] ipfs_gateway_addr=`
+    // Calling thread becomes the service thread for this call
+    virtual void ServiceThread_start(asio_ipfs::config) = 0;
+    virtual void ServiceThread_stop() = 0;
 
-* Swarm.EnableAutoRelay - false in API / `true` on Desktop / `--ipfs_auto_relay`, `settings.ini -> [ipfsnode] ipfs_auto_relay=`
+    virtual bool   AnyThread_running() const = 0;
+    virtual std::string AnyThread_id() const = 0;
 
-* Swarm.EnableRelayHop - `false` / `--ipfs_relay_hop`, `settings.ini -> [ipfsnode] ipfs_relay_hop=`
+    virtual void AnyThread_add   (data, bool pin, timeout, res_cb, err_cb) = 0;
+    virtual void AnyThread_hash  (data, timeout, res_cb, err_cb) = 0;
+    virtual void AnyThread_get   (hash, timeout, res_cb, err_cb) = 0;
+    virtual void AnyThread_pin   (hash, timeout, res_cb, err_cb) = 0;
+    virtual void AnyThread_unpin (hash, res_cb, err_cb) = 0;
+    virtual void AnyThread_gc    (timeout, res_cb, err_cb) = 0;
+};
+```
 
-* Swarm.Transports.Network.Relay - forced to `true` everywhere. Not adjustable at the moment.
+Every method name prefixed `AnyThread_` is safe to call from any thread. Callbacks always arrive in the wallet's reactor thread via `Handler::AnyThread_pushToClient`, which posts through `PostToReactorThread` — an `io::AsyncEvent`-based cross-thread queue (`wallet/ipfs/ipfs_async.h`).
 
-* AutoNAT.ServiceMode - `enabled` / `--ipfs_autonat`, `settings.ini -> [ipfsnode] ipfs_autonat=` as bool
+### Startup Sequence
 
-* AutoNAT.Throttle.GlobalLimit - `30` / `--ipfs_autonat_limit`, `settings.ini -> [ipfsnode] ipfs_autonat_limit=`
+`ServiceThread_start` runs the `asio_ipfs::node::build` coroutine **synchronously** in the calling thread until the node is fully initialized (bootstrap connection established, swarm key accepted, peer ID derived). Only then does the dedicated service thread begin its event loop. This simplifies the startup flow at the cost of a potentially multi-second blocking call on first launch.
 
-* AutoNAT.Throttle.PeerLimit - `3` / `--ipfs_autonat_peer_limit`, `settings.ini -> [ipfsnode] ipfs_autonat_peer_limit=`
+## Configuration (`asio_ipfs::config`)
 
-* Datastore.StorageMax - `20GB` in API CLI / `2GB` in Desktop client / `--ipfs_storage_max`, `settings.ini -> [ipfsnode] ipfs_storage_max=`
+| Field | Desktop default | Server (`wallet-api`) default | CLI flag | `settings.ini` key |
+|---|---|---|---|---|
+| `repo_root` | `<wallet-data>/ipfs-repo` | same | `--ipfs_repo` | `[ipfsnode] ipfs_repo` |
+| `storage_max` | `2GB` | `20GB` | `--ipfs_storage_max` | `[ipfsnode] ipfs_storage_max` |
+| `low_water` | `100` | `100` | `--ipfs_low_water` | `[ipfsnode] ipfs_low_water` |
+| `high_water` | `200` | `200` | `--ipfs_high_water` | `[ipfsnode] ipfs_high_water` |
+| `grace_period` | `20s` | `20s` | `--ipfs_grace_period` | `[ipfsnode] ipfs_grace_period` |
+| `swarm_port` | `10100` | `10100` | `--ipfs_swarm_port` | `[ipfsnode] ipfs_swarm_port` |
+| `api_address` | *(disabled)* | `/ip4/127.0.0.1/tcp/6100` | `--ipfs_api_addr` | `[ipfsnode] ipfs_api_addr` |
+| `gateway_address` | *(disabled)* | `/ip4/127.0.0.1/tcp/6200` | `--ipfs_gateway_addr` | `[ipfsnode] ipfs_gateway_addr` |
+| `routing_type` | `dht` | `dhtserver` | `--ipfs_routing_type` | `[ipfsnode] ipfs_routing_type` |
+| `auto_relay` | `true` | `false` | `--ipfs_auto_relay` | `[ipfsnode] ipfs_auto_relay` |
+| `relay_hop` | `false` | `false` | `--ipfs_relay_hop` | `[ipfsnode] ipfs_relay_hop` |
+| `autonat` | `true` | `true` | `--ipfs_autonat` | `[ipfsnode] ipfs_autonat` |
+| `autonat_limit` | `30` | `30` | `--ipfs_autonat_limit` | `[ipfsnode] ipfs_autonat_limit` |
+| `autonat_peer_limit` | `3` | `3` | `--ipfs_autonat_peer_limit` | `[ipfsnode] ipfs_autonat_peer_limit` |
+| `run_gc` | `true` | `false` | `--ipfs_run_gc` | `[ipfsnode] ipfs_run_gc` |
+| `bootstrap` | network defaults | network defaults | `--ipfs_bootstrap` (space-separated multiaddr list) | `[ipfsnode] ipfs_bootstrap` |
+| `peering` | network defaults | network defaults | — | — |
+| `swarm_key` | network default | network default | `--ipfs_swarm_key` | `[ipfsnode] ipfs_swarm_key` |
 
-* Routing.Type - `dhtserver` in API CLI / `dht` in Desktop client / `--ipfs_routing_type`, `settings.ini -> [ipfsnode] ipfs_routing_type=`
+### Network-Specific Bootstrap and Swarm Keys
 
-* swarm.key file is created to ensure connection to the BEAM private IPFS network / `--ipfs_swarm_key`, `settings.ini -> [ipfsnode] ipfs_swarm_key=` as string
+Beam operates a **private IPFS swarm** — nodes with a wrong or missing swarm key cannot join. Bootstrap nodes and swarm keys are injected automatically based on `Rules::get().m_Network`:
 
-* IPFS periodic GC is disabled in API CLI / launched in Desktop Client / `--ipfs_run_gc`, `settings.ini -> [ipfsnode] ipfs_run_gc=` as bool
+| Network | Bootstrap peers | Swarm key prefix |
+|---|---|---|
+| `mainnet` | `eu-node01..04.mainnet.beam.mw:38041` | `1fabcf9e…` |
+| `testnet` | `eu-node01..03.testnet.beam.mw:38041` | `1191aea7…` |
+| `masternet` | `3.19.32.148:38041` | `18502580…` |
+| `dappnet` | `3.16.160.95:38041` | `bf2f2063…` |
 
-* sockets-based activation for "io.ipfs.api" and "io.ipfs.gateway" is disabled at the moment and is not planned in the future. Contact us if you need this feature.
+All swarm keys use the PSK v1 format: `/key/swarm/psk/1.0.0/\n/base16/\n<hex>`.
 
-* WebUI is not supported and disabled, will be supported in the future
+If a custom `swarm_key` or `bootstrap` list is provided in config, the network defaults are ignored entirely for that field.
 
-* fuse mounts for "/ipfs" and "/ipfs" are not supported and disabled, will be supported in the future
+### `config.lock` — Preventing Config Overwrite
 
-* remote pinning for MFS roots is not supported and disabled, will be supported in the future
+On every startup Beam forcibly overwrites the BEAM-specific settings in `<repo>/config`. To suppress this (e.g., to preserve manual edits), create the file `<repo>/config.lock`. When this file is present, all BEAM-side config knobs — CLI flags, `wallet_api.cfg`, desktop settings — are ignored and the existing `config` file is used as-is.
 
-There are no changes in default IPFS repo layout, all default config and data files are and you are able to manage the IPFS repo via default IPFS cli tool paired with the `IPFS_PATH` environment variable. Ensure that BEAM client that uses the repo is not launched when accessing it using IPFS cli. In case of Desktop client's IPFS repo `ipfs_node_api_port`/`Addresses.API` setting should be specified  before running daemon or it would crash. go-ipfs is unable to launch without API support.
+## Async API
 
-### ipfs-repo/config.lock file
+All six service methods follow the same pattern: submit a coroutine to the IPFS `io_context`, optionally attach a `boost::asio::steady_timer` for timeout enforcement, then marshal the result back to the wallet's reactor thread via `Handler::AnyThread_pushToClient`.
 
-This section describes BEAM extension to IPFS repo & config handling.
+| Method | Direction | Notes |
+|---|---|---|
+| `AnyThread_add(data, pin, timeout, res, err)` | local → IPFS network | Stores bytes; returns CID string. `pin=true` prevents GC from evicting the block. |
+| `AnyThread_hash(data, timeout, res, err)` | local only | Computes CID without storing (`calc_cid` internally). No network I/O. |
+| `AnyThread_get(hash, timeout, res, err)` | IPFS network → local | Fetches content by CID; returns raw bytes. |
+| `AnyThread_pin(hash, timeout, res, err)` | local bookkeeping | Marks a CID as pinned so GC will not remove it. |
+| `AnyThread_unpin(hash, res, err)` | local bookkeeping | Removes pin; timeout not applicable (local). |
+| `AnyThread_gc(timeout, res, err)` | local | Removes all un-pinned blocks from the local store. |
 
-On every start BEAM would force and overwrite the aforementioned BEAM custom settings in the `ipfs-repo/config` file. If you want to cancel this behavior, edit the `ipfs-repo/config` file manually or via cli and preserve your custom changes `ipfs-repo/config.lock` file should be created.
+Timeout is in milliseconds; pass `0` to disable timeout enforcement (unpin always uses `0`).
 
-If `ipfs-repo/config.lock` is present BEAM would not make any changes to the `ipfs-repo/config` file. All BEAM ways to change IPFS settings are immediately blocked and ignored including `--ipfs-xxx` CLI options, any IPFS options set in `wallet_api.cfg` file, any IPFS options set via desktop UI and any IPFS options set in desktop UI `settings.ini` file.
+### Wallet API Methods
 
-## Useful stuff
+These operations are also exposed as JSON-RPC methods in the wallet API (since v6.3), all tagged `APPS_ALLOWED` so DApp shaders can call them:
 
-### Access BEAM IPFS node using standard IPFS cli tool
+| JSON-RPC method | Access level | Async |
+|---|---|---|
+| `ipfs_add` | write | yes |
+| `ipfs_hash` | read | yes |
+| `ipfs_get` | write | yes |
+| `ipfs_pin` | write | yes |
+| `ipfs_unpin` | write | yes |
+| `ipfs_gc` | write | yes |
 
-1. Start wallet api
-2. Install go-ipfs
-3. Create beam-ipfs bash script (do not forget to change your paths)
+See the [Wallet API v7.0](api/Beam-wallet-protocol-API-v7.0.md) documentation for parameter schemas.
+
+## Interaction with Shader Invocation
+
+When a DApp is opened in the desktop wallet, the wallet:
+
+1. Reads the shader's embedded metadata to find the app shader's IPFS CID.
+2. Calls `AnyThread_get(cid, ...)` to fetch the UI bundle from IPFS.
+3. Starts a local IPFS node on demand (if not already running) via `IWThread_startIPFSNode`.
+4. Launches a sandboxed WebView pointing at the fetched bundle.
+
+The app shader running inside the WebView can call `ipfs_add`, `ipfs_get`, etc., through the DApp API (`wallet/client/apps_api/apps_api.h`). The DApp API checks whether an IPFS node is available (`hasIPFSNode`) at DApp launch time and logs a warning if it is not; read operations from mobile/WASM clients fall back to HTTP calls to BEAM-managed gateway nodes.
+
+## Repository Layout
+
+The IPFS repo lives at `<wallet-data>/ipfs-repo` by default and is a standard go-ipfs repository. The standard IPFS CLI can inspect it:
 
 ```bash
-#/bin/bash
-export IPFS_PATH=/home/ubuntu/beam-api/ipfs-repo/
-# uncomment the following line if you're using private IPFS network
-# export LIBP2P_FORCE_PNET=1
-/home/ubuntu/go-ipfs-node/ipfs "$@"
+export IPFS_PATH=/path/to/beam/ipfs-repo
+export LIBP2P_FORCE_PNET=1   # required for private swarm
+ipfs swarm peers
+ipfs pin ls
 ```
 
-In desktop client IPFS node API is disabled by default. `ipfs_node_api_port` should be set in `settings.ini` or `Addresses.API` in `ipfs-repo/config` to access IPFS node API. 
+Ensure the Beam wallet is not running when using the IPFS CLI against the same repo — both processes cannot hold the repo lock simultaneously.
 
-4. Make it executable 
+**Desktop note:** The IPFS API (`Addresses.API`) is disabled in the desktop client's default repo config. Set `ipfs_node_api_port` in `settings.ini` or add `Addresses.API` manually to `ipfs-repo/config` before starting, otherwise `ipfs daemon` will abort.
 
-```bash
-chmod  +x ./beam_ipfs
-```
+### SystemD Unit (wallet-api)
 
-5. Execute usual ipfs commands via the script
-
-```bash
-./beam-ipfs swarm peers
-```
-
-### SystemD IPFS unit file
-
-Example below if given for a standard go-ipfs binary. You can also use the same settings for running wallet API
-
-```
-/etc/systemd/system/ipfs.service
-```
-
-```
+```ini
 [Unit]
-Description=GO IPFS Node
+Description=Beam Wallet API with IPFS
 After=network.target
 
 [Service]
 Type=exec
 Restart=on-failure
-Environment="IPFS_PATH=/home/ubuntu/go-ipfs-node/repo"
-# uncomment if private IPFS network
-# Environment="LIBP2P_FORCE_PNET=1"
-WorkingDirectory=/home/ubuntu/go-ipfs-node
-ExecStart=/home/ubuntu/go-ipfs-node/ipfs daemon
+WorkingDirectory=/home/beam/wallet-api
+ExecStart=/home/beam/wallet-api/wallet-api --enable_ipfs=true ...
 
 [Install]
 WantedBy=multi-user.target
 ```
+
+## Current Limitations
+
+- **WebUI** is disabled and not planned.
+- **FUSE mounts** (`/ipfs`, `/ipns`) are disabled and not planned.
+- **Remote MFS-root pinning** is not supported.
+- **Sockets-based activation** for `io.ipfs.api` / `io.ipfs.gateway` is not supported.
+- The IPFS startup is **synchronous** (blocks the calling thread until the node is connected); async startup is a noted TODO in the implementation.
+- Connect timeout lowering is also listed as a TODO; the initial peer connection may take several seconds on a cold start.

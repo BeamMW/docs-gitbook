@@ -17,7 +17,7 @@ At Mainnet launch, we will use the following Equihash parameters: **n=150**, **k
 
 Note: in Testnet 3 we are still using **n=144**, **k=5** 
 
-The minimal memory requirement for the GPU will be 4 GB. The most up-to-date list of supported GPUs will be available [here](https://github.com/BeamMW/beam/wiki/Supported-GPU-cards-for-mining-(NVIDIA)).
+The minimal memory requirement for the GPU will be 4 GB. The most up-to-date list of supported GPUs is available at [Supported nVidia Cards (OpenCL)](historical/Supported-nVidia-cards-for-mining-using-OpenCL-miner.md).
 
 # Block Size and Time
 A Beam block will be generated approximately every minute and contain about 1000 transactions. Block size will be roughly 1MB.
@@ -51,7 +51,7 @@ The external miner software is available for download [here](https://www.beam.mw
 
 # How can you help?
 * Want to help developing Beam mining infrastructure? Have GPU development skills or experience with mining pools? Write to us at mining@beam.mw. Fair compensation will be offered to qualified developers.
-* Own a mining farm and want to mine Beam at launch? Join Beam Mining community on Telegram or contact us at mining@beam.mw.
+* Own a mining farm and want to mine Beam? Join Beam Mining community on [Telegram](https://t.me/BeamMiners) or contact us at mining@beam.mw.
 
 
 

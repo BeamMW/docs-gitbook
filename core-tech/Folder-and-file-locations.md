@@ -1,5 +1,8 @@
 # Desktop Wallet app
 
+Please refer to: https://documentation.beam.mw/en/latest/rtd_pages/user_files_and_locations.html?highlight=location
+
+
 ## General points to mention:
 * The default location of the Desktop Wallet app can be modified during the installation process (Windows only).
 * The default Database location for the Desktop Wallet app can be changed setting the `appdata` parameter to `beam-wallet.cfg` (Windows only).
