@@ -119,6 +119,8 @@ Client should subscribe to events via [ev_subunsub](#ev_subunsub) method. Events
 - [ev_utxos_changed](#ev_utxos_changed) ![](https://img.shields.io/badge/-async-orange)
 - [ev_txs_changed](#ev_txs_changed) ![](https://img.shields.io/badge/-DAPPs%20allowed-green)![](https://img.shields.io/badge/-async-orange)
 - [ev_connection_changed](#ev_connection_changed) ![](https://img.shields.io/badge/-DAPPs%20allowed-green)![](https://img.shields.io/badge/-async-orange)
+- [ev_assets_swap_offers_changed](#ev_assets_swap_offers_changed) ![](https://img.shields.io/badge/-async-orange)
+- [ev_swap_offers_changed](#ev_swap_offers_changed) ![](https://img.shields.io/badge/-async-orange)
 
 ## Async Notice
 
@@ -1691,6 +1693,7 @@ Subscribe/unsubscribe to API events.
 ```
 
 * `ev_xxxx` corresponding event name, optional, bool. True subscribes to the event, false unsubscribes. All `ev_xxxx` paramaters are optional. If event is not specified its subscription state remains unchanged. Immediately after subscription corresponding event is generated providing the latest state.
+* Subscribing to `ev_assets_swap_offers_changed` fails with `-32024` (`Assets Swaps are not enabled`) if `wallet-api` runs without `--enable_assets` or the API version is below 7.2. Subscribing to `ev_swap_offers_changed` fails with `-32016` (`Swaps are not enabled`) if atomic swaps are not available. On error no subscription is changed.
 
 ## ev_sync_progress
 
@@ -2021,6 +2024,75 @@ Event is generated when wallet connection status is changed. For example, connec
 * `node_connected` - if `true` this means that wallet successfully connected at least to one node
 * `own_node` - `true` if one of connected beam nodes has owner key
 * `last_connect_error` - this field contains a string with last connection error explanation 
+
+## ev_assets_swap_offers_changed
+
+Event is generated when the asset swap (DEX) offers board changes. `wallet-api` must be started with `--enable_assets`. Available since API v7.2.
+
+`<--`
+```json
+{
+  "id": "ev_assets_swap_offers_changed",
+  "jsonrpc": "2.0",
+  "result": {
+    "change": 0,
+    "change_str": "added",
+    "offers": [
+      {
+        "create_time": 1667219066,
+        "expire_time": 1667240666,
+        "id": "1ae40a6c80d54cc4b3653ab2c478c328",
+        "isMy": false,
+        "receiveAmount": 100000000,
+        "receiveAssetId": 0,
+        "receiveCurrencyName": "BEAM",
+        "sendAmount": 100000000,
+        "sendAssetId": 2,
+        "sendCurrencyName": "SHEKELb"
+      }
+    ]
+  }
+}
+```
+
+* `change`, `change_str` - check [ev_XXX_changed Events](#ev_xxx_changed-events) section for details. `removed` is sent when an offer is cancelled, accepted or expired; `updated` when a known offer is re-broadcast
+* `offers` - array of changed offers, same format as in [assets_swap_offers_list](#assets_swap_offers_list). For `removed` the last known offer is provided
+
+## ev_swap_offers_changed
+
+Event is generated when the atomic swap offers board changes.
+
+`<--`
+```json
+{
+  "id": "ev_swap_offers_changed",
+  "jsonrpc": "2.0",
+  "result": {
+    "change": 0,
+    "change_str": "added",
+    "offers": [
+      {
+        "height_expired": 4071420,
+        "is_my_offer": false,
+        "is_public": true,
+        "min_height": 4071400,
+        "receive_amount": 100000,
+        "receive_currency": "BTC",
+        "send_amount": 2000000000,
+        "send_currency": "BEAM",
+        "status": 0,
+        "status_string": "pending",
+        "time_created": "2026.10.08 12:00:00",
+        "token": "...",
+        "txId": "4a4f8b0f0f3d4d1c9b1f2e6a7c8d9e0f"
+      }
+    ]
+  }
+}
+```
+
+* `change`, `change_str` - check [ev_XXX_changed Events](#ev_xxx_changed-events) section for details. Only `added`, `removed` and `reset` are generated
+* `offers` - array of changed offers, same format as `swap_offers_board` returns. For `removed` only `txId`, `status` and `status_string` are reliable. `reset` contains pending offers only
 
 ## sign_message
 
