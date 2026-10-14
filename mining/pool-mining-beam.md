@@ -1,6 +1,6 @@
 # Pool Mining Beam
 
-If you decide to participate in a Beam mining pool, you will need to select a mining [pool](https://miningpoolstats.stream/beam) and determine which mining pool best suits your needs. When selecting your pool, it is essential to consider the geographic locations, fee, hash rate, and user experience.
+If you decide to participate in a Beam mining pool, you will need to select a mining pool and determine which mining pool best suits your needs. The [Beam Explorer](https://explorer.beam.mw/#/explorer/mining) lists the pools that mine Beam with their hashrate, fee, payout scheme and the blocks each one found; [MiningPoolStats](https://miningpoolstats.stream/beam) keeps another list. When selecting your pool, it is essential to consider the geographic locations, fee, hash rate, and user experience.
 
 https://www.youtube.com/watch?v=sM0SCGw8Puo
 
@@ -9,7 +9,7 @@ https://www.youtube.com/watch?v=sM0SCGw8Puo
 * Mining rig containing at least one GPU with a minimum of 3GB RAM.
 * Basic knowledge of command line (CMD terminal) functions.
 * High-speed internet connection.
-* A mining [pool](https://miningpoolstats.stream/beam).
+* A mining pool, see the [Beam Explorer's pool list](https://explorer.beam.mw/#/explorer/mining) or [MiningPoolStats](https://miningpoolstats.stream/beam).
 * Mining software, e.g., [lolMiner](https://github.com/Lolliedieb/lolMiner-releases).
 
 
