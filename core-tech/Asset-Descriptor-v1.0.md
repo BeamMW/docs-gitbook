@@ -28,7 +28,26 @@ Asset meta is a byte buffer associated with the asset and stored on chain.
 * `NTHUN=` human-readable smallest asset unit name (nth-unit name), for example Groth
 
 # Standard properties, non-mandatory
-* `NTH_RATIO=` integer that represents the ratio of the smallest asset unit to regular unit. If omitted default value of `100000000` is used
+* `NTH_RATIO=` descriptive metadata for the number of smallest units per whole asset unit. Use `100000000` (eight decimal places) for new assets, or omit the field. It is not a consensus precision setting; see the precision note below.
+
+
+## Asset precision and compatibility
+
+Beam wallet amounts use eight decimal places for Confidential Assets: one whole
+asset unit corresponds to `100000000` smallest units. The core treats
+`NTH_RATIO` as opaque metadata, not as a parameter that changes transaction
+arithmetic, issuance amounts or supply limits. A value of `8` is a ratio of eight,
+not a request for eight decimal places.
+
+For asset-creation interfaces, show eight decimal places as fixed. If emitting
+`NTH_RATIO`, use `100000000`; do not offer a configurable precision selector.
+Third-party frontends may interpret metadata differently. To avoid inconsistent
+amounts, continue using eight-decimal amount formatting rather than rescaling
+balances according to this field.
+
+Existing assets may contain a different or invalid ratio. Preserve their stored
+metadata and amounts; displaying that declared ratio must not imply that it is
+the effective precision.
 
 # Optional properties
 * `OPT_SHORT_DESC=` an one-liner, should not exceed 128 characters
