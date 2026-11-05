@@ -16,6 +16,17 @@ Use the command line to register a Confidential Asset.
    Users must register all CAs on-chain Before before usage.
 
 
+## Asset precision
+
+Confidential Asset amounts use eight decimal places: `100000000` smallest units
+per whole asset unit. The optional `NTH_RATIO` metadata field does not change
+on-chain precision, issuance amounts or supply limits. When creating assets,
+omit it or use `NTH_RATIO=100000000`, not `NTH_RATIO=8`.
+
+Do not rescale existing balances based on a different ratio in an asset's
+metadata. See the [Asset Metadata Descriptor](../dev/confidential-assets/using-confidential-assets/asset-metadata-descriptor.md#asset-precision-and-compatibility)
+for the distinction between metadata and amount formatting.
+
 ## Register a Confidential Asset
 
 #### Mandatory asset meta keys:
