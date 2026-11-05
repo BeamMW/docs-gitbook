@@ -47,9 +47,7 @@ balances according to this field.
 
 Existing assets may contain a different or invalid ratio. Preserve their stored
 metadata and amounts; displaying that declared ratio must not imply that it is
-the effective precision. This clarification does not migrate existing balances
-or implement the precision-change proposal in
-[Beam #2172](https://github.com/BeamMW/beam/issues/2172).
+the effective precision.
 
 # Optional properties
 * `OPT_SHORT_DESC=` an one-liner, should not exceed 128 characters
